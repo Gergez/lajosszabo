@@ -1,0 +1,262 @@
+*, *::before, *::after
+{
+  box-sizing:inherit;
+  -webkit-box-sizing:inherit;
+  -moz-box-sizing:inherit;
+}
+
+*{box-sizing: border-box;}
+
+html {
+  background: url(2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat-y;
+  scroll-behavior: smooth;
+}
+
+body,html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.5%;
+}
+
+
+h1,h2,h3,h4,h5,h6
+{
+  padding: 0;
+  margin: 0;
+
+}
+
+ h1
+{
+  font-size:3rem;
+}
+
+
+h2
+{
+  font-size:3rem;
+}
+h3
+{
+  font-size: 2.5rem;
+}
+
+
+/************       TOP NAVIGATION  START     ********************/
+
+
+/* POSITION AND STYLE THE NAVBAR */
+.topnav
+{
+  position:fixed;
+  display:flex;
+  flex-direction:row;
+  float:right;
+  width:100%;
+  background-color: #c1c1c1;
+  justify-content: flex-end;
+  color:black;
+}
+
+/* POSITION AND STYLE THE NAVBAR LINKS */
+.topnav a
+{
+  display: inline-block;
+  position:relative;
+  color: black;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  background:#c1c1c1;
+}
+
+/* CHANGE THE COLOR OF LINKS ON HOVER */
+.topnav a:hover
+{
+  background-color: #a2a2a2;
+  color: white;
+}
+
+/* ADD A COLOR TO THE ACTIVE/CURRENT LINK */
+.topnav a.active {
+  background-color: #a2a2a2;
+  color: black;
+}
+
+/************       DROPDOWN MENU  START        ********************/
+
+
+/* Dropdown Button */
+.dropdown
+{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button
+{
+  background-color: #c1c1c1;
+  height:100%;
+  border:0px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 14px 50px;
+  pointer-events: none;
+}
+
+.dropdown:hover button
+{
+  background-color: #a2a2a2;
+  color: white;
+}
+
+.dropdown button::after
+{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #4B5468;
+  top: 20px;
+  right: 20px;
+}
+
+.dropdown:hover button::after
+{
+  border-top-color: #ffffff;
+}
+
+/* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
+.dropdown-content
+{
+  display: none;
+  min-width: 100%;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+/* POSITION AND STYLE OF DROPDOWN LINKS */
+.dropdown-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+}
+
+
+/* POSITION THE DROPDOWN CONTENT DOWNWARDS */
+.dropdown:hover .dropdown-content
+{
+  display:block;
+}
+
+
+/* CHANGE THE COLOR OF LINKS ON HOVER */
+.dropdown-content a:hover
+{
+  background-color: #ddd;
+}
+
+
+
+
+
+/************       DROPDOWN MENU   END       ********************/
+
+/* STYLE THE SEARCH BAR */
+.search_bar
+{
+  margin: 10px;
+  box-shadow: 3px 5px 5px #888888;
+
+}
+
+/************       TOP NAVIGATION END       ********************/
+
+/*   DIALOGIKUS ISKOLA CÍM       */
+
+.title
+{
+  display: block;
+  text-align: center;
+  margin-bottom:75px;
+}
+
+
+/************       SZL,TB KÉPEK START      ********************/
+
+.szl_tb_container
+{
+  display:flex;
+  flex-
+  margin:auto;
+  width:100%;
+
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+}
+
+
+
+.szl_container
+{
+  display:block;
+  height:600px;
+  margin-right:10%;
+}
+
+.tb_container
+{
+  display:block;
+  height:600px;
+}
+
+
+.szl_portre
+{
+  float:left;
+  height:inherit;
+  width:auto;
+}
+
+.tb_portre
+{
+  float:right;
+  height:inherit;
+  width:auto;
+}
+
+.person_name
+{
+  display:block;
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.person_title
+{
+  display:block;
+  text-align: center;
+  margin-bottom:50px;
+}
+
+
+/************       SZL,TB KÉPEK   END       ********************/

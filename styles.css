@@ -359,7 +359,7 @@ p
 .vadirat_wrap1
 {
   display:block;
-  background: rgba(248,213,122,00);
+  background: rgba(248,213,122,0.3);
   width:33%;
   float:left;
   border: 2px solid rgba(206,160,107,0.2);

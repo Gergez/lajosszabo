@@ -353,7 +353,8 @@ p
 
 .vadirat_container p
 {
-  height:500px;
+  width:100%;
+  height:100%;
 }
 
 .vadirat_wrap1
@@ -396,7 +397,7 @@ line-height: 3rem;
 
 .vadirat_wrap1 img
 {
-  float:left;
+  float:right;
   align-items: flex-end;
   justify-content: flex-end;
   padding: 5px 5px;

@@ -310,7 +310,7 @@ p
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:1176px) {
+/* @media screen and (max-width:1176px) {
 
   .topnav
   {
@@ -318,7 +318,7 @@ p
     align-items: center;
   }
 
-}
+} */
 
 @media (min-width:350px) and (max-width:784px)
 

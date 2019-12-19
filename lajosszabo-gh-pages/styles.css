@@ -1,0 +1,436 @@
+*, *::before, *::after
+{
+  box-sizing:inherit;
+  -webkit-box-sizing:inherit;
+  -moz-box-sizing:inherit;
+}
+
+*
+{
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+}
+
+html {
+  background-image: url(kepek/Dusty5.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, top;
+  background-blend-mode: lighten;
+  /* no-repeat center center fixed, no-repeat top center fixed */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat-y;
+  scroll-behavior: smooth;
+}
+
+body,html {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 75%;
+  height:100vh;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+ h1
+{
+  font-size:3rem;
+}
+
+
+h2
+{
+  font-size:3rem;
+}
+h3
+{
+  font-size: 2.5rem;
+}
+p
+{
+  font-size:2rem;
+  margin:0;
+}
+
+/************       TOP NAVIGATION  START     ********************/
+
+
+/* POSITION AND STYLE THE NAVBAR */
+.topnav
+{
+  position:fixed;
+  display:flex;
+  -webkit-display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  float:right;
+  width: 100%;
+  /* background:#c1c1c1; */
+  background-color: rgba(0,0,0,0);
+  background-size:150%;
+  justify-content: center;
+  color:black;
+}
+
+/* POSITION AND STYLE THE NAVBAR LINKS */
+.topnav a
+{
+  display: flex;
+  position:relative;
+  color: black;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  /* background:#c1c1c1; */
+  background-color: rgba(0,0,0,0);
+    border-bottom: 1px solid black;
+}
+
+/* CHANGE THE COLOR OF LINKS ON HOVER */
+.topnav a:hover
+{
+  background-color: #a2a2a2;
+  color: white;
+}
+
+/* ADD A COLOR TO THE ACTIVE/CURRENT LINK */
+.topnav a.active
+{
+  background-color: rgba(0,0,0,0);
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+/* ADD BORDER TO THE NAV ELEMENTS */
+/* .topnav a, .topnav .dropdown
+{
+  border-right: 1px solid white;
+} */
+
+
+
+/************       DROPDOWN MENU  START        ********************/
+
+
+/* Dropdown Button */
+.dropdown
+{
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown button
+{
+  background-color: rgba(0,0,0,0);
+  height:100%;
+  border:0px;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 14px 30px;
+  pointer-events: none;
+}
+
+.dropdown:hover button
+{
+  background-color: #a2a2a2;
+  color: white;
+}
+
+.dropdown button::after
+{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #4B5468;
+  top: 20px;
+  right: 10px;
+}
+
+.dropdown:hover button::after
+{
+  border-top-color:white;
+}
+
+/* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
+.dropdown-content
+{
+  display: none;
+  min-width: 100%;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align:center;
+
+}
+
+/* POSITION AND STYLE OF DROPDOWN LINKS */
+.dropdown-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display:block;
+
+}
+
+
+/* POSITION THE DROPDOWN CONTENT DOWNWARDS */
+.dropdown:hover .dropdown-content
+{
+  display:block;
+}
+
+
+/* CHANGE THE COLOR OF LINKS ON HOVER */
+.dropdown-content a:hover
+{
+  background-color: #ddd;
+}
+
+
+
+
+
+/************       DROPDOWN MENU   END       ********************/
+
+/* STYLE THE SEARCH BAR */
+.search_bar
+{
+  margin: 10px;
+  box-shadow: 3px 5px 5px #888888;
+}
+
+
+/* LANGUAGE SELECTION */
+
+
+.language_flag
+{
+  display:block;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+  height:40px;
+  margin-top:5px;
+}
+
+/************       TOP NAVIGATION END       ********************/
+
+/*   DIALOGIKUS ISKOLA CÍM       */
+
+.title
+{
+  font-family: 'Playfair Display', serif;
+  display: block;
+  text-align: center;
+  margin-bottom:150px;
+}
+
+
+/************       SZL,TB KÉPEK START      ********************/
+
+.szl_tb_container
+{
+  display:flex;
+  flex-wrap:wrap;
+  flex-grow: 1;
+  justify-content:center;
+  height:100vh;
+
+}
+
+
+
+.szl_container
+{
+  display:block;
+  height:400px;
+  width:350px;
+  margin-right:10%;
+}
+
+.szl_container p
+{
+  display:none;
+}
+
+.szl_container:hover p
+{
+  display: block;
+}
+
+.tb_container
+{
+  display:block;
+  height:400px;
+  width:350px;
+}
+
+.tb_container p
+{
+  display:none;
+}
+
+.tb_container:hover p
+{
+  display: block;
+}
+
+.szl_portre
+{
+  float:left;
+  height:inherit;
+  width:auto;
+}
+
+.tb_portre
+{
+  height:inherit;
+  width:auto;
+}
+
+.person_name
+{
+  font-family: 'Crimson Text', serif;
+  display:block;
+  text-align: center;
+  margin-bottom:0px;
+  font-size:2.5rem;
+}
+
+.person_title
+{
+  font-family: 'Crimson Text', serif;
+  display:block;
+  text-align: center;
+  margin-bottom:30px;
+}
+
+/* MEDIA QUERIES */
+
+/* @media screen and (max-width:1176px) {
+
+  .topnav
+  {
+    display:none;
+    align-items: center;
+  }
+
+} */
+
+@media (min-width:350px) and (max-width:784px)
+
+{
+  .szl_container
+  {
+    margin-right:0%;
+    margin-bottom: 150px;
+  }
+}
+
+/************       SZL,TB KÉPEK   END       ********************/
+
+
+/****************      VÁDIRAT START         ********************/
+
+
+.vadirat_container
+{
+  display:flex;
+  flex-wrap: wrap;
+  flex-grow:1;
+  justify-content: space-between;
+  padding: 0px 10%;
+  margin-top:100px;
+  margin-bottom:100px;
+  align-items: flex-end;
+}
+
+
+
+
+.vadirat_container p
+{
+  width:100%;
+  height:100%;
+}
+
+.vadirat_wrap1
+{
+  display:block;
+  background: rgba(248,213,122,0.3);
+  width:33%;
+  float:left;
+  border: 2px solid rgba(206,160,107,0.2);
+  border-radius:10px;
+  line-height: 3rem;
+}
+
+
+.vadirat_wrap2
+{
+display:block;
+background: #f8d57a;
+width:41%;
+float:right;
+border: 2px solid rgba(206,160,107,0.2);
+border-radius:10px;
+line-height: 3rem;
+}
+
+
+
+/* .vadirat_wrap p
+{
+  font-size:1.6rem;
+} */
+
+.vadirat_wrapper img
+{
+  height:300px;
+  width:auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.vadirat_wrap1 img
+{
+  float:right;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 5px 5px;
+}
+
+.vadirat_wrap2 img
+{
+  float:left;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 5px 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/****************      VÁDIRAT END        ********************/

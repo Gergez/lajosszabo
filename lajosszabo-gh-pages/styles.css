@@ -14,15 +14,16 @@
 html {
   background-image: url(kepek/Dusty5.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-position: center, top;
-  background-blend-mode: lighten;
-  /* no-repeat center center fixed, no-repeat top center fixed */
+  background-position: center;
+  /* background-blend-mode: lighten; */
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: scroll;
-  background-position: center;
+  background-attachment:local;
+  background-position:center;
+  /* background-position: top; */
   background-repeat: repeat-y;
   scroll-behavior: smooth;
 }
@@ -36,7 +37,7 @@ body,html {
 
   font-style: normal;
   font-weight: 400;
-  font-size: 75%;
+  font-size: 80%;
   height:100vh;
 }
 
@@ -83,7 +84,7 @@ p
   background-color: rgba(0,0,0,0);
   background-size:150%;
   justify-content: center;
-  color:black;
+  color:#3e2200;
 }
 
 /* POSITION AND STYLE THE NAVBAR LINKS */
@@ -91,37 +92,42 @@ p
 {
   display: flex;
   position:relative;
-  color: black;
+  color:#3e2200;
   padding: 14px 30px;
   text-decoration: none;
   font-size: 1.6rem;
   /* background:#c1c1c1; */
   background-color: rgba(0,0,0,0);
-    border-bottom: 1px solid black;
 }
 
-/* CHANGE THE COLOR OF LINKS ON HOVER */
+/* ADD A BORDER TO LINKS ON HOVER */
 .topnav a:hover
 {
-  background-color: #a2a2a2;
-  color: white;
+  border-bottom: 2px solid #5a3310;
+}
+
+.topnav a:hover .dropdown-content a
+{
+  transformY(10px);
+}
+
+.topnav::after
+{
+  content:'';
+  display:block;
+  position:absolute;
+  width:100%;
+  top: 5px;
+  left:10px;
+  border-bottom: 20px;
+  border-collapse: separate;
 }
 
 /* ADD A COLOR TO THE ACTIVE/CURRENT LINK */
 .topnav a.active
 {
   background-color: rgba(0,0,0,0);
-  border-bottom: 1px solid black;
-  color: black;
 }
-
-/* ADD BORDER TO THE NAV ELEMENTS */
-/* .topnav a, .topnav .dropdown
-{
-  border-right: 1px solid white;
-} */
-
-
 
 /************       DROPDOWN MENU  START        ********************/
 
@@ -131,8 +137,14 @@ p
 {
   position: relative;
   display: inline-block;
-
+  color: #3e2200;
 }
+
+.dropdown::after
+{
+  border-bottom:2px solid red;
+}
+
 
 .dropdown button
 {
@@ -143,12 +155,12 @@ p
   font-size: 1.6rem;
   padding: 14px 30px;
   pointer-events: none;
+  color: #3e2200;
 }
 
 .dropdown:hover button
 {
-  background-color: #a2a2a2;
-  color: white;
+  color: #3e2200;
 }
 
 .dropdown button::after
@@ -159,14 +171,18 @@ p
   width: 0;
   height: 0;
   border: 5px solid transparent;
-  border-top-color: #4B5468;
-  top: 20px;
+  border-top-color: #3e2200;
+  top: 28px;
   right: 10px;
+  /* transition-property: border, right;
+  transition-duration: 1000ms; */
 }
 
 .dropdown:hover button::after
 {
-  border-top-color:white;
+  /* border: 6px solid transparent;
+  right:8px;
+  opacity:1; */
 }
 
 /* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
@@ -184,7 +200,7 @@ p
 /* POSITION AND STYLE OF DROPDOWN LINKS */
 .dropdown-content a
 {
-  color: black;
+  color: #3e2200;
   padding: 12px 16px;
   text-decoration: none;
   display:block;
@@ -203,6 +219,7 @@ p
 .dropdown-content a:hover
 {
   background-color: #ddd;
+  border:none;
 }
 
 
@@ -264,7 +281,7 @@ p
   display:block;
   height:400px;
   width:350px;
-  margin-right:10%;
+  margin-right:33%;
 }
 
 .szl_container p

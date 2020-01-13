@@ -26,6 +26,12 @@
 		display: none;
 	}
 
+	#headerLogoSmall img
+	{
+		transform: translate(50px,10px);
+		max-width:240px;
+	}
+
 	#headerContactSmall{
 		margin: 0 auto;
 	}
@@ -121,6 +127,8 @@
 	#searchdiv{
 		height:auto;
 	}
+	
+
 	.filterdiv{
 		float:none;
 	}
@@ -193,9 +201,22 @@
 	#headerContactSmall{
 		float:none;
 	}
+
+	#headerLogoSmall img
+	{
+		transform: translate(150px,10px);
+		max-width:240px;
+	}
+
 	#headerContactSmall{
 		margin: 15px auto 0;
 	}
+
+	.social-links
+	{
+		display:block;
+	}
+
 
 	.slider-wrapper{
 		display:none;
@@ -453,6 +474,14 @@
 	#logo img{
 		width:245px;
 	}
+
+	#headerLogoSmall img
+	{
+		float:right;
+		transform: translate(180px,15px);
+		max-width:200px;
+	}
+
 	.mobile-nav {
 		/*float: none;*/
 		width: 98%;

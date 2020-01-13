@@ -189,6 +189,11 @@ a, a:hover {
 	margin:6px 0 0 20px;
 }
 
+.social-links
+{
+	display:inline-grid;
+}
+
 .top-right-links {
 	margin:13px 0;
 }
@@ -293,7 +298,7 @@ a, a:hover {
 	height:60px;
 	float:left;
 	position:absolute;
-	left:calc(50% - 120px);
+	left:calc(50% - 150px);
 }
 
 #headerLogoSmall img
@@ -312,6 +317,15 @@ a, a:hover {
 	text-align:left;
 	margin:0px auto;
 	float:left;
+}
+
+#headerContactSmall:after
+{
+	content:url('./Online Pénztárgép Bolt Online pénztárgép értékesítés_files/facebook_logo');
+	display:inline;
+	width:32px;
+	height:32px;
+	background:black;
 }
 
 #headerContactSmall h1{
@@ -417,8 +431,8 @@ a, a:hover {
 
 .navigation {
 	width:100%;
-	text-align:center;
 	margin:0 auto;
+	font-size:large;
 }
 
 .navigation ul ul {
@@ -455,6 +469,7 @@ a, a:hover {
 .navigation ul li a {
 	text-decoration:none;
 }
+
 
 .navigation ul ul {
 	background:#FFF;
@@ -2346,6 +2361,7 @@ input {
 	line-height:0;
 	height:125px;
 	text-align:center
+	margin-bottom:10px;
 }
 
 .products-6 .car-image,
@@ -2601,7 +2617,7 @@ input {
 
 .add-to-cart-button {
 	position:absolute;
-	bottom:40px;
+	bottom:30px;
 	right:45px;
 }
 
@@ -3165,8 +3181,13 @@ a.cart-side-button {
 .main-content section ul li input[type=number]
 {
 	position:absolute;
-	bottom:40px;
+	bottom:30px;
 	right:0px;
+}
+
+.main-content section ul li:hover
+{
+	opacity:0.85;
 }
 
 .widget {

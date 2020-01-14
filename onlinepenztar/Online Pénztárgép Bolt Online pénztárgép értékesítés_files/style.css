@@ -310,6 +310,11 @@ a, a:hover {
 	transform: translateX(-5%);
 }
 
+#headerLogoSmall img:nth-child(2)
+{
+		display:none;
+}
+
 #headerContactSmall {
 	font-size:0.9em;
 	font-weight:bold;
@@ -927,7 +932,7 @@ a, a:hover {
 .top-bar,
 .navigation-wrapper,
 .content-wrapper {
-	padding:0 5% 10px 5%;
+	padding:0 2.5% 10px 2.5%;
 }
 
 .mobile-menu {

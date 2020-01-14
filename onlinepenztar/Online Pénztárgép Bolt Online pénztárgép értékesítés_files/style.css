@@ -319,14 +319,6 @@ a, a:hover {
 	float:left;
 }
 
-#headerContactSmall:after
-{
-	content:url('./Online Pénztárgép Bolt Online pénztárgép értékesítés_files/facebook_logo');
-	display:inline;
-	width:32px;
-	height:32px;
-	background:black;
-}
 
 #headerContactSmall h1{
 	margin:5px;

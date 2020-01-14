@@ -2372,6 +2372,8 @@ input {
 
 .product-image-single {
 	width:250px;
+	max-width:300px;
+	max-height:300px;
 	float:left;
 	position:relative;
 	margin:0 10px 25px 0;
@@ -2386,6 +2388,11 @@ input {
     margin: 15px 5px 40px 80px;
     float: left;
     padding: 0 5px 0 5px;
+}
+
+.product-description-single p:nth-child(11)
+{
+	float:right;
 }
 
 .product-details-single {

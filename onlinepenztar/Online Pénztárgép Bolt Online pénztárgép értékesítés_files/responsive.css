@@ -55,6 +55,7 @@
 
 	.mobile-nav {
 		display: block;
+		transform:translate(80px,0px);
 	}
 
 	.mobile-search-form {
@@ -217,6 +218,10 @@
 		display:block;
 	}
 
+	.mobile-nav
+	{
+		transform:translate(0,0);
+	}
 
 	.slider-wrapper{
 		display:none;
@@ -478,7 +483,7 @@
 	#headerLogoSmall img
 	{
 		float:right;
-		transform: translate(180px,15px);
+		transform: translate(200px,15px);
 		max-width:200px;
 	}
 

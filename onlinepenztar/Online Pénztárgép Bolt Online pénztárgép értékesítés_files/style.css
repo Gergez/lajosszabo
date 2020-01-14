@@ -2618,7 +2618,7 @@ input {
 .add-to-cart-button {
 	position:absolute;
 	bottom:30px;
-	right:45px;
+	right:0px;
 }
 
 .add-to-cart-wrapper {
@@ -3182,7 +3182,7 @@ a.cart-side-button {
 {
 	position:absolute;
 	bottom:30px;
-	right:0px;
+	right:40px;
 }
 
 .main-content section ul li:hover

@@ -215,8 +215,10 @@
 		max-width:240px;
 	}
 
-	#headerContactSmall{
-		margin: 5px auto 25px;
+	
+	#headerContactSmall 
+	{
+	    margin: 0px auto 20px;
 	}
 
 	.social-links

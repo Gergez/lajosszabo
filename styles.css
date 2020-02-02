@@ -114,7 +114,8 @@ p
 /* ADD A BORDER TO LINKS ON HOVER */
 .topnav:hover .dropdown-content a
 {
-  padding-bottom:0px;
+  padding-bottom: 10px;
+  line-height: 1.7rem;
 }
 
 .topnav::after
@@ -358,6 +359,7 @@ section
   /* background-repeat:  */
   /* scroll-behavior: smooth; */
   width:100%;
+  border-right: 2px solid white;
 
 }
 
@@ -612,6 +614,11 @@ line-height: 3rem;
 .pages
 {
   background:#ecdcbb;
+  /* border-right: 2px solid white; */
+}
+
+.pages:not(.sixth_page)
+{
   border-right: 2px solid white;
 }
 

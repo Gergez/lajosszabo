@@ -101,7 +101,7 @@ p
   display: flex;
   position:relative;
   color:#3e2200;
-  padding: 5px 20px 0px 10px;
+  padding: 5px 18px 0px 0px;
   text-decoration: none;
   font-size: 1.8rem;
   text-shadow: 1px 1px 1px rgba(90,51,16,0.3);
@@ -188,7 +188,7 @@ p
   height: 0;
   border: 5px solid transparent;
   border-top-color: #3e2200;
-  top: 30px;
+  top: 32px;
   right: 12px;
   /* transition-property: border, right;
   transition-duration: 1000ms; */
@@ -387,7 +387,7 @@ section
   right:0;
   font-size: 3em;
   text-align:center;
-  margin-bottom:170px;
+  margin-bottom:200px;
   /* z-index:1; */
   transform:skewX(-5deg);
 }
@@ -430,6 +430,36 @@ section
   line-height: 2.0rem;
 }
 
+.szl_portre
+{
+  float:left;
+  height:inherit;
+  width:auto;
+}
+
+.szl_idezet
+{
+  position: relative;
+  max-width: 310px;
+  bottom: 330px;
+  left: 290px;
+}
+
+.tb_portre
+{
+  float:right;
+  height:inherit;
+  width:auto;
+}
+
+.tb_idezet
+{
+  position: relative;
+  max-width: 310px;
+  bottom: 330px;
+  right: 290px;
+}
+
 .szl_image_wrapper:hover p
 {
   display: block;
@@ -459,19 +489,7 @@ section
   display: block;
 }
 
-.szl_portre
-{
-  float:left;
-  height:inherit;
-  width:auto;
-}
 
-.tb_portre
-{
-  float:right;
-  height:inherit;
-  width:auto;
-}
 
 .person_name
 {
@@ -490,27 +508,6 @@ section
   margin-bottom:30px;
 }
 
-/* MEDIA QUERIES */
-
-/* @media screen and (max-width:1176px) {
-
-  .topnav
-  {
-    display:none;
-    align-items: center;
-  }
-
-} */
-
-@media (min-width:350px) and (max-width:784px)
-
-{
-  .szl_image_wrapper
-  {
-    margin-right:0%;
-    margin-bottom: 150px;
-  }
-}
 
 /************       SZL,TB KÉPEK   END       ********************/
 
@@ -700,3 +697,41 @@ line-height: 3rem;
 }
 
 /************       sixth_page  A Harmincas évek írásai END ***********************************/
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* @media screen and (max-width:1176px) {
+
+  .topnav
+  {
+    display:none;
+    align-items: center;
+  }
+
+} */
+
+@media (min-width:350px) and (max-width:784px)
+
+{
+  .szl_image_wrapper
+  {
+    margin-right:0%;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width:350px) and (max-width:1210px)
+{
+  .language_selector
+  {
+    display:none;
+  }
+  .language_flag
+  {
+    display:none;
+  }
+}

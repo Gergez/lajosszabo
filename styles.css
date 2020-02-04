@@ -91,7 +91,7 @@ p
   align-items: flex-start;
   color:#3e2200;
   z-index:999;
-  max-height:60px;
+  height:60px;
   top:0;
 }
 
@@ -163,7 +163,7 @@ p
   border:0px;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 10px 10px;
+  padding: 12px 10px;
   pointer-events:all;
   color: #3e2200;
   /* width:auto; */
@@ -188,8 +188,8 @@ p
   height: 0;
   border: 5px solid transparent;
   border-top-color: #3e2200;
-  top: 32px;
-  right: 12px;
+  top: 34px;
+  right: 14px;
   /* transition-property: border, right;
   transition-duration: 1000ms; */
 }
@@ -333,7 +333,6 @@ section
   display:block;
   min-width: 100%;
   height:auto;
-
 }
 
 /************** Page_container END **************/
@@ -359,8 +358,6 @@ section
   /* background-repeat:  */
   /* scroll-behavior: smooth; */
   width:100%;
-  border-right: 2px solid white;
-
 }
 
 .title
@@ -437,12 +434,12 @@ section
   width:auto;
 }
 
+
+
 .szl_idezet
 {
   position: relative;
   max-width: 310px;
-  bottom: 330px;
-  left: 290px;
 }
 
 .tb_portre
@@ -456,13 +453,6 @@ section
 {
   position: relative;
   max-width: 310px;
-  bottom: 330px;
-  right: 290px;
-}
-
-.szl_image_wrapper:hover p
-{
-  display: block;
 }
 
 .tb_image_wrapper
@@ -484,12 +474,6 @@ section
   line-height: 2.0rem;
 }
 
-.tb_image_wrapper:hover p
-{
-  display: block;
-}
-
-
 
 .person_name
 {
@@ -504,8 +488,8 @@ section
 {
   font-family: 'Crimson Text', serif;
   display:block;
-  text-align: center;
-  margin-bottom:30px;
+  text-align:center;
+  margin-bottom:10px;
 }
 
 
@@ -542,7 +526,7 @@ section
 
 .vadirat_wrapper p:nth-of-type(1)
 {
-  margin-bottom:55px;
+  margin-bottom:50px;
 }
 
 .vadirat_wrapper img
@@ -614,24 +598,57 @@ line-height: 3rem;
   /* border-right: 2px solid white; */
 }
 
+/* .pages::after
+{
+  content:'';
+  background:white;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  height:calc(100% - 60px);
+  width:2px;
+} */
+
 .pages:not(.sixth_page)
 {
   border-right: 2px solid white;
 }
+/* .third_page::before
+{
+  content:'';
+  background:white;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  height:calc(100% - 60px);
+  width:2px;
+} */
 
 .third_page
 {
+  display:block;
+  padding: 0px 10%;
+}
+
+.third_page_container
+{
+  margin: 0 auto;
   display:flex;
   flex-wrap: wrap;
-  flex-grow:1;
-  justify-content: space-between;
-  padding: 0px 10%;
+  flex-grow: 1;
 }
 
 .third_page h1
 {
   margin:100px auto;
+  text-align: center;
 }
+
+.third_page p:nth-child(1)
+{
+  margin-bottom: 50px;
+}
+
 /************       third_page  Alapállás END ***********************************/
 
 

@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta title="Magyar Dialogikus Iskola">
     <meta keywords="Magyar Dialogikus Iskola, Dialogikus Iskola, Szabó Lajos, Tábor Béla, Mándy Stefánia, Horváth Ágnes, Surányi László, Tábor Ádám">
-    <title style="display:none">Dialogikus Iskola</title>
+    <title>Magyar Dialogikus Iskola</title>
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./animations.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://use.fontawesome.com/101eb913db.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
@@ -42,15 +43,14 @@
           <button><a href="szabolajos.html">Szabó Lajos</a></button>
 
           <div class="dropdown-content">
-            <a href="./horvathagnes/horvathagnes.html">Életrajz</a>
-            <a href="./suranyilaszlo/suranyilaszlo.html">Könyvek</a>
-            <a href="./taboradam/taboradam.html">Szeminárumi előadások</a>
-            <a href="./horvathagnes/horvathagnes.html">Tanulmányok</a>
-            <a href="./suranyilaszlo/suranyilaszlo.html">Grafikák, kiállítások</a>
-            <a href="./taboradam/taboradam.html">Düsseldorfi beszélgetések</a>
-            <a href="./horvathagnes/horvathagnes.html">Konferenciák</a>
-            <a href="./suranyilaszlo/suranyilaszlo.html">Bibliográfia</a>
-            <a href="./taboradam/taboradam.html">Csütörtöki beszélgetések</a>
+            <a href="./SZL/eletrajz/szabo_lajos_eletrajz.htm">Életrajz</a>
+            <a href="./SZL/irasok/">Írások</a>
+            <a href="./SZL/szeminariumi_eloadasok/">Szeminárumi előadások</a>
+            <a href="./SZL/">Grafikák, kiállítások</a>
+            <a href="./SZL/">Csütörtöki beszélgetések</a>
+            <a href="./SZL/">Düsseldorfi beszélgetések</a>
+            <a href="./SZL/">Konferenciák</a>
+            <a href="./SZL/">Bibliográfia</a>
           </div>
         </div>
 
@@ -127,7 +127,9 @@
               <h2 class="person_name">Szabó Lajos</h2>
               <h3 class="person_title">1902-1967</h3>
               <a href="szabolajos/szabolajos.html"><img class="szl_portre" src="kepek/portrek/SZLfoto_3.jpg" alt="Szabó Lajos portré" style="height:100%; width:100%" > </a>
-              <p class="szl_idezet">"A lelkiismeret a személy legszemélyesbb pontja, pillanata, örökkévalósága. [...] Minden alkotás legbensőbb indítása, az emberi lélek legősibb mozdulása (Fülep Lajos), ahol zene, líra és ima még nem váltak széjjel! A lelkiismeret így: teremtő vágy és lírai igény."</p>
+              <div class="szl_idezet_container">
+                <p class="szl_idezet">"A lelkiismeret a személy legszemélyesbb pontja, pillanata, örökkévalósága. [...] Minden alkotás legbensőbb indítása, az emberi lélek legősibb mozdulása (Fülep Lajos), ahol zene, líra és ima még nem váltak széjjel! A lelkiismeret így: teremtő vágy és lírai igény."</p>
+              </div>
             </div>
           </div>
 
@@ -139,7 +141,9 @@
               <h2 class="person_name">Tábor Béla</h2>
               <h3 class="person_title">1907-1992</h3>
               <a href="taborbela/taborbela.html"><img class="tb_portre" src="TB_foto.jpg" alt="Tábor Béla portré" style="height:100%; width:100%" ></a>
-              <p class="tb_idezet">"A szellem a valóságnak az az egyetlen csodája, hogy a valóság van. Az él a szellemben, aki ezt a "van"-t, mint csodát, éspedig mint a valóság egyetlen csodáját éli át.</br>Csoda az, amihez egy dimenzióval meg kell növekednünk ahhoz, hogy mérhetővé váljon a számunkra."</p>
+              <div class="tb_idezet_container">
+                <p class="tb_idezet">"A szellem a valóságnak az az egyetlen csodája, hogy a valóság van. Az él a szellemben, aki ezt a "van"-t, mint csodát, éspedig mint a valóság egyetlen csodáját éli át.</br>Csoda az, amihez egy dimenzióval meg kell növekednünk ahhoz, hogy mérhetővé váljon a számunkra."</p>
+              </div>
             </div>
           </div>
 
@@ -197,6 +201,33 @@
       <section class="pages third_page">
 
         <h1 id="alapallas">Alapállás</h1>
+        <div class="third_page_container">
+          <p>
+            A „Magyar Dialogikus Iskola” név túlzottan hivatalos hangzása ellenére valójában egy olyan szellemi közösséget takar,
+            amely több mint ötven évig illegális körülmények között működött.
+            Képviselői a szellem primátusát vallják, s ezért elutasítanak minden institucionalizmust.
+            Tagjai sem a nemzeti szocialista, sem a bolsevik rezsimek idején nem publikálhattak.
+            A közösség két középponti alakja Szabó Lajos és Tábor Béla.
+            Szorosabban és kevésbé szorosan sokan tartoztak hozzá,
+            az ő nevük az alábbi, részletesebb történeti bemutatásban szerepel.
+          </p>
+
+          <p>
+            A Magyar Dialogikus Iskola a szellem primátusát és ezen belül
+            a szó primátusát vallja. A racionalizmust és irracionalizmust egyaránt
+            az egységes szellem bomlástermékeiként fogja fel. A racionalizmust túl szűk keretnek
+            ítéli a szellem valóságos problémáinak érdemi kutatásához. A latin „ratio” szó
+            a görög „logosz” szó jelentésmezejének csak egy metszetét fedi le.
+            Kimarad belőle az, amit latinra verbummal fordítottak: ez az élő beszéd,
+            a személyes szó. A verbumot és ratiot egyaránt magában foglaló logosz az igazság
+            kutatásának tere. Az igazság nem tárgyi, hanem személyes, dialogikus viszony.
+            Ilyen értelemben a Budapesti Dialogikus Iskola logocentrikus,
+            a demitologizáló korszellem nyelvi-gondolati közegében fogalmazza újra az örök
+            alapkérdéseket. Azokat a kérdéseket, amelyeket a Biblia, Plótinosz, a spekulatív gnózis
+            és misztika, a klasszikus német filozófia, Kierkegaard és a dialogikus gondolkodók,
+            másrészt az avantgárd művészek vagy a matematikaelméleti kutatók vetettek fel.
+          </p>
+        </div>
 
 
       </section>

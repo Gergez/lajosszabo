@@ -6,6 +6,7 @@
   height:inherit;
   width:inherit;
   bottom:330px;
+
   /* overflow:scroll; */
 }
 
@@ -38,7 +39,6 @@
   position: relative;
   height: inherit;
   width: inherit;
-  right:280px;
   bottom:330px;
   /* overflow:scroll; */
 }
@@ -46,6 +46,19 @@
 .tb_image_wrapper:hover p
 {
   display: block;
+  animation: fadeInFromNone 1000ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.tb_image_wrapper img
+{
+  opacity:1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.tb_image_wrapper:hover img
+{
+  opacity:0.4;
 }
 
 @keyframes fadeInFromNone {

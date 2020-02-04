@@ -1,0 +1,486 @@
+
+
+
+/*[if lte IE 6]>
+	<style type="text/css">
+	@import url(ie.css)
+	*/
+	
+
+/****************/
+/*GLOBAL RESET*/
+/****************/
+
+
+#accessibility {
+display:none;
+}
+
+
+
+html,body,p,div,img,h1,h2,h3,h4,li,ul,ol,dl,dd,dt,form {  
+margin:0px;   
+padding:0px; 
+border:0px;    
+border-collapse:separate;    
+border-spacing:0px;
+}
+
+h1, h2, h3, h4, h5, h6,{
+font-weight:normal;
+}
+
+a{
+text-decoration:none;
+}
+
+img {
+border:0pt none;
+}
+
+ul, li {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+
+
+
+.noBorder{
+border:none;
+}
+
+.boldFont {
+font-weight:bold;
+color:#57261d;
+}
+
+.strongboldFont {
+font-weight:bold;
+color:#ffffff;
+}
+
+
+.italicFont {
+font-style:italic;
+}
+
+.floatLeft {
+float:left;
+}
+
+.floatRight{
+float:left;
+}
+
+.noFloat
+{
+float:none;
+}
+
+
+.clear {
+clear:both;
+}
+
+.clearLeft {
+clear:left;
+}
+
+.clearRight {
+clear:right;
+}
+
+.alignLeft {
+text-align:left;
+}
+
+.alignRight {
+text-align:right}
+
+.alignCenter {
+text-align:center;
+width:80%;
+}
+
+.indent {
+padding-left:55px;
+}
+
+
+.hrLine {
+border-bottom:1px solid #575740;
+}
+
+.hrDotted {
+border-bottom:1px dotted #3580A0;
+width:90%;
+
+}
+
+
+
+
+.backtoTop {
+
+text-align:right;
+font-size:0.8em;
+color:#A7A7A7;
+letter-spacing:0.1em;
+margin:1em 10px 2em 450px 
+}
+
+
+
+div#sparespace {
+width:90%px;
+margin-top:5px;
+margin-bottom:10px;
+background:transparent;
+margin-left:auto; margin-right:auto;
+clear:both;
+text-align:center;
+}
+
+div#sparespaceMiddle {
+width:90%;
+margin-top:40px;
+margin-bottom:40px;
+background:transparent;
+margin-left:auto; margin-right:auto;
+clear:both;
+text-align:center;}
+
+
+div#sparespaceBig {
+width:90%;
+margin-top:100px;
+margin-bottom:100px;
+background:transparent;
+margin-left:auto; margin-right:auto;
+clear:both;
+text-align:center;}
+
+
+
+
+
+body {
+	font-size:78%;
+	font-family: "Trebuchet MS", Helvetica, Georgia, Verdana, Arial, sans;  /* overal font and sizing */	
+	color:#573028;
+	text-align:center; /* centers the layout in IE */
+	background:transparent url(../images_pres/paper_tile.jpg) repeat; 
+	background-attachment:fixed;
+	background-color:#f1eada;
+	behavior:url(csshover.htc); /*solves IE hover behaviour problem*/
+	
+	}
+
+
+div#bg {
+width:100%; height:auto;	
+
+}
+
+div#headingtop {
+position:relative;
+width:auto; height:83px;
+margin-left:auto; margin-right:auto;
+text-align:center;
+background:transparent url(../images_pres/header_bg14.jpg) repeat-x;
+
+} 
+
+
+
+div#mainwrap1 {
+
+	width:990px; height:auto;
+	text-align:center;
+	margin-left:auto; margin-right:auto; 
+	margin-top:0px;
+	}
+
+
+div#mainwrap2 {
+	position:relative;
+	min-width:850px; max-width:850px; 
+	float:left;
+	}
+
+
+
+div#contentarea {
+    width:690px;
+    float:right;
+    text-align:center;
+    margin-left:auto; margin-right:auto; 
+    margin-top:0px;
+    margin-bottom:2em;
+    margin-left:0;
+    background: transparent url(../images_pres/transbg.png) repeat;
+   
+	}
+
+div#languages {
+
+text-align:center;
+margin-left:auto; margin-right:auto;
+margin:0px;
+width:100%;
+margin-top:10px;
+
+
+}
+
+div#sideContainer{
+	width:120px; 
+    float:right;
+    display:inline;
+    margin-top:20px;
+    overflow:visible;
+text-align:center;
+margin-left:auto; margin-right:auto;
+
+
+}
+
+
+div#sideContainer .ads
+{
+margin-top:20px;
+width:108px;
+margin-left:auto; margin-right:auto;
+text-align:center;
+
+}
+
+
+	
+div#menu {
+width:150px;
+float:left;
+text-align:center;
+margin-left:auto; margin-right:auto; 
+margin-top:50px;
+letter-spacing:0.1em;
+
+}
+
+#menu-ul {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 140px;
+}
+
+#menu-ul a {
+	background: transparent;
+	color: #573028;
+	display: block;
+	margin-bottom: 5px;
+	padding: 7px 10px;
+	text-decoration: none;
+}
+
+
+
+#menu-ul #list1 a:hover {
+background:transparent url("../images_pres/bgx_over.jpg");
+color: #fff;
+}
+
+
+
+div#contentheaderImage {
+margin-top:-1px;
+margin-left:-5px;
+margin-bottom: 1em;
+float:left;
+padding:0;
+display:inline;
+}
+
+div#contentarea .cerka {
+
+float:left;
+margin-left:45px;
+
+}
+
+object {
+ outline-style: none;
+}
+
+div#contentarea .photoProfile {
+width:205px;
+background:transparent none repeat scroll 0%;
+float:right;
+margin-right:40px;
+margin-top:-35px;
+margin-left:10px;
+margin-bottom:5px;
+display:block;
+}
+
+
+
+div#contentarea .photoProfile img {
+display:block;
+padding:3px;
+}
+
+
+
+div#contentarea p {
+color:#573028;
+font-size:1.1em;
+line-height:1.5em; 
+text-align:justify; 
+margin: 1em 50px 0.7em 50px;
+letter-spacing:0.1em;
+
+}
+
+
+h1 {
+color:#573028;
+font-size: 2em;
+letter-spacing:0.2em;
+font-weight:bold; 
+margin: 2em 10px 1em 50px;
+}
+
+
+h2{
+color:#573028;
+font-size: 1.2em;
+letter-spacing:0.2em;
+font-weight:bold; 
+margin: 0.5em 10px 1.5em 50px;
+}
+
+
+h3 {
+color:#572015;
+font-size:1.1em; 
+font-weight:bold; 
+text-align:left; 
+margin:1.5em 15px 1.5em 20px;
+}
+
+h4{
+color:#573028;
+font-size: 1.2em;
+letter-spacing:0.2em;
+font-weight:bold; 
+margin: 0.5em 10px 1.5em 80px;
+}
+
+
+.handcursor{
+cursor:hand;
+cursor:pointer;
+}
+
+
+.scaleWidth {
+width:40%;
+
+}
+
+
+div#contentarea .bio {
+
+line-height:2.1em;
+text-align:left;
+}
+
+
+a, a:link, li a:link { 
+color:#0e977d;
+font-weight:bold;}
+
+
+a:visited { 
+ color:#669d93;
+}
+
+a:hover, a:active  { 
+color:#8cd4be;
+}
+
+
+.noLink1, .noLink3 {
+font-size:1.1em;
+line-height:0.9em;
+text-align:left;}
+
+
+ .noLink2 li
+{list-style-image: url(../images_pres/arrow_left.gif);
+list-style-position:outside;
+margin:1em 15px 20px 20px;
+text-align:left;
+color:#0099cc;}
+
+
+
+ .noLink1 li
+{list-style-image: url(../images_pres/icon1.png);
+list-style-position:outside;
+margin:0.5em 15px 20px 60px;
+
+}
+
+.noLink3 li
+{list-style-image: url(../images_pres/bullet1.jpg);
+list-style-position:outside;
+margin:1em 15px 20px 60px;
+
+}
+
+
+*html #contentarea .noLink1 li {
+list-style-image: url(../images_pres/icon1.png);
+list-style-position:outside;
+}
+
+div#contentarea .smallText
+{
+text-align:center;
+margin-left:auto; margin-right:auto;
+font-size:0.9em;
+} 
+
+div#footer {
+position:relative;
+background:transparent url(../images_pres/footer.png) no-repeat; 
+text-align:center;
+margin-left:auto; margin-right:auto;
+width:690px; height:1px;
+clear:both;} 
+
+
+
+
+/*****************************/
+/*IE HACKS. IDOVEL ELIRTHATOK*/
+/****************************/
+
+.clearfix:after { 
+    content: ".";             
+	display: block;         
+    height: 0;                 
+    clear: both;               
+    visibility: hidden;	    
+}
+
+.clearfix {display: inline-block;}  
+
+* html .clearfix {height: 1%;} 
+
+.clearfix {display: block;}
+

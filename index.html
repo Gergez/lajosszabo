@@ -30,10 +30,10 @@
           <button><a class="iskola_fooldal" href="#tarek">Dialogikus Iskola</a></button>
 
           <div class="dropdown-content">
-            <a href="#vadirat">Vádirat</a>
-            <a href="./suranyilaszlo/suranyilaszlo.html">Alapállás</a>
+            <a href="#vadirat" onclick="onLinkClick()">Vádirat</a>
+            <a href="#alapallas">Alapállás</a>
             <a href="./taboradam/taboradam.html">Történet</a>
-            <a href="./horvathagnes/horvathagnes.html">A harmincas évek írásai</a>
+            <a href="./horvathagnes/horvathagnes.html">A '30-as évek írásai</a>
             <a href="./suranyilaszlo/suranyilaszlo.html">1945 után</a>
           </div>
         </div>
@@ -100,9 +100,9 @@
 
 
         <div class="dropdown-content">
-          <a href="#">Angol</a>
-          <a href="#">Német</a>
-          <a href="#">Francia</a>
+          <a href="#">English</a>
+          <a href="#">Deutsch</a>
+          <a href="#">Français</a>
         </div>
       </div>
 
@@ -153,7 +153,8 @@
 
       <section class="pages second_page">
 
-      <h1 id="vadirat">Vádirat a szellem ellen</h1>
+      <h1 id="vadirat" onClick="onLinkClick(this.id)">Vádirat a szellem ellen</h1>
+
 
           <div class="vadirat_wrapper">
             <div class="vadirat_wrap1">
@@ -242,7 +243,7 @@
 
       <section class="pages fifth_page">
 
-        <h1 id="a_harmincas_evek_irasai">A harmincas évek írásai</h1>
+        <h1 id="a_harmincas_evek_irasai">A '30-as évek írásai</h1>
 
       </section>
 
@@ -254,11 +255,13 @@
 
 
 
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
 <script type="text/javascript" src="skrollr.js"></script>
 <script type="text/javascript">
     skrollr.init();
 </script>
+
+<script type="text/javascript" src="app.js"></script>
 
 </div> <!-- page_container END -->
 

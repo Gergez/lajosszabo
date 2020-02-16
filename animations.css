@@ -6,6 +6,7 @@
   height:inherit;
   width:inherit;
   bottom:330px;
+  left:280px;
 
   /* overflow:scroll; */
 }
@@ -21,6 +22,7 @@
   display: block;
   animation: fadeInFromNone 1000ms ease-in-out;
   animation-fill-mode: forwards;
+
 }
 
 .szl_image_wrapper img

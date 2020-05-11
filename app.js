@@ -237,7 +237,7 @@ function onReady(callback) {
     function checkReady() {
         if (document.getElementsByTagName('body')[0] !== undefined) {
             window.clearInterval(intervalID);
-            // callback.call(this);
+            callback.call(this);
         }
     }
 }

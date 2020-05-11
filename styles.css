@@ -1,8 +1,7 @@
-*, *::before, *::after
-{
-  box-sizing:inherit;
-  -webkit-box-sizing:inherit;
-  -moz-box-sizing:inherit;
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .clearfix::after {
@@ -11,844 +10,546 @@
   display: table;
 }
 
-*
-{
+* {
   box-sizing: border-box;
   font-family: 'Crimson Text', serif;
 }
 
-html
-{
+/* Hide Scrollbars*/
+html {
   scroll-behavior: smooth;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
-body,html {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-
+body, html {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 80%;
-  zoom:1;
+  zoom: 1;
   line-height: 2.6rem;
-  /* overflow-y: hidden; */
-  /* overflow-x:auto; */
-
 }
 
-h1,h2,h3,h4,h5,h6
-{
-  padding: 0px;
-  margin: 0px;
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
 }
 
- h1
-{
-  font-size:3rem;
-  margin: 100px auto;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.2), 2px 2px 2px rgba(0,0,0,0.15), 2px 2px 3px rgba(0,0,0,0.1);
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
-h2
-{
-  font-size:3rem;
+h2 {
+  font-size: 3rem;
 }
-h3
-{
+
+h3 {
   font-size: 2.5rem;
 }
-p
-{
-  font-size:2rem;
-  margin:0;
-  line-height: 2rem;
+
+a:link{
+  text-decoration: none;
+  color:inherit;
+  background-color: inherit;
 }
 
-/************       TOP NAVIGATION  START     ********************/
+a:visited{
+  color: inherit;
+}
+a:active{
+  color: inherit;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 2.4rem;
+  text-indent: 20px;
+}
+
+p + p{
+  margin-top:30px;
+}
+
+img{
+  max-height: 65vh;
+  width:auto;
+}
+
+::selection {
+  background-color: rgb(218, 183, 95);
+  background-color: rgba(218, 183, 95, 0.8);
+}
+
+img::selection{
+  background-color:transparent;
+}
+
+::-moz-selection {
+  background-color: rgb(218, 183, 95);
+  background-color: rgba(218, 183, 95, 0.8);
+}
 
 
-/* POSITION AND STYLE THE NAVBAR */
-/* .top
-{
-  background-image: url(kepek/hatter/hatter_top.jpg);
-  background-repeat: no-repeat, no-repeat;
-  background-position:center;
-  background:black;
+
+
+
+
+/***************** lOADING SCREEN *******************/
+/* #loading_container{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(kepek/hatter/89120.jpg);
+  background-size: cover;
+  background-position: center;
 } */
 
-.topnav
-{
-  position:fixed;
-  display:flex;
-  -webkit-display:flex;
-  flex-direction:row;
+/* .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+} */
+
+.loading{
+  /* font-size: 6em; */
+  display: inline-flex;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading_animation{
+  position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.circle{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  animation: loading 0.8s ease-in-out infinite;
+}
+
+.circle-1{
+  animation-delay: 0.1s;
+}
+.circle-2{
+  animation-delay: 0.2s;
+}
+.circle-3{
+  animation-delay: 0.3s;
+}
+
+.main_container{
+  display: none;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+/************       TOP NAVIGATION  START     ********************/
+/* POSITION AND STYLE THE NAVBAR */
+.topnav {
+  position: fixed;
+  display: flex;
+  -webkit-display: flex;
   flex-wrap: wrap;
-  float:right;
   width: 100%;
-  background:rgba(218,183,95,0.8);
-  /* background-color:white; */
+  background: rgb(218, 183, 95);
+  background: rgba(218, 183, 95, 1.0);
   justify-content: center;
-  align-items: flex-start;
-  color:#3e2200;
-  z-index:999;
-  height:60px;
-  top:0;
+  color: #3e2200;
+  z-index: 999;
+  height: 60px;
 }
 
 /* POSITION AND STYLE THE NAVBAR LINKS */
-.topnav a
-{
+.topnav a {
   display: flex;
-  position:relative;
-  color:#3e2200;
-  padding: 5px 18px 0px 0px;
+  flex-wrap: wrap;
+  color: #3e2200;
+  padding: 5px 0 0 0;
   text-decoration: none;
   font-size: 1.8rem;
-  text-shadow: 1px 1px 1px rgba(90,51,16,0.3);
-  /* background:#c1c1c1; */
-  background-color: rgba(0,0,0,0);
-  justify-content: center;
-  align-items: center;
+  text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
-/* ADD A BORDER TO LINKS ON HOVER */
-.topnav:hover .dropdown-content a
-{
+/* ADD A PADDING TO ITEMS ON HOVER */
+
+.topnav:hover .dropdown-content a {
   padding-bottom: 10px;
   line-height: 1.7rem;
 }
 
-.topnav::after
-{
-  content:'';
-  display:block;
-  position:absolute;
-  width:100%;
-  top: 5px;
-  left:10px;
-  border-bottom: 20px;
-  border-collapse: separate;
+.topnav button{
+  outline:none;
 }
 
-/* ADD A COLOR TO THE ACTIVE/CURRENT LINK */
-.topnav a.active
-{
-  background-color: rgba(0,0,0,0);
-}
-
-.topnav button a
-{
+.topnav button a {
   transition: all 0.5s ease-in-out;
 }
 
-.topnav button:hover a
-{
-  /* color:#683911; */
-  color:#643e00;
+.topnav button:hover a {
+  color: #ae670f;
 }
 
 /************       DROPDOWN MENU  START        ********************/
-.tovabbi_szerzok
-{
-  pointer-events: none;
-}
 
 /* Dropdown Button */
-.dropdown
-{
+.dropdown {
+  display: flex;
   position: relative;
-  display: inline-block;
+  top:0;
   color: #3e2200;
 }
 
-
-.dropdown::after
-{
-  border-bottom:2px solid red;
+.cancel_button,
+.burger_menu{
+  display:none;
 }
 
-
-.dropdown button
-{
-  background-color: rgba(0,0,0,0);
-  height:100%;
-  border:0px;
+.dropdown button {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 12px 10px;
-  pointer-events:all;
-  color: #3e2200;
-  /* width:auto; */
-}
-
-.dropdown span
-{
-  min-width:150px;
-}
-
-.dropdown:hover button
-{
+  padding: 12px 12px;
+  pointer-events: all;
   color: #3e2200;
 }
 
-.dropdown button::after
-{
+.dropdown:hover button {
+  color: #3e2200;
+}
+
+.topnav button a::after {
   content: "";
   display: block;
-  position: absolute;
+  position: relative;
   width: 0;
   height: 0;
   border: 5px solid transparent;
   border-top-color: #3e2200;
-  top: 34px;
-  right: 14px;
-  /* transition-property: border, right;
-  transition-duration: 1000ms; */
+  margin: auto;
+  top: 5px;
+  left: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-
-/* .dropdown:nth-child(5) button::after
-{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 5px solid transparent;
-  border-top-color: #3e2200;
-  top: 36px;
-  right: -3px;
-  /* transition-property: border, right;
-  transition-duration: 1000ms; */
-} */
-
-.language_selector
-{
-  font-size:1.7rem;
-  color: #3e2200;
-  padding: 0px 0px 2px 0px;
-  text-decoration: none;
-  display:block;
-  margin-right:50px;
-}
-
-.language_selector::after
-{
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  border: 5px solid transparent;
-  border-top-color: #3e2200;
-  top: 27px;
-  right: 12px;
-  right: 200px;
-  /* transition-property: border, right;
-  transition-duration: 1000ms; */
-}
-
-.dropdown:hover button::after
-{
-  /* border: 6px solid transparent;
-  right:8px;
-  opacity:1; */
+.topnav button:hover a::after{
+  border-top-color: #ae670f;
 }
 
 /* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
-.dropdown-content
-{
-  display: none;
-  min-width: 100%;
+.dropdown-content {
+  visibility: hidden;
+  width: 100%;
   position: absolute;
+  top: 60px;
   background-color: #f1f1f1;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  text-align:center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
   justify-content: center;
-
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /* POSITION AND STYLE OF DROPDOWN LINKS */
-.dropdown-content a
-{
-  font-size:1.7rem;
+.dropdown-content a {
+  font-size: 1.7rem;
   color: #3e2200;
-  padding: 0px 0px 2px 0px;
+  padding: 0 0 2px 0;
   text-decoration: none;
-  display:block;
+  display: block;
 }
-
 
 /* POSITION THE DROPDOWN CONTENT DOWNWARDS */
-.dropdown:hover .dropdown-content
-{
-  display:block;
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
 }
-
 
 /* CHANGE THE COLOR OF LINKS ON HOVER */
-.dropdown-content a:hover
-{
+.dropdown-content a:hover {
   background-color: #ddd;
-  border:none;
 }
 
-
-
-
+.dropdown-content a a::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #3e2200;
+  margin: auto;
+  top: 5px;
+  left: 5px;
+  transition: all 0.5s ease-in-out;
+}
 
 /************       DROPDOWN MENU   END       ********************/
-
 /* STYLE THE SEARCH BAR */
-.search_bar
-{
+.search_bar {
   font-family: 'Crimson Text', sans-serif;
   font-size: 1.4rem;
   margin: 15px 20px;
   box-shadow: 3px 5px 5px #888888;
-  min-width:125px;
-  max-height:50px;
+  min-width: 125px;
+  max-height: 50px;
+  border-radius: 5px;
 }
-
-
-
 
 /* LANGUAGE SELECTION */
-
-
-.language_flag
-{
-  display:block;
-  align-items: center;
-  justify-content: center;
-  width:40px;
-  height:40px;
-  margin-top:15px;
+.language_flag {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  top: 5px;
 }
+
+
+/* .topnav{
+  display:none;
+} */
 
 /************       TOP NAVIGATION END       ********************/
-
-
 /************** Page_container START **************/
 
-.page_container
-{
-  display:flex;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
+section {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  /* background-image: url("kepek/hatter/paper_old.jpg");
+  background-size: cover; */
 }
 
-section
-{
-  display:block;
-  min-width: 100%;
-  height:auto;
+section::after{
+  content:'';
+  background-image: url("kepek/hatter/paper_old.jpg");
+  background-size: cover;
+}
+
+section h1{
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.page_container{
+  width: 80%;
+  /* height: 80%; */
+  margin: 0 auto;
+}
+
+.pages{
+  background-color: #ecdcbb;
+  width: 100vw;
+}
+
+.titles{
+  margin-top: 100px;
+}
+
+.first_page{
+  z-index: 100;
+}
+
+.second_page{
+  z-index: 99;
+}
+
+.third_page{
+  z-index: 98;
+}
+
+.fourth_page{
+  z-index: 97;
+}
+
+.fifth_page{
+  z-index: 96;
+}
+
+.sixth_page{
+  z-index: 95;
 }
 
 /************** Page_container END **************/
 
+/********** FIRST PAGE START *****************************/
 /*   DIALOGIKUS ISKOLA CÍM       */
 
-.first_page
-{
-  /* background-image: url(kepek/hatter.jpg); */
-  background-repeat: no-repeat, no-repeat;
-  background-position:left;
-  background-color: #ecdcbb;
-  /* background-blend-mode: lighten; */
-
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding:0px;
-  margin:0px;
-  /* background-attachment:fixed; */
-  /* background-position: top; */
-  /* background-repeat:  */
-  /* scroll-behavior: smooth; */
-  width:100%;
-}
-
-.title
-{
-  font-family: 'Crimson Text', serif;
-  display: block;
-  text-align: center;
-  position:relative;
-  top:100px;
-  margin:0 auto;
-  word-spacing: 5px;
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.2), 2px 2px 2px rgba(0,0,0,0.15), 2px 2px 3px rgba(0,0,0,0.1);
-  /* z-index:1; */
-}
-
-.tarek
-{
+.tarek {
   font-family: 'Playfair Display', serif;
-  position:relative;
-  top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  left:0;
-  right:0;
   font-size: 3em;
-  text-align:center;
-  margin-bottom:200px;
-  /* z-index:1; */
-  transform:skewX(-5deg);
+  text-align: center;
+  margin-bottom: 50px;
+  transform: skewX(-5deg);
 }
 
 /************       SZL,TB KÉPEK START      ********************/
-/* .alapitok_container
-{
-  display:block;
-} */
 
-.szl_tb_container
-{
-  display:flex;
-  flex-wrap:wrap;
-  flex-grow: 1;
-  justify-content:space-around;
-  height:100vh;
-  align-items:flex-start;
-}
-
-
-
-.szl_image_wrapper
-{
-  display:block;
-  height:350px;
-  width:278px;
-}
-
-.szl_image_wrapper img
-{
-  height:350px;
-  width:278px;
-}
-
-.szl_image_wrapper p
-{
-  /* font-family: 'Crimson Text',sans-serif; */
-  display:none;
-  line-height: 2.0rem;
-}
-
-.szl_portre
-{
-  float:left;
-  height:inherit;
-  width:auto;
-}
-
-.szl_idezet_container
-{
-  position:absolute;
-  top:-0%;
-}
-
-
-.szl_idezet
-{
-  position: relative;
-  max-width: 310px;
-  padding: 0px 5px;
-  top:50%;
-  transform: translateY(-78%);
-}
-
-.tb_portre
-{
-  float:right;
-  height:inherit;
-  width:auto;
-}
-
-.tb_idezet_container
-{
-  position:absolute;
-  top:-0%;
-}
-
-.tb_idezet
-{
-  position: relative;
-  max-width: 310px;
-  padding: 0px 5px;
-  top:50%;
-  transform: translateY(-77%);
-}
-
-.tb_image_wrapper
-{
-  display:block;
-  height:350px;
-  width:278px;
-}
-
-.tb_image_wrapper img
-{
-  height:350px;
-  width:278px;
-}
-
-.tb_image_wrapper p
-{
-  display:none;
-  line-height: 2.0rem;
-}
-
-
-.person_name
-{
-  font-family: 'Crimson Text', serif;
-  display:block;
-  text-align: center;
-  margin-bottom:0px;
-  font-size:2.5rem;
-}
-
-.person_title
-{
-  font-family: 'Crimson Text', serif;
-  display:block;
-  text-align:center;
-  margin-bottom:10px;
-}
-
-
-/************       SZL,TB KÉPEK   END       ********************/
-
-
-
-/****************     second_page VÁDIRAT START         ********************/
-
-
-.second_page
-{
-  /* justify-content: space-between; */
-  padding: 0px 10%;
-  background-size:cover;
-  background-color: #f1d4a9;
-}
-
-.second_page h1
-{
-  margin:10px auto;
-  font-family: 'Playfair Display', serif;
-  /* display: block; */
-  margin: 100px auto;
-  text-align: center;
-  text-align: center;
-  position:relative;
-  /* top:100px; */
-  word-spacing: 5px;
-
-}
-
-.vadirat_wrapper p:nth-of-type(1)
-{
-  margin-bottom:50px;
-}
-
-.vadirat_wrapper img
-{
-  margin: 0px 10px;
-  float:left;
-  height:60vh;
-  width:auto;
-
-}
-
-/* .vadirat_wrap1
-{
-  display:block;
-  background: rgba(248,213,122,0.3);
-  width:33%;
-  float:left;
-  border: 2px solid rgba(206,160,107,0.2);
-  border-radius:10px;
-  line-height: 3rem;
-}
-
-
-.vadirat_wrap2
-{
-display:block;
-background: #f8d57a;
-width:41%;
-float:right;
-border: 2px solid rgba(206,160,107,0.2);
-border-radius:10px;
-line-height: 3rem;
-}
-
-
-
-.vadirat_wrap p
-{
-  font-size:1.6rem;
-}
-
-
-
-.vadirat_wrap1 img
-{
-  float:right;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 5px 5px;
-}
-
-.vadirat_wrap2 img
-{
-  float:left;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 5px 5px;
-} */
-
-
-
-/****************      VÁDIRAT END        ********************/
-
-/************     third_page  Alapállás START ******************************/
-
-.pages
-{
-  background:#ecdcbb;
-  /* background:#e4d4b4; */
-  /* border-right: 2px solid white; */
-}
-
-/* .pages::after, .second_page::after, .third_page::after
-{
-  content: '';
-  position:absolute;
-  top:30%;
-  right:0px;
-  width:200px;
-  height:200px;
-  background:rgba(255,255,255,0.05);
-}
-
-.second_page::after
-{
-  content: '';
-  position:absolute;
-  top:30%;
-  right:-100%;
-  width:200px;
-  height:200px;
-  background:rgba(255,255,255,0.3);
-}
-
-.third_page::after
-{
-  content: '';
-  position:absolute;
-  top:30%;
-  right:-200%;
-  width:200px;
-  height:200px;
-  background:rgba(255,255,255,0.3);
-}
-
-.fourth_page::after
-{
-  content: '';
-  position:absolute;
-  top:30%;
-  right:-300%;
-  width:200px;
-  height:200px;
-  background:rgba(255,255,255,0.3);
-}
-
-.fifth_page::after
-{
-  content: '';
-  position:absolute;
-  top:30%;
-  right:-400%;
-  width:200px;
-  height:200px;
-  background:rgba(255,255,255,0.3);
-} */
-
-.second_page::after
-{
-  content:'';
-  background:white;
-  position: absolute;
-  bottom:0px;
-  left:100%;
-  height:calc(100% - 60px);
-  width:2px;
-}
-
-.third_page::before
-{
-  content:'';
-  background:white;
-  position: absolute;
-  bottom:0px;
-  left:200%;
-  height:calc(100% - 60px);
-  width:2px;
-}
-
-.fourth_page::before
-{
-  content:'';
-  background:white;
-  position: absolute;
-  bottom:0px;
-  left:300%;
-  height:calc(100% - 60px);
-  width:2px;
-}
-
-.fifth_page::before
-{
-  content:'';
-  background:white;
-  position: absolute;
-  bottom:0px;
-  left:400%;
-  height:calc(100% - 60px);
-  width:2px;
-}
-
-.sixth_page::before
-{
-  content:'';
-  background:white;
-  position: absolute;
-  bottom:0px;
-  left:500%;
-  height:calc(100% - 60px);
-  width:2px;
-}
-
-/* .pages:not(.sixth_page)
-{
-  border-right: 2px solid white;
-} */
-/* .third_page::before
-{
-  content:'';
-  background:white;
-  position: absolute;
-  bottom:0px;
-  right:0px;
-  height:calc(100% - 60px);
-  width:2px;
-} */
-
-.third_page
-{
-  display:block;
-  padding: 0px 10%;
-}
-
-.third_page_container
-{
-  margin: 0 auto;
-  display:flex;
+.szl_tb_container {
+  display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.third_page h1
+.portre_container{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.portre_wrapper {
+  height: 350px;
+  width: 278px;
+}
+
+.portre_wrapper p {
+  display: none;
+  line-height: 2.2rem;
+  opacity:0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.portre {
+  border-radius: 10%;
+}
+
+.idezet_container {
+  position: relative;
+  height: inherit;
+}
+
+.idezet {
+  position: absolute;
+  max-width: 270px;
+  padding: 8px 8px;
+  top: 0;
+  right: 5px;
+  text-indent: 0;
+}
+
+.portre_wrapper:hover p
 {
-  margin:100px auto;
+  display: block;
+  animation: fadeInFromNone 1000ms ease-in-out;
+  animation-fill-mode: forwards;
+
+}
+
+.portre_wrapper img
+{
+  opacity:1;
+  transition: opacity 1000ms ease-in-out;
+  height: 100%;
+  width: 100%;
+  min-height: 350px;
+  min-width: 278px;
+}
+
+.portre_wrapper:hover img
+{
+  opacity:0.4;
+}
+
+.person_name {
+  font-family: 'Crimson Text', serif;
   text-align: center;
+  font-size: 2.7rem;
 }
 
-.third_page p:nth-child(1)
-{
-  margin-bottom: 50px;
+.person_title {
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  margin-bottom: 10px;
 }
+/******************* FIRST PAGE END ***********************/
 
-/************       third_page  Alapállás END ***********************************/
+/****************     SECOND PAGE START         ********************/
 
-
-
-
-/************     fourth_page  Történet START ******************************/
-
-.fourth_page
-{
-  display:flex;
+.vadirat_container{
+  display: flex;
   flex-wrap: wrap;
-  flex-grow:1;
-  justify-content: space-between;
-  padding: 0px 10%;
+  height: 80vh;
+  justify-content: center;
+  max-height: 80vh;
 }
 
-.fourth_page h1
-{
-  margin:100px auto;
+.vadirat_container img{
+  margin: 0 20px;
+  width:auto;
+  align-self: flex-start;
 }
 
-/************       fourth_page Történet END ***********************************/
-
-
-
-
-
-/************     fifth_page  A Harmincas évek írásai START ******************************/
-
-.fifth_page
-{
+.vadirat_wrapper {
   display:flex;
-  flex-wrap: wrap;
-  flex-grow:1;
-  justify-content: space-between;
-  padding: 0px 10%;
+  flex-direction: column;
+  justify-content: flex-start;
+  width:70%;
+  max-height: 80vh;
 }
 
-.fifth_page h1
-{
-  margin:100px auto;
+.vadirat_wrapper p{
+  margin: 0 20px 20px;
 }
 
-/************       fifth_page  A Harmincas évek írásai END ***********************************/
-
-
-
-
-/************     sixth_page  A Harmincas évek írásai START ******************************/
-
-.sixth_page
-{
-  display:flex;
-  flex-wrap: wrap;
-  flex-grow:1;
-  justify-content: space-between;
-  padding: 0px 10%;
+/*********** JAVASCRIPT RENDERED ITEMS START ******************************/
+.arrowButton {
+  transition: all 0.35s ease-in-out;
+  border: none;
 }
 
-.sixth_page h1
-{
-  margin:100px auto;
+.arrowButton:focus{
+  outline: none;
 }
+
+.arrowButton:hover {
+  background-color: #ffffff;
+  transform: rotateX(40deg);
+}
+
+.arrowButton img {
+  width: 40px;
+  height: auto;
+}
+
+/*********** JAVASCRIPT RENDERED ITEMS END ******************************/
 
 /************       sixth_page  A Harmincas évek írásai END ***********************************/
-
-
-
-
-
 /* MEDIA QUERIES */
-
 /* @media screen and (max-width:1176px) {
 
   .topnav
@@ -858,25 +559,180 @@ line-height: 3rem;
   }
 
 } */
+@media screen and (max-width:1024px) {
 
-@media (min-width:350px) and (max-width:784px)
-
-{
-  .szl_image_wrapper
-  {
-    margin-right:0%;
-    margin-bottom: 150px;
-  }
 }
 
-@media (min-width:350px) and (max-width:1210px)
-{
-  .language_selector
-  {
-    display:none;
+@media screen and (max-width:1200px) {
+
+  section{
+    height: auto;
+    max-height: auto;
   }
-  .language_flag
-  {
-    display:none;
+  .pages{
+    height: fit-content;
   }
+
+  .language_selector {
+
+  }
+
+  .language_flag {
+    top: 12px;
+  }
+
+  .topnav{
+    height: 100vh;
+    display: none;
+    text-align: center;
+    /* background-color: white; */
+    overflow: hidden;
+  }
+
+  .topnav::before{
+    content:'';
+    background-image: url("kepek/hatter/89120.jpg");
+    background-position: center;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .dropdown {
+    display: block;
+    text-align: center;
+    /* background-color: white; */
+  }
+
+  .cancel_button{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    height: 80px;
+    width: auto;
+    transform: scale(0.6);
+    background-color: transparent;
+    border: none;
+    outline:none;
+    transition: all 300ms ease-in-out;
+  }
+
+  .cancel_button:hover{
+    transform:scale(0.7);
+  }
+
+  .burger_menu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+    height: 80px;
+    width: auto;
+    transform: scale(0.6);
+    background-color: transparent;
+    border: none;
+    outline:none;
+    transition: all 300ms ease-in-out;
+    z-index: 100;
+  }
+
+  .burger_menu:hover{
+    transform:scale(0.70);
+  }
+
+  .dropdown-content{
+    display: none;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .search_bar_container{
+    /* background-color: white; */
+  }
+  .search_bar{
+    width:80%;
+    max-width: 500px;
+    background-color: white;
+  }
+
+/*FIRST PAGE START*/
+
+  .titles{
+    margin-top: 40px;
+  }
+
+  .portre_container{
+    margin: 0 40px;
+  }
+
+  .portre_wrapper{
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .portre_wrapper p {
+    display: block;
+    opacity:1;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .portre_wrapper:hover p{
+    opacity: 1;
+  }
+
+  .portre_wrapper img{
+    height: 350px;
+    width: 278px;
+  }
+
+  .portre_wrapper:hover img{
+    opacity: 1;
+  }
+
+  .idezet{
+    position: static;
+    max-width: inherit;
+    padding: 8px 8px;
+    text-indent: 0;
+  }
+
+/************************** FIRST PAGE END ***********************/
+
+/************************ SECOND PAGE START ************************/
+  .vadirat_container img{
+    margin: 20px;
+    max-height: 65vh;
+  }
+
+  .vadirat_container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    max-height: none;
+  }
+
+  .vadirat_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    max-height: none;
+    margin: auto;
+  }
+
+/************************ SECOND PAGE END ************************/
+
+}
+
+@media (min-width: 1024px) and (max-width: 1276px){
+
 }

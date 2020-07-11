@@ -1,4 +1,4 @@
-*, *::before, *::after {
+*{
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -20,6 +20,7 @@ html {
   scroll-behavior: smooth;
   /* overflow-x: hidden;
   overflow-y: hidden; */
+  background-color: #ecdcbb;
 }
 
 body, html {
@@ -39,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3rem;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -71,7 +72,7 @@ p {
 }
 
 p + p{
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 img{
@@ -91,6 +92,14 @@ img::selection{
 ::-moz-selection {
   background-color: rgb(218, 183, 95);
   background-color: rgba(218, 183, 95, 0.8);
+}
+
+input[type=text]{
+  transition: 1s;
+}
+
+input[type=text]:focus{
+  background-color: #f1f1f1;
 }
 
 
@@ -125,25 +134,31 @@ img::selection{
 } */
 
 .loading{
-  /* font-size: 6em; */
   display: inline-flex;
   position: absolute;
-  margin: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.loading h1{
+  text-align: center;
+  min-width: 400px;
+  font-size: 5em;
+}
+
 .loading_animation{
+  display: flex;
   position: relative;
-  margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 22px;
+  margin-left: 10px;
 }
 
 .circle{
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
   background-color: black;
   border-radius: 50%;
   animation: loading 0.8s ease-in-out infinite;
@@ -198,7 +213,7 @@ img::selection{
 
 /* ADD A PADDING TO ITEMS ON HOVER */
 
-.topnav:hover .dropdown-content a {
+.topnav:hover .dropdown_content a {
   padding-bottom: 10px;
   line-height: 1.7rem;
 }
@@ -264,7 +279,7 @@ img::selection{
 }
 
 /* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
-.dropdown-content {
+.dropdown_content {
   visibility: hidden;
   width: 100%;
   position: absolute;
@@ -278,26 +293,26 @@ img::selection{
 }
 
 /* POSITION AND STYLE OF DROPDOWN LINKS */
-.dropdown-content a {
+.dropdown_content a {
+  display: block;
   font-size: 1.7rem;
   color: #3e2200;
   padding: 0 0 2px 0;
   text-decoration: none;
-  display: block;
 }
 
 /* POSITION THE DROPDOWN CONTENT DOWNWARDS */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown_content {
   opacity: 1;
   visibility: visible;
 }
 
 /* CHANGE THE COLOR OF LINKS ON HOVER */
-.dropdown-content a:hover {
+.dropdown_content a:hover {
   background-color: #ddd;
 }
 
-.dropdown-content a a::after {
+.dropdown_content a a::after {
   content: "";
   display: block;
   position: relative;
@@ -317,10 +332,12 @@ img::selection{
   font-family: 'Crimson Text', sans-serif;
   font-size: 1.4rem;
   margin: 15px 20px;
+  padding-left: 10px;
   box-shadow: 3px 5px 5px #888888;
   min-width: 125px;
   max-height: 50px;
   border-radius: 5px;
+  outline: none;
 }
 
 /* LANGUAGE SELECTION */
@@ -331,6 +348,29 @@ img::selection{
   margin: auto 0;
   top: 5px;
 }
+
+.language_selector{
+
+}
+
+.dropdown_content .language_selection{
+  display: block;
+  padding: 0 0 10px;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  width: 100%;
+  color: #3e2200;
+  text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
+}
+
+.dropdown_content .language_selection:hover{
+  background-color: #ddd;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+
+
 
 
 /* .topnav{
@@ -408,7 +448,7 @@ section h1{
 /********** FIRST PAGE START *****************************/
 /*   DIALOGIKUS ISKOLA CÍM       */
 
-.tarek {
+.tarek{
   font-family: 'Playfair Display', serif;
   font-size: 3em;
   text-align: center;
@@ -418,7 +458,7 @@ section h1{
 
 /************       SZL,TB KÉPEK START      ********************/
 
-.szl_tb_container {
+.szl_tb_container{
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
@@ -432,28 +472,28 @@ section h1{
   justify-content: space-around;
 }
 
-.portre_wrapper {
+.portre_wrapper{
   height: 350px;
   width: 278px;
 }
 
-.portre_wrapper p {
+.portre_wrapper p{
   display: none;
   line-height: 2.2rem;
   opacity:0;
   transition: opacity 1000ms ease-in-out;
 }
 
-.portre {
+.portre{
   border-radius: 10%;
 }
 
-.idezet_container {
+.idezet_container{
   position: relative;
   height: inherit;
 }
 
-.idezet {
+.idezet{
   position: absolute;
   max-width: 270px;
   padding: 8px 8px;
@@ -462,33 +502,39 @@ section h1{
   text-indent: 0;
 }
 
-.portre_wrapper:hover p
-{
+.idezet::before, .idezet::after{
+  content:'"';
+}
+
+.portre_wrapper:hover p{
   display: block;
   animation: fadeInFromNone 1000ms ease-in-out;
   animation-fill-mode: forwards;
-
 }
 
-.portre_wrapper img
-{
+.portre_wrapper img{
   opacity:1;
   transition: opacity 1000ms ease-in-out;
   height: 100%;
   width: 100%;
   min-height: 350px;
   min-width: 278px;
+  box-shadow: 6px 6px 10px -4px black;
 }
 
-.portre_wrapper:hover img
-{
+.portre_wrapper:hover img{
   opacity:0.4;
 }
 
-.person_name {
+.person_name{
   font-family: 'Crimson Text', serif;
   text-align: center;
   font-size: 2.7rem;
+  transition: 0.5s cubic-bezier(.21,1.15,1,.99);
+}
+
+.person_name:hover{
+  transform: scale(1.05);
 }
 
 .person_title {
@@ -530,6 +576,12 @@ section h1{
 .arrowButton {
   transition: all 0.35s ease-in-out;
   border: none;
+  position: fixed;
+  /* background-color: transparent; */
+  box-shadow: none;
+  top: 50%;
+  z-index: 200;
+  border-radius: 10px;
 }
 
 .arrowButton:focus{
@@ -542,7 +594,7 @@ section h1{
 }
 
 .arrowButton img {
-  width: 40px;
+  width: 35px;
   height: auto;
 }
 
@@ -559,6 +611,29 @@ section h1{
   }
 
 } */
+@media screen and (max-width:512px) {
+
+  .loading_animation{
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+
+  .loading{
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+  }
+
+  .loading h1{
+    text-align: inherit;
+    min-width: unset;
+    line-height: 0.95;
+  }
+}
+
 @media screen and (max-width:1024px) {
 
 }
@@ -569,6 +644,11 @@ section h1{
     height: auto;
     max-height: auto;
   }
+
+  /* .display_none{
+    display: none;
+  } */
+
   .pages{
     height: fit-content;
   }
@@ -585,19 +665,11 @@ section h1{
     height: 100vh;
     display: none;
     text-align: center;
-    /* background-color: white; */
     overflow: hidden;
-  }
 
-  .topnav::before{
-    content:'';
-    background-image: url("kepek/hatter/89120.jpg");
-    background-position: center;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    background-image: url(kepek/hatter/89120.jpg);
+    background-position: center center;
+    background-size: cover;
   }
 
   .dropdown {
@@ -645,10 +717,11 @@ section h1{
     transform:scale(0.70);
   }
 
-  .dropdown-content{
-    display: none;
-    margin: 0 auto;
+  .dropdown_content{
     z-index: 1;
+    width: 60%;
+    left: 21%;
+    background-color: rgba(218, 183, 95, 1.0);
   }
 
   .search_bar_container{

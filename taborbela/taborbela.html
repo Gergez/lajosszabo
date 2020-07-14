@@ -22,7 +22,7 @@
     <div class="mobile_menu">
       <div class="dropdown">
 
-        <button><a class="iskola_fooldal" href="" id="dialogikus-iskola">Dialogikus Iskola</a></button>
+        <button><a class="iskola_fooldal" href="../index.html" id="dialogikus-iskola">Dialogikus Iskola</a></button>
 
         <div class="dropdown_content">
           <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->
@@ -51,7 +51,7 @@
     </div>
 
     <div class="dropdown">
-      <button><a href="taborbela/taborbela.html" id="tabor-bela">Tábor Béla</a></button>
+      <button><a href="../taborbela/taborbela.html" id="tabor-bela">Tábor Béla</a></button>
 
       <div class="dropdown_content">
         <a href="./horvathagnes/horvathagnes.html" id="tabor-bela-eletrajz">Életrajz</a>
@@ -90,9 +90,20 @@
         <a href="./taboradam/taboradam.html" id="tabor-adam">Tábor Ádám</a>
       </div>
     </div>
-    <form class="search_bar_container">
-      <input type="text" class="search_bar" placeholder=" Keresés...">
-    </form>
+
+    <div class="dropdown">
+      <button class="konyvtar"><a id="konyvtar">Könyvtár</a></button>
+
+      <div class="dropdown_content">
+        <a href="./horvathagnes/horvathagnes.html" id="konyvtar_irasok">Írások</a>
+        <a href="./suranyilaszlo/suranyilaszlo.html" id="konyvtar_kepek">Képek</a>
+        <a href="./taboradam/taboradam.html" id="konyvtar_esemenyek">Események</a>
+      </div>
+    </div>
+
+    <!-- <form class="search_bar_container">
+      <input type="text" class="search_bar" placeholder=" Könyvtár">
+    </form> -->
 
     <div class="dropdown">
       <button class="language_selector"><a id="lang1">Magyar</a></button>
@@ -235,6 +246,9 @@
     <div class="footer_3">Egyéb</div>
 
   </footer>
+
+  <script type="text/javascript" src="../js/taborbela/main.js"> </script>
+
 </body>
 
 </html>

@@ -16,6 +16,10 @@ section
   height: auto;
 }
 
+p{
+  text-indent: 0;
+}
+
 p + p {
   margin: 0;
 }
@@ -44,6 +48,35 @@ section a
 section a:hover
 {
   color:rgba(218,183,95,0.8);
+}
+
+
+/* a:hover{
+  transform: scale(1.1);
+} */
+
+.konyvek_inner_wrapper p {
+  display: none;
+}
+
+.konyvek_inner_wrapper p {
+  display: block;
+}
+
+
+.appear{
+  display: block;
+}
+
+
+
+
+
+
+
+
+.dropdown .konyvtar{
+  padding-left: 50px;
 }
 
 .konyvek
@@ -88,10 +121,10 @@ section a:hover
   background-color:#a87e31;
 }
 
-.tanulmanyok
+/* .tanulmanyok
 {
   background-color: #a87e31;
-}
+} */
 
 .szeminariumok
 {

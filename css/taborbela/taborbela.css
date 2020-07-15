@@ -68,11 +68,9 @@ section a:hover
   display: block;
 }
 
-
-
-
-
-
+.disappear{
+  display: none;
+}
 
 
 .dropdown .konyvtar{

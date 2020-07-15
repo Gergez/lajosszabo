@@ -1,36 +1,38 @@
-
-
-  var innerwrapper = document.querySelectorAll('.titles');
-  for(var i = 0; i < innerwrapper.length; i++){
-    var paragraphs = innerwrapper[i].querySelectorAll('p');
-    var button = document.createElement('BUTTON');
-    button.addEventListener('click', ()=> {
-      paragraphs.forEach((item, i) => {
-        item.classList.add('appear');
-      });
-
-    });
-    innerwrapper[i].appendChild(button);
-  }
-
-
-function konyvekMenu(){}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function setup(){
-  konyvekMenu();
-}
-
-setup();
+//
+//   var sections = document.querySelectorAll('section');
+//   var titles = sections.forEach((item) => item.querySelectorAll('h1'));
+//   var paragraphs = [];
+//
+//   for(var i = 0; i < titles.length; i++){
+// // Kell ide, hogy külön kezelje egyes titls-ök paragrafusait ( könyveit)!!
+//     var paragraph = document.querySelectorAll('.konyvek_wrapper .konyvek_inner_wrapper p');
+//     paragraphs.push(paragraph);
+//
+//     var button = document.createElement('BUTTON');
+//     button.style.width = '30px';
+//     button.style.height = '20px';
+//     button.style.background = "black";
+//     button.style.border = "none";
+//     button.style.marginLeft = "20px";
+//
+//     button.addEventListener('click', () => {
+//       for (var j = 0; j < paragraphs.length; j++){
+//           // paragraphs[j].style.display = "none";
+//       }
+//       // console.log("wow", i);
+//     });
+//
+//     titles[i].appendChild(button);
+//     console.log('in for end', i);
+//   }
+//
+//
+// function konyvekMenu(){}
+//
+//
+//
+// function setup(){
+//   konyvekMenu();
+// }
+//
+// setup();

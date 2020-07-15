@@ -1,0 +1,184 @@
+/************       TOP NAVIGATION  START     ********************/
+/* POSITION AND STYLE THE NAVBAR */
+.topnav {
+  position: fixed;
+  display: flex;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: rgb(218, 183, 95);
+  background: rgba(218, 183, 95, 1.0);
+  justify-content: center;
+  color: #3e2200;
+  z-index: 999;
+  height: 60px;
+}
+
+/* POSITION AND STYLE THE NAVBAR LINKS */
+.topnav a {
+  display: flex;
+  flex-wrap: wrap;
+  color: #3e2200;
+  padding: 5px 0 0 0;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* ADD A PADDING TO ITEMS ON HOVER */
+
+.topnav:hover .dropdown_content a {
+  padding-bottom: 10px;
+  line-height: 1.7rem;
+}
+
+.topnav button{
+  outline:none;
+}
+
+.topnav button a {
+  transition: all 0.5s ease-in-out;
+}
+
+.topnav button:hover a {
+  color: #ae670f;
+}
+
+/************       DROPDOWN MENU  START        ********************/
+
+/* Dropdown Button */
+.dropdown {
+  display: flex;
+  position: relative;
+  top:0;
+  color: #3e2200;
+}
+
+.cancel_button,
+.burger_menu{
+  display:none;
+}
+
+.dropdown button {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 12px 12px;
+  pointer-events: all;
+  color: #3e2200;
+}
+
+.dropdown:hover button {
+  color: #3e2200;
+}
+
+.topnav button a::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #3e2200;
+  margin: auto;
+  top: 5px;
+  left: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.topnav button:hover a::after{
+  border-top-color: #ae670f;
+}
+
+/* DROPDOWN CONTENT (HIDDEN BY DEFAULT) */
+.dropdown_content {
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  background-color: #f1f1f1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* POSITION AND STYLE OF DROPDOWN LINKS */
+.dropdown_content a {
+  display: block;
+  font-size: 1.7rem;
+  color: #3e2200;
+  padding: 0 0 2px 0;
+  text-decoration: none;
+}
+
+/* POSITION THE DROPDOWN CONTENT DOWNWARDS */
+.dropdown:hover .dropdown_content {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* CHANGE THE COLOR OF LINKS ON HOVER */
+.dropdown_content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown_content a a::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #3e2200;
+  margin: auto;
+  top: 5px;
+  left: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/************       DROPDOWN MENU   END       ********************/
+/* STYLE THE SEARCH BAR */
+.search_bar {
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 1.4rem;
+  margin: 15px 20px;
+  padding-left: 10px;
+  box-shadow: 3px 5px 5px #888888;
+  min-width: 125px;
+  max-height: 50px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* LANGUAGE SELECTION */
+.language_flag {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  top: 5px;
+}
+
+.dropdown_content .language_selection{
+  display: block;
+  padding: 0 0 10px;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  width: 100%;
+  color: #3e2200;
+  text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
+}
+
+.dropdown_content .language_selection:hover{
+  background-color: #ddd;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/************       TOP NAVIGATION END       ********************/

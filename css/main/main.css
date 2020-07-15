@@ -1,0 +1,205 @@
+/************** Page_container START **************/
+
+section {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  /* background-image: url("kepek/hatter/paper_old.jpg");
+  background-size: cover; */
+}
+
+section::after{
+  content:'';
+  background-image: url("kepek/hatter/paper_old.jpg");
+  background-size: cover;
+}
+
+section h1{
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.page_container{
+  width: 80%;
+  /* height: 80%; */
+  margin: 0 auto;
+}
+
+.pages{
+  background-color: #ecdcbb;
+  width: 100vw;
+}
+
+.titles{
+  margin-top: 100px;
+}
+
+.first_page{
+  z-index: 100;
+}
+
+.second_page{
+  z-index: 99;
+}
+
+.third_page{
+  z-index: 98;
+}
+
+.fourth_page{
+  z-index: 97;
+}
+
+.fifth_page{
+  z-index: 96;
+}
+
+.sixth_page{
+  z-index: 95;
+}
+
+/************** Page_container END **************/
+
+/********** FIRST PAGE START *****************************/
+/*   DIALOGIKUS ISKOLA CÍM       */
+
+.tarek{
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 50px;
+  transform: skewX(-5deg);
+}
+
+/************       SZL,TB KÉPEK START      ********************/
+
+.szl_tb_container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.portre_container{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.portre_wrapper{
+  height: 350px;
+  width: 278px;
+}
+
+.portre_wrapper p{
+  display: none;
+  line-height: 2.2rem;
+  opacity:0;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.portre{
+  border-radius: 10%;
+}
+
+.idezet_container{
+  position: relative;
+  height: inherit;
+}
+
+.idezet{
+  position: absolute;
+  max-width: 270px;
+  padding: 8px 8px;
+  top: 0;
+  right: 5px;
+  text-indent: 0;
+}
+
+.idezet::before, .idezet::after{
+  content:'"';
+}
+
+.portre_wrapper:hover p{
+  display: block;
+  animation: fadeInFromNone 1000ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.portre_wrapper img{
+  opacity:1;
+  transition: opacity 1000ms ease-in-out;
+  height: 100%;
+  width: 100%;
+  min-height: 350px;
+  min-width: 278px;
+  box-shadow: 6px 6px 10px -4px black;
+}
+
+.portre_wrapper:hover img{
+  opacity:0.4;
+}
+
+.person_name{
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  font-size: 2.7rem;
+  transition: 0.5s cubic-bezier(.21,1.15,1,.99);
+}
+
+.person_name:hover{
+  transform: scale(1.05);
+}
+
+.person_title {
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/******************* FIRST PAGE END ***********************/
+
+/****************     SECOND PAGE START         ********************/
+
+.vadirat_container{
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  justify-content: center;
+  max-height: 80vh;
+}
+
+.vadirat_container img{
+  margin: 0 20px;
+  width:auto;
+  align-self: flex-start;
+}
+
+.vadirat_wrapper {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width:70%;
+  max-height: 80vh;
+}
+
+.vadirat_wrapper p{
+  margin: 0 20px 20px;
+}
+
+/************       sixth_page  A Harmincas évek írásai END ***********************************/
+/* MEDIA QUERIES */
+/* @media screen and (max-width:1176px) {
+
+  .topnav
+  {
+    display:none;
+    align-items: center;
+  }
+
+} */

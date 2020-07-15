@@ -1,0 +1,27 @@
+/*********** JAVASCRIPT RENDERED ITEMS START ******************************/
+.arrowButton {
+  transition: all 0.35s ease-in-out;
+  border: none;
+  position: fixed;
+  /* background-color: transparent; */
+  box-shadow: none;
+  top: 50%;
+  z-index: 200;
+  border-radius: 10px;
+}
+
+.arrowButton:focus{
+  outline: none;
+}
+
+.arrowButton:hover {
+  background-color: #ffffff;
+  transform: rotateX(40deg);
+}
+
+.arrowButton img {
+  width: 35px;
+  height: auto;
+}
+
+/*********** JAVASCRIPT RENDERED ITEMS END ******************************/

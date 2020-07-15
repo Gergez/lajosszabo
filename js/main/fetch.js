@@ -10,6 +10,4 @@ function loadDoc() {
   xhttp.send();
 }
 
-loadDoc();
-
-export { loadDoc };
+module.exports.loadDoc = loadDoc;

@@ -1,4 +1,6 @@
-require('fetch.js');
+import { loadDoc } from './fetch.js';
+
+const fetchNavbar = loadDoc();
 
 /************** PAGE TURNER START **************/
 

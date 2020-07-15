@@ -1,3 +1,5 @@
+require('fetch.js');
+
 /************** PAGE TURNER START **************/
 
 let nextPageButton = document.createElement("BUTTON");

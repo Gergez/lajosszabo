@@ -11,3 +11,5 @@ function loadDoc() {
 }
 
 loadDoc();
+
+export { loadDoc };

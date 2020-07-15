@@ -19,13 +19,15 @@
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <link rel="icon" href="./kepek/favicon/favicon.png" type="image/x-icon">
 
-  <script type="text/javascript" src="js/main/language.json"></script>
-  <script type="text/javascript" src="js/main/fetch.js"></script>
+
+  <!-- <script type="text/javascript" rel="preload" src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+
 
 </head>
-
-
 <body>
+
+  <script type="text/javascript" src="js/main/language.json"></script>
+  <script async type="module" rel="preload" src="js/main/fetch.js"></script>
 
   <div id="loading_container">
     <div id="loading" class="loading">
@@ -191,7 +193,7 @@
     </section> <!-- SIXTH PAGE END -->
 
   </div>
-  <script type="module" src="js/main/app.js"></script>
+  <script type="module" src="js/main/app.js" defer></script>
   <!-- <script type="text/javascript" src="include.js" crossorigin="same-origin"></script> -->
 
 </body>

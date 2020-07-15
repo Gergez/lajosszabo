@@ -6,8 +6,8 @@ function loadDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "../js/fetch/navbar.html", true);
+  xhttp.open("GET", "../js/fetch/navbar.html", false);
   xhttp.send();
 }
 
-module.exports.loadDoc = loadDoc;
+export { loadDoc };

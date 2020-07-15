@@ -55,10 +55,12 @@ function setUpPreviousPageButton() {
 }
 
 iskolaFooldal.addEventListener('click', () => {
+
   currentPage = 0;
   let pageArray = [page1, page2, page3, page4, page5, page6];
   let currentPageZIndex = pageArray[currentPage].style.zIndex;
-});
+
+  });
 
 var allPages = document.querySelectorAll('section');
 // function pageTransition(currentPage){

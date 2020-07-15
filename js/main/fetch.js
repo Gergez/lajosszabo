@@ -9,5 +9,3 @@ function loadDoc() {
   xhttp.open("GET", "../js/fetch/navbar.html", true);
   xhttp.send();
 }
-
-module.exports.loadDoc = loadDoc;

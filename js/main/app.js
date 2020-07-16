@@ -1,6 +1,6 @@
-import { loadDoc } from './fetch.js';
-
-const fetchNavbar = loadDoc();
+// import { loadDoc } from './fetch.js';
+//
+// const fetchNavbar = loadDoc();
 
 /************** PAGE TURNER START **************/
 

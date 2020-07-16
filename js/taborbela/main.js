@@ -1,3 +1,7 @@
+import { loadDoc } from '../main/fetch.js';
+
+const fetchNavbar = loadDoc();
+
 //
 //   var sections = document.querySelectorAll('section');
 //   var titles = sections.forEach((item) => item.querySelectorAll('h1'));

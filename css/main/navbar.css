@@ -181,4 +181,78 @@
   pointer-events: all;
 }
 
+@media screen and (max-width:1200px) {
+.language_flag {
+  top: 12px;
+}
+
+.topnav{
+  height: 100vh;
+  display: none;
+  text-align: center;
+  overflow: hidden;
+
+  background-image: url(../kepek/hatter/89120.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.dropdown {
+  display: block;
+  text-align: center;
+  /* background-color: white; */
+}
+
+.cancel_button{
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  height: 80px;
+  width: auto;
+  transform: scale(0.6);
+  background-color: transparent;
+  border: none;
+  outline:none;
+  transition: all 300ms ease-in-out;
+}
+
+.cancel_button:hover{
+  transform:scale(0.7);
+}
+
+.burger_menu{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 101;
+  height: 80px;
+  width: auto;
+  transform: scale(0.6);
+  background-color: transparent;
+  border: none;
+  outline:none;
+  transition: all 300ms ease-in-out;
+  z-index: 100;
+}
+
+.burger_menu:hover{
+  transform:scale(0.70);
+}
+
+.dropdown_content{
+  z-index: 1;
+  width: 60%;
+  left: 21%;
+  background-color: rgba(218, 183, 95, 1.0);
+}
+
+.search_bar{
+  width:80%;
+  max-width: 500px;
+  background-color: white;
+ }
+}
 /************       TOP NAVIGATION END       ********************/

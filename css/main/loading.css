@@ -73,3 +73,26 @@
   animation-name: animatebottom;
   animation-duration: 1s;
 }
+
+@media screen and (max-width:512px) {
+
+  .loading_animation{
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+
+  .loading{
+    display: inline-flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+  }
+
+  .loading h1{
+    text-align: inherit;
+    min-width: unset;
+    line-height: 0.95;
+  }
+}

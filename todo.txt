@@ -1,0 +1,17 @@
+Fő feladatok:
+1a) Megírni a language handlert Objektum orientáltan, úgy, hogy lehessen különálló fájlokat használni, és automatikusan megcsinálja a navbart és a footert.
+1b) A language handler-höz csinálni egy linkeket kezelő részt, ahol innerHTML-t változtatunk textContent helyett.
+2) Megírni a page handlert Objektum orientáltan, úgy hogy képes legyen a linkeket kezelni.
+3) Minden függvényhez megfelelő, szabatos kommentet írni.
+
+Kisebb feladatok:
+1. tábor bélának egy kis árnyék
+2. Reszponzívitás
+3. Lefele görgetéskor a nyilak elrejtése, felfelé görgetéskor a láthatóvá tétele.
+
+
+Kérdések Laciékhoz:
+
+1. Linkek színe
+2. Navbarban maradhat a 'Könyvtár' a keresés helyett?
+3. Mi legyen az idézeteknél az automatikus idézőjelekkel: legyenek vagy sem?

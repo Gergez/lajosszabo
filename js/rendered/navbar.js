@@ -22,7 +22,7 @@ document.write( '\n' );
 document.write( '  <div class=\"mobile_menu\">\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );
-document.write( '      <button><a class=\"iskola_fooldal\" href=\"https://gergez.github.io/lajosszabo/\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
+document.write( '      <button><a class=\"iskola_fooldal\" href=\"https://gergez.github.io/lajosszabo/index.html\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->\n' );

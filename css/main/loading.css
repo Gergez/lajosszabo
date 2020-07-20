@@ -36,12 +36,13 @@
   text-align: center;
   min-width: 400px;
   font-size: 5em;
+  line-height: 0.9em;
 }
 
 .loading_animation{
   display: flex;
   position: relative;
-  margin-top: 22px;
+  margin-top: 32px;
   margin-left: 10px;
 }
 
@@ -78,7 +79,7 @@
 
   .loading_animation{
     margin-top: 0px;
-    margin-left: 100px;
+    transform: translate(120px, -18px);
   }
 
   .loading{
@@ -94,5 +95,11 @@
     text-align: inherit;
     min-width: unset;
     line-height: 0.95;
+  }
+}
+
+@media screen and (max-width:512px) {
+  .loading_animation{
+    transform: translate();
   }
 }

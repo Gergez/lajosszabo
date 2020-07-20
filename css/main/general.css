@@ -1,4 +1,4 @@
-*{
+* {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -15,12 +15,19 @@
   font-family: 'Crimson Text', serif;
 }
 
-/* Hide Scrollbars*/
 html {
   scroll-behavior: smooth;
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
   background-color: #ecdcbb;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 body, html {
@@ -51,17 +58,25 @@ h3 {
   font-size: 2.5rem;
 }
 
-a:link{
+a:link {
   text-decoration: none;
-  color:inherit;
+  color: rgb(132, 96, 6);
+  color: rgba(132, 96, 6, 0.8);
+  font-weight: bold;
   background-color: inherit;
 }
 
-a:visited{
-  color: inherit;
+a:visited {
+  text-decoration: none;
+  color: rgb(132, 96, 6);
+  color: rgba(132, 96, 6, 1.0);
+  font-weight: bold;
+  background-color: inherit;
 }
-a:active{
-  color: inherit;
+
+a:active {
+  color: rgb(132, 96, 6);
+  color: rgba(132, 96, 6, 1.0);
 }
 
 p {
@@ -71,13 +86,13 @@ p {
   text-indent: 20px;
 }
 
-p + p{
+p+p {
   margin-top: 30px;
 }
 
-img{
+img {
   max-height: 65vh;
-  width:auto;
+  width: auto;
 }
 
 ::selection {
@@ -85,8 +100,8 @@ img{
   background-color: rgba(218, 183, 95, 0.8);
 }
 
-img::selection{
-  background-color:transparent;
+img::selection {
+  background-color: transparent;
 }
 
 ::-moz-selection {
@@ -94,10 +109,10 @@ img::selection{
   background-color: rgba(218, 183, 95, 0.8);
 }
 
-input[type=text]{
+input[type=text] {
   transition: 1s;
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
   background-color: #f1f1f1;
 }

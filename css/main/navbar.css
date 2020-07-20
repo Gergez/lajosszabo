@@ -22,20 +22,20 @@
   padding: 5px 0 0 0;
   text-decoration: none;
   font-size: 1.8rem;
+  font-weight: normal;
   text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
 }
 
 /* ADD A PADDING TO ITEMS ON HOVER */
-
 .topnav:hover .dropdown_content a {
   padding-bottom: 10px;
   line-height: 1.7rem;
 }
 
-.topnav button{
-  outline:none;
+.topnav button {
+  outline: none;
 }
 
 .topnav button a {
@@ -47,18 +47,17 @@
 }
 
 /************       DROPDOWN MENU  START        ********************/
-
 /* Dropdown Button */
 .dropdown {
   display: flex;
   position: relative;
-  top:0;
+  top: 0;
   color: #3e2200;
 }
 
 .cancel_button,
-.burger_menu{
-  display:none;
+.burger_menu {
+  display: none;
 }
 
 .dropdown button {
@@ -90,7 +89,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.topnav button:hover a::after{
+.topnav button:hover a::after {
   border-top-color: #ae670f;
 }
 
@@ -144,7 +143,11 @@
 
 /************       DROPDOWN MENU   END       ********************/
 /* STYLE THE SEARCH BAR */
-.search_bar {
+.konyvtar{
+  margin-left: 20px;
+}
+
+/* .search_bar {
   font-family: 'Crimson Text', sans-serif;
   font-size: 1.4rem;
   margin: 15px 20px;
@@ -154,7 +157,7 @@
   max-height: 50px;
   border-radius: 5px;
   outline: none;
-}
+} */
 
 /* LANGUAGE SELECTION */
 .language_flag {
@@ -165,7 +168,7 @@
   top: 5px;
 }
 
-.dropdown_content .language_selection{
+.dropdown_content .language_selection {
   display: block;
   padding: 0 0 10px;
   font-size: 1.7rem;
@@ -175,84 +178,84 @@
   text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
 }
 
-.dropdown_content .language_selection:hover{
+.dropdown_content .language_selection:hover {
   background-color: #ddd;
   cursor: pointer;
   pointer-events: all;
 }
 
 @media screen and (max-width:1200px) {
-.language_flag {
-  top: 12px;
+  .language_flag {
+    top: 12px;
+  }
+
+  .topnav {
+    height: 100vh;
+    display: none;
+    text-align: center;
+    overflow: hidden;
+    background-image: url(/kepek/hatter/89120.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .dropdown {
+    display: block;
+    text-align: center;
+    /* background-color: white; */
+  }
+
+  .cancel_button {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    height: 80px;
+    width: auto;
+    transform: scale(0.6);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: all 300ms ease-in-out;
+  }
+
+  .cancel_button:hover {
+    transform: scale(0.7);
+  }
+
+  .burger_menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 101;
+    height: 80px;
+    width: auto;
+    transform: scale(0.6);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: all 300ms ease-in-out;
+    z-index: 100;
+  }
+
+  .burger_menu:hover {
+    transform: scale(0.70);
+  }
+
+  .dropdown_content {
+    z-index: 1;
+    width: 60%;
+    left: 21%;
+    background-color: rgba(218, 183, 95, 1.0);
+  }
+
+  .search_bar {
+    width: 80%;
+    max-width: 500px;
+    background-color: white;
+  }
 }
 
-.topnav{
-  height: 100vh;
-  display: none;
-  text-align: center;
-  overflow: hidden;
-
-  background-image: url(../kepek/hatter/89120.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-
-.dropdown {
-  display: block;
-  text-align: center;
-  /* background-color: white; */
-}
-
-.cancel_button{
-  display: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1001;
-  height: 80px;
-  width: auto;
-  transform: scale(0.6);
-  background-color: transparent;
-  border: none;
-  outline:none;
-  transition: all 300ms ease-in-out;
-}
-
-.cancel_button:hover{
-  transform:scale(0.7);
-}
-
-.burger_menu{
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 101;
-  height: 80px;
-  width: auto;
-  transform: scale(0.6);
-  background-color: transparent;
-  border: none;
-  outline:none;
-  transition: all 300ms ease-in-out;
-  z-index: 100;
-}
-
-.burger_menu:hover{
-  transform:scale(0.70);
-}
-
-.dropdown_content{
-  z-index: 1;
-  width: 60%;
-  left: 21%;
-  background-color: rgba(218, 183, 95, 1.0);
-}
-
-.search_bar{
-  width:80%;
-  max-width: 500px;
-  background-color: white;
- }
-}
 /************       TOP NAVIGATION END       ********************/

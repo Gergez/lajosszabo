@@ -13,15 +13,34 @@ section {
 
 section::after{
   content:'';
-  background-image: url("kepek/hatter/paper_old.jpg");
+  background-image: url("/kepek/hatter/89120.jpg");
   background-size: cover;
 }
 
 section h1{
   font-family: 'Crimson Text', serif;
+  font-size: 3.5rem;
   text-align: center;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
+}
+
+section p:last-of-type{
+  margin-bottom: 30px;
+}
+
+blockquote {
+    font-size: 1.9rem;
+    color: black;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+blockquote::before{
+  content:'„';
+}
+
+blockquote::after{
+  content:'”';
 }
 
 .page_container{
@@ -70,9 +89,18 @@ section h1{
 
 .tarek{
   font-family: 'Playfair Display', serif;
-  font-size: 3em;
+  font-size: 3.2em;
   text-align: center;
   margin-bottom: 50px;
+  transform: skewX(-5deg);
+}
+
+.talalkozas{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8em;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 80px;
   transform: skewX(-5deg);
 }
 
@@ -143,7 +171,7 @@ section h1{
 }
 
 .portre_wrapper:hover img{
-  opacity:0.4;
+  opacity:0.2;
 }
 
 .person_name{
@@ -151,6 +179,10 @@ section h1{
   text-align: center;
   font-size: 2.7rem;
   transition: 0.5s cubic-bezier(.21,1.15,1,.99);
+}
+
+.person_name a{
+  color: inherit;
 }
 
 .person_name:hover{
@@ -174,10 +206,10 @@ section h1{
   max-height: 80vh;
 }
 
-.vadirat_container img{
-  margin: 0 20px;
-  width:auto;
-  align-self: flex-start;
+.vadirat_container img {
+    margin: 0 20px;
+    height: 430px;
+    width: auto;
 }
 
 .vadirat_wrapper {
@@ -203,3 +235,10 @@ section h1{
   }
 
 } */
+
+/* @media screen and (max-width:1176px) {
+  body{
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+  } */

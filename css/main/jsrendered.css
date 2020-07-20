@@ -1,16 +1,15 @@
-/*********** JAVASCRIPT RENDERED ITEMS START ******************************/
 .arrowButton {
   transition: all 0.35s ease-in-out;
   border: none;
   position: fixed;
-  /* background-color: transparent; */
+  background-color: transparent;
   box-shadow: none;
   top: 50%;
   z-index: 200;
   border-radius: 10px;
 }
 
-.arrowButton:focus{
+.arrowButton:focus {
   outline: none;
 }
 
@@ -23,5 +22,3 @@
   width: 35px;
   height: auto;
 }
-
-/*********** JAVASCRIPT RENDERED ITEMS END ******************************/

@@ -24,6 +24,7 @@
 
 
 </head>
+
 <body>
 
   <script type="text/javascript" src="js/main/language.json"></script>
@@ -32,149 +33,67 @@
   <div id="loading_container">
     <div id="loading" class="loading">
       <h1>Magyar dialogikus iskola</h1>
-       <div class="loading_animation">
-         <div class="circle circle-1"></div>
-         <div class="circle circle-2"></div>
-         <div class="circle circle-3"></div>
-       </div>
-     </div>
+      <div class="loading_animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+    </div>
 
   </div>
   <div id="main_container" class="main_container">
-<!-- <div id="navbar"></div> -->
-
-<header class="topnav">
-
-  <div class="mobile_menu">
-    <div class="dropdown">
-
-      <button><a class="iskola_fooldal" href="/index.html" id="dialogikus-iskola">Dialogikus Iskola</a></button>
-
-      <div class="dropdown_content">
-        <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->
-        <a href="#vadirat" id="vadirat">Vádirat</a>
-        <a href="#alapallas" id="alapallas">Alapállás</a>
-        <a href="#tortenet" id="tortenet">Történet</a>
-        <a href="#harmincas-evek" id="harmincas-evek">A '30-as évek írásai</a>
-        <a href="#negyvenot-utan" id="negyvenot-utan">1945 után</a>
-      </div>
+    <div id="navbar">
+      <script type="text/javascript" src="js/rendered/navbar.js"></script>
     </div>
-  </div>
 
-  <div class="dropdown">
-    <button><a href="szabolajos.html" id="szabo-lajos">Szabó Lajos</a></button>
+    <section class="pages first_page">
+      <div class="page_container">
 
-    <div class="dropdown_content">
-      <a href="./SZL/eletrajz/szabo_lajos_eletrajz.htm" id="szabo-lajos-eletrajz">Életrajz</a>
-      <a href="./SZL/irasok/" id="szabo-lajos-irasok">Írások</a>
-      <a href="./SZL/szeminariumi_eloadasok/" id="szabo-lajos-szeminariumi-eloadasok">Szemináriumi előadások</a>
-      <a href="./SZL/" id="szabo-lajos-grafikak-kiallitasok">Grafikák, kiállítások</a>
-      <a href="./SZL/" id="szabo-lajos-csutortoki-beszelgetesek">Csütörtöki beszélgetések</a>
-      <a href="./SZL/" id="szabo-lajos-dusseldorfi-beszelgetesek">Düsseldorfi beszélgetések</a>
-      <a href="./SZL/" id="szabo-lajos-konferenciak">Konferenciák</a>
-      <a href="./SZL/" id="szabo-lajos-bibliografia">Bibliográfia</a>
-    </div>
-  </div>
+        <div class="titles">
+          <h1 class="title" id="magyar-dialogikus-iskola">Magyar dialogikus iskola</h1>
 
-  <div class="dropdown">
-    <button><a href="/taborbela/taborbela.html" id="tabor-bela">Tábor Béla</a></button>
+          <h2 id="tarek" class="tarek">Teizmus és ateizmus roppant erőinek kereszteződésében</h2>
+          <h2 id="talalkozas" class="talalkozas"> Találkozásból született találkozások szövik a közösségeket; ezeknek a
+            találkozásoknak a szintje határozza meg a közösség szintjét, s vele együtt a közösség
+            történelmének szintjét is. A közösség és a közösség története egy és ugyanaz.</h2>
+        </div>
 
-    <div class="dropdown_content">
-      <a href="./horvathagnes/horvathagnes.html" id="tabor-bela-eletrajz">Életrajz</a>
-      <a href="./suranyilaszlo/suranyilaszlo.html" id="tabor-bela-konyvek">Könyvek</a>
-      <a href="./taboradam/taboradam.html" id="tabor-bela-ostortenet">"Őstörténet"</a>
-      <a href="./horvathagnes/horvathagnes.html" id="tabor-bela-a-szimbolum-valsaga">A szimbólum válsága</a>
-      <a href="./suranyilaszlo/suranyilaszlo.html" id="tabor-bela-preszokratikus-szeminariumok">Preszókratikus szemináriumok</a>
-      <a href="./taboradam/taboradam.html" id="tabor-bela-egyeb-irasok">Egyéb írások</a>
-      <a href="./taboradam/taboradam.html" id="tabor-bela-csutortoki-beszelgetesek">Csütörtöki beszélgetések</a>
-      <a href="./horvathagnes/horvathagnes.html" id="tabor-bela-szaz">"Tábor Béla 100"</a>
-      <a href="./suranyilaszlo/suranyilaszlo.html" id="tabor-belarol">Tábor Béláról</a>
+        <div class="first_page_container">
 
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <button><a href="./mandystefania/mandystefania.html" id="mandy-stefania">Mándy Stefánia</a></button>
-
-    <div class="dropdown_content">
-      <a href="./horvathagnes/horvathagnes.html" id="mandy-stefania-eletrajz">Életrajz</a>
-      <a href="./suranyilaszlo/suranyilaszlo.html" id="mandy-stefania-a-kes-a-kez-a-hal">A kés a kéz a hal (részletek)</a>
-      <a href="./taboradam/taboradam.html" id="mandy-stefania-az-ellopott-tortenelem">Az ellopott történelem (részletek)</a>
-      <a href="./horvathagnes/horvathagnes.html" id="mandy-stefania-scintilla">Scintilla (részletek)</a>
-      <a href="./suranyilaszlo/suranyilaszlo.html" id="mandy-stefania-kepzomuveszeti-irasok">Képzőművészeti írások</a>
-      <a href="./taboradam/taboradam.html" id="mandy-stefania-mandy-szaz">Mándy 100</a>
-    </div>
-  </div>
-
-
-  <div class="dropdown">
-    <button class="tovabbi_szerzok"><a id="tovabbi-szerzok">További szerzők</a></button>
-
-    <div class="dropdown_content">
-      <a href="./horvathagnes/horvathagnes.html" id="horvath-agnes">Horváth Ágnes</a>
-      <a href="./suranyilaszlo/suranyilaszlo.html" id="suranyi-laszlo">Surányi László</a>
-      <a href="./taboradam/taboradam.html" id="tabor-adam">Tábor Ádám</a>
-    </div>
-  </div>
-  <form class="search_bar_container">
-    <input type="text" class="search_bar" placeholder=" Keresés...">
-  </form>
-
-  <div class="dropdown">
-    <button class="language_selector"><a id="lang1">Magyar</a></button>
-    <img class="language_flag" src="../kepek/menu/magyar_zaszlo.svg" alt="Magyar nyelv">
-
-    <div class="dropdown_content">
-      <button class="language_selection" id="lang2">English</button>
-      <button class="language_selection" id="lang3">Deutsch</button>
-      <button class="language_selection" id="lang4">Français</button>
-    </div>
-  </div>
-</header>
-
-
-      <section class="pages first_page">
-        <div class="page_container">
-
-          <div class="titles">
-            <h1 class="title" id="magyar-dialogikus-iskola">Magyar dialogikus iskola</h1>
-            <h2 id="tarek" class="tarek">Teizmus és ateizmus roppant erőinek kereszteződésében</h2>
-          </div>
-
-          <div class="first_page_container">
-
-            <div class="szl_tb_container">
-              <div class="szl_container">
-                <div class="portre_container">
-                  <div class=portre_wrapper>
-                    <h2 class="person_name"><a href="szabolajos/szabolajos.html"><span id="person-name-szabo-lajos">Szabó Lajos</span></a></h2>
-                    <h3 class="person_title">1902-1967</h3>
-                    <div class="idezet_container">
-                      <a href="szabolajos/szabolajos.html"><img class="portre" src="kepek/portrek/SZLfoto_3.jpg" alt="Szabó Lajos portré"> </a>
-                      <p class="idezet" id="szabo-lajos-idezet">A lelkiismeret a személy legszemélyesbb pontja, pillanata, örökkévalósága. [...] Minden alkotás legbensőbb indítása, az emberi lélek legősibb mozdulása (Fülep Lajos), ahol zene, líra és ima még nem váltak
-                        széjjel! A lelkiismeret így: teremtő vágy és lírai igény.</p>
-                    </div>
+          <div class="szl_tb_container">
+            <div class="szl_container">
+              <div class="portre_container">
+                <div class=portre_wrapper>
+                  <h2 class="person_name"><a href="szabolajos/szabolajos.html"><span id="person-name-szabo-lajos">Szabó Lajos</span></a></h2>
+                  <h3 class="person_title">1902-1967</h3>
+                  <div class="idezet_container">
+                    <a href="szabolajos/szabolajos.html"><img class="portre" src="kepek/portrek/SZLfoto_3.jpg" alt="Szabó Lajos portré"> </a>
+                    <p class="idezet" id="szabo-lajos-idezet">A lelkiismeret a személy legszemélyesbb pontja, pillanata, örökkévalósága. [...] Minden alkotás legbensőbb indítása, az emberi lélek legősibb mozdulása (Fülep Lajos), ahol zene, líra és
+                      ima még nem váltak
+                      széjjel! A lelkiismeret így: teremtő vágy és lírai igény.</p>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="tb_container">
-                <div class="portre_container">
-                  <div class="portre_wrapper">
-                    <h2 class="person_name"><a href="taborbela/taborbela.html"><span id="person-name-tabor-bela">Tábor Béla</span></a></h2>
-                    <h3 class="person_title">1907-1992</h3>
-                    <div class="idezet_container">
-                      <a href="taborbela/taborbela.htm"><img class="portre" src="kepek/portrek/TB_foto.jpg" alt="Tábor Béla portré"></a>
-                      <p class="idezet" id="tabor-bela-idezet">A szellem a valóságnak az az egyetlen csodája, hogy a valóság van. Az él a szellemben, aki ezt a "van"-t, mint csodát, éspedig mint a valóság egyetlen csodáját éli át.</br>Csoda az, amihez egy dimenzióval meg
-                        kell növekednünk ahhoz, hogy mérhetővé váljon a számunkra.</p>
+            <div class="tb_container">
+              <div class="portre_container">
+                <div class="portre_wrapper">
+                  <h2 class="person_name"><a href="taborbela/taborbela.html"><span id="person-name-tabor-bela">Tábor Béla</span></a></h2>
+                  <h3 class="person_title">1907-1992</h3>
+                  <div class="idezet_container">
+                    <a href="taborbela/taborbela.htm"><img class="portre" src="kepek/portrek/TB_foto.jpg" alt="Tábor Béla portré"></a>
+                    <p class="idezet" id="tabor-bela-idezet">A szellem a valóságnak az az egyetlen csodája, hogy a valóság van. Az él a szellemben, aki ezt a "van"-t, mint csodát, éspedig mint a valóság egyetlen csodáját éli át.</br>Csoda az, amihez
+                      egy dimenzióval meg
+                      kell növekednünk ahhoz, hogy mérhetővé váljon a számunkra.</p>
 
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
     </section> <!-- First Page END -->
 
@@ -189,7 +108,7 @@
           <img class="clearfix vadirat_kep" src="kepek/Vadiratcimlap_1.jpg" alt="Az Idő Könyvei">
 
           <div class="vadirat_wrapper">
-            <p id="vadirat-p-1">Valakinek végre vállalkoznia kell a kényelmetlen feladatra,
+            <p id="vadirat_p1">Valakinek végre vállalkoznia kell a kényelmetlen feladatra,
               hogy lerántsa az ártatlanság leplét arról az egyetlen tényezőről,
               amely az érdekellentétekké atomizálódott világ bellum omnium contra
               omnes-ében eddig még intakt maradt: a szellemről.
@@ -201,7 +120,7 @@
               hegeliánusok éppoly kevéssé vonhatják ki magukat, mint Klagesék.
             </p>
 
-            <p id="vadirat-p-2">Tisztában vagyunk vele, hogy amikor a szellemi élet leleplezésére vállalkozunk,
+            <p id="vadirat_p2">Tisztában vagyunk vele, hogy amikor a szellemi élet leleplezésére vállalkozunk,
               osztályárulást követünk el. A "teremtő intelligencia", úgy látszik, nagyon jól
               érezte magát abban a pozícióban, amelyet a társadalom láthatatlan hierarchiájában
               elfoglalt. Ő volt az, aki vádolhatott, anélkül,
@@ -225,7 +144,7 @@
         </div>
 
         <div class="third_page_container">
-          <p>
+          <p id="alapallas_p1">
             A „Magyar dialogikus iskola” név túlzottan hivatalos hangzása ellenére valójában egy olyan szellemi közösséget takar,
             amely több mint ötven évig illegális körülmények között működött.
             Képviselői a szellem primátusát vallják, s ezért elutasítanak minden institucionalizmust.
@@ -235,7 +154,7 @@
             az ő nevük az alábbi, részletesebb történeti bemutatásban szerepel.
           </p>
 
-          <p>
+          <p id="alapallas_p2">
             A Magyar dialogikus iskola a szellem primátusát és ezen belül
             a szó primátusát vallja. A racionalizmust és irracionalizmust egyaránt
             az egységes szellem bomlástermékeiként fogja fel. A racionalizmust túl szűk keretnek
@@ -260,6 +179,40 @@
       <div class="page_container">
         <div class="titles">
           <h1 id="tortenet">Történet</h1>
+          <p id="tortenet_p1">Szabó és Tábor az 1930-as évek elején találkoztak a magyarországi oppozíciós mozgalomban.
+            Ez az illegális baloldali antikapitalista és antibolsevista mozgalom kapcsolódott Karl Korsch intranzigens marxizmusához is.
+            Legtekintélyesebb szellemi vezetői Szabó mellett Justus Pál, Partos Pál és Szirtes Andor voltak.</p>
+
+          <p id="tortenet_p2">Szabó és Tábor találkozásának már a körülménye is emblematikus és szinte kijelöli azt a horizontot, amely felé tartanak. Ezt Tábor Béla fia így írja le (<a href="http://lajosszabo.com/SZL/TA_Csutort.pdf">Tábor Ádám, Találkozás a
+              centrumban</a>):</p>
+
+          <blockquote id="tortenet_idezet1">Tábor Bélát 1930 őszén barátja, Szirtes Andor, a kiváló george-ista társadalomkutató elvitte a Jaurés Körbe Szabó Lajos előadására. Mintegy 2-300 fiatal – korschista oppozíciósok, diákok, trockisták, kommunisták vegyesen –
+            próbálta követni az akkor még marxista gondolkodó vallástörténeti tárgyú fejtegetéseit. Az előadás után a hátul álló Tábor Béla szót kért, és úgy foglalta össze a hallottakat, hogy „ha jól értem, az előadó szerint a vallás forradalom, az
+            egyház ellenforradalom”. Szabó Lajos felkapta a fejét, és élénken átszólt a tömegen keresztül: „Pontosan ezt akartam mondani.” Így kezdődött életre szóló szoros barátságuk és majd' negyedszázados munkakapcsolatuk”. </blockquote>
+
+          <p id="tortenet_p3">A harmincas évek közepére Szabó és Tábor útja teljesen elvált a marxista mozgalométól. Tábor Béla erről így ír a <a href="http://lajosszabo.com/SZEL/TB_szocializmus_gnozis_oppozicio.pdf">Szocializmus, gnózis és oppozíció</a> c. írásában
+            (in uő, <a href="http://lajosszabo.com/BPDISKANG/szemeslog.html">Személyiség és logosz</a> 246-248):</p>
+
+          <blockquote id="tortenet_idezet2">
+            Korsch a „Marxismus und Philosophie”-ban már azt írta: „a szocializmus a maga végcéljában, de a hozzávezető út minden fázisában is folytatólagos (folyamatos) harc a szabadság megvalósításáért.” Mi ketten Szabó Lajossal akik az oppozíció
+            spirituális magvát képeztük, a cél és az eszköz szétválaszthatatlanságának elve alapján (úgy, ahogy a „Vádirat” marxizmus-kritikájában is deklaráltuk) a szabadságot csak folyamatos spiritualizálásként voltunk hajlandók szabadságnak
+            elismerni, és ennek megfelelően a szocialista mozgalmakban (és méginkább a liberalizmusban) megfogalmazott szabadságtörekvéseket önámításnak, vagy álcázott elnyomó törekvéseknek tekintettük.
+            Az oppozíció már kiindulási pontjában, tehát ezotérikus-marxista fázisában is a teória és ideológia marxi megkülönböztetését tekintette módszertani alapelvének. A „baloldaliság” kvalifikáló jelzőjét, amelyet a marxista mozgalom és ezen
+            keresztül a XVIII. századi felvilágosodás értékvilágától örökölt, szintén azzal az értelmezéssel fogadta el, hogy annál „baloldalibb” egy állásfoglalás, minél radikálisabban érvényesíti a teóriát az ideológiával szemben. A teória Marxnál
+            az igazság kutatását jelenti, az ideológia pedig a „hamis tudatot”, vagyis olyan „tudatot”, amely az igazság kutatása helyett hatalmi érdeket (Marxnál: „osztályérdeket”) szolgál. A spirituális oppozíció (amit következetesen csak ketten
+            képviseltünk Szabó Lajossal) azt tekintette (szellemi) feladatának, hogy a teoretikus magot kihámozza az ideológikus burokból, minden szellemi megnyilvánulásban (ezért szélesedett egyre inkább szellemi érzékenységének köre), de ezt a
+            kritériumot a marxizmus megítélésére is alkalmazta – így távolodott el egyre inkább a marxizmustól, annál is inkább, mivel ez egyre fokozódó mértékben azonosult egzotérikus, „vulgarizált”, popularizált önértelmezésével.”
+          </blockquote>
+
+          <p id="tortenet_p4">Ennek a spirituális szabadságeszmének a mértékén mérve dolgozzák fel kritikailag nemcsak a marxizmus közvetlen filozófiai környezetét jelentő német klasszikus filozófiát, hanem az egész európai, görög és hindu filozófiai hagyományt. A
+            fentebb megfogalmazott szabadságeszmét legtisztábban képviselő teoretikusokat keresve jutnak el Nietzschéhez és Kierkegaardhoz, asszimilálják Johann Georg Hamannt, másrészt Plótinoszt, a középkori spekulatív misztikát, elsősorban Eckhart
+            mestert. Erősen hat rájuk Schmitt Jenő Henrik gnózisa Schmitt tanítványán, Kepes Ferencen keresztül. Így jutnak el a dialogikus gondolkodók – Ferdinand Ebner, Franz Rosenzweig és Martin Buber – szóközéppontú, azaz az én-te-szó viszonyt
+            középpontba állító biblicizmusához.</p>
+
+          <p id="tortenet_p5">Munkájukba bekapcsolódik Békefi Zoltán is. Szintén ebből az időből datálódik Szabó barátsága Vajda Lajossal. (Barátságuk néhány dokumentumát lásd <a href="http://www.lajosszabo.com/SZL/Szabo_Vajda_kapcsolat.pdf">itt</a>.) Tanítványai
+            közé tartozik Mándy Stefánia költő és művészettörténész – később az első nagy Vajda-monográfia szerzője –, Bíró Endre, aki biokémikus lesz és Joyce-ot fordít.</p>
+
+
         </div>
       </div>
     </section> <!-- FOURTH PAGE END -->
@@ -269,6 +222,57 @@
       <div class="page_container">
         <div class="titles">
           <h1 id="a_harmincas_evek_irasai">A '30-as évek írásai</h1>
+
+          <p id="harmincas_p1">1936-ban Szabó és Tábor kiadják közösen írt <a href="http://lajosszabo.com/vadirat.htm">Vádirat a szellem ellen</a> című könyvüket (amelyet a Szellemi Együttműködés Ligájának budapesti konferenciájára időzítenek). Itt élesen kritizálják
+            a szellemen belül uralkodó autarkiát, epigonizmust, a bábeli nyelvzavart és terminologizmust, s ennek jegyében a kor uralkodó irányzatait, a szociológiát, a marxizmust, a pozitivizmust és a pszichoanalízist. Itt is az „előbb méltatni,
+            aztán támadni” módszerét követik. A marxizmusban méltatják, hogy az a legelnyomottabbak, leginkább szenvedők elé a legmagasabb szellemi célokat állítja, vagyis gondolkodás és szenvedés szövetségét képviseli teoretikusan-praktikusan.
+            Ugyanakkor nemcsak a marxizmust, hanem magát Marxot is bírálják, hogy a spirituális célokat despiritualizált eszközökkel akarta elérni:</p>
+
+          <blockquote id="harmincas_idezet1">
+            Marx személyes magatartása illusztrációjává vált saját gyakorlati módszere lehetetlenségének: annak, hogy despiritualizált eszközökkel nem lehet spiritualizálni – csak despiritualizálni. Lehet, hogy a materialista frazeológiával Marx csak
+            a kapitalizmus saját nyelvén akart beszélni a kapitalizmushoz – amelyhez természetesen a proletariátus éppúgy hozzátartozik, mint a kapitalisták – de ha így is volt, közben elfelejtette saját anyanyelvét.
+          </blockquote>
+
+          <p id="harmincas_p2">(Szabónak Marxról szóló írásait l. <a href="http://lajosszabo.com/SZL/TAREK.html">itt</a>, Nietzschéről l. <a href="http://lajosszabo.com/SZL/NIETZSCHE.pdf">itt</a>.) Már ebben a munkájukban egy olyan egzisztencializmushoz optálnak,
+            amely számára</p>
+
+          <blockquote id="harmincas_idezet2">
+            az „egzisztencia” az abszolút személyi pozíció egzisztenciáját jelenti (ahol az „abszolút” és „személyi” egyformán hangsúlyosak: a kettő polaritásában rejlik az egzisztencia).
+          </blockquote>
+
+          <p id="harmincas_p3">Az abszolút személyes pozíció pedig „Én” és „Te” viszonyát, „az Én–Te viszony és a nyelv, a szó kölcsönös feltételezettségét” jelenti. A nyelvnek, a szónak tehát „emberi lét-meghatározó, kozmikus jelentősége” van. Pozíciójukat Rilke „<a
+              href="http://rainer-maria-rilke.de/05a007wennesstillwaer.html">Wenn es nur einmal so ganz stille wäre</a>” kezdetű versével és Ebner gondolataival világítják meg.</p>
+
+          <p id="harmincas_p4">Szabó Lajos 1937-ben kiadja <a href="http://lajosszabo.com/SZL/A_hit_logikaja.pdf">A hit logikája – Teocentrikus logika</a> első füzetét.</p>
+
+          <p id="harmincas_p5">Tábor, aki Szabóval való találkozása előtt prózaíróként indult, és közölt is néhány novellát, ebben az időben kezdi el írni Bevezetés a valóság őstörténetébe c. főművét. (Ennek néhány részlete <a
+              href="http://lajosszabo.com/indexTB.html">innen érhető el</a>.) Darányi miniszterelnöknek a zsidótörvényeket bejelentő győri beszéde után megírja <a href="http://lajosszabo.com/TB/Zs2U.html">A zsidóság két útja</a> c. könyvét, amelynek
+            célja a magyar zsidóság szellemi mozgósítása volt. Amint az 1990-es második kiadáshoz írott utószóban írja, fel akarta rázni a magyar zsidóságot tompultságából, abból az életformából, amelybe beépült a fenyegetettség tudata.</p>
+
+          <blockquote id="harmincas_idezet3">
+            Ehhez meg kellett ismertetni zsidósága belső – és lényegileg ezotérikus – tartalmával, ráeszméltetni a nyugati kultúrában elfoglalt különleges és kényes történelmi helyére és az ebből adódó feladatokra. Szembe kellett szállni az
+            önsajnálattal és önelégültséggel […] A magasra emelt mérce, amely megkövetelte tőle [a magyar zsidóságtól], hogy saját magatartását, cselekedeteit és érték-opcióit ne mások hibáin mérje, hanem önmaga felismert történelmi felelősségén,
+            arra volt hivatott, hogy önismeretre támaszkodó, öntudatos, önmagához szigorú zsidó nemzedéket neveljen ki.
+          </blockquote>
+
+          <p id="harmincas_p6">A zsidó vallást az áldozat vallásaként mutatja be, ahol az áldozat az alacsonyabb érték magasabb értékké teremtését jelenti az anyag-ellenállással szemben.</p>
+
+          <p id="harmincas_p7">Szabó a negyvenes évek elején megírja a <a href="http://lajosszabo.com/SZL/Biblia_es_romantika.pdf">Biblia és romantika</a> c. írását, amelyben a romantikus periódust így jellemzi:</p>
+
+          <blockquote id="harmincas_idezet4">
+            Művek, kísérletek, töredékek: költők, művészek és gondolkodók rendkívül sűrített fellépése. Egyetemes utak kiásását kezdték meg, a hagyomány fonalát kívánták újra felvenni.
+          </blockquote>
+
+          <p id="harmincas_p8">De míg</p>
+
+          <blockquote id="harmincas_idezet5">
+            a bibliai egyéniségek, karakterek vagy küldöttek téren és időn túl szolidárisak egymással, [...] igent mondanak egymásra és a közösen követett útra, [addig] a romantikus periódus alkotóit az egymásról-nem-tudás, az egymást-nem-folytatás,
+            az egymásra-igent-nem-mondás jellemzi.
+          </blockquote>
+
+          <p id="harmincas_p9">Szabó saját álláspontját néha „nyelvi materializmusnak” is nevezi, s erről az álláspontról értékeli át például az akkoriban nagy vitákat kiváltó matematikaelméleti alapkutatás („Grundlagenforschung”) középponti kérdéseit. <a
+              href="http://lajosszabo.com/SZL/Adalekok_a_HE_kerdeseihez_01.pdf">Az első halmazelmélet-kritikai írása</a> 1938-ból való.</p>
+
         </div>
       </div>
     </section> <!-- FIFTH PAGE END -->
@@ -277,7 +281,31 @@
     <section class="pages sixth_page">
       <div class="page_container">
         <div class="titles">
-          <h1 id="1945">1945 után</h1>
+          <h1 id="negyvenot_utan">1945 után</h1>
+
+          <p id="negyvenot_utan_p1">Szabó és Tábor 1945–48 között rakták le a Budapesti Dialogikus Iskola alapjait. Ezekben az években szorosan együttműködtek az író és esszéista Hamvas Bélával is és szorosabb kapcsolat alakult ki Fülep Lajossal is. Előbbivel már '45 végén
+            megkezdődött „munkaközösségük”, rendszeres beszélgetéseik „<a href="http://lajosszabo.com/SZL/csutortok.html">Csütörtöki beszélgetések</a>” néven vált ismertté, ezen hármójuk mellett Mándy Stefánia (immár Tábor Béla felesége) és Kemény
+            Katalin (Hamvas Béla felesége) vettek részt.</p>
+
+          <p id="negyvenot_utan_p2">Szabó a 45–48 között tartott előadássorozataiban beható értékelméleti és értékpszichológiai elemzéseket folytatott, egyaránt asszimilálta a prefilozófiai szituációt (pl. az indiai hagyományt és a preszokratikusokat), és a posztfilozófiai
+            szemléletmódot, a földalatti XIX. század nagy alakjainak (Kierkegaard, Dosztojevszkij és Nietzsche) filozófia-, művészet- és valláskritikáját. A szemináriumi előadások legaktívabb résztvevői Kotányi Attila és Kunszt György voltak, ők le
+            is jegyezték az előadásokat (lásd <a href="http://lajosszabo.com/SZL/SzL_Szem_ea.html">itt</a>), mellettük Bíró Endre és Bíró Gábor neve szerepel még gyakran. A későbbi, tudomány- és matematikaelméleti vitákon Surányi János matematikus is
+            részt vett. A szellemi munkába bekapcsolódtak például a festő Vajda Júlia, az első szürrealista magyar szobrász, Jakovits József, a festő Gedő Ilka (Bíró Endre felesége), Vajda tanítványa és haláláig barátja, Bálint Endre és felesége
+            Richter Irina.</p>
+
+          <p id="negyvenot_utan_p3">Szabó aktívan részt vett az Európai Iskola rendezvényein. A sztálinizmus alatt szoros kapcsolatok szövődtek a földalatti Budapesti Iskola és a szintén betiltott avantgárd képzőművészek között. Ekkoriban nagy tisztázó viták folynak szó és
+            kép viszonyáról, a „szó vagy a kép primátusa”, illetve „a szó vagy a szám primátusa” témakörében.</p>
+
+          <p id="negyvenot_utan_p4">Az ötvenes évek közepétől Szabó maga is kalligráfus lett. 56-ban néhány tanítványával Nyugat-Európába ment, Brüsszelben, majd Düsseldorfban élt. Kiállításai voltak többek között Brüsszelben, Párizsban, Düsseldorfban, Dortmundban. Szabó
+            mozgalmi pszeudonímja AO volt, ami az Anti-Organisation rövidítése. Egy ideig sok rajzát is így szignálta, később visszatérő képi motívummá vált nála.</p>
+
+          <p id="negyvenot_utan_p5">Tábor Béla 1956 után is Budapesten maradt. A szovjet megszállás alatt a lakásán tartott szemináriumokat. Írók, festők, művészettörténészek, építészek, tudósok egyaránt voltak tanítványai között, akikkel intenzív személyes és teoretikus
+            beszélgetéseket folytatott, a folyamatos szellemi munka mellett ezt tartotta másik legfontosabb tevékenységének. Ezek a beszélgetések többnyire (alkotói vagy más) személyes problémákból indultak ki, hogy aztán mind szélesebb kör vonódjék
+            az aktuális problémák köré. Tábor mindig tudta teoretikusan úgy mélyíteni a felmerülő kérdéseket, hogy ez egyben a személyes érintettség fokozását is jelentette. Eközben folyamatosan dolgozott pneumatológiáján: személyiség-, logosz- és
+            szimbólumelméletén. A diktatúra bukása után kiadták régebbi könyveit és néhány újabb írását. 2003-ban összefoglaló kötet jelent meg <a href="http://lajosszabo.com/BPDISKANG/szemeslog.html">Személyiség és logosz</a> címen, ez főleg
+            életében kiadatlan írásaiból tartalmaz válogatást.</p>
+
+
         </div>
       </div>
     </section> <!-- SIXTH PAGE END -->

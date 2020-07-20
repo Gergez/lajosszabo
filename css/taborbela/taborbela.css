@@ -35,6 +35,9 @@ div .konyvek
   margin-top:10%;
   display:flex;
 }
+a{
+  color:inherit;
+}
 
 section a
 {

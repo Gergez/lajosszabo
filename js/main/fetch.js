@@ -6,7 +6,7 @@ function loadDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "../js/fetch/navbar.html", false);
+  xhttp.open("GET", "../js/rendered/navbar.html", false);
   xhttp.send();
 }
 

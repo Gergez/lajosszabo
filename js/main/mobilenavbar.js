@@ -1,6 +1,11 @@
 
 /****************** MOBILE NAVBAR START ********************/
 
+/**
+//NEED TO MAKE STUFF IN THE MOBILE CLICKABLE
+**/
+
+
 let cancelButton = document.createElement('BUTTON');
 let burgerButton = document.createElement('BUTTON');
 
@@ -35,10 +40,7 @@ function mediaFunction(x) {
     burgerButton.style.display = 'block';
 
     // Kérdés, hogy ezzel mi lesz még. Amikor bemegyek a menübe, eltüntetem az összeset, és ha kimegyek, akkor vissza
-    // var allElements = document.getElementsByTagName('*');
-    // for(let i=0; i<allElements.length; i++){
-    //   allElements[i].classList.add('display_none');
-    // }
+
   }
   else {
     document.getElementsByClassName('topnav')[0].style.display = 'flex';

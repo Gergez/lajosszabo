@@ -25,7 +25,7 @@ section h1{
   margin-bottom: 30px;
 }
 
-section p:last-of-type{
+section p:last-of-type:not(.idezet){
   margin-bottom: 30px;
 }
 
@@ -35,13 +35,13 @@ blockquote {
     color: rgba(0, 0, 0, 0.8);
 }
 
-blockquote::before{
+/* blockquote::before{
   content:'„';
 }
 
 blockquote::after{
   content:'”';
-}
+} */
 
 .page_container{
   width: 80%;
@@ -146,8 +146,7 @@ blockquote::after{
   max-width: 270px;
   padding: 8px 8px;
   top: 0;
-  right: 5px;
-  text-indent: 0;
+  right: 0;
 }
 
 .idezet::before, .idezet::after{

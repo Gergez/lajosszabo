@@ -1,17 +1,19 @@
 Fő feladatok:
-1a) Megírni a language handlert Objektum orientáltan, úgy, hogy lehessen különálló fájlokat használni, és automatikusan megcsinálja a navbart és a footert.
+1a) KÉSZ Megírni a language handlert Objektum orientáltan, úgy, hogy lehessen különálló fájlokat használni, és automatikusan megcsinálja a navbart és a footert.
 1b) A language handler-höz csinálni egy linkeket kezelő részt, ahol innerHTML-t változtatunk textContent helyett.
 2) Megírni a page handlert Objektum orientáltan, úgy hogy képes legyen a linkeket kezelni.
 3) Minden függvényhez megfelelő, szabatos kommentet írni.
+4) Mobil navigációt megcsinálni. Valszeg kelleni fog JS, és valamit kell akkor kezdeni a CSS dropdown hover pseudojával, úgyhogy lehet, hogy újra kell strukturálni az egészet. JS add class (when width> 1200px) és remove (when width < 1200px) megoldhatja a gondot.
 
 Kisebb feladatok:
-1. tábor bélának egy kis árnyék
+1. KÉSZ tábor bélának egy kis árnyék
 2. Reszponzívitás
 3. Lefele görgetéskor a nyilak elrejtése, felfelé görgetéskor a láthatóvá tétele.
+4. Gedő Ilka és Jakovitsz József József, és stb. linkek '45 utánhoz.
 
 
 Kérdések Laciékhoz:
 
 1. Linkek színe
-2. Navbarban maradhat a 'Könyvtár' a keresés helyett?
+2. Navbarban maradhat a 'Könyvtár' a keresés helyett? IGEN, KELLENEK OLDALAK!
 3. Mi legyen az idézeteknél az automatikus idézőjelekkel: legyenek vagy sem?

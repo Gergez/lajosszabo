@@ -223,12 +223,29 @@ previousPageButton.addEventListener('click', goToPreviousPage);
 
 */
 
+/*MAKE ARROWS DISAPPEAR ON SCROLL DOWN AND APPEAR ON SCROLL UP*/
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementsByClassName("arrowButton")[0].style.opacity = "1";
+    document.getElementsByClassName("arrowButton")[0].style.pointerEvents = "auto";
+    document.getElementsByClassName("arrowButton")[1].style.opacity = "1";
+    document.getElementsByClassName("arrowButton")[1].style.pointerEvents = "auto";
+  } else {
+    document.getElementsByClassName("arrowButton")[0].style.opacity = "0";
+    document.getElementsByClassName("arrowButton")[0].style.pointerEvents = "none";
+    document.getElementsByClassName("arrowButton")[1].style.opacity = "0";
+    document.getElementsByClassName("arrowButton")[1].style.pointerEvents = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 /************** PAGE TURNER END **************/
 
 export {
   setUpNextPageButton,
   setUpPreviousPageButton,
-  // pageTransition,
   goToPreviousPage,
   goToNextPage,
   currentPageHandler

@@ -16,13 +16,13 @@ preload(
 );
 
 //NAVBAR.HTML CONVERTED TO NAVBAR.JS WITH ONLINE CONVERTER http://www.andrewdavidson.com/convert-html-to-javascript/
-
+document.write( '  <div class=\"mobile_menu\">\n' );
+document.write( '  </div>\n' );
 document.write( '<header class=\"topnav\">\n' );
 document.write( '\n' );
-document.write( '  <div class=\"mobile_menu\">\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );
-document.write( '      <button><a class=\"iskola_fooldal\" href=\"/index.html\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
+document.write( '      <button><a class=\"iskola_fooldal\" href=\"/lajosszabo/index.html\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->\n' );
@@ -33,7 +33,6 @@ document.write( '        <a href=\"#harmincas-evek\" id=\"navbar_harmincas-evek\
 document.write( '        <a href=\"#negyvenot-utan\" id=\"navbar_negyvenot-utan\">1945 után</a>\n' );
 document.write( '      </div>\n' );
 document.write( '    </div>\n' );
-document.write( '  </div>\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
 document.write( '    <button><a href=\"szabolajos.html\" id=\"navbar_szabo-lajos\">Szabó Lajos</a></button>\n' );
@@ -51,7 +50,7 @@ document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
-document.write( '    <button><a href=\"/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
+document.write( '    <button><a href=\"/lajosszabo/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
 document.write( '      <a href=\"./horvathagnes/horvathagnes.html\" id=\"navbar_tabor-bela-eletrajz\">Életrajz</a>\n' );

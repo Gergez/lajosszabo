@@ -1,19 +1,28 @@
 Fő feladatok:
 1a) KÉSZ Megírni a language handlert Objektum orientáltan, úgy, hogy lehessen különálló fájlokat használni, és automatikusan megcsinálja a navbart és a footert.
 1b) A language handler-höz csinálni egy linkeket kezelő részt, ahol innerHTML-t változtatunk textContent helyett.
-2) Megírni a page handlert Objektum orientáltan, úgy hogy képes legyen a linkeket kezelni.
+2) Megírni a page handlert Objektum orientáltan, úgy hogy képes legyen a linkeket kezelni. Pl: Ha valaki a vádiratra megy, akkor ugorjon egyből oda.
 3) Minden függvényhez megfelelő, szabatos kommentet írni.
 4) Mobil navigációt megcsinálni. Valszeg kelleni fog JS, és valamit kell akkor kezdeni a CSS dropdown hover pseudojával, úgyhogy lehet, hogy újra kell strukturálni az egészet. JS add class (when width> 1200px) és remove (when width < 1200px) megoldhatja a gondot.
+5) Tábor Bélához lenyíló fülek. A fülekhez megfelelő tartalom.
+6) Megoldani, hogy a loading screen minden oldal előtt ott legyen.
 
 Kisebb feladatok:
 1. KÉSZ tábor bélának egy kis árnyék
 2. Reszponzívitás
-3. Lefele görgetéskor a nyilak elrejtése, felfelé görgetéskor a láthatóvá tétele.
-4. Gedő Ilka és Jakovitsz József József, és stb. linkek '45 utánhoz.
+3. KÉSZ Lefele görgetéskor a nyilak elrejtése, felfelé görgetéskor a láthatóvá tétele.
+4. Gedő Ilka és Jakovitsz József, és stb. linkek '45 utánhoz.
 
 
 Kérdések Laciékhoz:
 
-1. Linkek színe
+1. TETSZIK, EZ ÍGY JÓ. Linkek színe
 2. Navbarban maradhat a 'Könyvtár' a keresés helyett? IGEN, KELLENEK OLDALAK!
 3. Mi legyen az idézeteknél az automatikus idézőjelekkel: legyenek vagy sem?
+4. Mi legyen az automatikus bekezdésekkel?
+
+
+Nikosszal:
+1. Szöveg tördelése: Bekezdések (jelenleg 30px); oldalak szélessége 70% (80%-ról); Szövegek tördelése kicsit (/br) EZT NEM KEZELI A FORDÍTÓ SCRIPT!.
+2. Mobilos nézetnél sáv a menünek és logo.
+3. Szabvány oldal

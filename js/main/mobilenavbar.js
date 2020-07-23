@@ -10,11 +10,11 @@ let cancelButton = document.createElement('BUTTON');
 let burgerButton = document.createElement('BUTTON');
 
 function createMobileMenu() {
-  document.body.appendChild(cancelButton);
+  document.querySelector('.mobile_menu').appendChild(cancelButton);
   cancelButton.classList.add('cancel_button');
   cancelButton.innerHTML = '<img src="kepek/menu/cancel.png" alt="menu-cancel"/>';
 
-  document.body.appendChild(burgerButton);
+  document.querySelector('.mobile_menu').appendChild(burgerButton);
   burgerButton.innerHTML = '<img src="kepek/menu/menu.png" alt="menu_button"/>';
   burgerButton.classList.add('burger_menu');
 }
@@ -40,9 +40,10 @@ function mediaFunction(x) {
     burgerButton.style.display = 'block';
 
     // Kérdés, hogy ezzel mi lesz még. Amikor bemegyek a menübe, eltüntetem az összeset, és ha kimegyek, akkor vissza
-
   }
   else {
+    burgerButton.style.display = 'none';
+    cancelButton.style.display = 'none';
     document.getElementsByClassName('topnav')[0].style.display = 'flex';
   }
 }

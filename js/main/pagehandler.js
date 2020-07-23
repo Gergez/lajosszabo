@@ -2,6 +2,64 @@
 /************** PAGE TURNER START **************/
 
 
+/**
+// SET THE CURRENTPAGE VARIABLE ACCORDING TO HASH. CALL NEXT PAGE OR PREV PAGE
+// AS MANY TIMES AS NEEDED ACCORDING TO CURRENTPAGE AND DESIRED PAGE DIFFERENCE.
+//
+
+function setCurrentPage() {
+  let currentLocation = location.hash;
+
+  if(currentLocation == ("")){
+    currentPage = 0;
+  }else if(currentLocation.includes("#vadirat")){
+    currentPage = 1;
+  }else if(currentLocation.includes("#alapallas")){
+    currentPage = 2;
+  }else if(currentLocation.includes("#tortenet")){
+    currentPage = 3;
+  }else if(currentLocation.includes("#harmincas-evek")){
+    currentPage = 4;
+  }else if(currentLocation.includes("##negyvenot-utan")){
+    currentPage = 5;
+  }
+}
+
+
+ window.onload = () => {
+
+  let current_location = location.hash;
+
+  switch (current_location) {
+    case "#vadirat":
+
+      break;
+    default:
+
+  }
+}
+
+ function clickNavigation() {
+   let navigation = document.querySelector('.topnav .dropdown .dropdown_content');
+   let dropdown_content = navigation.children;
+   dropdown_content.forEach((child) => {
+     child.addEventListener('click', () => {
+
+     })
+   });
+
+ }
+
+//
+//
+//
+//
+//
+**/
+
+
+
+
 let nextPageButton = document.createElement("BUTTON");
 let nextPageImage = document.createElement("IMG");
 
@@ -13,6 +71,8 @@ let page4 = document.querySelector('.fourth_page');
 let page5 = document.querySelector('.fifth_page');
 let page6 = document.querySelector('.sixth_page');
 
+let pageArray = [page1, page2, page3, page4, page5, page6];
+
 page1.style.zIndex = 100;
 page2.style.zIndex = 99;
 page3.style.zIndex = 98;
@@ -20,28 +80,7 @@ page4.style.zIndex = 97;
 page5.style.zIndex = 96;
 page6.style.zIndex = 95;
 
-
-/* INITIALIZE ALL THE SECTIONS */
-// @RETURN VALUE: ALLSECTIONS ARRAY
-
-function sectionInitializer(){
-  const iskolaFooldal = document.getElementById('dialogikus-iskola');
-  const vadirat = document.getElementById('vadirat');
-  const alapallas = document.getElementById('alapallas');
-  const tortenet = document.getElementById('tortenet');
-  const harmincasEvek = document.getElementById('harmincas-evek');
-  const negyvenotUtan = document.getElementById('negyvenot-utan');
-
-  const allSections = [];
-  allSections.push(iskolaFooldal, vadirat, alapallas, tortenet, harmincasEvek, negyvenotUtan);
-
-  return allSections;
-}
-
-
-
-
-
+let currentPageZIndex;
 
 
 function setUpNextPageButton() {
@@ -69,7 +108,7 @@ function setUpPreviousPageButton() {
 
 // iskolaFooldal.addEventListener('click', () => {
 //   currentPage = 0;
-//   let pageArray = [page1, page2, page3, page4, page5, page6];
+//
 //   let currentPageZIndex = pageArray[currentPage].style.zIndex;
 //   });
 
@@ -137,8 +176,7 @@ function setUpPreviousPageButton() {
 
 function goToNextPage() {
 
-  let pageArray = [page1, page2, page3, page4, page5, page6];
-  let currentPageZIndex = pageArray[currentPage].style.zIndex;
+  currentPageZIndex = pageArray[currentPage].style.zIndex;
 
   if (currentPage != 5) {
     pageArray[currentPage].style.zIndex = pageArray[currentPage + 1].style.zIndex;
@@ -164,17 +202,13 @@ function goToNextPage() {
 
 function goToPreviousPage() {
 
-  //Declare the pages array.
-  let pageArray = [page1, page2, page3, page4, page5, page6];
   // Save the current index in a temporary variable.
-  let currentPageZIndex = pageArray[currentPage].style.zIndex;
+  currentPageZIndex = pageArray[currentPage].style.zIndex;
 
   if (currentPage != 0) {
     //Swap the indexes of the current and the previous pages.
     pageArray[currentPage].style.zIndex = pageArray[currentPage - 1].style.zIndex;
     pageArray[currentPage - 1].style.zIndex = currentPageZIndex;
-
-
     //Always set the button's opacity to 1. Except if its the last page.
     previousPageButton.style.opacity = 1.0;
   }
@@ -196,8 +230,6 @@ function goToPreviousPage() {
 }
 
 function currentPageHandler() {
-
-  let pageArray = [page1, page2, page3, page4, page5, page6];
   for (let i = 0; i < pageArray.length; i++) {
     if (currentPage == i) {
       pageArray[i].style.display = 'block';
@@ -228,11 +260,15 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("arrowButton")[0].style.opacity = "1";
-    document.getElementsByClassName("arrowButton")[0].style.pointerEvents = "auto";
-    document.getElementsByClassName("arrowButton")[1].style.opacity = "1";
-    document.getElementsByClassName("arrowButton")[1].style.pointerEvents = "auto";
-  } else {
+    if(currentPage != 5){
+      document.getElementsByClassName("arrowButton")[0].style.opacity = "1";
+      document.getElementsByClassName("arrowButton")[0].style.pointerEvents = "auto";
+      }
+    if(currentPage != 0){
+      document.getElementsByClassName("arrowButton")[1].style.opacity = "1";
+      document.getElementsByClassName("arrowButton")[1].style.pointerEvents = "auto";
+    }
+  } else{
     document.getElementsByClassName("arrowButton")[0].style.opacity = "0";
     document.getElementsByClassName("arrowButton")[0].style.pointerEvents = "none";
     document.getElementsByClassName("arrowButton")[1].style.opacity = "0";

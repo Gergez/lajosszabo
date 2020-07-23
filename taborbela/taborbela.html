@@ -11,8 +11,11 @@
 
   <link rel="stylesheet" href="../css/main/general.css">
   <link rel="stylesheet" href="../css/main/navbar.css">
+  <link rel="stylesheet" href="../css/main/jsrendered.css">
   <link rel="stylesheet" href="../css/main/main.css">
-  <link rel="stylesheet" href="../css/taborbela/taborbela.css">
+  <link rel="stylesheet" href="../css/main/responsive.css">
+  <link rel="stylesheet" href="../css/main/animations.css">
+    <link rel="stylesheet" href="../css/taborbela/taborbela.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <link rel="icon" href="./favicon.png" type="image/x-icon">
@@ -21,6 +24,19 @@
 
 <body>
 
+  <div id="loading_container">
+    <div id="loading" class="loading">
+      <h1>Magyar dialogikus iskola</h1>
+      <div class="loading_animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+      </div>
+    </div>
+
+  </div>
+
+<div class="main_container">
   <div id="navbar">
     <script type="text/javascript" src="js/rendered/navbar.js"></script>
   </div>
@@ -155,8 +171,8 @@
     <div class="footer_3">Egyéb</div>
 
   </footer>
-
-  <script type="module" src="../js/taborbela/main.js"> </script>
+</div>
+  <script type="module" src="../js/taborbela/main.js" defer> </script>
 
 </body>
 

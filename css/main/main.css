@@ -31,20 +31,26 @@ section p:last-of-type:not(.idezet){
 
 blockquote {
     font-size: 1.9rem;
+    font-style: italic;
     color: black;
     color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(218 183 95 / 0.75);
+    padding: 20px;
+    border-radius: 4px;
 }
 
-/* blockquote::before{
+blockquote::before{
   content:'„';
+  font-size: 3rem;
 }
 
 blockquote::after{
   content:'”';
-} */
+  font-size: 3rem;
+}
 
 .page_container{
-  width: 80%;
+  width: 70%;
   /* height: 80%; */
   margin: 0 auto;
 }

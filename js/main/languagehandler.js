@@ -134,7 +134,7 @@ window.onload = () => {
 };
 
 /**
-// This does it all. Everything happens based on hashchange
+// This one does it all. Everything happens based on hashchange
 **/
 
 window.onhashchange = languageContentUpdater;

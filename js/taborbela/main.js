@@ -1,7 +1,10 @@
-import { loadDoc } from '../main/fetch.js';
+// import { loadDoc } from '../main/fetch.js';
+//
+// const fetchNavbar = loadDoc();
 
-const fetchNavbar = loadDoc();
-
+import * as mobilenavbar from './mobilenavbar.js';
+import * as languagehandler from './languagehandler.js';
+import * as loading from './loading.js';
 //
 //   var sections = document.querySelectorAll('section');
 //   var titles = sections.forEach((item) => item.querySelectorAll('h1'));
@@ -40,3 +43,10 @@ const fetchNavbar = loadDoc();
 // }
 //
 // setup();
+
+loading.onReady(function() {
+  loading.show('main_container', true);
+  loading.show('loading_container',false);
+  mobilenavbar.createMobileMenu();
+  mobilenavbar.responsiveNavigation();
+});

@@ -2,14 +2,31 @@
 //
 // const fetchNavbar = loadDoc();
 
-import * as mobilenavbar from './mobilenavbar.js';
-import * as languagehandler from './languagehandler.js';
-import * as loading from './loading.js';
-//
-//   var sections = document.querySelectorAll('section');
-//   var titles = sections.forEach((item) => item.querySelectorAll('h1'));
-//   var paragraphs = [];
-//
+import * as mobilenavbar from '../main/mobilenavbar.js';
+import * as languagehandler from '../main/languagehandler.js';
+import * as loading from '../main/loading.js';
+
+/*DECLARE SECTION SELECTORS, AND ADD EVENT LISTENER TO THEM TO BE ABLE TO MAKE THE CONTENT DISAPPEAR*/
+  const sections = document.querySelectorAll('section');
+  const titles = document.querySelectorAll('section h1');
+  let containers = [];
+
+  for(let i = 0; i < titles.length; i++){
+    containers.push(titles[i].nextElementSibling);
+  }
+
+  for(let i = 0; i < titles.length; i++){
+    titles[i].addEventListener('click', () => {
+      containers[i].classList.toggle('disappear');
+    })
+  }
+
+
+  // var containers = titles.forEach((title) => title.children());
+  // containers.forEach((container) => container.addEventListener('click', () => {
+  // container.style.backgroundColor = 'red';
+// }));
+
 //   for(var i = 0; i < titles.length; i++){
 // // Kell ide, hogy külön kezelje egyes titls-ök paragrafusait ( könyveit)!!
 //     var paragraph = document.querySelectorAll('.konyvek_wrapper .konyvek_inner_wrapper p');
@@ -32,8 +49,8 @@ import * as loading from './loading.js';
 //     titles[i].appendChild(button);
 //     console.log('in for end', i);
 //   }
-//
-//
+
+
 // function konyvekMenu(){}
 //
 //
@@ -43,6 +60,11 @@ import * as loading from './loading.js';
 // }
 //
 // setup();
+
+
+
+
+/*FOR LOADER*/
 
 loading.onReady(function() {
   loading.show('main_container', true);

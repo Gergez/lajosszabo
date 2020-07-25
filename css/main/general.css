@@ -83,7 +83,7 @@ p {
   font-size: 2rem;
   margin: 0;
   line-height: 2.4rem;
-  text-indent: 30px;
+  /* text-indent: 30px; */
 }
 
 p+p {
@@ -109,10 +109,44 @@ img::selection {
   background-color: rgba(218, 183, 95, 0.8);
 }
 
+blockquote {
+    font-size: 1.9rem;
+    font-style: italic;
+    color: rgb(0 0 0 / 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(218 183 95 / 0.65);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+blockquote::before{
+  content:'„';
+  font-size: 3rem;
+}
+
+blockquote::after{
+  content:'”';
+  font-size: 3rem;
+}
+
 input[type=text] {
   transition: 1s;
 }
 
 input[type=text]:focus {
   background-color: #f1f1f1;
+}
+
+.disappear{
+  display: none !important;
+}
+
+.fadein{
+  animation: fadeInFromNone 500ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.fadein_nostay{
+  animation: fadeInFromNone 500ms ease-in-out;
+  animation-fill-mode: none;
 }

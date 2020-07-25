@@ -69,9 +69,9 @@
 .main_container{
   display: none;
   position: relative;
-  -webkit-animation-name: animatebottom;
+  -webkit-animation-name: fadeInFromNone;
   -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
+  animation-name: fadeInFromNone;
   animation-duration: 1s;
 }
 

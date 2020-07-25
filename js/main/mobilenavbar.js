@@ -12,10 +12,10 @@ let burgerButton = document.createElement('BUTTON');
 function createMobileMenu() {
   document.querySelector('.mobile_menu').appendChild(cancelButton);
   cancelButton.classList.add('cancel_button');
-  cancelButton.innerHTML = '<img src="kepek/menu/cancel.png" alt="menu-cancel"/>';
+  cancelButton.innerHTML = '<img src="../kepek/menu/cancel.png" alt="menu-cancel"/>';
 
   document.querySelector('.mobile_menu').appendChild(burgerButton);
-  burgerButton.innerHTML = '<img src="kepek/menu/menu.png" alt="menu_button"/>';
+  burgerButton.innerHTML = '<img src="../kepek/menu/menu.png" alt="menu_button"/>';
   burgerButton.classList.add('burger_menu');
 }
 
@@ -51,6 +51,18 @@ function mediaFunction(x) {
 var x = window.matchMedia("(max-width: 1200px)")
 mediaFunction(x) // Call listener function at run time
 x.addListener(mediaFunction) // Attach listener function on state changes
+
+
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//       document.getElementsByClassName("mobile_menu")[0].style.display = "flex";
+//   } else{
+//     document.getElementsByClassName("mobile_menu")[0].style.display = "none";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 /****************** MOBILE NAVBAR END ********************/
 

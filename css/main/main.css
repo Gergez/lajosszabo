@@ -29,26 +29,6 @@ section p:last-of-type:not(.idezet){
   margin-bottom: 30px;
 }
 
-blockquote {
-    font-size: 1.9rem;
-    font-style: italic;
-    color: black;
-    color: rgba(0, 0, 0, 0.8);
-    background-color: rgb(218 183 95 / 0.75);
-    padding: 20px;
-    border-radius: 4px;
-}
-
-blockquote::before{
-  content:'„';
-  font-size: 3rem;
-}
-
-blockquote::after{
-  content:'”';
-  font-size: 3rem;
-}
-
 .page_container{
   width: 70%;
   /* height: 80%; */
@@ -161,13 +141,13 @@ blockquote::after{
 
 .portre_wrapper:hover p{
   display: block;
-  animation: fadeInFromNone 1000ms ease-in-out;
+  animation: fadeInFromNone 800ms ease-in-out;
   animation-fill-mode: forwards;
 }
 
 .portre_wrapper img{
   opacity:1;
-  transition: opacity 1000ms ease-in-out;
+  transition: opacity 800ms ease-in-out;
   height: 100%;
   width: 100%;
   min-height: 350px;

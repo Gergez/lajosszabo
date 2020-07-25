@@ -86,7 +86,7 @@ let currentPageZIndex;
 function setUpNextPageButton() {
   document.body.appendChild(nextPageButton);
   nextPageImage.src = "kepek/nyilak/arrow-next.png";
-  nextPageButton.className = "arrowButton";
+  nextPageButton.className = "arrowButton fadein_nostay";
   nextPageButton.style.right = '3%';
   nextPageButton.style.backgroundColor = 'transparent';
   nextPageButton.appendChild(nextPageImage);
@@ -169,6 +169,33 @@ function setUpPreviousPageButton() {
 //
 // }
 
+// for(let i = 0; i < titles.length; i++){
+//   titles[i].addEventListener('click', () => {
+//     containers[i].classList.toggle('disappear');
+//   })
+// }
+
+// function pageTransition (button) {
+//    get currentPage
+//    if its the nextPageButton then
+//    give pageArray[currentPage+1] class with animate forward
+//    give pageArray[currentPage] class with animate backward
+//    else if its the previousPageButton then
+//    give pageArray[currentPage] class with animate forward
+//    give pageArray[currentPage-1] class with animate backward
+// }
+
+function pageTransition (button) {
+  if(button == "nextPage"){
+    pageArray[currentPage + 1].classList.toggle('fadein');
+    pageArray[currentPage].classList.toggle('fadein');
+  }
+  else if(button == "prevPage"){
+    pageArray[currentPage].classList.toggle('fadein');
+    pageArray[currentPage - 1].classList.toggle('fadein');
+  }
+}
+
 
 /*************************  ANIMATE BETWEEN PAGES END **********************/
 
@@ -195,8 +222,10 @@ function goToNextPage() {
     previousPageButton.style.pointerEvents = 'auto';
   }
   // pageTransition();
+  pageTransition("nextPage");
   currentPage += 1;
   currentPageHandler();
+
 
 }
 
@@ -225,8 +254,10 @@ function goToPreviousPage() {
     nextPageButton.style.pointerEvents = 'auto';
   }
   // pageTransition();
+  pageTransition("prevPage");
   currentPage -= 1;
   currentPageHandler();
+
 }
 
 function currentPageHandler() {

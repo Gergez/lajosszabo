@@ -98,8 +98,8 @@ var navbar_language = {
     "navbar_galeria": "Galéria",
     "navbar_esemenyek": "Események",
 
-    "lang1": "Magyar",
-    "lang2": "English",
+    "lang1": "English",
+    "lang2": "Magyar",
     "lang3": "Deutsch",
     "lang4": "Français"
   },
@@ -150,9 +150,9 @@ var navbar_language = {
     "navbar_galeria": "Galéria",
     "navbar_esemenyek": "Események",
 
-    "lang1": "Magyar",
+    "lang1": "Deutsch",
     "lang2": "English",
-    "lang3": "Deutsch",
+    "lang3": "Magyar",
     "lang4": "Français"
   },
   "fr": {
@@ -202,9 +202,9 @@ var navbar_language = {
     "navbar_galeria": "Galéria",
     "navbar_esemenyek": "Események",
 
-    "lang1": "Magyar",
+    "lang1": "Français",
     "lang2": "English",
     "lang3": "Deutsch",
-    "lang4": "Français"
+    "lang4": "Magyar"
   }
 }

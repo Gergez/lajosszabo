@@ -30,7 +30,8 @@
 
 /* ADD A PADDING TO ITEMS ON HOVER */
 .topnav:hover .dropdown_content a {
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   line-height: 1.7rem;
 }
 
@@ -143,10 +144,10 @@
 
 /************       DROPDOWN MENU   END       ********************/
 /* STYLE THE SEARCH BAR */
-.konyvtar{
-  margin-left: 20px;
+.konyvtar_language_selector_container{
+  display: flex;
+  margin-left: 40px;
 }
-
 /* .search_bar {
   font-family: 'Crimson Text', sans-serif;
   font-size: 1.4rem;

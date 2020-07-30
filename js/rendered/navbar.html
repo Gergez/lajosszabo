@@ -13,7 +13,7 @@ preload(
     "http://domain.tld/gallery/image-003.jpg"
 ) -->
   <div class="mobile_menu"></div>
-<header class="topnav">
+<nav class="topnav">
 
 
     <div class="dropdown">
@@ -78,7 +78,7 @@ preload(
 
 
   <div class="dropdown">
-    <button class="tovabbi_szerzok"><a id="navbar_tovabbi-szerzok">További szerzők</a></button>
+    <button class="tovabbi_szerzok"><a id="navbar_tovabbi_szerzok">További szerzők</a></button>
 
     <div class="dropdown_content">
       <a href="./horvathagnes/horvathagnes.html" id="navbar_horvath-agnes">Horváth Ágnes</a>
@@ -87,28 +87,31 @@ preload(
     </div>
   </div>
 
-  <div class="dropdown">
-    <button class="konyvtar"><a id="navbar_konyvtar">Könyvtár</a></button>
 
-    <div class="dropdown_content">
-      <a href="" id="navbar_irasok">Írások</a>
-      <a href="" id="navbar_galeria">Galéria</a>
-      <a href="" id="navbar_esemenyek">Események</a>
+<div class="konyvtar_language_selector_container">
+    <div class="dropdown">
+      <button class="konyvtar"><a id="navbar_konyvtar">Könyvtár</a></button>
+
+      <div class="dropdown_content">
+        <a href="" id="navbar_irasok">Írások</a>
+        <a href="" id="navbar_galeria">Galéria</a>
+        <a href="" id="navbar_esemenyek">Események</a>
+      </div>
+    </div>
+
+    <!-- <form class="search_bar_container">
+      <input type="text" class="search_bar" placeholder=" Keresés...">
+    </form> -->
+
+    <div class="dropdown">
+      <button class="language_selector"><a id="lang1">Magyar</a></button>
+      <img class="language_flag" src="../kepek/menu/magyar_zaszlo.svg" alt="Magyar nyelv">
+
+      <div class="dropdown_content">
+        <button class="language_selection" id="lang2">English</button>
+        <button class="language_selection" id="lang3">Deutsch</button>
+        <button class="language_selection" id="lang4">Français</button>
+      </div>
     </div>
   </div>
-
-  <!-- <form class="search_bar_container">
-    <input type="text" class="search_bar" placeholder=" Keresés...">
-  </form> -->
-
-  <div class="dropdown">
-    <button class="language_selector"><a id="lang1">Magyar</a></button>
-    <img class="language_flag" src="../kepek/menu/magyar_zaszlo.svg" alt="Magyar nyelv">
-
-    <div class="dropdown_content">
-      <button class="language_selection" id="lang2">English</button>
-      <button class="language_selection" id="lang3">Deutsch</button>
-      <button class="language_selection" id="lang4">Français</button>
-    </div>
-  </div>
-</header>
+</nav>

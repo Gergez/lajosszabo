@@ -74,25 +74,25 @@ function imgChanger(lang) {
   switch (lang.textContent) {
     case "Magyar":
       location.href = ("#hu");
-      img.src = "kepek/menu/magyar_zaszlo.svg";
+      img.src = "../kepek/menu/magyar_zaszlo.svg";
       img.alt = "Magyar nyelv";
       break;
 
     case "English":
       location.href = ("#en");
-      img.src = "kepek/menu/angol_zaszlo.svg";
+      img.src = "../kepek/menu/angol_zaszlo.svg";
       img.alt = "English language";
       break;
 
     case "Deutsch":
       location.href = ("#de");
-      img.src = "kepek/menu/nemet_zaszlo.svg";
+      img.src = "../kepek/menu/nemet_zaszlo.svg";
       img.alt = "Deutsche Sprache";
       break;
 
     case "Français":
       location.href = ("#fr");
-      img.src = "kepek/menu/francia_zaszlo.svg";
+      img.src = "../kepek/menu/francia_zaszlo.svg";
       img.alt = "Langue Française";
       break;
   }

@@ -115,76 +115,6 @@ function setUpPreviousPageButton() {
 
 /************************* ANIMATE BETWEEN PAGES START **************************/
 
-
-// var allPages = document.querySelectorAll('section');
-// // function pageTransition(currentPage){
-// //
-// //   function animate(elem, increment, endOpacity) {
-// //       if(elem.style.opacity === endOpacity) {
-// //         clearInterval(id);
-// //       }
-// //       else{
-// //         elem.style.opacity += increment;
-// //       }
-// //     }
-// //
-// //     var id = setInterval(animate, 100);
-// //     animate(allPages[currentPage], 0.01, 1);
-// //     animate(allPages[currentPage-1], -0.01, 0);
-// //
-// //   }
-//
-//
-//
-// // allPages[1].style.opacity = 0;
-// function pageTransition() {
-//
-//   // for(let i = 0; i < allPages.length; i++){
-//   //   if(i !== currentPage){
-//   //     allPages[i].style.opacity = 0;
-//   //   }
-//   // }
-//
-//   var currentOpacity = 1;
-//   var followingOpacity = 0;
-//   function animate(){
-//
-//         if(allPages[currentPage-1].style.opacity > -0.01){
-//           currentOpacity -= 0.01;
-//           allPages[currentPage-1].style.opacity = currentOpacity;
-//           // setTimeout(() => {
-//           //   followingOpacity += 0.01;
-//           //   allPages[currentPage].style.opacity = followingOpacity;
-//           //   console.log("fasz");
-//           // }, 1000)
-//
-//         }
-//         else{
-//           clearInterval(id);
-//         }
-//
-//   }
-//
-//   var id = setInterval(animate, 10);
-//
-// }
-
-// for(let i = 0; i < titles.length; i++){
-//   titles[i].addEventListener('click', () => {
-//     containers[i].classList.toggle('disappear');
-//   })
-// }
-
-// function pageTransition (button) {
-//    get currentPage
-//    if its the nextPageButton then
-//    give pageArray[currentPage+1] class with animate forward
-//    give pageArray[currentPage] class with animate backward
-//    else if its the previousPageButton then
-//    give pageArray[currentPage] class with animate forward
-//    give pageArray[currentPage-1] class with animate backward
-// }
-
 function pageTransition (button) {
   if(button == "nextPage"){
     pageArray[currentPage + 1].classList.toggle('fadein');
@@ -195,7 +125,6 @@ function pageTransition (button) {
     pageArray[currentPage - 1].classList.toggle('fadein');
   }
 }
-
 
 /*************************  ANIMATE BETWEEN PAGES END **********************/
 
@@ -307,6 +236,19 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+function pager(event) {
+  if(event.keyCode == "ArrowRight"){
+    goToNextPage();
+    console.log('wow');
+  }else if(event.keyCode == "ArrowLeft"){
+    goToPreviousPage();
+    console.log('wow');
+  }
+}
+
+document.onkeydown = pager;
+document.onkeydown = pager;
 
 /************** PAGE TURNER END **************/
 

@@ -11,7 +11,7 @@ section
   width: 100%;
   background-color: #BB994C;
   margin: 20px 0;
-  padding: 10px 10px;
+  padding: 5px 10px;
   min-height: unset;
   height: auto;
 }
@@ -26,6 +26,8 @@ p + p {
 
 section h1{
   text-align: left;
+  margin-bottom: unset;
+  padding: 0 0 20px;
 }
 
 div .konyvek{

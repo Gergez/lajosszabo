@@ -4,22 +4,29 @@ Fő feladatok:
 2) Megírni a page handlert Objektum orientáltan, úgy hogy képes legyen a linkeket kezelni. Pl: Ha valaki a vádiratra megy, akkor ugorjon egyből oda.
 3) Minden függvényhez megfelelő, szabatos kommentet írni.
 4) Mobil navigációt megcsinálni. Valszeg kelleni fog JS, és valamit kell akkor kezdeni a CSS dropdown hover pseudojával, úgyhogy lehet, hogy újra kell strukturálni az egészet. JS add class (when width> 1200px) és remove (when width < 1200px) megoldhatja a gondot.
-5) Tábor Bélához lenyíló fülek. A fülekhez megfelelő tartalom.
+5) Tábor Bélához lenyíló fülek. A fülekhez megfelelő tartalom. Animációk és padding margin helyett.
 6) Megoldani, hogy a loading screen minden oldal előtt ott legyen.
+7) Redirect based on user GEO location.
+
 
 Kisebb feladatok:
 1. KÉSZ tábor bélának egy kis árnyék
-2. Reszponzívitás
-3. KÉSZ Lefele görgetéskor a nyilak elrejtése, felfelé görgetéskor a láthatóvá tétele.
-4. Gedő Ilka és Jakovitsz József, és stb. linkek '45 utánhoz.
+2. KÉSZ Lefele görgetéskor a nyilak elrejtése, felfelé görgetéskor a láthatóvá tétele.
+3. Ugyanez a navbarnal kicsi képernyőkön. Ugyanaz a függvény (window.onscroll) kezeli sajnos.
+3. Gedő Ilka és Jakovitsz József, és stb. linkek '45 utánhoz.
+4. Global keyDown listener for scrolling through pages (<-, ->).
+5. Swipe listener for mobile devices for page scrolling.
+6. Valszeg az idézeteknek le kell menniük.
+7. Kicsit kijjebb vinni a nyílakat kicsi képernyőn.
 
 
 Kérdések Laciékhoz:
 
 1. TETSZIK, EZ ÍGY JÓ. Linkek színe
 2. Navbarban maradhat a 'Könyvtár' a keresés helyett? IGEN, KELLENEK OLDALAK!
-3. Mi legyen az idézeteknél az automatikus idézőjelekkel: legyenek vagy sem?
-4. Mi legyen az automatikus bekezdésekkel?
+3. Mi legyen az idézeteknél az automatikus idézőjelekkel: legyenek vagy sem? Most vannak.
+4. Mi legyen az automatikus bekezdésekkel? Most nincsenek.
+5. Könyvtár -> Írások és Galéria... Mi lenne, ha  
 
 
 Nikosszal:

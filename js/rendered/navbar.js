@@ -9,10 +9,10 @@ function preload() {
 }
 
 preload(
-  "/kepek/menu/magyar_zaszlo.svg",
-  "/kepek/menu/angol_zaszlo.svg",
-  "/kepek/menu/nemet_zaszlo.svg",
-  "/kepek/menu/francia_zaszlo.svg"
+  "kepek/menu/magyar_zaszlo.svg",
+  "kepek/menu/angol_zaszlo.svg",
+  "kepek/menu/nemet_zaszlo.svg",
+  "kepek/menu/francia_zaszlo.svg"
 );
 
 //NAVBAR.HTML CONVERTED TO NAVBAR.JS WITH ONLINE CONVERTER http://www.andrewdavidson.com/convert-html-to-javascript/
@@ -22,7 +22,7 @@ document.write( '\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );
-document.write( '      <button><a class=\"iskola_fooldal\" href=\"/index.html\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
+document.write( '      <button><a class=\"iskola_fooldal\" href=\"https://gergez.github.io//lajosszabo/index.html\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->\n' );
@@ -51,7 +51,7 @@ document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
-document.write( '    <button><a href=\"/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
+document.write( '    <button><a href=\"https://gergez.github.io//lajosszabo/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
 document.write( '      <a href=\"./horvathagnes/horvathagnes.html\" id=\"navbar_tabor-bela-eletrajz\">Életrajz</a>\n' );

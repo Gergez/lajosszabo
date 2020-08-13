@@ -1,63 +1,4 @@
 
-/************** PAGE TURNER START **************/
-
-
-/**
-// SET THE CURRENTPAGE VARIABLE ACCORDING TO HASH. CALL NEXT PAGE OR PREV PAGE
-// AS MANY TIMES AS NEEDED ACCORDING TO CURRENTPAGE AND DESIRED PAGE DIFFERENCE.
-//
-
-function setCurrentPage() {
-  let currentLocation = location.hash;
-
-  if(currentLocation == ("")){
-    currentPage = 0;
-  }else if(currentLocation.includes("#vadirat")){
-    currentPage = 1;
-  }else if(currentLocation.includes("#alapallas")){
-    currentPage = 2;
-  }else if(currentLocation.includes("#tortenet")){
-    currentPage = 3;
-  }else if(currentLocation.includes("#harmincas-evek")){
-    currentPage = 4;
-  }else if(currentLocation.includes("##negyvenot-utan")){
-    currentPage = 5;
-  }
-}
-
-
- window.onload = () => {
-
-  let current_location = location.hash;
-
-  switch (current_location) {
-    case "#vadirat":
-
-      break;
-    default:
-
-  }
-}
-
- function clickNavigation() {
-   let navigation = document.querySelector('.topnav .dropdown .dropdown_content');
-   let dropdown_content = navigation.children;
-   dropdown_content.forEach((child) => {
-     child.addEventListener('click', () => {
-
-     })
-   });
-
- }
-
-//
-//
-//
-//
-//
-**/
-
-
 
 
 let nextPageButton = document.createElement("BUTTON");
@@ -72,6 +13,7 @@ let page5 = document.querySelector('.fifth_page');
 let page6 = document.querySelector('.sixth_page');
 
 let pageArray = [page1, page2, page3, page4, page5, page6];
+let pageURLs = ["#magyar_dialogikus_iskola", "#vadirat", "#alapallas", "#tortenet", "#harmincas-evek", "#negyvenot-utan"];
 
 page1.style.zIndex = 100;
 page2.style.zIndex = 99;
@@ -105,13 +47,6 @@ function setUpPreviousPageButton() {
   previousPageButton.style.opacity = 0;
   previousPageButton.style.pointerEvents = 'none';
 }
-
-// iskolaFooldal.addEventListener('click', () => {
-//   currentPage = 0;
-//
-//   let currentPageZIndex = pageArray[currentPage].style.zIndex;
-//   });
-
 
 /************************* ANIMATE BETWEEN PAGES START **************************/
 
@@ -150,12 +85,10 @@ function goToNextPage() {
     nextPageButton.style.pointerEvents = 'auto';
     previousPageButton.style.pointerEvents = 'auto';
   }
-  // pageTransition();
   pageTransition("nextPage");
   currentPage += 1;
   currentPageHandler();
-
-
+  scrollToTop();
 }
 
 function goToPreviousPage() {
@@ -182,12 +115,14 @@ function goToPreviousPage() {
     previousPageButton.style.pointerEvents = 'auto';
     nextPageButton.style.pointerEvents = 'auto';
   }
-  // pageTransition();
   pageTransition("prevPage");
   currentPage -= 1;
   currentPageHandler();
-
+  scrollToTop();
 }
+
+
+/*************PREV AND NEXT PAGE HANDLERS END************/
 
 function currentPageHandler() {
   for (let i = 0; i < pageArray.length; i++) {
@@ -197,6 +132,46 @@ function currentPageHandler() {
       pageArray[i].style.display = 'none';
     }
   }
+
+
+// DEFINE AN ARRAY CONTAINING URLS FOR THE CORRESPONDING CURRENT PAGES
+// CHECK FOR CURRENT PAGE'S URL.
+// CONCATANE A LANG TAG ACCORDING TO THE CURRENT LANGUAGE.
+
+/*
+LOCATION.HASH = PAGEURLS[CURRENTPAGE] + LANGUAGE TAG
+
+
+
+*/
+// let languageTag = checkLanguageTag();
+// location.hash = `${pageURLs[currentPage]}${languageTag}`
+
+}
+
+function URLHandler(){
+let cur_location = location.hash;
+let langTag = checkLanguageTag();
+location.hash = `${pageURLs[currentPage]}${langTag}`;
+
+  if(cur_location.includes("#hu")){
+    location.hash = `${pageURLs[currentPage]}#hu`;
+    console.log("It is hungarian");
+  }else if(cur_location.includes("#en")){
+    location.hash = `${pageURLs[currentPage]}#en`;
+    console.log("It is english");
+  }else if(cur_location.includes("#de")){
+    location.hash = `${pageURLs[currentPage]}#de`;
+    console.log("It is german");
+  }else if(cur_location.includes("#fr")){
+    location.hash = `${pageURLs[currentPage]}#fr`;
+    console.log("It is french");
+  }else{
+    location.hash = `${pageURLs[currentPage]}`;
+    console.log("It is basic");
+  }
+  cur_location = "";
+  return location.hash;
 }
 
 nextPageButton.addEventListener('click', goToNextPage);
@@ -216,8 +191,9 @@ previousPageButton.addEventListener('click', goToPreviousPage);
 */
 
 /*MAKE ARROWS DISAPPEAR ON SCROLL DOWN AND APPEAR ON SCROLL UP*/
+
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+function togglePagingArrow(){
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     if(currentPage != 5){
@@ -237,19 +213,121 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-function pager(event) {
-  if(event.keyCode == "ArrowRight"){
+function keyboardPager() {
+  if(event.key == "ArrowRight" && currentPage != 5){
     goToNextPage();
-    console.log('wow');
-  }else if(event.keyCode == "ArrowLeft"){
+  }else if(event.key == "ArrowLeft" && currentPage != 0){
     goToPreviousPage();
-    console.log('wow');
   }
 }
 
-document.onkeydown = pager;
-document.onkeydown = pager;
+/************** PAGE TURNER START **************/
 
+
+
+// SET THE CURRENTPAGE VARIABLE ACCORDING TO HASH. CALL NEXT PAGE OR PREV PAGE
+// AS MANY TIMES AS NEEDED ACCORDING TO CURRENTPAGE AND DESIRED PAGE DIFFERENCE.
+//
+function checkLanguageTag(){
+  let languageTag;
+  let locationURL = location.hash;
+  if(locationURL.includes("#hu")){
+    languageTag = "#hu";
+  }else if(locationURL.includes("#en")){
+    languageTag = "#en";
+  }else if(locationURL.includes("#de")){
+    languageTag = "#de";
+  }else if(locationURL.includes("#fr")){
+    languageTag = "#fr";
+  }else{
+    languageTag = "";
+  }
+  return languageTag;
+}
+
+
+function scrollToTop(){
+  window.scroll({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+  });
+}
+
+function setCurrentPage() {
+
+  console.log("inside setCurrentPage");
+  let currentLocation = location.hash;
+  console.log(currentLocation);
+  let languageTag = checkLanguageTag();
+
+  if(currentLocation == "" || currentLocation == "#" || currentLocation.includes("#magyar_dialogikus_iskola")){
+    currentPage = 0;
+    console.log("Current Page = " + currentPage);
+    goToNextPage();
+    goToPreviousPage();
+    scrollToTop();
+  }else if(currentLocation.includes("#vadirat")){
+    currentPage = 1;
+    console.log("Current Page = " + currentPage);
+    goToNextPage();
+    goToPreviousPage();
+    scrollToTop();
+  }else if(currentLocation.includes("#alapallas")){
+    currentPage = 2;
+    console.log("Current Page = " + currentPage);
+    goToNextPage();
+    goToPreviousPage();
+    scrollToTop();
+  }else if(currentLocation.includes("#tortenet")){
+    currentPage = 3;
+    console.log("Current Page = " + currentPage);
+    goToNextPage();
+    goToPreviousPage();
+    scrollToTop();
+  }else if(currentLocation.includes("#harmincas-evek")){
+    currentPage = 4;
+    console.log("Current Page = " + currentPage);
+    goToNextPage();
+    goToPreviousPage();
+    scrollToTop();
+  }else if(currentLocation.includes("#negyvenot-utan")){
+    currentPage = 5;
+    console.log("Current Page = " + currentPage);
+    goToPreviousPage();
+    goToNextPage();
+    scrollToTop();
+  }
+
+  // location.hash = `${pageURLs[currentPage]}${checkLanguageTag()}`;
+  // location.hash = URLHandler();
+}
+
+function whatever(){
+
+let navLink = document.querySelector(".topnav .dropdown .dropdown_content");
+let navLinkAnchors = navLink.querySelectorAll("a");
+
+  for(let i = 0; i < navLinkAnchors.length; i++){
+    navLinkAnchors[i].addEventListener('click', () => {
+      location.hash = `${pageURLs[currentPage]}${checkLanguageTag()}`;
+      console.log(navLinkAnchors[i]);
+    });
+  }
+}
+//
+whatever();
+
+// function dostuff(){
+//   let navLink = document.querySelector(".topnav .dropdown .dropdown_content");
+//   let navLinkAnchors = navLink.querySelectorAll("a");
+//
+//   for(let i = 0; i < navLinkAnchors.length; i++){
+//     navLinkAnchors[i].addEventListener('click', () => {
+//       location.hash = `${pageURLs[currentPage]}${checkLanguageTag()}`;
+//     });
+//   }
+// }
 /************** PAGE TURNER END **************/
 
 export {
@@ -257,5 +335,8 @@ export {
   setUpPreviousPageButton,
   goToPreviousPage,
   goToNextPage,
-  currentPageHandler
-};
+  currentPageHandler,
+  setCurrentPage,
+  keyboardPager,
+  togglePagingArrow
+}

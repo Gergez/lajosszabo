@@ -1,4 +1,4 @@
-var navbar_language = {
+const navbar_language = {
   "hu": {
     "navbar_dialogikus-iskola": "Dialogikus Iskola",
     "navbar_vadirat": "Vádirat",

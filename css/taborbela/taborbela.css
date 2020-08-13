@@ -14,6 +14,8 @@ section
   padding: 5px 10px;
   min-height: unset;
   height: auto;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
 }
 
 p{
@@ -58,7 +60,10 @@ section a:hover{
   color:rgba(218,183,95,0.8);
 }
 
-
+.accordion{
+  max-height: 100px;
+  overflow: hidden;
+}
 /* a:hover{
   transform: scale(1.1);
 } */
@@ -95,7 +100,7 @@ section a:hover{
   justify-content: center;
 }
 
-.konyvek_wrapper h1::after{
+/* .konyvek_wrapper h1::after{
   content: "";
   position: relative;
   width: 0;
@@ -106,29 +111,56 @@ section a:hover{
   top: 42px;
   left: 5px;
   transition: all 0.5s ease-in-out;
+  content: '\02795';  Unicode character for "plus" sign (+)
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+} */
+/* .konyvek_wrapper h1::before {
+    content: '';
+    width: 20px;
+    height: 5px;
+    background-color: #715521;
+    float: right;
+    transform: translateY(30px);
+} */
+
+.konyvek_wrapper h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color: #3e2200;
+  margin: auto;
+  top: 50%;
+  right: 5px;
+  transition: transform 0.5s ease-in-out;
 }
 
-.konyvek_inner_wrapper
-{
+.rotate{
+  transform: rotate(180deg);
+}
+
+.konyvek_inner_wrapper{
   display:block;
   padding: 0 20px;
-  margin-top:75px;
+  margin-top: 0;
 }
 
-.titles
-{
+.titles{
   text-shadow:none;
 }
 
 
-.zsidosag_ket_utja
-{
+.zsidosag_ket_utja{
   font-size:20px;
   font-weight: 600;
 }
 
-.ostortenet
-{
+.ostortenet{
   background-color:#a87e31;
 }
 
@@ -137,13 +169,11 @@ section a:hover{
   background-color: #a87e31;
 } */
 
-.szeminariumok
-{
+.szeminariumok{
   background-color: #a87e31;
 }
 
-.irasok_tabor_belarol
-{
+.irasok_tabor_belarol{
   background-color: #BB994C;
 }
 
@@ -153,8 +183,7 @@ section a:hover{
   display:block;
 } */
 
-footer
-{
+footer{
   display:flex;
   /* position:sticky; */
   bottom:0px;

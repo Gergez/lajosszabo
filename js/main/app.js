@@ -13,3 +13,21 @@ loading.onReady(function() {
   mobilenavbar.responsiveNavigation();
   pagehandler.currentPageHandler();
 });
+
+window.onhashchange = () => {
+  languagehandler.languageContentUpdater();
+  pagehandler.setCurrentPage();
+};
+
+window.onload = () => {
+  languagehandler.languageOnLoadUpdater();
+};
+
+document.onkeydown = () => {
+  pagehandler.keyboardPager();
+};
+
+document.onscroll = () => {
+  pagehandler.togglePagingArrow();
+  mobilenavbar.toggleOnScroll();
+};

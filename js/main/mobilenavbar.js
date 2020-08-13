@@ -33,6 +33,24 @@ function responsiveNavigation() {
   });
 }
 
+function navbarToggler(){
+  let navbarButtons = document.querySelectorAll('.dropdown');
+  let navbarContent = document.querySelectorAll('.dropdown .dropdown_content');
+
+  for(let i = 0; i < navbarButtons.length; i++){
+    navbarButtons[i].addEventListener('click', () => {
+    navbarContent[i].classList.toggle('dropdown_links_appear');
+    });
+  }
+
+
+}
+
+navbarToggler();
+
+
+
+
 function mediaFunction(x) {
   if (x.matches) { // If media query matches
     document.getElementsByClassName('topnav')[0].style.display = 'none';
@@ -46,6 +64,8 @@ function mediaFunction(x) {
     cancelButton.style.display = 'none';
     document.getElementsByClassName('topnav')[0].style.display = 'flex';
   }
+
+
 }
 
 var x = window.matchMedia("(max-width: 1200px)")
@@ -53,16 +73,18 @@ mediaFunction(x) // Call listener function at run time
 x.addListener(mediaFunction) // Attach listener function on state changes
 
 
-// let prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   let currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//       document.getElementsByClassName("mobile_menu")[0].style.display = "flex";
-//   } else{
-//     document.getElementsByClassName("mobile_menu")[0].style.display = "none";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
+let prevScrollpos = window.pageYOffset;
+function toggleOnScroll() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+      document.getElementsByClassName("mobile_menu")[0].style.opacity = 1;
+      document.getElementsByClassName("mobile_menu")[0].style.pointerEvents = "auto";
+  } else{
+    document.getElementsByClassName("mobile_menu")[0].style.opacity = 0;
+    document.getElementsByClassName("mobile_menu")[0].style.pointerEvents = "none";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 /****************** MOBILE NAVBAR END ********************/
 
@@ -72,5 +94,6 @@ export {
   burgerButton,
   createMobileMenu,
   responsiveNavigation,
-  mediaFunction
+  mediaFunction,
+  toggleOnScroll
 };

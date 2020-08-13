@@ -5,8 +5,11 @@
 **/
 
 /*Language json files. FOOTER STILL NEEDED*/
-let navbar_translations = navbar_language;
-let content_translations = language;
+const navbar_translations = navbar_language;
+const content_translations = language;
+
+const navbar_links = navbar_link;
+const main_links = main_link;
 
 /*Array with all the language files*/
 let language_translationsAll = [];
@@ -19,6 +22,8 @@ function fileLoader(file){
 
 fileLoader(navbar_language);
 fileLoader(language);
+fileLoader(navbar_link);
+fileLoader(main_link);
 
 /*This function changes all the main content's textContent based on id.
 It doesn't change the img sources or link sources.*/
@@ -36,29 +41,32 @@ for(let i = 0; i < language_translationsAll.length; i++){
     if (location.hash.includes("#en")) {
       for (let i = 0; i < keys.length; i++) {
         if (document.querySelector(`#${keys[i]}`)) {
-          document.querySelector(`#${keys[i]}`).textContent = `${en_values[i]}`;
+          document.querySelector(`#${keys[i]}`).innerHTML = `${en_values[i]}`;
         }
       }
     } else if (location.hash.includes("#hu")) {
       for (let i = 0; i < keys.length; i++) {
         if (document.querySelector(`#${keys[i]}`)) {
-          document.querySelector(`#${keys[i]}`).textContent = `${hu_values[i]}`;
+          document.querySelector(`#${keys[i]}`).innerHTML = `${hu_values[i]}`;
         }
       }
     } else if (location.hash.includes("#de")) {
       for (let i = 0; i < keys.length; i++) {
         if (document.querySelector(`#${keys[i]}`)) {
-          document.querySelector(`#${keys[i]}`).textContent = `${de_values[i]}`;
+          document.querySelector(`#${keys[i]}`).innerHTML = `${de_values[i]}`;
         }
       }
     } else if (location.hash.includes("#fr")) {
       for (let i = 0; i < keys.length; i++) {
         if (document.querySelector(`#${keys[i]}`)) {
-          document.querySelector(`#${keys[i]}`).textContent = `${fr_values[i]}`;
+          document.querySelector(`#${keys[i]}`).innerHTML = `${fr_values[i]}`;
         }
       }
     }
   }
+
+// languageLinkUpdater();
+
 };
 
 /*The 4 main languages*/
@@ -70,28 +78,30 @@ const lang4 = document.querySelector('#lang4');
 /*This function changes the img sources to the appropriate flag based on URL*/
 function imgChanger(lang) {
   const img = document.querySelector('.language_flag');
+  let current_location = location.href;
+  let filtered_current_location = current_location.replace(/#hu|#en|#de|#fr/, "");
 
   switch (lang.textContent) {
     case "Magyar":
-      location.href = ("#hu");
+      location.href = (`${filtered_current_location}#hu`);
       img.src = "../kepek/menu/magyar_zaszlo.svg";
       img.alt = "Magyar nyelv";
       break;
 
     case "English":
-      location.href = ("#en");
+      location.href = (`${filtered_current_location}#en`);
       img.src = "../kepek/menu/angol_zaszlo.svg";
       img.alt = "English language";
       break;
 
     case "Deutsch":
-      location.href = ("#de");
+      location.href = (`${filtered_current_location}#de`);
       img.src = "../kepek/menu/nemet_zaszlo.svg";
       img.alt = "Deutsche Sprache";
       break;
 
     case "Français":
-      location.href = ("#fr");
+      location.href = (`${filtered_current_location}#fr`);
       img.src = "../kepek/menu/francia_zaszlo.svg";
       img.alt = "Langue Française";
       break;
@@ -112,34 +122,28 @@ lang4.addEventListener('click', () => {
 });
 
 /*It's there so if the page is linked, it will update to the correct language*/
-window.onload = () => {
+
+function languageOnLoadUpdater(){
   let current_location = location.hash;
   location.hash = '';
   location.hash = current_location;
-  switch (current_location) {
-    case "#hu":
-      imgChanger(lang1);
-      break;
-    case "#en":
-      imgChanger(lang2);
-      break;
-    case "#de":
-      imgChanger(lang3);
-      break;
-    case "#fr":
-      imgChanger(lang4);
-      break;
+
+  if(current_location.includes("#hu")){
+    imgChanger(lang1);
+  }else if(current_location.includes("#en")){
+    imgChanger(lang2);
+  }else if(current_location.includes("#de")){
+    imgChanger(lang3);
+  }else if(current_location.includes("#fr")){
+    imgChanger(lang4);
   }
-
-};
-
+}
 /**
-// This one does it all. Everything happens based on hashchange
+// Everything happens based on hashchange
 **/
-
-window.onhashchange = languageContentUpdater;
 
 export {
   languageContentUpdater,
-  imgChanger
+  imgChanger,
+  languageOnLoadUpdater
 };

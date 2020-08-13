@@ -1,3 +1,4 @@
+
 //PRELOAD IMAGES
 var images = [];
 
@@ -22,12 +23,12 @@ document.write( '\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );
-document.write( '      <button><a class=\"iskola_fooldal\" href=\"https://gergez.github.io//lajosszabo/index.html\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
+document.write( '      <button><a class=\"iskola_fooldal\" href=\"/index.html#magyar_dialogikus_iskola\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->\n' );
-document.write( '        <a href=\"#vadirat\" id=\"navbar_vadirat\">Vádirat</a>\n' );
-document.write( '        <a href=\"#alapallas\" id=\"navbar_alapallas\">Alapállás</a>\n' );
+document.write( '        <a href=\"/index.html#vadirat\" id=\"navbar_vadirat\">Vádirat</a>\n' );
+document.write( '        <a href=\"/index.html#alapallas\" id=\"navbar_alapallas\">Alapállás</a>\n' );
 document.write( '        <a href=\"#tortenet\" id=\"navbar_tortenet\">Történet</a>\n' );
 document.write( '        <a href=\"#harmincas-evek\" id=\"navbar_harmincas-evek\">A \'30-as évek írásai</a>\n' );
 document.write( '        <a href=\"#negyvenot-utan\" id=\"navbar_negyvenot-utan\">1945 után</a>\n' );
@@ -51,7 +52,7 @@ document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
-document.write( '    <button><a href=\"https://gergez.github.io//lajosszabo/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
+document.write( '    <button><a href=\"/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
 document.write( '      <a href=\"./horvathagnes/horvathagnes.html\" id=\"navbar_tabor-bela-eletrajz\">Életrajz</a>\n' );

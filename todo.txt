@@ -8,6 +8,8 @@ Fő feladatok:
 6) Megoldani, hogy a loading screen minden oldal előtt ott legyen.
 7) Redirect based on user GEO location.
 
+FONTOS: app.js-be csak ready function, minden más kiszervezése külön fájlba.
+
 
 Kisebb feladatok:
 1. KÉSZ tábor bélának egy kis árnyék
@@ -18,6 +20,8 @@ Kisebb feladatok:
 5. Swipe listener for mobile devices for page scrolling.
 6. Valszeg az idézeteknek le kell menniük.
 7. Kicsit kijjebb vinni a nyílakat kicsi képernyőn.
+8. Title change on language change.
+9. Set lang attribue on language change.
 
 
 Kérdések Laciékhoz:

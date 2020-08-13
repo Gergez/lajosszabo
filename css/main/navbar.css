@@ -12,6 +12,7 @@
   color: #3e2200;
   z-index: 999;
   height: 60px;
+  box-shadow: 0px 0px 10px rgb(123 89 4);
 }
 
 /* POSITION AND STYLE THE NAVBAR LINKS */
@@ -195,6 +196,7 @@
     width: 100vw;
     background-color: rgba(218, 183, 95, 1.0);
     z-index: 1001;
+    transition: opacity 0.5s;
 }
 
   .language_flag {
@@ -216,6 +218,21 @@
     display: block;
     text-align: center;
     /* background-color: white; */
+    /* width: 100%; */
+  }
+
+  .dropdown_links_appear{
+    display: block !important;
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+/*MAKE IT DISAPPEAR ON SMALL RESOLUTION*/
+
+  .dropdown:hover .dropdown_content {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .cancel_button {
@@ -270,6 +287,7 @@
     z-index: 1;
     width: 60%;
     left: 21%;
+    top: 10%;
     background-color: rgba(218, 183, 95, 1.0);
   }
 
@@ -278,6 +296,14 @@
     max-width: 500px;
     background-color: white;
   }
+
+  .konyvtar_language_selector_container{
+    display: block;
+    margin-left: 0;
+  }
+
 }
+
+
 
 /************       TOP NAVIGATION END       ********************/

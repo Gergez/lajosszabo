@@ -1,4 +1,4 @@
-var language = {
+const language = {
   "hu": {
     "magyar_dialogikus_iskola": "Magyar dialogikus iskola",
     "tarek": "Teizmus és ateizmus roppant erőinek kereszteződésében",
@@ -16,7 +16,7 @@ var language = {
 
     "tortenet": "Történet",
     "tortenet_p1": "Szabó és Tábor az 1930-as évek elején találkoztak a magyarországi oppozíciós mozgalomban. Ez az illegális baloldali antikapitalista és antibolsevista mozgalom kapcsolódott Karl Korsch intranzigens marxizmusához is. Legtekintélyesebb szellemi vezetői Szabó mellett Justus Pál, Partos Pál és Szirtes Andor voltak.",
-    "tortenet_p2": "Szabó és Tábor találkozásának már a körülménye is emblematikus és szinte kijelöli azt a horizontot, amely felé tartanak. Ezt Tábor Béla fia így írja le (Tábor Ádám, Találkozás a centrumban):",
+    "tortenet_p2": "Szabó és Tábor találkozásának már a körülménye is emblematikus és szinte kijelöli azt a horizontot, amely felé tartanak. Ezt Tábor Béla fia így írja le (<a href=\"http://lajosszabo.com/SZL/TA_Csutort.pdf\">Tábor Ádám, Találkozás a centrumban</a>):",
     "tortenet_p3": "A harmincas évek közepére Szabó és Tábor útja teljesen elvált a marxista mozgalométól. Tábor Béla erről így ír a Szocializmus, gnózis és oppozíció c. írásában (in uő, Személyiség és logosz 246-248): ",
     "tortenet_p4": "Ennek a spirituális szabadságeszmének a mértékén mérve dolgozzák fel kritikailag nemcsak a marxizmus közvetlen filozófiai környezetét jelentő német klasszikus filozófiát, hanem az egész európai, görög és hindu filozófiai hagyományt. A fentebb megfogalmazott szabadságeszmét legtisztábban képviselő teoretikusokat keresve jutnak el Nietzschéhez és Kierkegaardhoz, asszimilálják Johann Georg Hamannt, másrészt Plótinoszt, a középkori spekulatív misztikát, elsősorban Eckhart mestert. Erősen hat rájuk Schmitt Jenő Henrik gnózisa Schmitt tanítványán, Kepes Ferencen keresztül. Így jutnak el a dialogikus gondolkodók – Ferdinand Ebner, Franz Rosenzweig és Martin Buber – szóközéppontú, azaz az én-te-szó viszonyt középpontba állító biblicizmusához.",
     "tortenet_p5": "Munkájukba bekapcsolódik Békefi Zoltán is. Szintén ebből az időből datálódik Szabó barátsága Vajda Lajossal. (Barátságuk néhány dokumentumát lásd itt.) Tanítványai közé tartozik Mándy Stefánia költő és művészettörténész – később az első nagy Vajda-monográfia szerzője –, Bíró Endre, aki biokémikus lesz és Joyce-ot fordít.",
@@ -42,8 +42,8 @@ var language = {
     "negyvenot_utan": "1945 után",
     "negyvenot_utan_p1": "Szabó és Tábor 1945–48 között rakták le a Budapesti Dialogikus Iskola alapjait. Ezekben az években szorosan együttműködtek az író és esszéista Hamvas Bélával is és szorosabb kapcsolat alakult ki Fülep Lajossal is. Előbbivel már '45 végén megkezdődött „munkaközösségük”, rendszeres beszélgetéseik „Csütörtöki beszélgetések” néven vált ismertté, ezen hármójuk mellett Mándy Stefánia (immár Tábor Béla felesége) és Kemény Katalin (Hamvas Béla felesége) vettek részt.",
     "negyvenot_utan_p2": "Szabó a 45–48 között tartott előadássorozataiban beható értékelméleti és értékpszichológiai elemzéseket folytatott, egyaránt asszimilálta a prefilozófiai szituációt (pl. az indiai hagyományt és a preszokratikusokat), és a posztfilozófiai szemléletmódot, a földalatti XIX. század nagy alakjainak (Kierkegaard, Dosztojevszkij és Nietzsche) filozófia-, művészet- és valláskritikáját. A szemináriumi előadások legaktívabb résztvevői Kotányi Attila és Kunszt György voltak, ők le is jegyezték az előadásokat (lásd itt), mellettük Bíró Endre és Bíró Gábor neve szerepel még gyakran. A későbbi, tudomány- és matematikaelméleti vitákon Surányi János matematikus is részt vett. A szellemi munkába bekapcsolódtak például a festő Vajda Júlia, az első szürrealista magyar szobrász, Jakovits József, a festő Gedő Ilka (Bíró Endre felesége), Vajda tanítványa és haláláig barátja, Bálint Endre és felesége Richter Irina.",
-    "negyvenot_utan_p3": "Szabó aktívan...",
-    "negyvenot_utan_p4": "Az ötvenes évek...",
+    "negyvenot_utan_p3": "Szabó aktívan részt vett az Európai Iskola rendezvényein. A sztálinizmus alatt szoros kapcsolatok szövődtek a földalatti Dialogikus Iskola és a szintén betiltott avantgárd képzőművészek között. Ekkoriban nagy tisztázó viták folynak szó és kép viszonyáról, a „szó vagy a kép primátusa”, illetve „a szó vagy a szám primátusa” témakörében.",
+    "negyvenot_utan_p4": "Az ötvenes évek közepétől Szabó maga is kalligráfus lett. 56-ban néhány tanítványával Nyugat-Európába ment, Brüsszelben, majd Düsseldorfban élt. Kiállításai voltak többek között Brüsszelben, Párizsban, Düsseldorfban, Dortmundban. Szabó mozgalmi pszeudonímja AO volt, ami az Anti-Organisation rövidítése. Egy ideig sok rajzát is így szignálta, később visszatérő képi motívummá vált nála.",
     "negyvenot_utan_p5": "Tábor Béla 1956 után is Budapesten maradt. A szovjet megszállás alatt a lakásán tartott szemináriumokat. Írók, festők, művészettörténészek, építészek, tudósok egyaránt voltak tanítványai között, akikkel intenzív személyes és teoretikus beszélgetéseket folytatott, a folyamatos szellemi munka mellett ezt tartotta másik legfontosabb tevékenységének. Ezek a beszélgetések többnyire (alkotói vagy más) személyes problémákból indultak ki, hogy aztán mind szélesebb kör vonódjék az aktuális problémák köré. Tábor mindig tudta teoretikusan úgy mélyíteni a felmerülő kérdéseket, hogy ez egyben a személyes érintettség fokozását is jelentette. Eközben folyamatosan dolgozott pneumatológiáján: személyiség-, logosz- és szimbólumelméletén. A diktatúra bukása után kiadták régebbi könyveit és néhány újabb írását. 2003-ban összefoglaló kötet jelent meg Személyiség és logosz címen, ez főleg életében kiadatlan írásaiból tartalmaz válogatást."
 
   },
@@ -149,7 +149,7 @@ var language = {
     "szabo_lajos_idezet": "SZL idézet Francia",
     "portre_tabor_bela": "Béla Tábor",
     "tabor_bela_idezet": "TB idézet Francia",
-    "vadirat": "Acte d'accusation contre le fantôme??????",
+    "vadirat": "Acte d'accusation contre le espirit??????",
     "vadirat_p1": "Vádirat idézet Francia",
 
     "alapallas": "Grundstellung auf französisch???",

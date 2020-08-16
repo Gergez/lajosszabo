@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/main/jsrendered.css">
   <link rel="stylesheet" href="css/main/responsive.css">
   <link rel="stylesheet" href="css/main/animations.css">
+  <link rel="stylesheet" href="css/konyvtar/style.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
   <link rel="icon" href="./kepek/favicon/favicon.png" type="image/x-icon">
@@ -48,7 +49,17 @@
     <section class="">
       <div class="section_container">
           <div class="titles">
-            <h1 class="title" id="">Magyar dialogikus iskola</h1>
+
+              <form action="/action_page.php">
+                <div class="form_container">
+                  <input type="radio" id="irasok" name="konyvtar" checked>
+                  <label class="selected" for="irasok">Írások</label><br>
+                  <input type="radio" id="galeria" name="konyvtar">
+                  <label class="selected" for="galeria">Galéria</label><br>
+                  <input type="radio" id="esemenyek" name="konyvtar">
+                  <label class="selected" for="esemenyek">Események</label>
+                </div>
+              </form>
 
             <h2 id="" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
             <h2 id="" class=""> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
@@ -60,6 +71,7 @@
 </div>
 
   <script type="module" src="sablon.js" defer></script>
+  <script type="text/javascript" src="/js/konyvtar/konyvtar.js"></script>
 
 </body>
 

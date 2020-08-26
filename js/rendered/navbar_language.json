@@ -125,7 +125,7 @@ const navbar_language = {
     "navbar_tabor-bela-eletrajz": "Biografie",
     "navbar_tabor-bela-konyvek": "Bücher",
     "navbar_tabor-bela-ostortenet": "??Vorgeschichte",
-    "navbar_tabor-bela-a-szimbolum-valsaga": "??Die Krise des Symbol",
+    "navbar_tabor-bela-a-szimbolum-valsaga": "??Die Krise des Symbols",
     "navbar_tabor-bela-preszokratikus-szeminariumok": "Presokratische Seminare",
     "navbar_tabor-bela-egyeb-irasok": "Andere Schriften",
     "navbar_tabor-bela-csutortoki-beszelgetesek": "Donnerstagsgespräche",
@@ -134,9 +134,9 @@ const navbar_language = {
 
     "navbar_mandy-stefania": "Stefánia Mándy",
     "navbar_mandy-stefania-eletrajz": "Biografie",
-    "navbar_mandy-stefania-a-kes-a-kez-a-hal": "A kés a kéz a hal (Fragmente)",
-    "navbar_mandy-stefania-az-ellopott-tortenelem": "Az ellopott történelem (Fragmente)",
-    "navbar_mandy-stefania-scintilla": "Scintilla (Fragmente)",
+    "navbar_mandy-stefania-a-kes-a-kez-a-hal": "A kés a kéz a hal (Ausschnitte)",
+    "navbar_mandy-stefania-az-ellopott-tortenelem": "Az ellopott történelem (Ausschnitte)",
+    "navbar_mandy-stefania-scintilla": "Scintilla (Ausschnitte)",
     "navbar_mandy-stefania-kepzomuveszeti-irasok": "Kunstschriften",
     "navbar_mandy-stefania-mandy-szaz": "Mándy 100",
 

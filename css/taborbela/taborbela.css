@@ -7,10 +7,9 @@ section
 {
   display: flex;
   position: relative;
-  padding: 0 30px;
   width: 100%;
   background-color: #BB994C;
-  margin: 20px 0;
+  margin: 0;
   padding: 5px 10px;
   min-height: unset;
   height: auto;
@@ -28,8 +27,8 @@ p + p {
 
 section h1{
   text-align: left;
-  margin-bottom: unset;
-  padding: 0 0 20px;
+  margin-bottom: 10px;
+  padding: 0 20px 20px;
 }
 
 div .konyvek{
@@ -63,6 +62,7 @@ section a:hover{
 .accordion{
   max-height: 100px;
   overflow: hidden;
+  padding: 0;
 }
 /* a:hover{
   transform: scale(1.1);
@@ -70,8 +70,9 @@ section a:hover{
 
 .page_container > h1.title{
   padding-top: 110px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   text-align: center;
+  font-size: 3.5rem;
 }
 
 .konyvek_inner_wrapper p {
@@ -135,8 +136,8 @@ section a:hover{
   border: 8px solid transparent;
   border-top-color: #3e2200;
   margin: auto;
-  top: 50%;
   right: 5px;
+  transform: translateY(-100%);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -148,12 +149,16 @@ section a:hover{
   display:block;
   padding: 0 20px;
   margin-top: 0;
+  background-color: rgba(218, 183, 95, 1.0);
+}
+
+.konyvek_inner_wrapper p:first-of-type{
+  padding-top: 15px;
 }
 
 .titles{
   text-shadow:none;
 }
-
 
 .zsidosag_ket_utja{
   font-size:20px;
@@ -164,54 +169,11 @@ section a:hover{
   background-color:#a87e31;
 }
 
-/* .tanulmanyok
-{
-  background-color: #a87e31;
-} */
-
 .szeminariumok{
   background-color: #a87e31;
 }
 
 .irasok_tabor_belarol{
   background-color: #BB994C;
-}
-
-/************       SZL,TB KÉPEK START      ********************/
-/* .alapitok_container
-{
-  display:block;
-} */
-
-footer{
-  display:flex;
-  /* position:sticky; */
-  bottom:0px;
-  height:80px;
-  width:100%;
-  background:#a87e31;
-  font-size:2rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer_1
-{
- display:flex;
- width:33%;
-}
-
-.footer_2
-{
-  display:flex;
-  width:33%
-}
-
-.footer_3{
-  align-items: center;
-}
-
-.blokk
-{
-  display:block;
+  margin-bottom: 100px;
 }

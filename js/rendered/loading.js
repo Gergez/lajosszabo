@@ -1,0 +1,10 @@
+document.write( '<div id=\"loading_container\">\n' );
+document.write( '  <div id=\"loading\" class=\"loading\">\n' );
+document.write( '    <h1>Magyar dialogikus iskola</h1>\n' );
+document.write( '    <div class=\"loading_animation\">\n' );
+document.write( '      <div class=\"circle circle-1\"></div>\n' );
+document.write( '      <div class=\"circle circle-2\"></div>\n' );
+document.write( '      <div class=\"circle circle-3\"></div>\n' );
+document.write( '    </div>\n' );
+document.write( '  </div>\n' );
+document.write( '</div>\n' );

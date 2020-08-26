@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../css/main/main.css">
   <link rel="stylesheet" href="../css/main/responsive.css">
   <link rel="stylesheet" href="../css/main/animations.css">
+  <link rel="stylesheet" href="../css/rendered/footer.css">
   <link rel="stylesheet" href="../css/taborbela/taborbela.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
@@ -29,16 +30,7 @@
   <script type="text/javascript" src="../js/main/main_link.json"></script>
   <script type="text/javascript" src="../js/rendered/navbar_language.json"></script>
   <script type="text/javascript" src="../js/rendered/navbar_link.json"></script>
-
-  <div id="loading_container">
-    <div id="loading" class="loading">
-      <h1>Magyar dialogikus iskola</h1>
-      <div class="loading_animation">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-      </div>
-    </div>
+  <script type="text/javascript" src="../js/rendered/loading.js"></script>
 
   </div>
 
@@ -54,10 +46,11 @@
       <!-- <div class="section_inner_wrapper"> -->
 
       <section class="konyvek accordion">
-        <div class="konyvek_wrapper">
 
+        <div class="konyvek_wrapper">
           <h1><a class="titles" href="#">Könyvek</a></h1>
-          <div class="konyvek_container disappear">
+
+          <div class="konyvek_container ">
             <div class="konyvek_inner_wrapper">
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/TB/Zs2U.html">A zsidóság két útja, 1939</a></p>
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Zs2U_utoszo.pdf">Az 1990-es második kiadás utószava</a></p>
@@ -80,7 +73,7 @@
         <div class="konyvek_wrapper">
 
           <h1><a class="titles" href="#">Bevezető fejezetek a valóság őstörténetéhez</a></h1>
-          <div class="konyvek_container disappear">
+          <div class="konyvek_container ">
             <div class="konyvek_inner_wrapper">
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf">Szabó Lajosról</a></p>
             </div>
@@ -103,7 +96,7 @@
         <div class="konyvek_wrapper">
 
           <h1><a class="titles" href="#">A szimbólum válsága</a></h1>
-          <div class="konyvek_container disappear">
+          <div class="konyvek_container ">
             <div class="konyvek_inner_wrapper">
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf">Az eredeti felejtés és a szó primátusa</a></p>
             </div>
@@ -120,7 +113,7 @@
         <div class="konyvek_wrapper">
 
           <h1><a class="titles" href="#">Akármilyen találkozások</a></h1>
-          <div class="konyvek_container disappear">
+          <div class="konyvek_container ">
             <div class="konyvek_inner_wrapper">
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf">Csütörtöki beszélgetések, részletek</a></p>
             </div>
@@ -136,12 +129,10 @@
 
 
       <section class="tanulmanyok accordion">
-        <a href="#">Tanulmányok</a>
-
         <div class="konyvek_wrapper">
 
-          <h1><a class="titles" href="#">Bevezető Fejezetek a valóság őstörténetéhez</a></h1>
-          <div class="konyvek_container disappear">
+          <h1><a class="titles" href="#">Tanulmányok</a></h1>
+          <div class="konyvek_container ">
             <div class="konyvek_inner_wrapper">
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf">Szabó Lajosról</a></p>
             </div>
@@ -154,35 +145,36 @@
             <div class="konyvek_inner_wrapper">
               <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/kisertesesbuna.pdf">Kísértés és Bűn - részlet</a></p>
             </div>
-
           </div>
-
-
 
         </div>
       </section>
 
+      <section class="irasok_tabor_belarol accordion">
+        <div class="konyvek_wrapper">
+        <h1><a class="titles" href="#">Írások Tábor Béláról</a></h1>
+        <div class="konyvek_container ">
+          <div class="konyvek_inner_wrapper">
+            <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf">Ide valami</a></p>
+          </div>
 
-      <section class="irasok_tabor_belarol">
-        <h1> <a class="titles" href="#">Írások Tábor Béláról</a></h1>
-        <div class="konyvek_container disappear">
+          <div class="konyvek_inner_wrapper">
+            <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/Ans_FN_fejezet.pdf">Ide valami</a></p>
+            <p>A közreadók utószavával</p>
+          </div>
+
+          <div class="konyvek_inner_wrapper">
+            <p class="zsidosag_ket_utja"><a href="http://lajosszabo.com/SZEL/kisertesesbuna.pdf">Ide valami</a></p>
+          </div>
         </div>
+      </div>
       </section>
 
       <!-- </div> -->
     </div>
-
-
-    <footer>
-
-      <div class="footer_1"><a href="mailto:lsuranyi@gmail.com">Kontakt: lsuranyi@gmail.com</a></div>
-      <div class="footer_2">Tábor Béla jogutódjai ©</div>
-      <div class="footer_3">Egyéb</div>
-
-    </footer>
+    <script type="text/javascript" src="../js/rendered/footer.js"></script>
   </div>
   <script type="module" src="../js/taborbela/main.js" defer> </script>
-
 </body>
 
 </html>

@@ -19,7 +19,9 @@ window.onload = () => {
   languagehandler.languageOnLoadUpdater()
 };
 
+window.onchange = () => {
 
+}
 
 
 
@@ -34,14 +36,20 @@ window.onload = () => {
     containers.push(titles[i].nextElementSibling);
   }
 
-  for(let i = 0; i < titles.length; i++){
-    titles[i].addEventListener('click', () => {
-      containers[i].classList.toggle('disappear');
-      // document.querySelectorAll('.section h1'), '::after'.classList.toggle('.rotate');
-      if (sections[i].style.maxHeight){
-        sections[i].style.maxHeight = null;
-      }else {
-        sections[i].style.maxHeight = sections[i].scrollHeight + "px";
-      }
-    })
+  function collapseAccordion(collapsable){
+    for (let i = 0; i < collapsable.length; i++){
+      collapsable[i].addEventListener('click', () => {
+        // containers[i].classList.toggle('disappear');
+        // document.querySelectorAll('.section h1'), '::after'.classList.toggle('.rotate');
+        if (sections[i].style.maxHeight){
+          sections[i].style.maxHeight = null;
+        }else {
+          sections[i].style.maxHeight = sections[i].scrollHeight + "px";
+        }
+      })
+    }
   }
+
+  collapseAccordion(titles);
+  collapseAccordion(containers);
+  

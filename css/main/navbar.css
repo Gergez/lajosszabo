@@ -12,7 +12,7 @@
   color: #3e2200;
   z-index: 999;
   height: 60px;
-  box-shadow: 0px 0px 10px rgb(123 89 4);
+  box-shadow: 0 0 10px rgb(123 89 4);
 }
 
 /* POSITION AND STYLE THE NAVBAR LINKS */
@@ -27,13 +27,6 @@
   text-shadow: 1px 1px 1px rgba(90, 51, 16, 0.3);
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
-}
-
-/* ADD A PADDING TO ITEMS ON HOVER */
-.topnav:hover .dropdown_content a {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  line-height: 1.7rem;
 }
 
 .topnav button {
@@ -207,7 +200,7 @@
     height: 100vh;
     display: none;
     text-align: center;
-    overflow: hidden;
+    overflow: scroll;
     background-image: url(/kepek/hatter/89120.jpg);
     background-position: center center;
     background-size: cover;
@@ -217,8 +210,7 @@
   .dropdown {
     display: block;
     text-align: center;
-    /* background-color: white; */
-    /* width: 100%; */
+    margin-bottom: 10px;
   }
 
   .dropdown_links_appear{
@@ -247,18 +239,6 @@
     transition: all 300ms ease-in-out;
     z-index: 100;
     align-self: flex-end;
-    /* display: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
-    height: 80px;
-    width: auto;
-    transform: scale(0.6);
-    background-color: transparent;
-    border: none;
-    outline: none;
-    transition: all 300ms ease-in-out; */
   }
 
   .cancel_button:hover {
@@ -288,7 +268,8 @@
     width: 60%;
     left: 21%;
     top: 10%;
-    background-color: rgba(218, 183, 95, 1.0);
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .search_bar {
@@ -307,3 +288,11 @@
 
 
 /************       TOP NAVIGATION END       ********************/
+
+/******* MOBILE MEDIA QUERIES FOR MAX-WIDTH < 512PX ***************/
+
+@media screen and (max-width: 512px){
+  .topnav{
+    background-size: auto;
+  }
+}

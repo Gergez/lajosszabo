@@ -28,7 +28,7 @@ let currentPageZIndex;
 function setUpNextPageButton() {
   document.body.appendChild(nextPageButton);
   nextPageImage.src = "kepek/nyilak/arrow-next.png";
-  nextPageButton.className = "arrowButton fadein_nostay";
+  nextPageButton.className = "arrowButton arrowNext fadein_nostay";
   nextPageButton.style.right = '3%';
   nextPageButton.style.backgroundColor = 'transparent';
   nextPageButton.appendChild(nextPageImage);
@@ -40,7 +40,7 @@ let previousPageImage = document.createElement("IMG");
 function setUpPreviousPageButton() {
   document.body.appendChild(previousPageButton);
   previousPageImage.src = "kepek/nyilak/arrow-prev.png";
-  previousPageButton.className = "arrowButton";
+  previousPageButton.className = "arrowButton arrowPrev";
   previousPageButton.appendChild(previousPageImage);
   previousPageButton.style.left = '3%';
   previousPageButton.style.backgroundColor = 'transparent';

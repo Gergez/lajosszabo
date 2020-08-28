@@ -24,12 +24,14 @@ function responsiveNavigation() {
     document.getElementsByClassName('topnav')[0].style.display = 'none';
     cancelButton.style.display = 'none';
     burgerButton.style.display = 'block';
+    window.scroll(0,0);
   });
 
   burgerButton.addEventListener('click', () => {
     document.getElementsByClassName('topnav')[0].style.display = 'block';
     cancelButton.style.display = 'block';
     burgerButton.style.display = 'none';
+    window.scroll(0,0);
   });
 }
 

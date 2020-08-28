@@ -9,6 +9,14 @@
   border-radius: 10px;
 }
 
+.arrowNext{
+  right: 3% !important;
+}
+
+.arrowPrev{
+  left: 3% !important;
+}
+
 .arrowButton:focus {
   outline: none;
 }
@@ -21,4 +29,17 @@
 .arrowButton img {
   width: 35px;
   height: auto;
+}
+
+
+@media screen and (max-width: 512px){
+
+  .arrowNext{
+    right: 0% !important;
+  }
+
+  .arrowPrev{
+    left: 0% !important;
+  }
+
 }

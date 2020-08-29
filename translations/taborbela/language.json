@@ -1,0 +1,21 @@
+const language = {
+  "hu": {
+    "title": "Tábor Béla",
+    "konyvek": "<a class=\"titles\" href=\"#\">Könyvek</a>"
+  },
+
+  "en": {
+    "title": "Béla Tábor",
+    "konyvek": "<a class=\"titles\" href=\"#\">Könyvek</a>"
+  },
+
+  "de": {
+    "title": "Béla Tábor",
+    "konyvek": "<a class=\"titles\" href=\"#\">Könyvek</a>"
+  },
+
+  "fr": {
+    "title": "Béla Tábor",
+    "konyvek": "<a class=\"titles\" href=\"#\">Könyvek</a>"
+  }
+}

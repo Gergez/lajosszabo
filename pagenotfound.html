@@ -9,53 +9,45 @@
   <title>Az oldal nem található - Magyar Dialogikus Iskola</title>
 
 
-  <link rel="stylesheet" href="css/main/general.css">
-  <link rel="stylesheet" href="css/main/main.css">
-  <link rel="stylesheet" href="css/main/loading.css">
-  <link rel="stylesheet" href="css/main/navbar.css">
-  <link rel="stylesheet" href="css/main/jsrendered.css">
-  <link rel="stylesheet" href="css/main/responsive.css">
-  <link rel="stylesheet" href="css/main/animations.css">
-  <link rel="stylesheet" href="css/pagenotfound/style.css">
-  <link rel="stylesheet" href="css/rendered/footer.css">
+  <link rel="stylesheet" href="/css/main/general.css">
+  <link rel="stylesheet" href="/css/main/main.css">
+  <link rel="stylesheet" href="/css/main/loading.css">
+  <link rel="stylesheet" href="/css/main/navbar.css">
+  <link rel="stylesheet" href="/css/main/jsrendered.css">
+  <link rel="stylesheet" href="/css/main/responsive.css">
+  <link rel="stylesheet" href="/css/main/animations.css">
+  <link rel="stylesheet" href="/css/pagenotfound/style.css">
+  <link rel="stylesheet" href="/css/rendered/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-  <link rel="icon" href="./kepek/favicon/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/kepek/favicon/favicon.png" type="image/x-icon">
 
 </head>
 
 <body>
 
-  <script type="text/javascript" src="js/main/language.json"></script>
-  <script type="text/javascript" src="js/main/main_link.json"></script>
-  <script type="text/javascript" src="js/rendered/navbar_language.json"></script>
-  <script type="text/javascript" src="js/rendered/navbar_link.json"></script>
+  <script type="text/javascript" src="/translations/pagenotfound/language.json"></script>
+  <script type="text/javascript" src="/translations/navbar/navbar_language.json"></script>
+  <script type="text/javascript" src="/translations/footer/footer_language.json"></script>
+  <script type="text/javascript" src="/js/rendered/loading.js"></script>
+
+<div id="main_container" class="main_container">
 
   <div id="navbar">
     <script type="text/javascript" src="js/rendered/navbar.js"></script>
   </div>
-<style>
-h1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-  /* font-size: 2.5em; */
-}
-h1 a{
-  color:black;
-}
 
-h1:hover a{
-  transform: scale(1.2);
-}
+<div class="title">
+  <h1 id="magyar_dialogikus_iskola">Magyar dialogikus iskola</h1>
+</div>
 
-</style>
-  <h1>Az oldal nem található.<a href="/index.html"> Vissza a Magyar dialogikus iskola főoldalára.</a></h1>
+  <div class="page_not_found">
+    <h2 id="vissza_a_fooldalra">Az oldal nem található.<a href="index.html"> </br>Vissza a Magyar dialogikus iskola főoldalára.</a></h2>
+  </div>
 
+  <script type="text/javascript" src="/js/rendered/footer.js"></script>
 
-  <script type="text/javascript" src="js/rendered/footer.js"></script>
+</div>
   <script type="module" src="/sablon.js" defer></script>
 
 </body>

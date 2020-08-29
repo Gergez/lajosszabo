@@ -8,43 +8,32 @@
   <meta keywords="Magyar Dialogikus Iskola, Dialogikus Iskola, Szabó Lajos, Tábor Béla, Mándy Stefánia, Horváth Ágnes, Surányi László, Tábor Ádám">
   <title>Magyar Dialogikus Iskola</title>
 
-  <link rel="stylesheet" href="css/main/general.css">
-  <link rel="stylesheet" href="css/main/main.css">
-  <link rel="stylesheet" href="css/main/loading.css">
-  <link rel="stylesheet" href="css/main/navbar.css">
-  <link rel="stylesheet" href="css/main/jsrendered.css">
-  <link rel="stylesheet" href="css/main/responsive.css">
-  <link rel="stylesheet" href="css/main/animations.css">
-  <link rel="stylesheet" href="css/konyvtar/style.css">
-  <link rel="stylesheet" href="css/rendered/footer.css">
+  <link rel="stylesheet" href="/css/main/general.css">
+  <link rel="stylesheet" href="/css/main/main.css">
+  <link rel="stylesheet" href="/css/main/loading.css">
+  <link rel="stylesheet" href="/css/main/navbar.css">
+  <link rel="stylesheet" href="/css/main/jsrendered.css">
+  <link rel="stylesheet" href="/css/main/responsive.css">
+  <link rel="stylesheet" href="/css/main/animations.css">
+  <link rel="stylesheet" href="/css/konyvtar/style.css">
+  <link rel="stylesheet" href="/css/rendered/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-  <link rel="icon" href="./kepek/favicon/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/kepek/favicon/favicon.png" type="image/x-icon">
 
 
 </head>
 
 <body>
 
-  <script type="text/javascript" src="js/main/language.json"></script>
-  <script type="text/javascript" src="js/main/main_link.json"></script>
-  <script type="text/javascript" src="js/rendered/navbar_language.json"></script>
-  <script type="text/javascript" src="js/rendered/navbar_link.json"></script>
-
-  <div id="loading_container">
-    <div id="loading" class="loading">
-      <h1>Magyar dialogikus iskola</h1>
-      <div class="loading_animation">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-      </div>
-    </div>
-  </div>
+  <script type="text/javascript" src="/translations/konyvtar/language.json"></script>
+  <script type="text/javascript" src="/translations/navbar/navbar_language.json"></script>
+  <script type="text/javascript" src="/translations/footer/footer_language.json"></script>
+  <script type="text/javascript" src="/js/rendered/loading.js"></script>
 
   <div id="main_container" class="main_container">
     <div id="navbar">
-      <script type="text/javascript" src="js/rendered/navbar.js"></script>
+      <script type="text/javascript" src="/js/rendered/navbar.js"></script>
     </div>
 
     <section class="">
@@ -84,11 +73,12 @@
       </div>
     </section>
   </div>
-<script type="text/javascript" src="js/rendered/footer.js"></script>
+<script type="text/javascript" src="/js/rendered/footer.js"></script>
 </div>
 
-  <script type="module" src="sablon.js" defer></script>
-  <script type="text/javascript" src="/js/konyvtar/konyvtar.js"></script>
+  <script type="module" src="/sablon.js" defer></script>
+  <!-- <script type="text/javascript" src="/js/konyvtar/konyvtar.js"></script> -->
+  <script type="text/javascript" src="/js/konyvtar/app.js"></script>
 
 </body>
 

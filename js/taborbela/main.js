@@ -1,4 +1,3 @@
-
 import * as mobilenavbar from '../main/mobilenavbar.js';
 import * as languagehandler from '../main/languagehandler.js';
 import * as loading from '../main/loading.js';
@@ -16,8 +15,8 @@ window.onhashchange = () => {
 }
 
 window.onload = () => {
-  languagehandler.languageOnLoadUpdater()
-};
+  languagehandler.languageOnLoadUpdater();
+}
 
 window.onchange = () => {
 
@@ -52,4 +51,3 @@ window.onchange = () => {
 
   collapseAccordion(titles);
   collapseAccordion(containers);
-  

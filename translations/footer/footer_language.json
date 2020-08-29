@@ -1,0 +1,22 @@
+const footer_language = {
+  "hu": {
+    "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Kontakt: lsuranyi@gmail.com</a>",
+    "footer_copyright": "Tábor Béla jogutódjai <span>©</span>",
+    "footer_egyeb": "Egyéb"
+  },
+  "en": {
+    "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Contact: lsuranyi@gmail.com</a>",
+    "footer_copyright": "Tábor Béla jogutódjai ANGOL<span>©</span>",
+    "footer_egyeb": "Other"
+  },
+  "de": {
+    "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Kontakt: lsuranyi@gmail.com</a>",
+    "footer_copyright": "Tábor Béla jogutódjai NÉMET<span>©</span>",
+    "footer_egyeb": "Andere"
+  },
+  "fr": {
+    "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Contact: lsuranyi@gmail.com</a>",
+    "footer_copyright": "Tábor Béla jogutódjai FRANCIA<span>©</span>",
+    "footer_egyeb": "Autre"
+  }
+}

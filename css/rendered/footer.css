@@ -1,17 +1,18 @@
-html{
-  height: 100%;
-}
-
 footer{
   display: flex;
   position: fixed;
-  bottom: 0px;
-  height: 80px;
+  bottom: 0;
+  height: 60px;
   width: 100%;
   background: #a87e31;
   font-size: 2rem;
   justify-content: center;
   align-items: center;
+}
+
+.footer_1, .footer_2, .footer_3{
+  margin-right: 5px;
+  overflow-x: hidden;
 }
 
 .footer_1
@@ -20,10 +21,19 @@ footer{
  width:33%;
 }
 
+.footer_1 a{
+  color: black;
+}
+
 .footer_2
 {
   display:flex;
   width:33%
+}
+
+.footer_2 span{
+  display: contents;
+  transform: translate(2px, 2px);
 }
 
 .footer_3{

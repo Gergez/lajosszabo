@@ -15,5 +15,12 @@ loading.onReady(function() {
 
 /***************** FUNCTION CALLS START ********************/
 
+window.onhashchange = () => {
+  languagehandler.languageContentUpdater();
+}
+
+window.onload = () => {
+  languagehandler.languageOnLoadUpdater();
+}
 
 /***************** FUNCTION CALLS END ********************/

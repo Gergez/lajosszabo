@@ -44,22 +44,16 @@ function navbarToggler(){
     navbarContent[i].classList.toggle('dropdown_links_appear');
     });
   }
-
-
 }
-
 navbarToggler();
 
 
-
-
 function mediaFunction(x) {
-  if (x.matches) { // If media query matches
+  if (x.matches) { // if media query matches
     document.getElementsByClassName('topnav')[0].style.display = 'none';
     cancelButton.style.display = 'none';
     burgerButton.style.display = 'block';
 
-    // Kérdés, hogy ezzel mi lesz még. Amikor bemegyek a menübe, eltüntetem az összeset, és ha kimegyek, akkor vissza
   }
   else {
     burgerButton.style.display = 'none';

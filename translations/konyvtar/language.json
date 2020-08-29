@@ -1,0 +1,21 @@
+const language = {
+  "hu": {
+    "irasok": "Magyar dialogikus iskola",
+    "galeria": "Az oldal nem található.<a href=\"index.html#hu\"> </br>Vissza a Magyar dialogikus iskola főoldalára.</a>"
+  },
+
+  "en": {
+    "irasok": "Hungarian dialogical school",
+    "galeria": "Page not found.<a href=\"index.html#en\"> </br>Back to the landing page.</a>"
+  },
+
+  "de": {
+    "irasok": "Ungarische Dialogische Schule",
+    "galeria": "Seite nicht gefunden.<a href=\"index.html\"> </br>Zurück zur Hauptseite.</a>"
+  },
+
+  "fr": {
+    "irasok": "École dialogique hongroise",
+    "galeria": "Page non trouvée.<a href=\"index.html\"> </br>Retour à la page principale.</a>"
+  }
+}

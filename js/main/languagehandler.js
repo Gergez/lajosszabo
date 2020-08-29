@@ -7,9 +7,8 @@
 /*Language json files. FOOTER STILL NEEDED*/
 const navbar_translations = navbar_language;
 const content_translations = language;
+const footer_translations = footer_language;
 
-const navbar_links = navbar_link;
-const main_links = main_link;
 
 /*Array with all the language files*/
 let language_translationsAll = [];
@@ -22,8 +21,7 @@ function fileLoader(file){
 
 fileLoader(navbar_language);
 fileLoader(language);
-fileLoader(navbar_link);
-fileLoader(main_link);
+fileLoader(footer_language);
 
 /*This function changes all the main content's textContent based on id.
 It doesn't change the img sources or link sources.*/
@@ -68,6 +66,13 @@ for(let i = 0; i < language_translationsAll.length; i++){
 // languageLinkUpdater();
 
 };
+
+
+/**
+@TODO: 1) SET GLOBAL HTML TITLE ATTRIBUTE ACCORDING TO THE CURRENT LANGUAGE
+       2) SET THE LANG ATTRIBUTE OF EVERY TRANSLATED ELEMENT ACCORDING TO THE CURRENT LANGUAGE
+*/
+
 
 /*The 4 main languages*/
 const lang1 = document.querySelector('#lang1');

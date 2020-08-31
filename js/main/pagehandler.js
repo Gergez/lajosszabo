@@ -24,6 +24,14 @@ page6.style.zIndex = 95;
 
 let currentPageZIndex;
 
+// const lang1 = document.querySelector('#lang1');
+// const lang2 = document.querySelector('#lang2');
+// const lang3 = document.querySelector('#lang3');
+// const lang4 = document.querySelector('#lang4');
+/*******************SETUP JS RENDERED NEXT PAGE BUTTON AND PREV PAGE BUTTON START****************/
+function getCurrentPage(){
+  return currentPage;
+}
 
 function setUpNextPageButton() {
   document.body.appendChild(nextPageButton);
@@ -48,6 +56,8 @@ function setUpPreviousPageButton() {
   previousPageButton.style.pointerEvents = 'none';
 }
 
+/*******************SETUP JS RENDERED NEXT PAGE BUTTON AND PREV PAGE BUTTON END****************/
+
 /************************* ANIMATE BETWEEN PAGES START **************************/
 
 function pageTransition (button) {
@@ -63,7 +73,17 @@ function pageTransition (button) {
 
 /*************************  ANIMATE BETWEEN PAGES END **********************/
 
+function currentPageHandler() {
+  for (let i = 0; i < pageArray.length; i++) {
+    if (currentPage == i) {
+      pageArray[i].style.display = 'block';
+    } else {
+      pageArray[i].style.display = 'none';
+    }
+  }
+}
 
+/*******************************PREV AND NEXT PAGE HANDLERS START***********************/
 
 function goToNextPage() {
 
@@ -124,71 +144,21 @@ function goToPreviousPage() {
 
 /*************PREV AND NEXT PAGE HANDLERS END************/
 
-function currentPageHandler() {
-  for (let i = 0; i < pageArray.length; i++) {
-    if (currentPage == i) {
-      pageArray[i].style.display = 'block';
-    } else {
-      pageArray[i].style.display = 'none';
-    }
-  }
+/*CORRECTS URL FOR WHEN THE JS RENDERED BUTTONS ARE CLICKED*/
 
-
-// DEFINE AN ARRAY CONTAINING URLS FOR THE CORRESPONDING CURRENT PAGES
-// CHECK FOR CURRENT PAGE'S URL.
-// CONCATANE A LANG TAG ACCORDING TO THE CURRENT LANGUAGE.
-
-/*
-LOCATION.HASH = PAGEURLS[CURRENTPAGE] + LANGUAGE TAG
-
-
-
-*/
-// let languageTag = checkLanguageTag();
-// location.hash = `${pageURLs[currentPage]}${languageTag}`
-
-}
-
-function URLHandler(){
+function setURL(){
 let cur_location = location.hash;
 let langTag = checkLanguageTag();
-location.hash = `${pageURLs[currentPage]}${langTag}`;
 
-  if(cur_location.includes("#hu")){
-    location.hash = `${pageURLs[currentPage]}#hu`;
-    console.log("It is hungarian");
-  }else if(cur_location.includes("#en")){
-    location.hash = `${pageURLs[currentPage]}#en`;
-    console.log("It is english");
-  }else if(cur_location.includes("#de")){
-    location.hash = `${pageURLs[currentPage]}#de`;
-    console.log("It is german");
-  }else if(cur_location.includes("#fr")){
-    location.hash = `${pageURLs[currentPage]}#fr`;
-    console.log("It is french");
-  }else{
-    location.hash = `${pageURLs[currentPage]}`;
-    console.log("It is basic");
-  }
-  cur_location = "";
-  return location.hash;
+location.hash = `${pageURLs[currentPage]}${langTag}`;
+cur_location = "";
 }
 
 nextPageButton.addEventListener('click', goToNextPage);
+nextPageButton.addEventListener('click', setURL);
 previousPageButton.addEventListener('click', goToPreviousPage);
+previousPageButton.addEventListener('click', setURL);
 
-
-/* TERVEK A NAVBAR LINKELÉSHEZ
-
-1. GET THE CURRENT PAGE INDEX
-2. GET THE DIFFERENCE OF THE CURRENT PAGE AND THE PAGE WE ARE NAVIGATED TO WITH +/-
-3. CALL THE goToNextPage OR goToPreviousPage FUNCTION THAT MANY TIMES.
-4. ??? PROFIT
-
-
-1.
-
-*/
 
 /*MAKE ARROWS DISAPPEAR ON SCROLL DOWN AND APPEAR ON SCROLL UP*/
 
@@ -213,11 +183,13 @@ function togglePagingArrow(){
   prevScrollpos = currentScrollPos;
 }
 
+/*MAKES IT POSSIBLE TO SWITCH PAGES WITH KEYBOARD*/
+
 function keyboardPager() {
   if(event.key == "ArrowRight" && currentPage != 5){
-    goToNextPage();
+    nextPageButton.click();
   }else if(event.key == "ArrowLeft" && currentPage != 0){
-    goToPreviousPage();
+    previousPageButton.click();
   }
 }
 
@@ -256,78 +228,56 @@ function scrollToTop(){
 
 function setCurrentPage() {
 
-  console.log("inside setCurrentPage");
   let currentLocation = location.hash;
-  console.log(currentLocation);
   let languageTag = checkLanguageTag();
 
   if(currentLocation == "" || currentLocation == "#" || currentLocation.includes("#magyar_dialogikus_iskola")){
     currentPage = 0;
-    console.log("Current Page = " + currentPage);
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
   }else if(currentLocation.includes("#vadirat")){
     currentPage = 1;
-    console.log("Current Page = " + currentPage);
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
   }else if(currentLocation.includes("#alapallas")){
     currentPage = 2;
-    console.log("Current Page = " + currentPage);
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
   }else if(currentLocation.includes("#tortenet")){
     currentPage = 3;
-    console.log("Current Page = " + currentPage);
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
   }else if(currentLocation.includes("#harmincas-evek")){
     currentPage = 4;
-    console.log("Current Page = " + currentPage);
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
   }else if(currentLocation.includes("#negyvenot-utan")){
     currentPage = 5;
-    console.log("Current Page = " + currentPage);
     goToPreviousPage();
     goToNextPage();
     scrollToTop();
   }
 
-  // location.hash = `${pageURLs[currentPage]}${checkLanguageTag()}`;
-  // location.hash = URLHandler();
 }
 
-function whatever(){
-
-let navLink = document.querySelector(".topnav .dropdown .dropdown_content");
-let navLinkAnchors = navLink.querySelectorAll("a");
-
-  for(let i = 0; i < navLinkAnchors.length; i++){
-    navLinkAnchors[i].addEventListener('click', () => {
-      location.hash = `${pageURLs[currentPage]}${checkLanguageTag()}`;
-      console.log(navLinkAnchors[i]);
-    });
-  }
-}
+// function navbarButtonsAddHash(){
 //
-whatever();
-
-// function dostuff(){
-//   let navLink = document.querySelector(".topnav .dropdown .dropdown_content");
-//   let navLinkAnchors = navLink.querySelectorAll("a");
-//
+// let navLink = document.querySelector(".topnav .dropdown .dropdown_content");
+// let navLinkAnchors = navLink.querySelectorAll("a");
 //   for(let i = 0; i < navLinkAnchors.length; i++){
 //     navLinkAnchors[i].addEventListener('click', () => {
-//       location.hash = `${pageURLs[currentPage]}${checkLanguageTag()}`;
+//       setTimeout(lang1.click(), 100);
+//       scrollToTop();
 //     });
 //   }
 // }
+// navbarButtonsAddHash();
+
 /************** PAGE TURNER END **************/
 
 export {
@@ -336,7 +286,8 @@ export {
   goToPreviousPage,
   goToNextPage,
   currentPageHandler,
+  setURL,
+  togglePagingArrow,
   setCurrentPage,
-  keyboardPager,
-  togglePagingArrow
+  keyboardPager
 }

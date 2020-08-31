@@ -1,1 +1,2 @@
 ErrorDocument 404 /pagenotfound.html
+Redirect /index.html /index.html#magyar_dialogikus_iskola

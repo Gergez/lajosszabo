@@ -37,3 +37,27 @@ Nikosszal:
 1. Szöveg tördelése: Bekezdések (jelenleg 30px); oldalak szélessége 70% (80%-ról); Szövegek tördelése kicsit (/br) EZT NEM KEZELI A FORDÍTÓ SCRIPT!.
 2. Mobilos nézetnél sáv a menünek és logo.
 3. Szabvány oldal
+
+
+
+
+Írások Tábor Béláról:
+
+Menüpontok neve kérdéses.
+Kell az egyikhez: Horváth Ágnes, Surányi Laci, Hegedűs Pali, Isztray Simon, Danielle, Abért Miklós, Miklóssy Endre,
+
+Pagenotfound:
+Fordítások
+
+Footer:
+Kontaktba megadni Ádámot.
+jogutódjai fordítás
+
+
+
+
+
+
+
+
+

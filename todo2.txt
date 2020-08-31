@@ -1,0 +1,5 @@
+Szerveren:
+
+Kezdő oldal Redirect -> index.html#magyar_dialogikus_iskola (-ra)
+300-as Redirectek.
+404-es Redirect Pagenotfound oldalra.

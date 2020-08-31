@@ -64,8 +64,8 @@ const navbar_language = {
     "navbar_szabo-lajos-irasok": "Writings",
     "navbar_szabo-lajos-szeminariumi-eloadasok": "Seminar lectures",
     "navbar_szabo-lajos-grafikak-kiallitasok": "Graphic arts, exhibitions",
-    "navbar_szabo-lajos-csutortoki-beszelgetesek": "Thursday's talks",
-    "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Conversations in Düsseldorf",
+    "navbar_szabo-lajos-csutortoki-beszelgetesek": "Thursday Conversations",
+    "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Conversations in Düsseldorf(hu)",
     "navbar_szabo-lajos-konferenciak": "Conferences",
     "navbar_szabo-lajos-bibliografia": "Bibliography",
 
@@ -76,7 +76,7 @@ const navbar_language = {
     "navbar_tabor-bela-a-szimbolum-valsaga": "A szimbólum válsága",
     "navbar_tabor-bela-preszokratikus-szeminariumok": "Presocratic seminars",
     "navbar_tabor-bela-egyeb-irasok": "Other writings",
-    "navbar_tabor-bela-csutortoki-beszelgetesek": "Thursday's talks",
+    "navbar_tabor-bela-csutortoki-beszelgetesek": "Thursday Conversations",
     "navbar_tabor-bela-szaz": "Béla Tábor 100",
     "navbar_tabor-belarol": "About Béla Tábor",
 
@@ -116,8 +116,8 @@ const navbar_language = {
     "navbar_szabo-lajos-irasok": "Schriften",
     "navbar_szabo-lajos-szeminariumi-eloadasok": "Seminarvorträge",
     "navbar_szabo-lajos-grafikak-kiallitasok": "Grafik, Ausstellungen",
-    "navbar_szabo-lajos-csutortoki-beszelgetesek": "Donnerstager Gespräche",
-    "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Düsseldorfer Gespräche",
+    "navbar_szabo-lajos-csutortoki-beszelgetesek": "Donnerstags- gespräche",
+    "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Düsseldorfer Gespräche(hu)",
     "navbar_szabo-lajos-konferenciak": "Konferenzen",
     "navbar_szabo-lajos-bibliografia": "Literaturverzeichnis",
 
@@ -128,7 +128,7 @@ const navbar_language = {
     "navbar_tabor-bela-a-szimbolum-valsaga": "Die Krise des Symbols",
     "navbar_tabor-bela-preszokratikus-szeminariumok": "Presokratische Seminare",
     "navbar_tabor-bela-egyeb-irasok": "Andere Schriften",
-    "navbar_tabor-bela-csutortoki-beszelgetesek": "Donnerstager Gespräche",
+    "navbar_tabor-bela-csutortoki-beszelgetesek": "Donnerstags- gespräche",
     "navbar_tabor-bela-szaz": "Béla Tábor 100",
     "navbar_tabor-belarol": "Über Béla Tábor",
 
@@ -169,7 +169,7 @@ const navbar_language = {
     "navbar_szabo-lajos-szeminariumi-eloadasok": "Conférences de séminaire",
     "navbar_szabo-lajos-grafikak-kiallitasok": "Dessins, expos",
     "navbar_szabo-lajos-csutortoki-beszelgetesek": "Les „jeudis”",
-    "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Conversations à Düsseldorf",
+    "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Conversations à Düsseldorf(hu)",
     "navbar_szabo-lajos-konferenciak": "Colloques",
     "navbar_szabo-lajos-bibliografia": "Bibliographie",
 

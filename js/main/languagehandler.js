@@ -23,8 +23,8 @@ fileLoader(navbar_language);
 fileLoader(language);
 fileLoader(footer_language);
 
-/*This function changes all the main content's textContent based on id.
-It doesn't change the img sources or link sources.*/
+/*This is the main function that changes all the main content's innerHTML based on id.
+It doesn't change the img sources.*/
 function languageContentUpdater() {
 
 for(let i = 0; i < language_translationsAll.length; i++){
@@ -89,29 +89,48 @@ function imgChanger(lang) {
   switch (lang.textContent) {
     case "Magyar":
       location.href = (`${filtered_current_location}#hu`);
+      console.log(location.href);
       img.src = "../kepek/menu/magyar_zaszlo.svg";
       img.alt = "Magyar nyelv";
       break;
 
     case "English":
       location.href = (`${filtered_current_location}#en`);
+      console.log(location.href);
       img.src = "../kepek/menu/angol_zaszlo.svg";
       img.alt = "English language";
       break;
 
     case "Deutsch":
       location.href = (`${filtered_current_location}#de`);
+      console.log(location.href);
       img.src = "../kepek/menu/nemet_zaszlo.svg";
       img.alt = "Deutsche Sprache";
       break;
 
     case "Français":
       location.href = (`${filtered_current_location}#fr`);
+      console.log(location.href);
       img.src = "../kepek/menu/francia_zaszlo.svg";
       img.alt = "Langue Française";
       break;
   }
 }
+
+
+function navbarButtonsAddHash(){
+
+let navLink = document.querySelector(".topnav .dropdown .dropdown_content");
+let navLinkAnchors = navLink.querySelectorAll("a");
+  for(let i = 0; i < navLinkAnchors.length; i++){
+    navLinkAnchors[i].addEventListener('click', () => {
+      setTimeout(lang1.click(), 100);
+      scrollToTop();
+    });
+  }
+}
+navbarButtonsAddHash();
+
 
 lang1.addEventListener('click', () => {
   imgChanger(lang1);

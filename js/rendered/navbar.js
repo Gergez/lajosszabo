@@ -10,10 +10,10 @@ function preload() {
 }
 
 preload(
-  "../../kepek/menu/magyar_zaszlo.svg",
-  "../../kepek/menu/angol_zaszlo.svg",
-  "../../kepek/menu/nemet_zaszlo.svg",
-  "../../kepek/menu/francia_zaszlo.svg"
+  "/lajosszabo/kepek/menu/magyar_zaszlo.svg",
+  "/lajosszabo/kepek/menu/angol_zaszlo.svg",
+  "/lajosszabo/kepek/menu/nemet_zaszlo.svg",
+  "/lajosszabo/kepek/menu/francia_zaszlo.svg"
 );
 
 //NAVBAR.HTML CONVERTED TO NAVBAR.JS WITH ONLINE CONVERTER http://www.andrewdavidson.com/convert-html-to-javascript/
@@ -110,7 +110,7 @@ document.write( '    </form> -->\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '      <button class=\"language_selector\"><a id=\"lang1\">Magyar</a></button>\n' );
-document.write( '      <img class=\"language_flag\" src=\"../../kepek/menu/magyar_zaszlo.svg\" alt=\"Magyar nyelv\">\n' );
+document.write( '      <img class=\"language_flag\" src=\"/lajosszabo/kepek/menu/magyar_zaszlo.svg\" alt=\"Magyar nyelv\">\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <button class=\"language_selection\" id=\"lang2\">English</button>\n' );

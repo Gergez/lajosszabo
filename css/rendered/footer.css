@@ -17,12 +17,17 @@ footer{
 
 .footer_1
 {
- display:flex;
+ display:block;
  width:33%;
 }
 
+.footer_1 a:nth-of-type(2){
+  display: block;
+}
+
 .footer_1 a{
-  color: black;
+  /* color: black; */
+  color: rgb(80, 54, 7);
 }
 
 .footer_2
@@ -32,7 +37,6 @@ footer{
 }
 
 .footer_2 span{
-  display: contents;
   transform: translate(2px, 2px);
 }
 

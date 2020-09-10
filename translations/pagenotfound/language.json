@@ -16,6 +16,6 @@ const language = {
 
   "fr": {
     "magyar_dialogikus_iskola": "École dialogique hongroise",
-    "vissza_a_fooldalra": "Page non trouvée.<a href=\"index.html\"> </br>Retour à la page principale.</a>"
+    "vissza_a_fooldalra": "Page non trouvée.<a href=\"index.html\"> </br>Retour à page d'accueil.</a>"
   }
 }

@@ -1,7 +1,7 @@
-import * as mobilenavbar from './mobilenavbar.js';
-import * as languagehandler from './languagehandler.js';
-import * as loading from './loading.js';
-import * as konyvtar from './konyvtar/konyvtar.js';
+import * as mobilenavbar from '../main/mobilenavbar.js';
+import * as languagehandler from '../main/languagehandler.js';
+import * as loading from '../main/loading.js';
+import * as konyvtar from '../main/konyvtar/konyvtar.js';
 
 loading.onReady(function() {
   loading.show('main_container', true);

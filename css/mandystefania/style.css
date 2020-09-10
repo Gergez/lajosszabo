@@ -1,0 +1,196 @@
+.title{
+  margin-bottom: 10px;
+}
+
+.eletido{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portre_wrapper{
+
+}
+
+.portre{
+
+}
+
+
+
+
+/**/
+
+section
+{
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #BB994C;
+  margin: 0;
+  padding: 5px 10px;
+  min-height: unset;
+  height: auto;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+p{
+  text-indent: 0;
+}
+
+p + p {
+  margin: 0;
+}
+
+section h1{
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 0 20px 20px;
+}
+
+div .konyvek{
+  display:flex;
+}
+
+a{
+  color:inherit;
+}
+
+a:link{
+  color:black;
+}
+
+a:visited{
+  color: black;
+}
+
+section a{
+  font-size:2rem;
+  padding:auto 10px;
+  text-decoration: none;
+  color:#3E2200;
+  margin:auto 0;
+}
+
+section a:hover{
+  color:rgba(218,183,95,0.8);
+}
+
+.accordion{
+  max-height: 100px;
+  overflow: hidden;
+  padding: 0;
+}
+/* a:hover{
+  transform: scale(1.1);
+} */
+
+.page_container > h1.title{
+  padding-top: 110px;
+  padding-bottom: 70px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.konyvek_inner_wrapper p {
+  display: none;
+}
+
+.konyvek_inner_wrapper p {
+  display: block;
+}
+
+.konyvek
+{
+  display:block;
+  background-color: #BB994C;
+}
+
+.konyvek_container{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.konyvek_wrapper
+{
+  display:block;
+  justify-content: center;
+}
+
+/* .konyvek_wrapper h1::after{
+  content: "";
+  position: relative;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #3e2200;
+  margin: auto;
+  top: 42px;
+  left: 5px;
+  transition: all 0.5s ease-in-out;
+  content: '\02795';  Unicode character for "plus" sign (+)
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+} */
+/* .konyvek_wrapper h1::before {
+    content: '';
+    width: 20px;
+    height: 5px;
+    background-color: #715521;
+    float: right;
+    transform: translateY(30px);
+} */
+
+.konyvek_wrapper h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color: #3e2200;
+  margin: auto;
+  right: 5px;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.rotate{
+  transform: rotate(180deg);
+}
+
+.konyvek_inner_wrapper{
+  display:block;
+  padding: 0 20px;
+  margin-top: 0;
+  background-color: rgba(218, 183, 95, 1.0);
+}
+
+.konyvek_inner_wrapper p:first-of-type{
+  padding-top: 15px;
+}
+
+.titles{
+  text-shadow:none;
+}
+
+.zsidosag_ket_utja{
+  font-size:20px;
+  font-weight: 600;
+}
+
+.ostortenet{
+  background-color:#a87e31;
+}
+
+.szeminariumok{
+  background-color: #a87e31;
+}
+
+.irasok_tabor_belarol{
+  background-color: #BB994C;
+  margin-bottom: 100px;
+}

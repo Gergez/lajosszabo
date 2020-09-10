@@ -119,7 +119,7 @@ const navbar_language = {
     "navbar_szabo-lajos-csutortoki-beszelgetesek": "Donnerstags- gespräche",
     "navbar_szabo-lajos-dusseldorfi-beszelgetesek": "Düsseldorfer Gespräche(hu)",
     "navbar_szabo-lajos-konferenciak": "Konferenzen",
-    "navbar_szabo-lajos-bibliografia": "Literaturverzeichnis",
+    "navbar_szabo-lajos-bibliografia": "Literatur- verzeichnis",
 
     "navbar_tabor-bela": "Béla Tábor",
     "navbar_tabor-bela-eletrajz": "Biografie",
@@ -192,7 +192,7 @@ const navbar_language = {
     "navbar_mandy-stefania-kepzomuveszeti-irasok": "Écrits d'art",
     "navbar_mandy-stefania-mandy-szaz": "Mándy 100",
 
-    "navbar_tovabbi_szerzok": "Postérité",
+    "navbar_tovabbi_szerzok": "l'Après",
     "navbar_horvath-agnes": "Ágnes Horváth",
     "navbar_suranyi-laszlo": "László Surányi",
     "navbar_tabor-adam": "Ádám Tábor",

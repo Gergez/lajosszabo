@@ -53,10 +53,11 @@ section a{
   text-decoration: none;
   color:#3E2200;
   margin:auto 0;
+  transition: color 0.25s ease-in-out;
 }
 
 section a:hover{
-  color:rgba(218,183,95,0.8);
+  color:#3e2200;
 }
 
 .accordion{
@@ -73,14 +74,6 @@ section a:hover{
   padding-bottom: 70px;
   text-align: center;
   font-size: 3.5rem;
-}
-
-.konyvek_inner_wrapper p {
-  display: none;
-}
-
-.konyvek_inner_wrapper p {
-  display: block;
 }
 
 .konyvek
@@ -160,9 +153,18 @@ section a:hover{
   text-shadow:none;
 }
 
-.zsidosag_ket_utja{
-  font-size:20px;
+.irasok{
+  font-size: 18px;
   font-weight: 600;
+}
+
+.irasok a{
+  transition: all 0.5s ease-in-out;
+}
+
+.irasok:hover a{
+  color: black;
+  transform: scale(1.1);
 }
 
 .ostortenet{

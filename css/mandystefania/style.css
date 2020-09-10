@@ -4,7 +4,7 @@
 
 .eletido{
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .portre_wrapper{
@@ -48,7 +48,7 @@ section h1{
   padding: 0 20px 20px;
 }
 
-div .konyvek{
+div .versek{
   display:flex;
 }
 
@@ -87,38 +87,38 @@ section a:hover{
 
 .page_container > h1.title{
   padding-top: 110px;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 3.5rem;
 }
 
-.konyvek_inner_wrapper p {
+.versek_inner_wrapper p {
   display: none;
 }
 
-.konyvek_inner_wrapper p {
+.versek_inner_wrapper p {
   display: block;
 }
 
-.konyvek
+.versek
 {
   display:block;
   background-color: #BB994C;
 }
 
-.konyvek_container{
+.versek_container{
   display:flex;
   justify-content: space-around;
   flex-direction: column;
 }
 
-.konyvek_wrapper
+.versek_wrapper
 {
   display:block;
   justify-content: center;
 }
 
-/* .konyvek_wrapper h1::after{
+/* .versek_wrapper h1::after{
   content: "";
   position: relative;
   width: 0;
@@ -135,7 +135,7 @@ section a:hover{
   float: right;
   margin-left: 5px;
 } */
-/* .konyvek_wrapper h1::before {
+/* .versek_wrapper h1::before {
     content: '';
     width: 20px;
     height: 5px;
@@ -144,7 +144,7 @@ section a:hover{
     transform: translateY(30px);
 } */
 
-.konyvek_wrapper h1::after {
+.versek_wrapper h1::after {
   content: "";
   display: block;
   position: absolute;
@@ -162,14 +162,14 @@ section a:hover{
   transform: rotate(180deg);
 }
 
-.konyvek_inner_wrapper{
+.versek_inner_wrapper{
   display:block;
   padding: 0 20px;
   margin-top: 0;
   background-color: rgba(218, 183, 95, 1.0);
 }
 
-.konyvek_inner_wrapper p:first-of-type{
+.versek_inner_wrapper p:first-of-type{
   padding-top: 15px;
 }
 

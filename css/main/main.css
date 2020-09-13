@@ -1,5 +1,9 @@
 /************** Page_container START **************/
 
+.main_container{
+  scroll-behavior: auto;
+}
+
 section {
   display: flex;
   position: absolute;

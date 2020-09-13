@@ -30,6 +30,10 @@ footer{
   color: rgb(80, 54, 7);
 }
 
+.footer_1 a::after{
+  content: 'Ide valami paperclip';
+}
+
 .footer_2
 {
   display:flex;

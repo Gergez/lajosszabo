@@ -19,9 +19,15 @@ let irasok = document.getElementById('irasok');
 let galeria = document.getElementById('galeria');
 let esemenyek = document.getElementById('esemenyek');
 
-let irasokContent = document.getElementsByClassName('irasok')[0];
-let galeriaContent = document.getElementsByClassName('galeria')[0];
-let esemenyekContent = document.getElementsByClassName('esemenyek')[0];
+let irasokContent = document.getElementsByClassName('irasok_container')[0];
+let galeriaContent = document.getElementsByClassName('galeria_container')[0];
+let esemenyekContent = document.getElementsByClassName('esemenyek_container')[0];
+
+let containers = [irasokContent, galeriaContent, esemenyekContent];
+
+for (var container of containers) {
+  
+}
 
 irasok.addEventListener('click', toggleClasslist);
 galeria.addEventListener('click', toggleClasslist);

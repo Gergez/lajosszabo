@@ -1,3 +1,12 @@
+:root{
+  --main-bg-color: #ecdcbb;
+  --main-link-color: rgba(132, 96, 6, 0.8);
+  --visited-and-active-link-color: rgba(132, 96, 6, 1);
+  --text-selection-color: rgba(218, 183, 95, 0.8);
+  --blockquote-bg-color: rgba(218, 183, 95, 0.65);
+
+}
+
 * {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -17,7 +26,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #ecdcbb;
+  background-color: var(--main-bg-color);
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
@@ -61,7 +70,7 @@ h3 {
 a:link {
   text-decoration: none;
   color: rgb(132, 96, 6);
-  color: rgba(132, 96, 6, 0.8);
+  color: var(--main-link-color);
   font-weight: bold;
   background-color: inherit;
 }
@@ -69,15 +78,21 @@ a:link {
 a:visited {
   text-decoration: none;
   color: rgb(132, 96, 6);
-  color: rgba(132, 96, 6, 1.0);
+  color: var(--visited-and-active-link-color);
   font-weight: bold;
   background-color: inherit;
 }
 
 a:active {
   color: rgb(132, 96, 6);
-  color: rgba(132, 96, 6, 1.0);
+  color: var(--visited-and-active-link-color);
 }
+
+/* a[href$=".pdf"]::after{
+  content: '';
+  background: transparent url('../../kepek/ikonok/document-pdf.png') center right no-repeat;
+  padding-right: 20px;
+} */
 
 p {
   font-size: 2rem;
@@ -97,7 +112,7 @@ img {
 
 ::selection {
   background-color: rgb(218, 183, 95);
-  background-color: rgba(218, 183, 95, 0.8);
+  background-color: var(--text-selection-color);
 }
 
 img::selection {
@@ -106,7 +121,7 @@ img::selection {
 
 ::-moz-selection {
   background-color: rgb(218, 183, 95);
-  background-color: rgba(218, 183, 95, 0.8);
+  background-color: var(--text-selection-color);
 }
 
 blockquote {
@@ -114,7 +129,7 @@ blockquote {
     font-style: italic;
     color: rgb(0 0 0 / 0.8);
     color: rgba(0, 0, 0, 0.8);
-    background-color: rgb(218 183 95 / 0.65);
+    background-color: var(--blockquote-bg-color);
     padding: 20px;
     border-radius: 4px;
 }

@@ -8,7 +8,8 @@ section
   display: flex;
   position: relative;
   width: 100%;
-  background-color: #BB994C;
+  /* background-color: #BB994C; */
+  background-color: rgb(168 126 49);
   margin: 0;
   padding: 5px 10px;
   min-height: unset;
@@ -53,7 +54,7 @@ section a{
   text-decoration: none;
   color:#3E2200;
   margin:auto 0;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.10s ease-in-out;
 }
 
 section a:hover{
@@ -76,10 +77,10 @@ section a:hover{
   font-size: 3.5rem;
 }
 
-.konyvek
-{
-  display:block;
-  background-color: #BB994C;
+.konyvek, .ostortenet, .preszokratikus, .tanulmanyok, .irasok{
+  /* display:block; */
+  /* background-color: #BB994C; */
+  /* background-color: rgb(218 183 95 / 0.65); */
 }
 
 .konyvek_container{
@@ -142,7 +143,8 @@ section a:hover{
   display:block;
   padding: 0 20px;
   margin-top: 0;
-  background-color: rgba(218, 183, 95, 1.0);
+  /* background-color: rgba(218, 183, 95, 1.0); */
+  background-color: rgb(218 183 95 / 0.65);
 }
 
 .konyvek_inner_wrapper p:first-of-type{
@@ -159,6 +161,7 @@ section a:hover{
 }
 
 .irasok a{
+  color: rgba(132, 96, 6, 1.0);
   transition: all 0.5s ease-in-out;
 }
 
@@ -167,15 +170,27 @@ section a:hover{
   transform: scale(1.1);
 }
 
+.irasok_wrapper{
+  padding: 10px;
+}
+
+.irasok_wrapper a{
+  color: rgba(132, 96, 6, 1.0);
+}
+
+/* .irasok_wrapper a::before, .irasok_wrapper a::after{
+  content:'"';
+} */
+
 .ostortenet{
-  background-color:#a87e31;
+  /* background-color:#a87e31; */
 }
 
 .szeminariumok{
-  background-color: #a87e31;
+  /* background-color: #a87e31; */
 }
 
 .irasok_tabor_belarol{
-  background-color: #BB994C;
+  /* background-color: #BB994C; */
   margin-bottom: 100px;
 }

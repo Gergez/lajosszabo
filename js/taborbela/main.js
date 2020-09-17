@@ -50,4 +50,4 @@ window.onchange = () => {
   }
 
   collapseAccordion(titles);
-  collapseAccordion(containers);
+  // collapseAccordion(containers);

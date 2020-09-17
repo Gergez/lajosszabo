@@ -1,21 +1,7 @@
-.title{
-  margin-bottom: 10px;
+:root{
+  --titles-bg-color: rgba(218, 183, 95, 0.8);
+  --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
 }
-
-.eletido{
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.portre_wrapper{
-
-}
-
-.portre{
-
-}
-
-
 
 
 /**/
@@ -25,7 +11,6 @@ section
   display: flex;
   position: relative;
   width: 100%;
-  background-color: #BB994C;
   margin: 0;
   padding: 5px 10px;
   min-height: unset;
@@ -44,8 +29,10 @@ p + p {
 
 section h1{
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   padding: 0 20px 20px;
+  /* border: solid 1px black; */
+  background-color: var(--titles-bg-color);
 }
 
 div .versek{
@@ -58,6 +45,7 @@ a{
 
 a:link{
   color:black;
+  background-color: none;
 }
 
 a:visited{
@@ -70,10 +58,7 @@ section a{
   text-decoration: none;
   color:#3E2200;
   margin:auto 0;
-}
-
-section a:hover{
-  color:rgba(218,183,95,0.8);
+  transition: color 0.10s ease-in-out;
 }
 
 .accordion{
@@ -81,9 +66,21 @@ section a:hover{
   overflow: hidden;
   padding: 0;
 }
-/* a:hover{
-  transform: scale(1.1);
-} */
+
+.eletido{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.bevezeto{
+  display: flex;
+  min-height: 350px;
+  margin-bottom: 50px;
+}
+
+.bevezeto p{
+ padding-left: 20px;
+}
 
 .page_container > h1.title{
   padding-top: 110px;
@@ -92,30 +89,22 @@ section a:hover{
   font-size: 3.5rem;
 }
 
-.versek_inner_wrapper p {
-  display: none;
-}
-
-.versek_inner_wrapper p {
-  display: block;
-}
-
-.versek
-{
-  display:block;
-  background-color: #BB994C;
-}
-
 .versek_container{
   display:flex;
   justify-content: space-around;
   flex-direction: column;
 }
 
-.versek_wrapper
-{
-  display:block;
-  justify-content: center;
+.versek_container li{
+  list-style: none;
+}
+
+.versek_container li::before{
+  content: "-";
+  padding-right: 4px;
+  font-size: 3rem;
+  color: #936606;
+  line-height: 0rem;
 }
 
 /* .versek_wrapper h1::after{
@@ -158,39 +147,51 @@ section a:hover{
   transition: transform 0.5s ease-in-out;
 }
 
-.rotate{
-  transform: rotate(180deg);
-}
-
-.versek_inner_wrapper{
+.versek_outer_wrapper{
   display:block;
-  padding: 0 20px;
+  padding: 15px 20px 0;
   margin-top: 0;
-  background-color: rgba(218, 183, 95, 1.0);
+  background-color: var(--konyvek_outer_wrapper-bg-color);
+  box-shadow: 0 1px 3px -1px #846006;
 }
 
-.versek_inner_wrapper p:first-of-type{
+.versek_outer_wrapper p:first-of-type{
   padding-top: 15px;
+  font-size: 2.2rem;
 }
 
 .titles{
   text-shadow:none;
+  font-size: 2.5rem;
 }
 
-.zsidosag_ket_utja{
-  font-size:20px;
+.irasok{
+  font-size: 18px;
   font-weight: 600;
 }
 
-.ostortenet{
-  background-color:#a87e31;
+.irasok a{
+  color: black;
+  transition: all 0.3s ease-in-out;
 }
 
-.szeminariumok{
-  background-color: #a87e31;
+.irasok:hover a{
+  color: rgba(132, 96, 6, 1.0);
 }
 
-.irasok_tabor_belarol{
-  background-color: #BB994C;
+.versek_wrapper li{
+  font-size: 2rem;
+}
+
+.versek_wrapper li a{
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.versek_wrapper li:hover a{
+  color: rgba(132, 96, 6, 1.0);
+}
+
+.irasok_megemlekezesek{
   margin-bottom: 100px;
 }

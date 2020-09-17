@@ -72,7 +72,6 @@ a:link {
   color: rgb(132, 96, 6);
   color: var(--main-link-color);
   font-weight: bold;
-  background-color: inherit;
 }
 
 a:visited {
@@ -80,7 +79,6 @@ a:visited {
   color: rgb(132, 96, 6);
   color: var(--visited-and-active-link-color);
   font-weight: bold;
-  background-color: inherit;
 }
 
 a:active {
@@ -136,12 +134,12 @@ blockquote {
 
 blockquote::before{
   content:'„';
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 blockquote::after{
   content:'”';
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 input[type=text] {

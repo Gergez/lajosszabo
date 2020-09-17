@@ -48,4 +48,4 @@ function collapseAccordion(collapsable){
 }
 
 collapseAccordion(titles);
-collapseAccordion(containers);
+// collapseAccordion(containers);

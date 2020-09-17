@@ -1,4 +1,7 @@
-
+:root{
+  --titles-bg-color: rgba(218, 183, 95, 0.8);
+  --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
+}
 
 
 /**/
@@ -8,8 +11,6 @@ section
   display: flex;
   position: relative;
   width: 100%;
-  /* background-color: #BB994C; */
-  background-color: rgb(168 126 49);
   margin: 0;
   padding: 5px 10px;
   min-height: unset;
@@ -28,8 +29,10 @@ p + p {
 
 section h1{
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   padding: 0 20px 20px;
+  /* border: solid 1px black; */
+  background-color: var(--titles-bg-color);
 }
 
 div .konyvek{
@@ -42,6 +45,7 @@ a{
 
 a:link{
   color:black;
+  background-color: none;
 }
 
 a:visited{
@@ -57,8 +61,8 @@ section a{
   transition: color 0.10s ease-in-out;
 }
 
-section a:hover{
-  color:#3e2200;
+.accordion_container{
+  box-shadow: 2px 2px 12px -2px #a87e31;
 }
 
 .accordion{
@@ -66,21 +70,31 @@ section a:hover{
   overflow: hidden;
   padding: 0;
 }
-/* a:hover{
-  transform: scale(1.1);
-} */
+
+.eletido{
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.bevezeto{
+  display: flex;
+  min-height: 350px;
+  margin-bottom: 50px;
+}
+
+.bevezeto p{
+ padding-left: 20px;
+}
+
+.portre_wrapper:hover img{
+  opacity: inherit;
+}
 
 .page_container > h1.title{
   padding-top: 110px;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 3.5rem;
-}
-
-.konyvek, .ostortenet, .preszokratikus, .tanulmanyok, .irasok{
-  /* display:block; */
-  /* background-color: #BB994C; */
-  /* background-color: rgb(218 183 95 / 0.65); */
 }
 
 .konyvek_container{
@@ -89,10 +103,21 @@ section a:hover{
   flex-direction: column;
 }
 
-.konyvek_wrapper
-{
-  display:block;
-  justify-content: center;
+.konyvek_container li{
+  list-style: none;
+}
+
+.konyvek_container li::before{
+  content: "-";
+  padding-right: 4px;
+  font-size: 3rem;
+  color: black;
+  line-height: 0rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.konyvek_container li:hover::before{
+  color: #936606;
 }
 
 /* .konyvek_wrapper h1::after{
@@ -135,19 +160,23 @@ section a:hover{
   transition: transform 0.5s ease-in-out;
 }
 
-.rotate{
-  transform: rotate(180deg);
-}
-
-.konyvek_inner_wrapper{
+.konyvek_outer_wrapper{
   display:block;
-  padding: 0 20px;
+  padding: 10px 20px 0;
   margin-top: 0;
-  /* background-color: rgba(218, 183, 95, 1.0); */
-  background-color: rgb(218 183 95 / 0.65);
+  background-color: var(--konyvek_outer_wrapper-bg-color);
+  box-shadow: 0 1px 3px -1px #846006;
 }
 
-.konyvek_inner_wrapper p:first-of-type{
+.konyvek_outer_wrapper li a{
+  transition: color 0.3s ease-in-out;
+}
+
+.konyvek_outer_wrapper li a:hover{
+  color: #936606;
+}
+
+.konyvek_outer_wrapper p:first-of-type{
   padding-top: 15px;
 }
 
@@ -161,36 +190,31 @@ section a:hover{
 }
 
 .irasok a{
-  color: rgba(132, 96, 6, 1.0);
-  transition: all 0.5s ease-in-out;
+  color: black;
+  transition: all 0.3s ease-in-out;
 }
 
 .irasok:hover a{
-  color: black;
-  transform: scale(1.1);
+  color: rgba(132, 96, 6, 1.0);
 }
 
 .irasok_wrapper{
   padding: 10px;
 }
 
-.irasok_wrapper a{
+.irasok_wrapper li{
+  font-size: 2rem;
+}
+
+.irasok_wrapper li a{
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.irasok_wrapper li:hover a{
   color: rgba(132, 96, 6, 1.0);
 }
 
-/* .irasok_wrapper a::before, .irasok_wrapper a::after{
-  content:'"';
-} */
-
-.ostortenet{
-  /* background-color:#a87e31; */
-}
-
-.szeminariumok{
-  /* background-color: #a87e31; */
-}
-
 .irasok_tabor_belarol{
-  /* background-color: #BB994C; */
   margin-bottom: 100px;
 }

@@ -3,7 +3,7 @@ let currentLogo = 0;
 let logoOsszes = ['15', '0666', '0673', '0674', '0675', '0676'];
 
 function changeLogo(){
- logo.src = `/kepek/logok/vagott/${logoOsszes[currentLogo]}.png`;
+ logo.src = `./kepek/logok/vagott/${logoOsszes[currentLogo]}.png`;
 }
 
 function logoPager(){

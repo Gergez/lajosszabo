@@ -1,7 +1,8 @@
 import * as pagehandler from './pagehandler.js';
-import * as mobilenavbar from './mobilenavbar.js';
-import * as languagehandler from './languagehandler.js';
-import * as loading from './loading.js';
+import * as languagehandler from '../plugins/languagehandler.js';
+import * as mobilenavbar from '../plugins/mobilenavbar.js';
+import * as loading from '../plugins/loading.js';
+import * as logoPager from '../plugins/kepcsere.js';
 
 
 loading.onReady(function() {

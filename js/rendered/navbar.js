@@ -1,83 +1,73 @@
-
-//PRELOAD IMAGES
-var images = [];
-
-function preload() {
-  for (var i = 0; i < arguments.length; i++) {
-    images[i] = new Image();
-    images[i].src = preload.arguments[i];
-  }
-}
-
-preload(
-  "/lajosszabo/kepek/menu/magyar_zaszlo.svg",
-  "/lajosszabo/kepek/menu/angol_zaszlo.svg",
-  "/lajosszabo/kepek/menu/nemet_zaszlo.svg",
-  "/lajosszabo/kepek/menu/francia_zaszlo.svg"
-);
-
-//NAVBAR.HTML CONVERTED TO NAVBAR.JS WITH ONLINE CONVERTER http://www.andrewdavidson.com/convert-html-to-javascript/
-document.write( '  <div class=\"mobile_menu\"></div>\n' );
+document.write( '<div class=\"mobile_menu\"></div>\n' );
 document.write( '<nav class=\"topnav\">\n' );
 document.write( '\n' );
+document.write( '<img class=\"logo\" src=\"/kepek/logok/15.jpg\" alt=\"logo\">' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );
-document.write( '      <button><a class=\"iskola_fooldal\" href=\"/index.html#magyar_dialogikus_iskola\" id=\"navbar_dialogikus-iskola\">Dialogikus Iskola</a></button>\n' );
+document.write( '      <button><a href=\"/index.html#magyar_dialogikus_iskola\" id=\"navbar_dialogikus_iskola\">Dialogikus Iskola</a></button>\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
-document.write( '        <!-- JÖN ONCLICK FV. CURRENTPAGE COUNTER SZARRAL -->\n' );
 document.write( '        <a href=\"/index.html#vadirat\" id=\"navbar_vadirat\">Vádirat</a>\n' );
 document.write( '        <a href=\"/index.html#alapallas\" id=\"navbar_alapallas\">Alapállás</a>\n' );
 document.write( '        <a href=\"/index.html#tortenet\" id=\"navbar_tortenet\">Történet</a>\n' );
-document.write( '        <a href=\"/index.html#harmincas-evek\" id=\"navbar_harmincas-evek\">A \'30-as évek írásai</a>\n' );
-document.write( '        <a href=\"/index.html#negyvenot-utan\" id=\"navbar_negyvenot-utan\">1945 után</a>\n' );
+document.write( '        <a href=\"/index.html#harmincas_evek\" id=\"navbar_harmincas_evek\">A \'30-as évek írásai</a>\n' );
+document.write( '        <a href=\"/index.html#negyvenot_utan\" id=\"navbar_negyvenot_utan\">1945 után</a>\n' );
+document.write( '      </div>\n' );
+document.write( '    </div>\n' );
+document.write( '\n' );
+document.write( '    <div class=\"dropdown\">\n' );
+document.write( '\n' );
+document.write( '      <button><a href=\"/beszelgetesek.html\" id=\"navbar_beszelgetesek_vitak_szeminariumok\">Beszélgetések, viták, szemináriumok</a></button>\n' );
+document.write( '\n' );
+document.write( '      <div class=\"dropdown_content\">\n' );
+document.write( '        <a href=\"/beszelgetesek.html#csutortoki_beszelgetesek\" id=\"navbar_csutortoki_beszelgetesek\">Csütörtöki beszélgetések</a>\n' );
+document.write( '        <a href=\"/beszelgetesek.html#szabo_lajos_szeminariumai\" id=\"navbar_szabo_lajos_szeminariumai\">Szabó Lajos szemináriumai</a>\n' );
+document.write( '        <a href=\"/beszelgetesek.html#tabor_bela_preszokratikus_szeminariumai\" id=\"navbar_tabor_bela_preszokratikus_szeminariumai\">Tábor Béla preszókratikus szemináriumai</a>\n' );
+document.write( '        <a href=\"/beszelgetesek.html#vitak\" id=\"navbar_vitak\">Viták</a>\n' );
 document.write( '      </div>\n' );
 document.write( '    </div>\n' );
 document.write( '\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
-document.write( '    <button><a href=\"szabolajos.html\" id=\"navbar_szabo-lajos\">Szabó Lajos</a></button>\n' );
+document.write( '    <button><a href=\"/SZL/szabolajos.html\" id=\"navbar_szabo_lajos\">Szabó Lajos</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
-document.write( '      <a href=\"/SZL/eletrajz/szabo_lajos_eletrajz.htm\" id=\"navbar_szabo-lajos-eletrajz\">Életrajz</a>\n' );
-document.write( '      <a href=\"/SZL/irasok/\" id=\"navbar_szabo-lajos-irasok\">Írások</a>\n' );
-document.write( '      <a href=\"/SZL/szeminariumi_eloadasok/\" id=\"navbar_szabo-lajos-szeminariumi-eloadasok\">Szemináriumi előadások</a>\n' );
-document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo-lajos-grafikak-kiallitasok\">Grafikák, kiállítások</a>\n' );
-document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo-lajos-csutortoki-beszelgetesek\">Csütörtöki beszélgetések</a>\n' );
-document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo-lajos-dusseldorfi-beszelgetesek\">Düsseldorfi beszélgetések</a>\n' );
-document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo-lajos-konferenciak\">Konferenciák</a>\n' );
-document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo-lajos-bibliografia\">Bibliográfia</a>\n' );
+document.write( '      <a href=\"/SZL/eletrajz/szabo_lajos_eletrajz.htm\" id=\"navbar_szabo_lajos_eletrajz\">Életrajz</a>\n' );
+document.write( '      <a href=\"/SZL/irasok/\" id=\"navbar_szabo_lajos_irasok\">Írások</a>\n' );
+document.write( '      <a href=\"/SZL/szeminariumi_eloadasok/\" id=\"navbar_szabo_lajos_szeminariumi_eloadasok\">Szemináriumi előadások</a>\n' );
+document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo_lajos_grafikak_kiallitasok\">Grafikák, kiállítások</a>\n' );
+document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo_lajos_dusseldorfi_beszelgetesek\">Düsseldorfi beszélgetések</a>\n' );
+document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo_lajos_konferenciak\">Konferenciák</a>\n' );
+document.write( '      <a href=\"/SZL/\" id=\"navbar_szabo_lajos_bibliografia\">Bibliográfia</a>\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
-document.write( '    <button><a href=\"/taborbela/taborbela.html\" id=\"navbar_tabor-bela\">Tábor Béla</a></button>\n' );
+document.write( '    <button><a href=\"/taborbela/taborbela.html\" id=\"navbar_tabor_bela\">Tábor Béla</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
-document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor-bela-eletrajz\">Életrajz</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor-bela-konyvek\">Könyvek</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor-bela-ostortenet\">\"Őstörténet\"</a>\n' );
-document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor-bela-a-szimbolum-valsaga\">A szimbólum válsága</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor-bela-preszokratikus-szeminariumok\">Preszókratikus szemináriumok</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor-bela-egyeb-irasok\">Egyéb írások</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor-bela-csutortoki-beszelgetesek\">Csütörtöki beszélgetések</a>\n' );
-document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor-bela-szaz\">\"Tábor Béla 100\"</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor-belarol\">Tábor Béláról</a>\n' );
+document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor_bela_eletrajz\">Életrajz</a>\n' );
+document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor_bela_konyvek\">Könyvek</a>\n' );
+document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor_bela_ostortenet\">\"Őstörténet\"</a>\n' );
+document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor_bela_a_szimbolum_valsaga\">A szimbólum válsága</a>\n' );
+document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor_bela_preszokratikus_szeminariumok\">Preszókratikus szemináriumok</a>\n' );
+document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor_bela_egyeb_irasok\">Egyéb írások</a>\n' );
+document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor_bela_szaz\">\"Tábor Béla 100\"</a>\n' );
+document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor_belarol\">Tábor Béláról</a>\n' );
 document.write( '\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
 document.write( '  <div class=\"dropdown\">\n' );
-document.write( '    <button><a href=\"/mandystefania/mandystefania.html\" id=\"navbar_mandy-stefania\">Mándy Stefánia</a></button>\n' );
+document.write( '    <button><a href=\"/mandystefania/mandystefania.html\" id=\"navbar_mandy_stefania\">Mándy Stefánia</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
-document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_mandy-stefania-eletrajz\">Életrajz</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_mandy-stefania-a-kes-a-kez-a-hal\">A kés a kéz a hal (részletek)</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_mandy-stefania-az-ellopott-tortenelem\">Az ellopott történelem (részletek)</a>\n' );
-document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_mandy-stefania-scintilla\">Scintilla (részletek)</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_mandy-stefania-kepzomuveszeti-irasok\">Képzőművészeti írások</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_mandy-stefania-mandy-szaz\">Mándy 100</a>\n' );
+document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_mandy_stefania_eletrajz\">Életrajz</a>\n' );
+document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_mandy_stefania_versek\">Versek</a>\n' );
+document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_mandy_stefania_kepzomuveszeti_irasok\">Képzőművészeti írások</a>\n' );
+document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_mandy_stefania_egyeb_tanulmanyok\">Egyéb tanulmányok</a>\n' );
+document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_mandy_stefania_irasok_megemlekezesek\">Írások, megemlékezések</a>\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
@@ -86,9 +76,9 @@ document.write( '  <div class=\"dropdown\">\n' );
 document.write( '    <button class=\"tovabbi_szerzok\"><a id=\"navbar_tovabbi_szerzok\">További szerzők</a></button>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
-document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_horvath-agnes\">Horváth Ágnes</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_suranyi-laszlo\">Surányi László</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor-adam\">Tábor Ádám</a>\n' );
+document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_horvath_agnes\">Horváth Ágnes</a>\n' );
+document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_suranyi_laszlo\">Surányi László</a>\n' );
+document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor_adam\">Tábor Ádám</a>\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
 document.write( '\n' );
@@ -104,13 +94,9 @@ document.write( '        <a href=\"/konyvtar/konyvtar.html#esemenyek\" id=\"navb
 document.write( '      </div>\n' );
 document.write( '    </div>\n' );
 document.write( '\n' );
-document.write( '    <!-- <form class=\"search_bar_container\">\n' );
-document.write( '      <input type=\"text\" class=\"search_bar\" placeholder=\" Keresés...\">\n' );
-document.write( '    </form> -->\n' );
-document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '      <button class=\"language_selector\"><a id=\"lang1\">Magyar</a></button>\n' );
-document.write( '      <img class=\"language_flag\" src=\"/lajosszabo/kepek/menu/magyar_zaszlo.svg\" alt=\"Magyar nyelv\">\n' );
+document.write( '      <img class=\"language_flag\" src=\"/kepek/menu/magyar_zaszlo.svg\" alt=\"Magyar nyelv\">\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <button class=\"language_selection\" id=\"lang2\">English</button>\n' );
@@ -119,4 +105,4 @@ document.write( '        <button class=\"language_selection\" id=\"lang4\">Fran�
 document.write( '      </div>\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
-document.write( '</nav>\n' );
+document.write( '</nav' );

@@ -1,0 +1,55 @@
+const language = {
+  "hu": {
+    "title": "Surányi László",
+    "suranyi_laszlo_leiras": "Rövid leírás Surányi Lászlóról... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+    "metaaxiomatika": "METAAXIOMATIKA",
+    "konyvek": "Könyvek",
+    "szabadsag_es_geometria": "<a href=\"http://lajosszabo.com/SL/logoszesananke.htm\">Szabadság és geometria: logosz és ananké harca a geometriában – Megjegyzések Tóth Imre Bolyai-értelmezéséhez</a>",
+    "metaaxiomatikai_problemak": "<a href=\"http://lajosszabo.com/SL/MAXPROBL.htm\">Metaaxiomatikai problémák</a>",
+    "metaaxiomatika_tanulmanyok": "<a href=\"\">Tanulmányok</a>",
+    "metaaxiomatika_tanulmanyok_l1": "<a href=\"http://buksz.c3.hu/150102/03.2problsuranyi.pdf\">Matematika és lélek – Hermann Imre matematikai tárgyú gondolkodás-lélektani tanulmányairól. BUKSZ Budapesti Könyvszemle 2015. tavasz-nyár, 47-54.</a>",
+    "metaaxiomatika_tanulmanyok_l2": "<a href=\"http://imago.mtapi.hu/a_folyoirat/e_szovegek/pdf/3(24)2013-3-4/113-122_Suranyi_L.pdf\">Egy matematikus megjegyzései Hermann Imre „Lélek és tér” koncepciójához Imágó Budapest (Ex-Thalassza) 2013/3-4, 113-122.</a>",
+    "metaaxiomatika_tanulmanyok_l3": "A nem-euklidészi háromszög dialektikája – Egy rendhagyó tudománytörténész: Tóth Imre, Café Bábel, 65. (2011 szeptember) 29–36. Letölthető <a href=\"http://www.cafebabel.hu/szamok/szabaly/suranyi\">itt</a>",
+    "metaaxiomatika_tanulmanyok_l4": "<a href=\"http://lajosszabo.com/SL/NULLA1.pdf\">Symposion a nulláról in Tartóshullám, szerk.: Beke L., Csanádi D., Szőke A.; Bölcsész Index Antológiája, Budapest, 1985. 203-213.</a>",
+    "metaaxiomatika_tanulmanyok_l5": "<a href=\"http://lajosszabo.com/SL/BOLYAI.htm\"></a>Euklidész és Bolyai párhuzamosai: a görög és a modern tragikum szimbólumai in Györe B. – Legéndy P.– Miklóssy E. – Rácz P. – Tábor Á. (szerk): Lélegzet 2 Budapest, 1987. 197-217.",
+    "metaaxiomatika_tanulmanyok_l6": "<a href=\"\"></a>Min mérhető a tudományos igazság? Élet és Irodalom 1995. 07.05.",
+    "metaaxiomatika_tanulmanyok_l7": "<a href=\"http://lajosszabo.com/SL/DBL.htm\">Descartes, Bolyai, Lobacsevszkij: a geometria visszavezetése szubjektív gyökerére in Túl a művészeten (Az 1996-os kiállítás katalógusa).</a>",
+    "metaaxiomatika_tanulmanyok_l8": "<a href=\"\"></a>Géniusz a tudományban – Polányi Mihály in Népszava 1999 augusztus",
+    "metaaxiomatika_tanulmanyok_l9": "<a href=\"\"></a>A személyesség és a gondolkodás viszonyáról; levél Ungváry Rudolfnak. – A falszifikáció elégtelensége; levél Petőcz Andrásnak. – Található-e közös nyelv a személyes és a tárgyiasító gondolkodás számára? in Budapesti Jelenlét/28-29 (2000 tél-2001 tavasz) 30-33., 41-43. és 51-68.",
+    "metaaxiomatika_tanulmanyok_l10": "<a href=\"http://lajosszabo.com/SL/20010211.htm\">A falak csak belülről bonthatók le, in Budapesti Jelenlét/28-29 (2001 nyár-ősz) 14-15.</a>",
+
+    "zenefilozofiai_irasok": "Zenefilozófiai írások",
+    "zenefilozofiai_irasok_konyvek": "<a href=\"\">Könyvek</a>",
+    "zenefilozofiai_irasok_konyvek_l1": "<a href=\"\"></a>Megszólít vagy elvarázsol? A zene szelleméről Typotex 2008. 320 o.",
+    "zenefilozofiai_irasok_tanulmanyok": "<a href=\"\">Tanulmányok</a>",
+    "zenefilozofiai_irasok_tanulmanyok_l1": "<a href=\"http://www.kalligramoz.eu/Kalligram/Archivum/2014/XXIII.-evf.-2014.-majus/Zene-es-szenvedes-a-nyelvi-differencia-1\">Zene és szenvedés – a nyelvi differencia</a> - Kalligram, 2014. május, 65-68.",
+    "zenefilozofiai_irasok_tanulmanyok_l2": "<a href=\"http://vizualzene.hu/suranyi_vaku_2015_08_vegl.pdf\">A hangszer és a betű mint a vizuális akusztika kezdete</a> Előadás a Vizuális AKUsztika Szimpóziumon, Kaposvár, 2015. augusztus 14.",
+    "zenefilozofiai_irasok_tanulmanyok_l3": "„Nem a részt akarja, hanem az egészet” Kalligram, 2010. december, 59-67.",
+    "zenefilozofiai_irasok_tanulmanyok_l4": "",
+    "zenefilozofiai_irasok_tanulmanyok_l5": "",
+    "zenefilozofiai_irasok_tanulmanyok_l6": "",
+    "zenefilozofiai_irasok_tanulmanyok_l7": "",
+    "zenefilozofiai_irasok_tanulmanyok_l8": "",
+    "zenefilozofiai_irasok_tanulmanyok_l9": "",
+    "zenefilozofiai_irasok_tanulmanyok_l10": "",
+    "zenefilozofiai_irasok_tanulmanyok_l11": "",
+    "zenefilozofiai_irasok_tanulmanyok_l12": "",
+
+
+
+
+  },
+
+  "en": {
+
+  },
+
+  "de": {
+
+  },
+
+  "fr": {
+
+  }
+}

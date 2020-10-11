@@ -1,8 +1,14 @@
 :root{
   --titles-bg-color: rgba(218, 183, 95, 0.8);
   --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
+  --main-bg-image: url('/kepek/hatter/15.jpg');
 }
 
+.main_container{
+  scroll-behavior: auto;
+  background-image: var(--main-bg-image);
+  background-position: cover;
+}
 
 /**/
 
@@ -103,8 +109,13 @@ section a{
   content: "-";
   padding-right: 4px;
   font-size: 3rem;
-  color: #936606;
+  color: black;
   line-height: 0rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.versek_container li:hover::before{
+  color: #936606;
 }
 
 /* .versek_wrapper h1::after{
@@ -162,7 +173,8 @@ section a{
 
 .titles{
   text-shadow:none;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
+  text-transform: none;
 }
 
 .irasok{
@@ -192,6 +204,16 @@ section a{
   color: rgba(132, 96, 6, 1.0);
 }
 
+
+
+
+
+
+
 .irasok_megemlekezesek{
   margin-bottom: 100px;
+}
+
+.portre_wrapper:hover img{
+  opacity: inherit;
 }

@@ -1,22 +1,22 @@
 const footer_language = {
   "hu": {
     "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Kontakt: Surányi László</a> <a href=\"mailto:lantesij@gmail.com\">Kontakt: Tábor Ádám</a>",
-    "footer_copyright": "Tábor Béla jogutódjai <span>©</span>",
-    "footer_egyeb": "Egyéb"
+    "footer_copyright": "Tábor Béla jogutódjai<span>©</span>",
+    "footer_egyeb": "Az oldal nem használ sütiket"
   },
   "en": {
     "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Contact: László Surányi</a> <a href=\"mailto:lantesij@gmail.com\">Contact: Ádám Tábor</a>",
-    "footer_copyright": "Tábor Béla jogutódjai ANGOL<span>©</span>",
-    "footer_egyeb": "Other"
+    "footer_copyright": "Béla Tábor's inheritors<span>©</span>",
+    "footer_egyeb": "This website doesn't use cookies"
   },
   "de": {
     "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Kontakt: László Surányi</a> <a href=\"mailto:lantesij@gmail.com\">Kontakt: Ádám Tábor</a>",
-    "footer_copyright": "Tábor Béla jogutódjai NÉMET<span>©</span>",
-    "footer_egyeb": "Andere"
+    "footer_copyright": "Béla Tábors Erbe<span>©</span>",
+    "footer_egyeb": "Diese Seite benutzt keine cookies"
   },
   "fr": {
     "footer_email": "<a href=\"mailto:lsuranyi@gmail.com\">Contact: László Surányi</a> <a href=\"mailto:lantesij@gmail.com\">Contact: Ádám Tábor</a>",
     "footer_copyright": "les ayants droit de Béla Tábor<span>©</span>",
-    "footer_egyeb": "Autre"
+    "footer_egyeb": "Baguette non cookies"
   }
 }

@@ -1,3 +1,25 @@
+:root{
+  --main-bg-image: url('/kepek/hatter/fa_uttal.jpg');
+}
+
+.main_container{
+  position: relative;
+  scroll-behavior: auto;
+  max-height: 100vh;
+}
+
+.main_container::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--main-bg-image);
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1;
+}
 
 section{
   position: static;
@@ -42,7 +64,7 @@ form input:checked+label{
   display: flex;
   width: fit-content;
   margin: auto;
-  border-radius: 2px;;
+  border-radius: 2px;
 }
 
 .form_container label{
@@ -59,8 +81,8 @@ form input:checked+label{
 }
 
 .kereso_container{
-  text-align: center;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .kereso_container .kereso{
@@ -76,11 +98,11 @@ form input:checked+label{
   padding-left: 15px;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: auto;
   background: transparent;
-  /* make scrollbar transparent */
-}
+  make scrollbar transparent
+} */
 
 /* table {
   display: grid;
@@ -113,12 +135,14 @@ main {
 
 table{
   font-size: 2rem;
+  max-width: 50vw;
 }
 
 .table-wrapper {
   overflow: auto;
   max-width: 100%;
-  background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)),
+  max-height: 100vh;
+  /* background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)),
     linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) 0 100%,
     radial-gradient(
       farthest-side at 0% 50%,
@@ -135,7 +159,8 @@ table{
   background-color: white;
   background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
   background-position: 0 0, 100%, 0 0, 100%;
-  background-attachment: local, local, scroll, scroll;
+  background-attachment: local, local, scroll, scroll; */
+  background-color: transparent;
 }
 
 tr {
@@ -167,6 +192,7 @@ input[type=search] {
   font-size: initial;
   margin-bottom: 1em;
   padding: 0.25em;
+  width: 30vw;
 }
 
 .hidden {

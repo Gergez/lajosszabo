@@ -8,70 +8,80 @@ function preload() {
 
 //-- usage --//
 preload(
-    "http://domain.tld/gallery/image-001.jpg",
-    "http://domain.tld/gallery/image-002.jpg",
-    "http://domain.tld/gallery/image-003.jpg"
+    "http://domain.tld/gallery/image_001.jpg",
+    "http://domain.tld/gallery/image_002.jpg",
+    "http://domain.tld/gallery/image_003.jpg"
 ) -->
   <div class="mobile_menu"></div>
 <nav class="topnav">
 
+<img class="logo" src="/kepek/logok/0674.jpg" alt="logo">
 
     <div class="dropdown">
 
-      <button><a class="iskola_fooldal" href="/index.html#magyar_dialogikus_iskola" id="navbar_dialogikus-iskola" onclick="setCurrentPage()">Dialogikus Iskola</a></button>
+      <button><a href="/index.html#magyar_dialogikus_iskola" id="navbar_dialogikus_iskola">Dialogikus Iskola</a></button>
 
       <div class="dropdown_content">
-        <a href="/index.html#vadirat" id="navbar_vadirat" onclick="setCurrentPage()">Vádirat</a>
-        <a href="/index.html#alapallas" id="navbar_alapallas" onclick="setCurrentPage()">Alapállás</a>
-        <a href="/index.html#tortenet" id="navbar_tortenet" onclick="setCurrentPage()">Történet</a>
-        <a href="/index.html#harmincas-evek" id="navbar_harmincas-evek" onclick="setCurrentPage()">A '30-as évek írásai</a>
-        <a href="/index.html#negyvenot-utan" id="navbar_negyvenot-utan" onclick="setCurrentPage()">1945 után</a>
+        <a href="/index.html#vadirat" id="navbar_vadirat">Vádirat</a>
+        <a href="/index.html#alapallas" id="navbar_alapallas">Alapállás</a>
+        <a href="/index.html#tortenet" id="navbar_tortenet">Történet</a>
+        <a href="/index.html#harmincas_evek" id="navbar_harmincas_evek">A '30-as évek írásai</a>
+        <a href="/index.html#negyvenot_utan" id="navbar_negyvenot_utan">1945 után</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+
+      <button><a href="/beszelgetesek.html" id="navbar_beszelgetesek_vitak_szeminariumok">Beszélgetések, viták, szemináriumok</a></button>
+
+      <div class="dropdown_content">
+        <a href="/beszelgetesek.html#csutortoki_beszelgetesek" id="navbar_csutortoki_beszelgetesek">Csütörtöki beszélgetések</a>
+        <a href="/beszelgetesek.html#szabo_lajos_szeminariumai" id="navbar_szabo_lajos_szeminariumai">Szabó Lajos szemináriumai</a>
+        <a href="/beszelgetesek.html#tabor_bela_preszokratikus_szeminariumai" id="navbar_tabor_bela_preszokratikus_szeminariumai">Tábor Béla preszókratikus szemináriumai</a>
+        <a href="/beszelgetesek.html#vitak" id="navbar_vitak">Viták</a>
       </div>
     </div>
 
 
   <div class="dropdown">
-    <button><a href="szabolajos.html" id="navbar_szabo-lajos">Szabó Lajos</a></button>
+    <button><a href="/SZL/szabolajos.html" id="navbar_szabo_lajos">Szabó Lajos</a></button>
 
     <div class="dropdown_content">
-      <a href="/SZL/eletrajz/szabo_lajos_eletrajz.htm" id="navbar_szabo-lajos-eletrajz">Életrajz</a>
-      <a href="/SZL/irasok/" id="navbar_szabo-lajos-irasok">Írások</a>
-      <a href="/SZL/szeminariumi_eloadasok/" id="navbar_szabo-lajos-szeminariumi-eloadasok">Szemináriumi előadások</a>
-      <a href="/SZL/" id="navbar_szabo-lajos-grafikak-kiallitasok">Grafikák, kiállítások</a>
-      <a href="/SZL/" id="navbar_szabo-lajos-csutortoki-beszelgetesek">Csütörtöki beszélgetések</a>
-      <a href="/SZL/" id="navbar_szabo-lajos-dusseldorfi-beszelgetesek">Düsseldorfi beszélgetések</a>
-      <a href="/SZL/" id="navbar_szabo-lajos-konferenciak">Konferenciák</a>
-      <a href="/SZL/" id="navbar_szabo-lajos-bibliografia">Bibliográfia</a>
+      <a href="/SZL/eletrajz/szabo_lajos_eletrajz.htm" id="navbar_szabo_lajos_eletrajz">Életrajz</a>
+      <a href="/SZL/irasok/" id="navbar_szabo_lajos_irasok">Írások</a>
+      <a href="/SZL/szeminariumi_eloadasok/" id="navbar_szabo_lajos_szeminariumi_eloadasok">Szemináriumi előadások</a>
+      <a href="/SZL/" id="navbar_szabo_lajos_grafikak_kiallitasok">Grafikák, kiállítások</a>
+      <a href="/SZL/" id="navbar_szabo_lajos_dusseldorfi_beszelgetesek">Düsseldorfi beszélgetések</a>
+      <a href="/SZL/" id="navbar_szabo_lajos_konferenciak">Konferenciák</a>
+      <a href="/SZL/" id="navbar_szabo_lajos_bibliografia">Bibliográfia</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <button><a href="/taborbela/taborbela.html" id="navbar_tabor-bela">Tábor Béla</a></button>
+    <button><a href="/taborbela/taborbela.html" id="navbar_tabor_bela">Tábor Béla</a></button>
 
     <div class="dropdown_content">
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor-bela-eletrajz">Életrajz</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_tabor-bela-konyvek">Könyvek</a>
-      <a href="/taboradam/taboradam.html" id="navbar_tabor-bela-ostortenet">"Őstörténet"</a>
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor-bela-a-szimbolum-valsaga">A szimbólum válsága</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_tabor-bela-preszokratikus-szeminariumok">Preszókratikus szemináriumok</a>
-      <a href="/taboradam/taboradam.html" id="navbar_tabor-bela-egyeb-irasok">Egyéb írások</a>
-      <a href="/taboradam/taboradam.html" id="navbar_tabor-bela-csutortoki-beszelgetesek">Csütörtöki beszélgetések</a>
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor-bela-szaz">"Tábor Béla 100"</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_tabor-belarol">Tábor Béláról</a>
+      <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor_bela_eletrajz">Életrajz</a>
+      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_tabor_bela_konyvek">Könyvek</a>
+      <a href="/taboradam/taboradam.html" id="navbar_tabor_bela_ostortenet">"Őstörténet"</a>
+      <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor_bela_a_szimbolum_valsaga">A szimbólum válsága</a>
+      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_tabor_bela_preszokratikus_szeminariumok">Preszókratikus szemináriumok</a>
+      <a href="/taboradam/taboradam.html" id="navbar_tabor_bela_egyeb_irasok">Egyéb írások</a>
+      <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor_bela_szaz">"Tábor Béla 100"</a>
+      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_tabor_belarol">Tábor Béláról</a>
 
     </div>
   </div>
 
   <div class="dropdown">
-    <button><a href="/mandystefania/mandystefania.html" id="navbar_mandy-stefania">Mándy Stefánia</a></button>
+    <button><a href="/mandystefania/mandystefania.html" id="navbar_mandy_stefania">Mándy Stefánia</a></button>
 
     <div class="dropdown_content">
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_mandy-stefania-eletrajz">Életrajz</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_mandy-stefania-a-kes-a-kez-a-hal">A kés a kéz a hal (részletek)</a>
-      <a href="/taboradam/taboradam.html" id="navbar_mandy-stefania-az-ellopott-tortenelem">Az ellopott történelem (részletek)</a>
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_mandy-stefania-scintilla">Scintilla (részletek)</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_mandy-stefania-kepzomuveszeti-irasok">Képzőművészeti írások</a>
-      <a href="/taboradam/taboradam.html" id="navbar_mandy-stefania-mandy-szaz">Mándy 100</a>
+      <a href="/horvathagnes/horvathagnes.html" id="navbar_mandy_stefania_eletrajz">Életrajz</a>
+      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_mandy_stefania_versek">Versek</a>
+      <a href="/taboradam/taboradam.html" id="navbar_mandy_stefania_kepzomuveszeti_irasok">Képzőművészeti írások</a>
+      <a href="/horvathagnes/horvathagnes.html" id="navbar_mandy_stefania_egyeb_tanulmanyok">Egyéb tanulmányok</a>
+      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_mandy_stefania_irasok_megemlekezesek">Írások, megemlékezések</a>
     </div>
   </div>
 
@@ -80,9 +90,9 @@ preload(
     <button class="tovabbi_szerzok"><a id="navbar_tovabbi_szerzok">További szerzők</a></button>
 
     <div class="dropdown_content">
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_horvath-agnes">Horváth Ágnes</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_suranyi-laszlo">Surányi László</a>
-      <a href="/taboradam/taboradam.html" id="navbar_tabor-adam">Tábor Ádám</a>
+      <a href="/horvathagnes/horvathagnes.html" id="navbar_horvath_agnes">Horváth Ágnes</a>
+      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_suranyi_laszlo">Surányi László</a>
+      <a href="/taboradam/taboradam.html" id="navbar_tabor_adam">Tábor Ádám</a>
     </div>
   </div>
 

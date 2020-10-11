@@ -10,10 +10,6 @@
     max-height: auto;
   }
 
-  /* .display_none{
-    display: none;
-  } */
-
   .pages{
     height: fit-content;
   }
@@ -22,10 +18,6 @@
 @media screen and (max-width:1200px) {
 
 /*FIRST PAGE START*/
-
-  /* .titles{
-    margin-top: 40px;
-  } */
 
   .portre_container{
     margin: 0 40px;

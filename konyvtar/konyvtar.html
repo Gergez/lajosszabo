@@ -9,13 +9,9 @@
   <title>Magyar Dialogikus Iskola</title>
 
   <link rel="stylesheet" href="/css/main/general.css">
-  <link rel="stylesheet" href="/css/main/main.css">
-  <link rel="stylesheet" href="/css/main/loading.css">
-  <link rel="stylesheet" href="/css/main/navbar.css">
-  <link rel="stylesheet" href="/css/main/jsrendered.css">
-  <link rel="stylesheet" href="/css/main/responsive.css">
-  <link rel="stylesheet" href="/css/main/animations.css">
+  <link rel="stylesheet" href="/css/main/style.css">
   <link rel="stylesheet" href="/css/konyvtar/style.css">
+  <link rel="stylesheet" href="/css/rendered/navbar.css">
   <link rel="stylesheet" href="/css/rendered/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
@@ -76,10 +72,13 @@
 
   <main>
     <div class="irasok_container">
+
+      <div class="kereso_container">
     <label>
       <!-- <span>Keresés:</span> -->
       <input placeholder="Keresés..." type="search" id="searchInput">
     </label>
+    </div>
 
     <div class="table-wrapper">
       <table id="filterTable">
@@ -99,8 +98,8 @@
           <tr>
             <td>Vádirat a szellem ellen</td>
             <td>Szabó Lajos, Tábor Béla</td>
-            <td>Magyar</td>
-            <td>https://lajosszabo.com/vadirat.htm</td>
+            <td><img class="language_flag" src="/kepek/menu/magyar_zaszlo.svg" alt="Magyar nyelv"></td>
+            <td><a href="http://lajosszabo.com/vadirat.htm" target="_blank">http://lajosszabo.com/vadirat.htm</a></td>
             <td>Akármi1</td>
             <td>Akármi2</td>
             <td>1.0</td>
@@ -1183,9 +1182,7 @@
 <script type="text/javascript" src="/js/rendered/footer.js"></script>
 </div>
 
-  <script type="module" src="/sablon.js" defer></script>
-  <script type="text/javascript" src="/js/konyvtar/konyvtar.js"></script>
-  <script type="text/javascript" src="/js/konyvtar/app.js"></script>
+  <script type="module" src="/js/konyvtar/app.js"></script>
 
 </body>
 

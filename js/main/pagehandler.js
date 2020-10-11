@@ -251,12 +251,12 @@ function setCurrentPage() {
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
-  }else if(currentLocation.includes("#harmincas-evek")){
+  }else if(currentLocation.includes("#harmincas_evek")){
     currentPage = 4;
     goToNextPage();
     goToPreviousPage();
     scrollToTop();
-  }else if(currentLocation.includes("#negyvenot-utan")){
+  }else if(currentLocation.includes("#negyvenot_utan")){
     currentPage = 5;
     goToPreviousPage();
     goToNextPage();

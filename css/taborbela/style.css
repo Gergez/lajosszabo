@@ -1,3 +1,5 @@
+@import '../main/general.css';
+
 :root{
   --titles-bg-color: rgba(218, 183, 95, 0.8);
   --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
@@ -5,6 +7,16 @@
 
 
 /**/
+
+section {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  min-width: 300px;
+}
 
 section
 {
@@ -105,6 +117,7 @@ section a{
 
 .konyvek_container li{
   list-style: none;
+  font-size: 2rem;
 }
 
 .konyvek_container li::before{

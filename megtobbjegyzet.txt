@@ -1,0 +1,8 @@
+LOGOKAT MEGVÁGNI, VÁLTÓ GOMB
+HÁTTEREK:
+	 KÖNYVTÁRHOZ: FA AZ ÚTTAL
+	 MÁNDYHOZ: RÁCSOS ABLAK CSENDÉLETTEL
+	 ÁGNESHEZ: TORONY CSENDÉLETTEL
+
+Mándynál: Európai iskolán belül alcímek: Vajda Júlia, Bálint Endre, stb., és azon belül a list item-ek.
+Csütörtöki beszélgetések: TÁ Találkozás a centrumban: http://exindex.hu/index.php?l=en&page=3&id=535

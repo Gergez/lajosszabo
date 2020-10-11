@@ -1,10 +1,13 @@
+@import './loading.css';
+@import './animations.css';
+
 :root{
   --main-bg-color: #ecdcbb;
   --main-link-color: rgba(132, 96, 6, 0.8);
   --visited-and-active-link-color: rgba(132, 96, 6, 1);
   --text-selection-color: rgba(218, 183, 95, 0.8);
   --blockquote-bg-color: rgba(218, 183, 95, 0.65);
-
+  --background-image: url();
 }
 
 * {

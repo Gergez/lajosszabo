@@ -1,0 +1,142 @@
+const language = {
+  "hu": {
+    "beszelgetesek_vitak_szeminariumok": "Beszélgetések, viták, szemináriumok",
+
+    "csutortoki_beszelgetesek": "Csütörtöki beszélgetések",
+    "csutortoki_beszelgetesek_p1": "Hamvas Béla, Szabó Lajos és Tábor Béla 1945 őszén szellemi munkaközösséget alapított, hogy „létezés és élet olyan szélső pontjait fogják emberi kutató magatartásuk egészébe, melyeknek egységes megragadására” a korabeli szellemi életben nem történt kísérlet. Ezzel szoros összefüggésben célul tűzték ki az egész szellemi korszituáció feltérképezését és értékelését. A hármas munkaközösség előzménye volt a Szabó Lajos és Tábor Béla között 1930-ig visszanyúló szoros szellemi és munkaközösség, Szabó Lajosnak és Hamvas Bélának a harmincas években kezdődött személyes és szellemi kapcsolata, valamint Hamvas Bélának Tábor Bélához a munkaszolgálatba írott levelezőlapjai. A rendszeressé vált úgynevezett „csütörtöki beszélgetéseken” részt vettek Kemény Katalin és Mándy Stefánia is, ennek ellenére ezek – Mándy Stefánia kifejezésével – alapjában Hamvas, Szabó és Tábor közötti „trialógusok” voltak. <br/> A beszélgetés-sorozat legintenzívebb szakasza Szabó Lajos <a href=\"http://lajosszabo.com/SZL/Biblia_es_romantika.pdf\">Biblia és romantika</a> című, a 2. világháború alatt készült tanulmányának vitájával indult. A vitaindító előadásra mind Hamvas, mind Tábor Béla hosszabb, részint írásos korreferátummal reagált. A nézetek közös és eltérő pontjainak tisztázása spontánabb beszélgetésekben folytatódott; ám a vita során később mind a három gondolkodó többször is újból hosszabb, írásban elkészített hozzászólásban fejtette ki álláspontját. Az álláspontok tisztázódásával „a felületi ellentmondások” fokozatosan „relativálódtak”, „mélyebb ellentmondásokra vezetődtek vissza”. Tehát nem a viták dacára, hanem éppen azoknak köszönhetően rendkívül ritka, valódi szellemi közösség jött létre a negyvenes években egy „üdvtörténeti” pillanatra a Haris-közi trialógusok során. (Tábor Ádám)",
+    "csutortoki_beszelgetesek_dokumentumok": "Dokumentumok:",
+    "csutortoki_beszelgetesek_dokumentumok_l1": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk00.pdf\">Szabó Lajos bevezetője</a></li>",
+    "csutortoki_beszelgetesek_dokumentumok_l2": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk01.pdf\">Az 1946. február 7-i beszélgetés jegyzőkönyve</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l3": "<a href=\"http://lajosszabo.com/SZL/Szellemi_topologia.pdf\">Tábor Béla korreferátuma Szabó Lajos bevezetőjéhez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l4": "<a href=\"http://lajosszabo.com/SZL/jobkve.pdf\">Tábor Béla bevezetője egy 1946 januári beszélgetéshez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l5": "Hamvas Béla hozzászólásainak gépirata megjelent a Szarepta c. könyve 2. kiadásában A Hamvas Bélánál fellelhető gépiratok <a href=\"http://lajosszabo.com/SZL/hamvas_csutbesz.pdf\">itt</a> olvashatók (<strong>EZ MÉG KÉRDÉSES</strong>) Ádámnál sok jegyzet van anyja hagyatékából – előbb-utóbb talán azok is felkerülhetnek.",
+
+    "csutortoki_beszelgetesek_tanulmanyok": "Tanulmányok",
+    "csutortoki_beszelgetesek_tanulmanyok_l1": "<a href=\"http://lajosszabo.com/SZL/TA_Csutort.pdf\">Tábor Ádám, Találkozás a centrumban</a>",
+
+    "szabo_lajos_szeminariumai": "Szabó Lajos szemináriumai",
+    "szabo_lajos_szeminariumai_p1": "Lejegyezték: Kotányi Attila és Kunszt György, az öt értékelméleti előadást Tábor Béla gyorsírásos, lényegében szó szerinti jegyzete alapján közöljük. <br /> A monogramok feloldása: Sz. L. = Szabó Lajos, T. B. = Tábor Béla, H. B. = Hamvas Béla, K. A. = Kotányi Attila, K. Gy. = Kunszt György, B. E. = Bíró Endre, B. G. = Bíró Gábor <br>Az <i>értékelméleti előadásokban</i> Szabó Lajos elsősorban az érték-fogalmat elemzi, az ebneri biblicizmus és az anselmusi lét érték azonossága alapján és a marxi közgazdaságtan-kritika szempontjait figyelembe véve. <br>Az 1947 szeptemberében és októberében tartott szemináriumokon kezdte el Szabó Lajos <i>nyelvmatézis-koncepciójának</i> kibontását. Azt a nevezetes tézisét járta körül, hogy „A nyelv tiszta matézis és semmi más.” Ennek keretében tárgyalja Szabó a halmazelmélet antinómiáit és értelmezi Gödel úgynevezett „nem-teljességi tételét” is.",
+    "szabo_lajos_szeminariumai_l1": "<a href=\"http://lajosszabo.com/SZL/Pszichologia.pdf\">Pszichológia</a>",
+    "szabo_lajos_szeminariumai_l2": "<a href=\"http://lajosszabo.com/SZL/Kozgazdasagtan.pdf\">Közgazdaságtan</a>",
+    "szabo_lajos_szeminariumai_l3": "<a href=\"http://lajosszabo.com/SZL/Ertekelmeleti_eloadas.pdf\">Értékelmélet</a>",
+    "szabo_lajos_szeminariumai_l4": "<a href=\"http://lajosszabo.com/SZL/egzisztencializmus_es.pdf\">Egzisztencializmus és indiai hagyomány</a>",
+    "szabo_lajos_szeminariumai_l5": "<a href=\"http://lajosszabo.com/SZL/Halmazelmelet_es_nyelvmatezis.pdf\">Halmazelmélet és nyelvmatézis</a>",
+    "szabo_lajos_szeminariumai_l6": "Történelemfelfogás és mozgalomelmélet – egyelőre csak az <a href=\"http://lajosszabo.com/SZL/1947_11_17.pdf\">1947.XI.17-i előadás jegyzete elérhető.</a>",
+    "szabo_lajos_szeminariumai_l7": "Tanulmányelőkészítés – MÉG NEM ELÉRHETŐ",
+
+
+    "tabor_bela_preszokratikus_szeminariumai": "Tábor Béla preszókratikus szemináriumai",
+    "tabor_bela_preszokratikus_szeminariumai_l1": "<a href=\"http://lajosszabo.com/100eves/Preszokratikus_bevezeto.pdf\">A fiatalok számára indított 1971-es szeminárium bevezetője</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l2": "<a href=\"http://lajosszabo.com/TB/PS71aprilis.pdf\">Jegyzet egy 1971-es szemináriumhoz</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l3": "<a href=\"http://lajosszabo.com/TB/PS72_02_15.pdf\">Az 1972 02.15-i előadás előzetes jegyzete</a>",
+
+    "vitak": "VITA … (ENNEK A CÍMÉT MÉG KI KELL TALÁLNI)",
+    "vitak_l1": "filler1",
+    "vitak_l1": "filler2"
+  },
+  "en": {
+    "beszelgetesek_vitak_szeminariumok": "Conversations, debates, seminars",
+
+    "csutortoki_beszelgetesek": "Thursday conversations",
+    "csutortoki_beszelgetesek_p1": "Hamvas Béla, Szabó Lajos és Tábor Béla 1945 őszén szellemi munkaközösséget alapított, hogy „létezés és élet olyan szélső pontjait fogják emberi kutató magatartásuk egészébe, melyeknek egységes megragadására” a korabeli szellemi életben nem történt kísérlet. Ezzel szoros összefüggésben célul tűzték ki az egész szellemi korszituáció feltérképezését és értékelését. A hármas munkaközösség előzménye volt a Szabó Lajos és Tábor Béla között 1930-ig visszanyúló szoros szellemi és munkaközösség, Szabó Lajosnak és Hamvas Bélának a harmincas években kezdődött személyes és szellemi kapcsolata, valamint Hamvas Bélának Tábor Bélához a munkaszolgálatba írott levelezőlapjai. A rendszeressé vált úgynevezett „csütörtöki beszélgetéseken” részt vettek Kemény Katalin és Mándy Stefánia is, ennek ellenére ezek – Mándy Stefánia kifejezésével – alapjában Hamvas, Szabó és Tábor közötti „trialógusok” voltak. <br/> A beszélgetés-sorozat legintenzívebb szakasza Szabó Lajos <a href=\"http://lajosszabo.com/SZL/Biblia_es_romantika.pdf\">Biblia és romantika</a> című, a 2. világháború alatt készült tanulmányának vitájával indult. A vitaindító előadásra mind Hamvas, mind Tábor Béla hosszabb, részint írásos korreferátummal reagált. A nézetek közös és eltérő pontjainak tisztázása spontánabb beszélgetésekben folytatódott; ám a vita során később mind a három gondolkodó többször is újból hosszabb, írásban elkészített hozzászólásban fejtette ki álláspontját. Az álláspontok tisztázódásával „a felületi ellentmondások” fokozatosan „relativálódtak”, „mélyebb ellentmondásokra vezetődtek vissza”. Tehát nem a viták dacára, hanem éppen azoknak köszönhetően rendkívül ritka, valódi szellemi közösség jött létre a negyvenes években egy „üdvtörténeti” pillanatra a Haris-közi trialógusok során. (Tábor Ádám)",
+    "csutortoki_beszelgetesek_dokumentumok": "Documents:",
+    "csutortoki_beszelgetesek_dokumentumok_l1": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk00.pdf\">Szabó Lajos bevezetője</a></li>",
+    "csutortoki_beszelgetesek_dokumentumok_l2": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk01.pdf\">Az 1946. február 7-i beszélgetés jegyzőkönyve</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l3": "<a href=\"http://lajosszabo.com/SZL/Szellemi_topologia.pdf\">Tábor Béla korreferátuma Szabó Lajos bevezetőjéhez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l4": "<a href=\"http://lajosszabo.com/SZL/jobkve.pdf\">Tábor Béla bevezetője egy 1946 januári beszélgetéshez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l5": "Hamvas Béla hozzászólásainak gépirata megjelent a Szarepta c. könyve 2. kiadásában A Hamvas Bélánál fellelhető gépiratok <a href=\"http://lajosszabo.com/SZL/hamvas_csutbesz.pdf\">itt</a> olvashatók (<strong>EZ MÉG KÉRDÉSES</strong>) Ádámnál sok jegyzet van anyja hagyatékából – előbb-utóbb talán azok is felkerülhetnek.",
+
+    "csutortoki_beszelgetesek_tanulmanyok": "Studies",
+    "csutortoki_beszelgetesek_tanulmanyok_l1": "<a href=\"http://exindex.hu/index.php?l=en&page=3&id=535\">Ádám Tábor, Concourse at the centre</a>",
+
+    "szabo_lajos_szeminariumai": "Lajos Szabó's seminars",
+    "szabo_lajos_szeminariumai_p1": "Lejegyezték: Kotányi Attila és Kunszt György, az öt értékelméleti előadást Tábor Béla gyorsírásos, lényegében szó szerinti jegyzete alapján közöljük. <br /> A monogramok feloldása: Sz. L. = Szabó Lajos, T. B. = Tábor Béla, H. B. = Hamvas Béla, K. A. = Kotányi Attila, K. Gy. = Kunszt György, B. E. = Bíró Endre, B. G. = Bíró Gábor <br>Az <i>értékelméleti előadásokban</i> Szabó Lajos elsősorban az érték-fogalmat elemzi, az ebneri biblicizmus és az anselmusi lét érték azonossága alapján és a marxi közgazdaságtan-kritika szempontjait figyelembe véve. <br>Az 1947 szeptemberében és októberében tartott szemináriumokon kezdte el Szabó Lajos <i>nyelvmatézis-koncepciójának</i> kibontását. Azt a nevezetes tézisét járta körül, hogy „A nyelv tiszta matézis és semmi más.” Ennek keretében tárgyalja Szabó a halmazelmélet antinómiáit és értelmezi Gödel úgynevezett „nem-teljességi tételét” is.",
+    "szabo_lajos_szeminariumai_l1": "<a href=\"http://lajosszabo.com/SZL/Pszichologia.pdf\">Pszichológia</a>",
+    "szabo_lajos_szeminariumai_l2": "<a href=\"http://lajosszabo.com/SZL/Kozgazdasagtan.pdf\">Közgazdaságtan</a>",
+    "szabo_lajos_szeminariumai_l3": "<a href=\"http://lajosszabo.com/SZL/Ertekelmeleti_eloadas.pdf\">Értékelmélet</a>",
+    "szabo_lajos_szeminariumai_l4": "<a href=\"http://lajosszabo.com/SZL/egzisztencializmus_es.pdf\">Egzisztencializmus és indiai hagyomány</a>",
+    "szabo_lajos_szeminariumai_l5": "<a href=\"http://lajosszabo.com/SZL/Halmazelmelet_es_nyelvmatezis.pdf\">Halmazelmélet és nyelvmatézis</a>",
+    "szabo_lajos_szeminariumai_l6": "Történelemfelfogás és mozgalomelmélet – egyelőre csak az <a href=\"http://lajosszabo.com/SZL/1947_11_17.pdf\">1947.XI.17-i előadás jegyzete elérhető.</a>",
+    "szabo_lajos_szeminariumai_l7": "Tanulmányelőkészítés – MÉG NEM ELÉRHETŐ",
+
+
+    "tabor_bela_preszokratikus_szeminariumai": "Béla Tábor's presocratic seminars",
+    "tabor_bela_preszokratikus_szeminariumai_l1": "<a href=\"http://lajosszabo.com/100eves/Preszokratikus_bevezeto.pdf\">A fiatalok számára indított 1971-es szeminárium bevezetője</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l2": "<a href=\"http://lajosszabo.com/TB/PS71aprilis.pdf\">Jegyzet egy 1971-es szemináriumhoz</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l3": "<a href=\"http://lajosszabo.com/TB/PS72_02_15.pdf\">Az 1972 02.15-i előadás előzetes jegyzete</a>",
+
+    "vitak": "Debates … (ENNEK A CÍMÉT MÉG KI KELL TALÁLNI)",
+    "vitak_l1": "filler1",
+    "vitak_l1": "filler2"
+  },
+  "de": {
+    "beszelgetesek_vitak_szeminariumok": "Gespräche, Diskussionen, Seminare",
+
+    "csutortoki_beszelgetesek": "Donnerstagsgespräche",
+    "csutortoki_beszelgetesek_p1": "Hamvas Béla, Szabó Lajos és Tábor Béla 1945 őszén szellemi munkaközösséget alapított, hogy „létezés és élet olyan szélső pontjait fogják emberi kutató magatartásuk egészébe, melyeknek egységes megragadására” a korabeli szellemi életben nem történt kísérlet. Ezzel szoros összefüggésben célul tűzték ki az egész szellemi korszituáció feltérképezését és értékelését. A hármas munkaközösség előzménye volt a Szabó Lajos és Tábor Béla között 1930-ig visszanyúló szoros szellemi és munkaközösség, Szabó Lajosnak és Hamvas Bélának a harmincas években kezdődött személyes és szellemi kapcsolata, valamint Hamvas Bélának Tábor Bélához a munkaszolgálatba írott levelezőlapjai. A rendszeressé vált úgynevezett „csütörtöki beszélgetéseken” részt vettek Kemény Katalin és Mándy Stefánia is, ennek ellenére ezek – Mándy Stefánia kifejezésével – alapjában Hamvas, Szabó és Tábor közötti „trialógusok” voltak. <br/> A beszélgetés-sorozat legintenzívebb szakasza Szabó Lajos <a href=\"http://lajosszabo.com/SZL/Biblia_es_romantika.pdf\">Biblia és romantika</a> című, a 2. világháború alatt készült tanulmányának vitájával indult. A vitaindító előadásra mind Hamvas, mind Tábor Béla hosszabb, részint írásos korreferátummal reagált. A nézetek közös és eltérő pontjainak tisztázása spontánabb beszélgetésekben folytatódott; ám a vita során később mind a három gondolkodó többször is újból hosszabb, írásban elkészített hozzászólásban fejtette ki álláspontját. Az álláspontok tisztázódásával „a felületi ellentmondások” fokozatosan „relativálódtak”, „mélyebb ellentmondásokra vezetődtek vissza”. Tehát nem a viták dacára, hanem éppen azoknak köszönhetően rendkívül ritka, valódi szellemi közösség jött létre a negyvenes években egy „üdvtörténeti” pillanatra a Haris-közi trialógusok során. (Tábor Ádám)",
+    "csutortoki_beszelgetesek_dokumentumok": "Unterlagen:",
+    "csutortoki_beszelgetesek_dokumentumok_l1": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk00.pdf\">Szabó Lajos bevezetője</a></li>",
+    "csutortoki_beszelgetesek_dokumentumok_l2": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk01.pdf\">Az 1946. február 7-i beszélgetés jegyzőkönyve</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l3": "<a href=\"http://lajosszabo.com/SZL/Szellemi_topologia.pdf\">Tábor Béla korreferátuma Szabó Lajos bevezetőjéhez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l4": "<a href=\"http://lajosszabo.com/SZL/jobkve.pdf\">Tábor Béla bevezetője egy 1946 januári beszélgetéshez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l5": "Hamvas Béla hozzászólásainak gépirata megjelent a Szarepta c. könyve 2. kiadásában A Hamvas Bélánál fellelhető gépiratok <a href=\"http://lajosszabo.com/SZL/hamvas_csutbesz.pdf\">itt</a> olvashatók (<strong>EZ MÉG KÉRDÉSES</strong>) Ádámnál sok jegyzet van anyja hagyatékából – előbb-utóbb talán azok is felkerülhetnek.",
+
+    "csutortoki_beszelgetesek_tanulmanyok": "Studien",
+    "csutortoki_beszelgetesek_tanulmanyok_l1": "<a href=\"http://lajosszabo.com/SZL/TA_Csutort.pdf\">Tábor Ádám, Találkozás a centrumban</a>",
+
+    "szabo_lajos_szeminariumai": "Lajos Szabós Seminare'",
+    "szabo_lajos_szeminariumai_p1": "Lejegyezték: Kotányi Attila és Kunszt György, az öt értékelméleti előadást Tábor Béla gyorsírásos, lényegében szó szerinti jegyzete alapján közöljük. <br /> A monogramok feloldása: Sz. L. = Szabó Lajos, T. B. = Tábor Béla, H. B. = Hamvas Béla, K. A. = Kotányi Attila, K. Gy. = Kunszt György, B. E. = Bíró Endre, B. G. = Bíró Gábor <br>Az <i>értékelméleti előadásokban</i> Szabó Lajos elsősorban az érték-fogalmat elemzi, az ebneri biblicizmus és az anselmusi lét érték azonossága alapján és a marxi közgazdaságtan-kritika szempontjait figyelembe véve. <br>Az 1947 szeptemberében és októberében tartott szemináriumokon kezdte el Szabó Lajos <i>nyelvmatézis-koncepciójának</i> kibontását. Azt a nevezetes tézisét járta körül, hogy „A nyelv tiszta matézis és semmi más.” Ennek keretében tárgyalja Szabó a halmazelmélet antinómiáit és értelmezi Gödel úgynevezett „nem-teljességi tételét” is.",
+    "szabo_lajos_szeminariumai_l1": "<a href=\"http://lajosszabo.com/SZL/Pszichologia.pdf\">Pszichológia</a>",
+    "szabo_lajos_szeminariumai_l2": "<a href=\"http://lajosszabo.com/SZL/Kozgazdasagtan.pdf\">Közgazdaságtan</a>",
+    "szabo_lajos_szeminariumai_l3": "<a href=\"http://lajosszabo.com/SZL/Ertekelmeleti_eloadas.pdf\">Értékelmélet</a>",
+    "szabo_lajos_szeminariumai_l4": "<a href=\"http://lajosszabo.com/SZL/egzisztencializmus_es.pdf\">Egzisztencializmus és indiai hagyomány</a>",
+    "szabo_lajos_szeminariumai_l5": "<a href=\"http://lajosszabo.com/SZL/Halmazelmelet_es_nyelvmatezis.pdf\">Halmazelmélet és nyelvmatézis</a>",
+    "szabo_lajos_szeminariumai_l6": "Történelemfelfogás és mozgalomelmélet – egyelőre csak az <a href=\"http://lajosszabo.com/SZL/1947_11_17.pdf\">1947.XI.17-i előadás jegyzete elérhető.</a>",
+    "szabo_lajos_szeminariumai_l7": "Tanulmányelőkészítés – MÉG NEM ELÉRHETŐ",
+
+
+    "tabor_bela_preszokratikus_szeminariumai": "Béla Tábors presokratische Seminare",
+    "tabor_bela_preszokratikus_szeminariumai_l1": "<a href=\"http://lajosszabo.com/100eves/Preszokratikus_bevezeto.pdf\">A fiatalok számára indított 1971-es szeminárium bevezetője</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l2": "<a href=\"http://lajosszabo.com/TB/PS71aprilis.pdf\">Jegyzet egy 1971-es szemináriumhoz</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l3": "<a href=\"http://lajosszabo.com/TB/PS72_02_15.pdf\">Az 1972 02.15-i előadás előzetes jegyzete</a>",
+
+    "vitak": "Diskussionen … (ENNEK A CÍMÉT MÉG KI KELL TALÁLNI)",
+    "vitak_l1": "filler1",
+    "vitak_l1": "filler2"
+  },
+  "fr": {
+    "beszelgetesek_vitak_szeminariumok": "Beszélgetések, viták, szemináriumok",
+
+    "csutortoki_beszelgetesek": "Csütörtöki beszélgetések",
+    "csutortoki_beszelgetesek_p1": "Hamvas Béla, Szabó Lajos és Tábor Béla 1945 őszén szellemi munkaközösséget alapított, hogy „létezés és élet olyan szélső pontjait fogják emberi kutató magatartásuk egészébe, melyeknek egységes megragadására” a korabeli szellemi életben nem történt kísérlet. Ezzel szoros összefüggésben célul tűzték ki az egész szellemi korszituáció feltérképezését és értékelését. A hármas munkaközösség előzménye volt a Szabó Lajos és Tábor Béla között 1930-ig visszanyúló szoros szellemi és munkaközösség, Szabó Lajosnak és Hamvas Bélának a harmincas években kezdődött személyes és szellemi kapcsolata, valamint Hamvas Bélának Tábor Bélához a munkaszolgálatba írott levelezőlapjai. A rendszeressé vált úgynevezett „csütörtöki beszélgetéseken” részt vettek Kemény Katalin és Mándy Stefánia is, ennek ellenére ezek – Mándy Stefánia kifejezésével – alapjában Hamvas, Szabó és Tábor közötti „trialógusok” voltak. <br/> A beszélgetés-sorozat legintenzívebb szakasza Szabó Lajos <a href=\"http://lajosszabo.com/SZL/Biblia_es_romantika.pdf\">Biblia és romantika</a> című, a 2. világháború alatt készült tanulmányának vitájával indult. A vitaindító előadásra mind Hamvas, mind Tábor Béla hosszabb, részint írásos korreferátummal reagált. A nézetek közös és eltérő pontjainak tisztázása spontánabb beszélgetésekben folytatódott; ám a vita során később mind a három gondolkodó többször is újból hosszabb, írásban elkészített hozzászólásban fejtette ki álláspontját. Az álláspontok tisztázódásával „a felületi ellentmondások” fokozatosan „relativálódtak”, „mélyebb ellentmondásokra vezetődtek vissza”. Tehát nem a viták dacára, hanem éppen azoknak köszönhetően rendkívül ritka, valódi szellemi közösség jött létre a negyvenes években egy „üdvtörténeti” pillanatra a Haris-közi trialógusok során. (Tábor Ádám)",
+    "csutortoki_beszelgetesek_dokumentumok": "Dokumentumok:",
+    "csutortoki_beszelgetesek_dokumentumok_l1": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk00.pdf\">Szabó Lajos bevezetője</a></li>",
+    "csutortoki_beszelgetesek_dokumentumok_l2": "<a href=\"http://lajosszabo.com/SZL/csutortok_dokuk01.pdf\">Az 1946. február 7-i beszélgetés jegyzőkönyve</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l3": "<a href=\"http://lajosszabo.com/SZL/Szellemi_topologia.pdf\">Tábor Béla korreferátuma Szabó Lajos bevezetőjéhez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l4": "<a href=\"http://lajosszabo.com/SZL/jobkve.pdf\">Tábor Béla bevezetője egy 1946 januári beszélgetéshez</a>",
+    "csutortoki_beszelgetesek_dokumentumok_l5": "Hamvas Béla hozzászólásainak gépirata megjelent a Szarepta c. könyve 2. kiadásában A Hamvas Bélánál fellelhető gépiratok <a href=\"http://lajosszabo.com/SZL/hamvas_csutbesz.pdf\">itt</a> olvashatók (<strong>EZ MÉG KÉRDÉSES</strong>) Ádámnál sok jegyzet van anyja hagyatékából – előbb-utóbb talán azok is felkerülhetnek.",
+
+    "csutortoki_beszelgetesek_tanulmanyok": "Tanulmányok",
+    "csutortoki_beszelgetesek_tanulmanyok_l1": "<a href=\"http://lajosszabo.com/SZL/TA_Csutort.pdf\">Tábor Ádám, Találkozás a centrumban</a>",
+
+    "szabo_lajos_szeminariumai": "Szabó Lajos szemináriumai",
+    "szabo_lajos_szeminariumai_p1": "Lejegyezték: Kotányi Attila és Kunszt György, az öt értékelméleti előadást Tábor Béla gyorsírásos, lényegében szó szerinti jegyzete alapján közöljük. <br /> A monogramok feloldása: Sz. L. = Szabó Lajos, T. B. = Tábor Béla, H. B. = Hamvas Béla, K. A. = Kotányi Attila, K. Gy. = Kunszt György, B. E. = Bíró Endre, B. G. = Bíró Gábor <br>Az <i>értékelméleti előadásokban</i> Szabó Lajos elsősorban az érték-fogalmat elemzi, az ebneri biblicizmus és az anselmusi lét érték azonossága alapján és a marxi közgazdaságtan-kritika szempontjait figyelembe véve. <br>Az 1947 szeptemberében és októberében tartott szemináriumokon kezdte el Szabó Lajos <i>nyelvmatézis-koncepciójának</i> kibontását. Azt a nevezetes tézisét járta körül, hogy „A nyelv tiszta matézis és semmi más.” Ennek keretében tárgyalja Szabó a halmazelmélet antinómiáit és értelmezi Gödel úgynevezett „nem-teljességi tételét” is.",
+    "szabo_lajos_szeminariumai_l1": "<a href=\"http://lajosszabo.com/SZL/Pszichologia.pdf\">Pszichológia</a>",
+    "szabo_lajos_szeminariumai_l2": "<a href=\"http://lajosszabo.com/SZL/Kozgazdasagtan.pdf\">Közgazdaságtan</a>",
+    "szabo_lajos_szeminariumai_l3": "<a href=\"http://lajosszabo.com/SZL/Ertekelmeleti_eloadas.pdf\">Értékelmélet</a>",
+    "szabo_lajos_szeminariumai_l4": "<a href=\"http://lajosszabo.com/SZL/egzisztencializmus_es.pdf\">Egzisztencializmus és indiai hagyomány</a>",
+    "szabo_lajos_szeminariumai_l5": "<a href=\"http://lajosszabo.com/SZL/Halmazelmelet_es_nyelvmatezis.pdf\">Halmazelmélet és nyelvmatézis</a>",
+    "szabo_lajos_szeminariumai_l6": "Történelemfelfogás és mozgalomelmélet – egyelőre csak az <a href=\"http://lajosszabo.com/SZL/1947_11_17.pdf\">1947.XI.17-i előadás jegyzete elérhető.</a>",
+    "szabo_lajos_szeminariumai_l7": "Tanulmányelőkészítés – MÉG NEM ELÉRHETŐ",
+
+
+    "tabor_bela_preszokratikus_szeminariumai": "Tábor Béla preszókratikus szemináriumai",
+    "tabor_bela_preszokratikus_szeminariumai_l1": "<a href=\"http://lajosszabo.com/100eves/Preszokratikus_bevezeto.pdf\">A fiatalok számára indított 1971-es szeminárium bevezetője</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l2": "<a href=\"http://lajosszabo.com/TB/PS71aprilis.pdf\">Jegyzet egy 1971-es szemináriumhoz</a>",
+    "tabor_bela_preszokratikus_szeminariumai_l3": "<a href=\"http://lajosszabo.com/TB/PS72_02_15.pdf\">Az 1972 02.15-i előadás előzetes jegyzete</a>",
+
+    "vitak": "VITA … (ENNEK A CÍMÉT MÉG KI KELL TALÁLNI)",
+    "vitak_l1": "filler1",
+    "vitak_l1": "filler2"
+  }
+}

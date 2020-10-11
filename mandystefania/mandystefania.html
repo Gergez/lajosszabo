@@ -10,14 +10,10 @@
   <title>Mándy Stefánia - Magyar Dialogikus Iskola</title>
 
   <link rel="stylesheet" href="../css/main/general.css">
-  <link rel="stylesheet" href="../css/main/main.css">
-  <link rel="stylesheet" href="../css/main/loading.css">
-  <link rel="stylesheet" href="../css/main/navbar.css">
-  <link rel="stylesheet" href="../css/main/jsrendered.css">
-  <link rel="stylesheet" href="../css/main/responsive.css">
-  <link rel="stylesheet" href="../css/main/animations.css">
-  <link rel="stylesheet" href="../css/rendered/footer.css">
+  <link rel="stylesheet" href="../css/main/style.css">
   <link rel="stylesheet" href="../css/mandystefania/style.css">
+  <link rel="stylesheet" href="../css/rendered/navbar.css">
+  <link rel="stylesheet" href="../css/rendered/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display|Playfair+Display+SC&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
   <link rel="icon" href="../kepek/favicon/favicon.png" type="image/x-icon">
@@ -27,7 +23,7 @@
 
 <body>
 
-  <script type="text/javascript" src="../translations/sablon/language.json"></script>
+  <script type="text/javascript" src="../translations/mandystefania/language.json"></script>
   <script type="text/javascript" src="../translations/navbar/navbar_language.json"></script>
   <script type="text/javascript" src="../translations/footer/footer_language.json"></script>
   <script type="text/javascript" src="../js/rendered/loading.js"></script>
@@ -43,14 +39,12 @@
       <h2 class="eletido">1918-2001</h2>
 
       <div class="bevezeto">
-        <!-- <div class="portre_container"> -->
         <div class="portre_wrapper">
           <img class="portre" src="../kepek/portrek/MS_portre_min.jpg" alt="Mándy Stefánia">
         </div>
-        <p>Rövid leírás Mándyról Stefániáról... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        <p id="mandy_stefania_leiras">Rövid leírás Mándyról Stefániáról... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
           laborum.</p>
-        <!-- </div> -->
       </div>
 
 
@@ -59,38 +53,38 @@
 
 
           <div class="versek_wrapper">
-            <h1 id="versek"><a class="titles" href="#">Versek</a></h1>
+            <h1 ><a id="versek" class="titles" href="#">Versek</a></h1>
 
             <div class="versek_container ">
               <div class="versek_outer_wrapper">
-                <p class="irasok">Verseskötetek:</p>
+                <p id="versek_verseskotetek" class="irasok">Verseskötetek:</p>
                 <ul class="versek_wrapper">
-                  <li><a href="">A lélek lép, lebben sután 1941</a></li>
-                  <li>A kés a kéz a hal 1970, Párizs - <a href="http://lajosszabo.com/MST/akesakezahal.pdf">részletek a kötetből</a></li>
-                  <li>Az ellopott történelem, 1992 - <a href="http://lajosszabo.com/MST/MST.pdf">részletek a kötetből</a></li>
-                  <li>Scintilla, 1999 KELL EGY KÖZÖS PDF - <a href="">részletek a köteteből</a></li>
+                  <li id="versek_verseskotetek_l1">A lélek lép, lebben sután 1941<a href=""></a></li>
+                  <li id="versek_verseskotetek_l2"><a href="http://lajosszabo.com/MST/akesakezahal.pdf">A kés a kéz a hal 1970, Párizs - részletek a kötetből</a></li>
+                  <li id="versek_verseskotetek_l3"><a href="http://lajosszabo.com/MST/MST.pdf">Az ellopott történelem, 1992 - részletek a kötetből</a></li>
+                  <li id="versek_verseskotetek_l4">Scintilla, 1999 - <a href="http://www.lajosszabo.com/MST/scintilla.pdf">részletek a kötetből</a>. további versek <a href="http://lajosszabo.com/MST/mst_tartalomesforma_kivanzarva.pdf">itt</a>, illetve <a href="https://hycry.wordpress.com/category/versek/mandy-stefania/">itt</a> olvashatók.</li>
                 </ul>
               </div>
 
               <div class="versek_outer_wrapper">
-                <p class="irasok">Gyerekveskötetek:</p>
+                <p id="versek_gyerekverskotetek" class="irasok">Gyerekverskötetek:</p>
                 <ul>
-                  <li><a href="">Ikrek könyve, 1964</a></li>
-                  <li><a href="">A cinóberpiros madár, 1965</a></li>
-                    <li style="text-indent: 10px;"><a href="">A cinóberpiros madár megzenésítve</a></li>
-                  <li><a href="">Eszterlánci tánc, 1979</a></li>
-                  <li><a href="">Mindenki lót, mindenki fut, 1979</a></li>
-                  <li><a href="">Játékzivatar, 1987</a></li>
+                  <li id="versek_gyerekverskotetek_l1"><a href=""></a>Ikrek könyve, 1964</li>
+                  <li id="versek_gyerekverskotetek_l2"><a href=""></a>A cinóberpiros madár, 1965</li>
+                  <li id="versek_gyerekverskotetek_l3" style="text-indent: 10px;"><a href=""></a>A cinóberpiros madár megzenésítve</li>
+                  <li id="versek_gyerekverskotetek_l4"><a href=""></a>Eszterlánci tánc, 1979</li>
+                  <li id="versek_gyerekverskotetek_l5"><a href=""></a>Mindenki lót, mindenki fut, 1979</li>
+                  <li id="versek_gyerekverskotetek_l6"><a href=""></a>Játékzivatar, 1987</li>
                 </ul>
               </div>
 
               <div class="versek_outer_wrapper">
-                <p class="irasok">Posthumus megjelent versek</p>
+                <p id="versek_posthumus" class="irasok">Posthumus megjelent versek, írások</p>
                 <ul>
-                  <li><a href="http://lajosszabo.com/MST/nev.pdf">Név</a></li>
-                  <li><a href="http://lajosszabo.com/MST/rejtozonek.pdf">Rejtőzőnek</a></li>
-                  <li><a href="https://issuu.com/ujforras/docs/ufo18_10_ok">Fújnak a néma harsonák / kezdettelen</a></li>
-                  <li><a href="">Egy halott álmaiból HOVA??</a></li>
+                  <li id="versek_posthumus_l1"><a href="http://lajosszabo.com/MST/nev.pdf">Név</a></li>
+                  <li id="versek_posthumus_l2"><a href="http://lajosszabo.com/MST/rejtozonek.pdf">Rejtőzőnek</a></li>
+                  <li id="versek_posthumus_l3"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok">Fújnak a néma harsonák / kezdettelen</a></li>
+                  <li id="versek_posthumus_l4"><a href="http://www.multesjovo.hu/hu/aitdownloadablefiles/download/aitfile/aitfile_id/2479/">Egy halott álmaiból</a></li>
                 </ul>
               </div>
             </div>
@@ -100,51 +94,44 @@
         <section class="kepzomuveszeti_irasok accordion">
           <div class="versek_wrapper">
 
-            <h1><a class="titles" href="#">Képzőművészeti írások</a></h1>
+            <h1><a id="kepzomuveszeti_irasok" class="titles" href="#">Képzőművészeti írások</a></h1>
             <div class="versek_container ">
               <div class="versek_outer_wrapper">
-                <p class="irasok">Vajda Lajosról:</p>
+                <p id="kepzomuveszeti_irasok_vajda_lajosrol" class="irasok">Vajda Lajosról:</p>
                 <ul>
-                  <li>Vajda Lajos (kis monográfia, 1964)</li>
-                  <li>Vajda Lajos (nagy monográfia) Corvina, 1983</li>
-                  <li><a href="http://lajosszabo.com/BPDISKANG/VAJDA_ALBUM.pdf">Vajda Lajos-mappa, előszó négy nyelven, Corvina, Budapest, 1973</a></li>
+                  <li id="kepzomuveszeti_irasok_vajda_lajosrol_l1">Vajda Lajos (kis monográfia, 1964)</li>
+                  <li id="kepzomuveszeti_irasok_vajda_lajosrol_l2">Vajda Lajos (nagy monográfia) Corvina, 1983</li>
+                  <li id="kepzomuveszeti_irasok_vajda_lajosrol_l3"><a href="http://lajosszabo.com/MST/mst_vajda_mappa_magyar.pdf">Vajda Lajos-mappa, előszó négy nyelven, Corvina, Budapest, 1973 - Magyar</a></li>
                 </ul>
               </div>
 
               <div class="versek_outer_wrapper">
-                <p class="irasok">Az Európai Iskoláról és alkotóiról:</p>
+                <p id="kepzomuveszeti_irasok_europai_iskola" class="irasok">Az Európai Iskoláról és alkotóiról:</p>
                 <ul>
-                  <li><a href="">Az Európai iskola és előzményei</a></li>
-                  <li><a href="http://lajosszabo.com/MST/MSt_balint.pdf">Bálint Endre Desclée de Brouwer, 1963</a></li>
-                  <li><a href="http://lajosszabo.com/MST/mandy_balint_80.pdf">Oly távol s oly közel – 80 éve született Bálint Endre</a></li>
-                  <li>Anna Margit</li>
-                  <li>Vajda Júlia</li>
-                  <li>Jakovitzs József</li>
-                  <li>Vajda Júlia útja</li>
-                  <li>Ország Lili és a nyugati fal</li>
-                  <li>A természet rejtett arca. Száz éve született Kállai Ernő</li>
-                  <li>Kassák az utolsó öt évben (1990)</li>
-                  <li>Veszelszky Béla: Az egyetlen kísérlet</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l1"><a href="">Az Európai iskola és előzményei</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l2"><a href="http://lajosszabo.com/MST/MSt_balint.pdf">Bálint Endre Desclée de Brouwer, 1967</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l3"><a href="http://lajosszabo.com/MST/mandy_balint_80.pdf">Oly távol s oly közel – 80 éve született Bálint Endre</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l4">Anna Margit NEM BIZTOS HOGY LESZ LINK</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l5">Vajda Júlia VÁRUNK LINKET</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l6"><a href="http://lajosszabo.com/MST/mst_jakovits.pdf">Jakovits József szobrairól</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l6_2"><a href="http://lajosszabo.com/MST/mst_jakovits_halalara.pdf">Jakovits József halálára</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l7">Vajda Júlia útja LESZ LINK</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l8">Ország Lili és a nyugati fal LESZ LINK</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l9">A természet rejtett arca. Száz éve született Kállai Ernő LESZ LINK</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l10">Kassák az utolsó öt évben (1990) LESZ LINK</li>
+                  <li id="kepzomuveszeti_irasok_europai_iskola_l11">Veszelszky Béla: Az egyetlen kísérlet LESZ LINK</li>
                 </ul>
               </div>
 
 
               <div class="versek_outer_wrapper">
-                <p class="irasok">Az európai avantgárdról</p>
-                <ul></ul>
+                <p id="kepzomuveszeti_irasok_europai_avantgard" class="irasok">Az európai avantgárdról</p>
+                <ul>
+                  <li id="kepzomuveszeti_irasok_europai_avantgard_l1"><a href="http://lajosszabo.com/MST/szeljegyzet_picassohoz.pdf">Széljegyzet Picassóhoz</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_avantgard_l2"><a href="http://lajosszabo.com/MST/modern_francia_festeszet.pdf">A modern francia festészet hatása a magyar kultúrára</a></li>
+                  <li id="kepzomuveszeti_irasok_europai_avantgard_l3">Paul Klee álomképvilága LINKET VÁRUNK</li>
+                </ul>
 
-              </div>
-
-              <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="http://lajosszabo.com/SZEL/kisertesesbuna.pdf">Kísértés és bűn - részlet</a></p>
-              </div>
-
-              <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="http://lajosszabo.com/SZEL/kisertesesbuna.pdf">A szimbólum válsága</a></p>
-                <p class="irasok"><a href="http://lajosszabo.com/TB/Muveszetesszimbolum.html">Művészes és szimbólum</a></p>
-                <p class="irasok"><a href="http://lajosszabo.com/TB/Aszimbolumvalsaga.html">A szimbólum válsága</a></p>
-                <p class="irasok"><a href="http://lajosszabo.com/TB/Tabor%20Bela%20Az%20eredeti%20felejtes%20es%20a%20szo%2">Az eredeti felejtés és a szó primátusa</a></p>
-                <p class="irasok"><a href="http://lajosszabo.com/TB/TABOR_BELA_Persona_Krisztus_miszterium_buddhizmus.pdf">Személyiség: persona, Krisztus-misztérium, buddhizmus</a></p>
               </div>
 
             </div>
@@ -155,21 +142,19 @@
         <section class="egyeb_tanulmanyok accordion">
           <div class="versek_wrapper">
 
-            <h1><a class="titles" href="#">Egyéb tanulmányok</a></h1>
+            <h1><a id="egyeb_tanulmanyok" class="titles" href="#">Egyéb tanulmányok</a></h1>
             <div class="versek_container ">
               <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="http://lajosszabo.com/SZL/MST_SzLrol.pdf">Szabó Lajost megérteni</a></p>
+                <ul>
+                  <li id="egyeb_tanulmanyok_l1">A gyermek a magyar regényirodalomban (doktori értekezés, 1941)</li>
+                  <li id="egyeb_tanulmanyok_l2"><a href="http://lajosszabo.com/MST/mst_ebnerrol_1.pdf">Én-Te-Szó. Ferdinand Ebner Pneumatológiai Töredékeiről</a></li>
+                  <li id="egyeb_tanulmanyok_l3"><a href="http://lajosszabo.com/SZL/MST_SzLrol.pdf">Szabó Lajost megérteni</a></li>
+                  <li id="egyeb_tanulmanyok_l4"><a href="http://lajosszabo.com/MST/MST_Mertektan_es.pdf">Mértéktan és szívárványtanítás</a></li>
+                  <li id="egyeb_tanulmanyok_l5"><a href="http://lajosszabo.com/MST/szubjektiv_barokk_1.pdf">Szubjektív barokk</a></li>
+                  <li id="egyeb_tanulmanyok_l6"><a href="http://lajosszabo.com/MST/MST_Mozaikresz.pdf">Mozaikrészecskék egy egészhez - Tábor Béláról</a></li>
+                  <li id="egyeb_tanulmanyok_l7"><a href="https://epa.oszk.hu/00000/00016/00015/960510.htm">Qumráni tekercsekre emlékezve - Molnár Péter képei előtt</a></li>
+                </ul>
               </div>
-
-              <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="http://lajosszabo.com/MST/MST_Mertektan_es.pdf">Mértéktan és szinvárványtanítás</p>
-              </div>
-
-              <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="http://lajosszabo.com/MST/MST_Mozaikresz.pdf">Mozaikrészecskék egy egészhez – Tábor Béláról</p>
-              </div>
-              <li><a href="http://lajosszabo.com/MST/Szubjektiv%20barokk_1.pdf">Szubjektív barokk</a></li>
-              <li><a href="http://lajosszabo.com/MST/Modern_francia_fesztészet.pdf">A modern francia festészet hatása a magyar kultúrára</a></li>
             </div>
           </div>
         </section>
@@ -177,38 +162,46 @@
         <section class="irasok_megemlekezesek accordion">
           <div class="versek_wrapper">
 
-            <h1><a class="titles" href="#">Írások, megemlékezések Mándy Stefániáról</a></h1>
+            <h1><a id="irasok_megemlekezesek" class="titles" href="#">Írások, megemlékezések Mándy Stefániáról</a></h1>
             <div class="versek_container ">
+
               <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="https://parnasszus.hu/termek/parnasszus-2013-02-nyar">Mándy Stefánia redivivus – a Parnasszus c. folyóirat megemlékezése, 2013.</a></p>
+                <p id="irasok_megemlekezesek_bucsu_mandy_stefaniatol" class="irasok">Búcsú Mándy Stefániától</p>
+                <ul>
+                  <li id="irasok_megemlekezesek_bucsu_mandy_stefaniatol_l1">Rába György, Mándy Stefánia (1918-2001)</li>
+                  <li id="irasok_megemlekezesek_bucsu_mandy_stefaniatol_l2">Juhász Attila, „a csonka csönd szólni marasztal” Mándy Stefánia pályaképe (TALÁN BE LESZ SZKENNELVE)</li>
+                  <li id="irasok_megemlekezesek_bucsu_mandy_stefaniatol_l3"><a href="http://lajosszabo.com/MST/bodor_bela_mst.pdf">Bodor Béla, Mándy Stefánia</a></li>
+                  <li id="irasok_megemlekezesek_bucsu_mandy_stefaniatol_l4"><a href="http://lajosszabo.com/MANDYST.htm">Horváth Ágnes, Surányi László, Búcsú Mándy Stefániától</a></li>
+                </ul>
               </div>
 
               <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="http://lajosszabo.com/SL/Suranyi_MSt_dialogikus_vers.pdf">Surányi László, A dialogikus vers</a></p>
-                <p class="irasok"><a href="http://lajosszabo.com/SL/Suranyi_MSt_dialogikus_vers.pdf">Horváth Ágnes????</a></p>
-                <p class="irasok"><a href="http://lajosszabo.com/MAGNES/Az_ember_es_a_haz.pdf">Horváth Ágnes, Az ember és a ház</a></p>
+                <p id="redivivus" class="irasok"><a href="https://parnasszus.hu/termek/parnasszus-2013-02-nyar">Mándy Stefánia redivivus – a Parnasszus c. folyóirat megemlékezése, 2013.</a></p>
+                <ul>
+                  <li id="redivivus_l1"><a href="http://lajosszabo.com/MAGNES/Az_ember_es_a_haz.pdf">Horváth Ágnes, Az ember és a ház</a></li>
+                  <li id="redivivus_l2"><a href="http://lajosszabo.com/SL/Suranyi_MSt_dialogikus_vers.pdf">Surányi László, A dialogikus vers</a></li>
+                </ul>
               </div>
 
               <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="https://issuu.com/ujforras/docs/ufo14_6_ok"></a>Surányi László, A súlyát hordozó kilép a kőből</p>
-                <p class="irasok"><a href="http://lajosszabo.com/SL/MST/Suranyi_L_Mandy_Stefaniarol_szemsugar.pdf"></a>Surányi László, Egy motívum szimbólummá sűrűsödése</p>
+                <p id="mandy_100" class="irasok">Mándy Stefánia 100 a PIM-ben - részletek</p>
+                <ul>
+                  <li id="mandy_100_l1"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok">Horváth Ágnes, Mándy 100</a></li>
+                  <li id="mandy_100_l2"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok">Abért Miklós, Egy dobbanás</a></li>
+                  <li id="mandy_100_l3"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok">Jász Attila, A befejezetlenség angyalának üzenete MS mesternek</a></li>
+                  <li id="mandy_100_l4"><a href="http://lajosszabo.com/MST/villanyi_mst.pdf">Villányi László, A másik - Mándy Stefániának</a></li>
+                </ul>
               </div>
 
               <div class="versek_outer_wrapper">
-
-                <p class="irasok"><a href="http://lajosszabo.com/MANDYST.htm"></a>Horváth Ágnes, Surányi László, Búcsú Mándy Stefániától</p>
-              </div>
-
-              <h1><a class="titles" href="#">Mándy Stefánia 100</a></h1>
-              <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok"></a>Abért Miklós, Egy dobbanás</p>
-                <p class="irasok"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok"></a>Jász Attila, A befejezetlenség angyalának üzenete MS mesternek</p>
-                <p class="irasok"><a href="https://issuu.com/ujforras/docs/ufo18_10_ok"></a>Villányi később</p>
-              </div>
-
-
-              <div class="versek_outer_wrapper">
-                <p class="irasok"><a href="https://issuu.com/ujforras/docs/ufo14_6_ok"></a>Horváth Ágnes, Ikrek, tükrök, ökrök LINK HIÁNYZIK</p>
+                <p id="tovabbi_tanulmanyok" class="irasok">További tanulmányok</p>
+                <ul>
+                  <li id="tovabbi_tanulmanyok_l1"><a href="https://epa.oszk.hu/00000/00016/00055/000515.html">Vörös László, „Mert minden óra végső óra” - Mándy Stefánia válogatott és új versei, költői életműve</a></li>
+                  <li id="tovabbi_tanulmanyok_l2"><a href="https://www.es.hu/old/0031/kritika.htm">Bodor Béla, Mándy Stefánia, scintilla (ez a 2. az oldalon)</a></li>
+                  <li id="tovabbi_tanulmanyok_l3"><a href="https://issuu.com/ujforras/docs/ufo14_6_ok">Surányi László, A súlyát hordozó kilép a kőből</a></li>
+                  <li id="tovabbi_tanulmanyok_l4"><a href="http://lajosszabo.com/SL/MST/Suranyi_L_Mandy_Stefaniarol_szemsugar.pdf">Surányi László, Egy motívum szimbólummá sűrűsödése</a></li>
+                  <li id="tovabbi_tanulmanyok_l5"><a href="https://issuu.com/ujforras/docs/ufo14_6_ok"></a>Horváth Ágnes, Ikrek, tükrök, ökrök LINK HIÁNYZIK, LESZ BŐVEBB</li>
+                </ul>
               </div>
 
             </div>

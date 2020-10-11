@@ -5,7 +5,7 @@ Fő feladatok:
 3) Minden függvényhez megfelelő, szabatos kommentet írni.
 4) Mobil navigációt megcsinálni. Valszeg kelleni fog JS, és valamit kell akkor kezdeni a CSS dropdown hover pseudojával, úgyhogy lehet, hogy újra kell strukturálni az egészet. JS add class (when width> 1200px) és remove (when width < 1200px) megoldhatja a gondot.
 5) Tábor Bélához lenyíló fülek. A fülekhez megfelelő tartalom. Animációk és padding margin helyett.
-6) Megoldani, hogy a loading screen minden oldal előtt ott legyen.
+6) KÉSZ Megoldani, hogy a loading screen minden oldal előtt ott legyen.
 7) Redirect based on user GEO location.
 
 FONTOS: app.js-be csak ready function, minden más kiszervezése külön fájlba.

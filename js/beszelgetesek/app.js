@@ -1,24 +1,24 @@
 import * as mobilenavbar from '../general/general.js';
 
-
-loading.onReady(function() {
-  loading.show('main_container', true);
-  loading.show('loading_container',false);
-  mobilenavbar.createMobileMenu();
-  mobilenavbar.responsiveNavigation();
-});
-
-window.onhashchange = () => {
-  languagehandler.languageContentUpdater();
-}
-
-window.onload = () => {
-  languagehandler.languageOnLoadUpdater();
-}
-
-window.onchange = () => {
-
-}
+// 
+// loading.onReady(function() {
+//   loading.show('main_container', true);
+//   loading.show('loading_container',false);
+//   mobilenavbar.createMobileMenu();
+//   mobilenavbar.responsiveNavigation();
+// });
+//
+// window.onhashchange = () => {
+//   languagehandler.languageContentUpdater();
+// }
+//
+// window.onload = () => {
+//   languagehandler.languageOnLoadUpdater();
+// }
+//
+// window.onchange = () => {
+//
+// }
 
 
 /*DECLARE SECTION SELECTORS, AND ADD EVENT LISTENER TO THEM TO BE ABLE TO MAKE THE CONTENT DISAPPEAR*/

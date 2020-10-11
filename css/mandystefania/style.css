@@ -4,6 +4,16 @@
   --main-bg-image: url('/kepek/hatter/15.jpg');
 }
 
+/* .ideiglenesformazas{
+  font-size: 2.2rem;
+  padding-left: 17px;
+  font-weight: 600;
+} */
+
+hr{
+  border: 1px solid rgb(209 178 106 / 0.4);;
+}
+
 .main_container{
   scroll-behavior: auto;
   background-image: var(--main-bg-image);

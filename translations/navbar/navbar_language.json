@@ -7,7 +7,7 @@ const navbar_language = {
     "navbar_harmincas_evek": "A '30_as évek írásai",
     "navbar_negyvenot_utan": "1945 után",
 
-    "navbar_beszelgetesek_vitak_szeminariumok": "Beszélgetések, viták, szemináriumok",
+    "navbar_beszelgetesek_vitak_szeminariumok": "Beszélgetések",
     "navbar_csutortoki_beszelgetesek": "Csütörtöki beszélgetések",
     "navbar_szabo_lajos_szeminariumai": "Szabó Lajos szemináriumai",
     "navbar_tabor_bela_preszokratikus_szeminariumai": "Tábor Béla preszókratikus szemináriumai",
@@ -62,7 +62,7 @@ const navbar_language = {
     "navbar_harmincas_evek": "Writings from the 1930s",
     "navbar_negyvenot_utan": "After 1945",
 
-    "navbar_beszelgetesek_vitak_szeminariumok": "Conversations, debates, seminars",
+    "navbar_beszelgetesek_vitak_szeminariumok": "Conversations",
     "navbar_csutortoki_beszelgetesek": "Thursday conversations",
     "navbar_szabo_lajos_szeminariumai": "Lajos Szabó's seminars",
     "navbar_tabor_bela_preszokratikus_szeminariumai": "Béla Tábor's presocratic seminars",
@@ -117,7 +117,7 @@ const navbar_language = {
     "navbar_harmincas_evek": "Schriften der '30er Jahre",
     "navbar_negyvenot_utan": "Nach 1945",
 
-    "navbar_beszelgetesek_vitak_szeminariumok": "Gespräche, Diskussionen, Seminare",
+    "navbar_beszelgetesek_vitak_szeminariumok": "Gespräche",
     "navbar_csutortoki_beszelgetesek": "Donnerstagsgespräche",
     "navbar_szabo_lajos_szeminariumai": "Lajos Szabós Seminare",
     "navbar_tabor_bela_preszokratikus_szeminariumai": "Béla Tábors presokratische Seminare",
@@ -172,7 +172,7 @@ const navbar_language = {
     "navbar_harmincas_evek": "Textes des années 30",
     "navbar_negyvenot_utan": "Après 1945",
 
-    "navbar_beszelgetesek_vitak_szeminariumok": "Gespräche, Diskussionen, Seminare",
+    "navbar_beszelgetesek_vitak_szeminariumok": "Gespräche FRANCIA",
     "navbar_csutortoki_beszelgetesek": "Les „jeudis”",
     "navbar_szabo_lajos_szeminariumai": "Lajos Szabós Seminare",
     "navbar_tabor_bela_preszokratikus_szeminariumai": "Béla Tábors presokratische Seminare",

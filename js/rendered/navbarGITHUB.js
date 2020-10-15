@@ -1,3 +1,17 @@
+document.write( '<!-- var images = [];\n' );
+document.write( 'function preload() {\n' );
+document.write( '    for (var i = 0; i < arguments.length; i++) {\n' );
+document.write( '        images[i] = new Image();\n' );
+document.write( '        images[i].src = preload.arguments[i];\n' );
+document.write( '    }\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '//-- usage --//\n' );
+document.write( 'preload(\n' );
+document.write( '    \"http://domain.tld/gallery/image_001.jpg\",\n' );
+document.write( '    \"http://domain.tld/gallery/image_002.jpg\",\n' );
+document.write( '    \"http://domain.tld/gallery/image_003.jpg\"\n' );
+document.write( ') -->\n' );
 document.write( '  <div class=\"mobile_menu\"></div>\n' );
 document.write( '<nav class=\"topnav\">\n' );
 document.write( '\n' );

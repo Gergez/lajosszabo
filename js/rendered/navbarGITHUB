@@ -19,7 +19,7 @@ preload(
 
     <div class="dropdown">
 
-      <button><a href="/index.html#magyar_dialogikus_iskola" id="navbar_dialogikus_iskola">Dialogikus Iskola</a></button>
+      <button><a href="https://gergez.github.io/lajosszabo/index.html" id="navbar_dialogikus_iskola">Dialogikus Iskola</a></button>
 
       <div class="dropdown_content">
         <a href="/index.html#vadirat" id="navbar_vadirat">Vádirat</a>
@@ -32,7 +32,7 @@ preload(
 
     <div class="dropdown">
 
-      <button><a href="/beszelgetesek.html" id="navbar_beszelgetesek_vitak_szeminariumok">Beszélgetések</a></button>
+      <button><a href="https://gergez.github.io/lajosszabo/beszelgetesek" id="navbar_beszelgetesek_vitak_szeminariumok">Beszélgetések</a></button>
 
       <div class="dropdown_content">
         <a href="/beszelgetesek.html#csutortoki_beszelgetesek" id="navbar_csutortoki_beszelgetesek">Csütörtöki beszélgetések</a>
@@ -44,7 +44,7 @@ preload(
 
 
   <div class="dropdown">
-    <button><a href="/SZL/szabolajos.html" id="navbar_szabo_lajos">Szabó Lajos</a></button>
+    <button><a href="https://gergez.github.io/lajosszabo/SZL/szabolajos" id="navbar_szabo_lajos">Szabó Lajos</a></button>
 
     <div class="dropdown_content">
       <a href="/SZL/eletrajz/szabo_lajos_eletrajz.htm" id="navbar_szabo_lajos_eletrajz">Életrajz</a>
@@ -58,7 +58,7 @@ preload(
   </div>
 
   <div class="dropdown">
-    <button><a href="/taborbela/taborbela.html" id="navbar_tabor_bela">Tábor Béla</a></button>
+    <button><a href="https://gergez.github.io/lajosszabo/taborbela/taborbela.html" id="navbar_tabor_bela">Tábor Béla</a></button>
 
     <div class="dropdown_content">
       <a href="/horvathagnes/horvathagnes.html" id="navbar_tabor_bela_eletrajz">Életrajz</a>
@@ -74,7 +74,7 @@ preload(
   </div>
 
   <div class="dropdown">
-    <button><a href="/mandystefania/mandystefania.html" id="navbar_mandy_stefania">Mándy Stefánia</a></button>
+    <button><a href="https://gergez.github.io/lajosszabo/mandystefania/mandystefania" id="navbar_mandy_stefania">Mándy Stefánia</a></button>
 
     <div class="dropdown_content">
       <a href="/horvathagnes/horvathagnes.html" id="navbar_mandy_stefania_eletrajz">Életrajz</a>
@@ -90,16 +90,16 @@ preload(
     <button class="tovabbi_szerzok"><a id="navbar_tovabbi_szerzok">További szerzők</a></button>
 
     <div class="dropdown_content">
-      <a href="/horvathagnes/horvathagnes.html" id="navbar_horvath_agnes">Horváth Ágnes</a>
-      <a href="/suranyilaszlo/suranyilaszlo.html" id="navbar_suranyi_laszlo">Surányi László</a>
-      <a href="/taboradam/taboradam.html" id="navbar_tabor_adam">Tábor Ádám</a>
+      <a href="https://gergez.github.io/lajosszabo/horvathagnes/horvathagnes" id="navbar_horvath_agnes">Horváth Ágnes</a>
+      <a href="https://gergez.github.io/lajosszabo/suranyilaszlo/suranyilaszlo" id="navbar_suranyi_laszlo">Surányi László</a>
+      <a href="https://gergez.github.io/lajosszabo/taboradam/taboradam" id="navbar_tabor_adam">Tábor Ádám</a>
     </div>
   </div>
 
 
 <div class="konyvtar_language_selector_container">
     <div class="dropdown">
-      <button class="konyvtar"><a href="/konyvtar/konyvtar.html" id="navbar_konyvtar">Könyvtár</a></button>
+      <button class="konyvtar"><a href="https://gergez.github.io/lajosszabo/konyvtar/konyvtar" id="navbar_konyvtar">Könyvtár</a></button>
 
       <div class="dropdown_content">
         <a href="/konyvtar/konyvtar.html#irasok" id="navbar_irasok">Írások</a>
@@ -110,7 +110,7 @@ preload(
 
     <div class="dropdown">
       <button class="language_selector"><a id="lang1">Magyar</a></button>
-      <img class="language_flag" src="/kepek/menu/magyar_zaszlo.svg" alt="Magyar nyelv">
+      <img class="language_flag" src="../../kepek/menu/magyar_zaszlo.svg" alt="Magyar nyelv">
 
       <div class="dropdown_content">
         <button class="language_selection" id="lang2">English</button>

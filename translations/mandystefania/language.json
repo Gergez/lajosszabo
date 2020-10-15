@@ -52,7 +52,7 @@ const language = {
 
     "egyeb_tanulmanyok": "Egyéb tanulmányok",
     "egyeb_tanulmanyok_l1": "A gyermek a magyar regényirodalomban (doktori értekezés, 1941)",
-    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/mst_ebnerrol_1.pdf\">Én-Te-Szó. Ferdinand Ebner Pneumatológiai Töredékeiről</a>",
+    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/mst_ebnerrol_1.pdf\">Én-Te-Szó. Ferdinand Ebner pneumatológiai töredékeiről</a>",
     "egyeb_tanulmanyok_l3": "<a href=\"http://lajosszabo.com/SZL/MST_SzLrol.pdf\">Szabó Lajost megérteni</a>",
     "egyeb_tanulmanyok_l4": "<a href=\"http://lajosszabo.com/MST/MST_Mertektan_es.pdf\">Mértéktan és szívárványtanítás</a>",
     "egyeb_tanulmanyok_l5": "<a href=\"http://lajosszabo.com/MST/szubjektiv_barokk_1.pdf\">Szubjektív barokk</a>",
@@ -102,7 +102,7 @@ const language = {
     "versek_gyerekverskotetek_l5": "<a href=\"\"></a>Mindenki lót, mindenki fut, 1979",
     "versek_gyerekverskotetek_l6": "<a href=\"\"></a>Játékzivatar, 1987",
 
-    "versek_postumus": "Separate and postumus poems, writings", 
+    "versek_postumus": "Separate and postumus poems, writings",
     "versek_postumus_l1": "<a href=\"http://lajosszabo.com/MST/nev.pdf\">Név</a>",
     "versek_postumus_l2": "<a href=\"http://lajosszabo.com/MST/rejtozonek.pdf\">Rejtőzőnek</a>",
     "versek_postumus_l3": "<a href=\"https://issuu.com/ujforras/docs/ufo18_10_ok\">Fújnak a néma harsonák / kezdettelen</a>",
@@ -135,7 +135,7 @@ const language = {
 
     "egyeb_tanulmanyok": "Other studies",
     "egyeb_tanulmanyok_l1": "A gyermek a magyar regényirodalomban (doktori értekezés, 1941)",
-    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/en_te_szo.pdf\">Én-Te-Szó. Ferdinand Ebner Pneumatológiai Töredékeiről ANGOL NÉV</a>",
+    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/en_te_szo.pdf\">Én-Te-Szó. Ferdinand Ebner pneumatológiai töredékeiről ANGOL NÉV</a>",
     "egyeb_tanulmanyok_l3": "<a href=\"http://lajosszabo.com/SZL/MST_SzLrol.pdf\">Szabó Lajost megérteni</a>",
     "egyeb_tanulmanyok_l4": "<a href=\"http://lajosszabo.com/MST/MST_Mertektan_es.pdf\">Mértéktan és szívárványtanítás</a>",
     "egyeb_tanulmanyok_l5": "<a href=\"http://lajosszabo.com/MST/szubjektiv_barokk_1.pdf\">Szubjektív barokk</a>",
@@ -218,7 +218,7 @@ const language = {
 
     "egyeb_tanulmanyok": "Egyéb tanulmányok",
     "egyeb_tanulmanyok_l1": "A gyermek a magyar regényirodalomban (doktori értekezés, 1941)",
-    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/en_te_szo.pdf\">Én-Te-Szó. Ferdinand Ebner Pneumatológiai Töredékeiről NÉMET CÍM</a>",
+    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/en_te_szo.pdf\">Én-Te-Szó. Ferdinand Ebner pneumatológiai töredékeiről NÉMET CÍM</a>",
     "egyeb_tanulmanyok_l3": "<a href=\"http://lajosszabo.com/SZL/MST_SzLrol.pdf\">Szabó Lajost megérteni</a>",
     "egyeb_tanulmanyok_l4": "<a href=\"http://lajosszabo.com/MST/MST_Mertektan_es.pdf\">Mértéktan és szívárványtanítás</a>",
     "egyeb_tanulmanyok_l5": "<a href=\"http://lajosszabo.com/MST/szubjektiv_barokk_1.pdf\">Szubjektív barokk</a>",
@@ -301,7 +301,7 @@ const language = {
 
     "egyeb_tanulmanyok": "Egyéb tanulmányok",
     "egyeb_tanulmanyok_l1": "A gyermek a magyar regényirodalomban (doktori értekezés, 1941)",
-    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/en_te_szo.pdf\">Én-Te-Szó. Ferdinand Ebner Pneumatológiai Töredékeiről FRANCIA CÍM</a>",
+    "egyeb_tanulmanyok_l2": "<a href=\"http://lajosszabo.com/MST/en_te_szo.pdf\">Én-Te-Szó. Ferdinand Ebner pneumatológiai töredékeiről FRANCIA CÍM</a>",
     "egyeb_tanulmanyok_l3": "<a href=\"http://lajosszabo.com/SZL/MST_SzLrol.pdf\">Szabó Lajost megérteni</a>",
     "egyeb_tanulmanyok_l4": "<a href=\"http://lajosszabo.com/MST/MST_Mertektan_es.pdf\">Mértéktan és szívárványtanítás</a>",
     "egyeb_tanulmanyok_l5": "<a href=\"http://lajosszabo.com/MST/szubjektiv_barokk_1.pdf\">Szubjektív barokk</a>",

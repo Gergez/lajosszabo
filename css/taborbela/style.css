@@ -3,6 +3,7 @@
 :root{
   --titles-bg-color: rgba(218, 183, 95, 0.8);
   --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
+  --main-bg-image: url('../../kepek/hatter/Taj_faval-min2.jpg');
 }
 
 

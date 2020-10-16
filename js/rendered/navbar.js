@@ -1,7 +1,7 @@
 document.write( '  <div class=\"mobile_menu\"></div>\n' );
 document.write( '<nav class=\"topnav\">\n' );
 document.write( '\n' );
-document.write( '<img class=\"logo\" src=\"/kepek/logok/0674.jpg\" alt=\"logo\">\n' );
+document.write( '<img class=\"logo\" src=\"../../kepek/logok/0666.jpg\" alt=\"logo\">\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );

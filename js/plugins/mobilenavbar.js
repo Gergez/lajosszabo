@@ -5,11 +5,15 @@
 //NEED TO MAKE STUFF IN THE MOBILE CLICKABLE
 **/
 
-
-let cancelButton = document.createElement('BUTTON');
-let burgerButton = document.createElement('BUTTON');
+// const logo = document.createElement('IMG');
+const cancelButton = document.createElement('BUTTON');
+const burgerButton = document.createElement('BUTTON');
 
 function createMobileMenu() {
+  // document.querySelector('.mobile_menu').appendChild(logo);
+  // logo.classList.add('logo');
+  // logo.innerHTML = 'src="../../kepek/logok/0666.jpg" alt="logo" ';
+
   document.querySelector('.mobile_menu').appendChild(cancelButton);
   cancelButton.classList.add('cancel_button');
   cancelButton.innerHTML = '<img src="../../kepek/menu/cancel.png" alt="menu-cancel"/>';
@@ -23,6 +27,7 @@ function responsiveNavigation() {
   cancelButton.addEventListener('click', () => {
     document.getElementsByClassName('topnav')[0].style.display = 'none';
     cancelButton.style.display = 'none';
+    // logo.style.display = 'block';
     burgerButton.style.display = 'block';
     window.scroll(0,0);
   });
@@ -30,6 +35,7 @@ function responsiveNavigation() {
   burgerButton.addEventListener('click', () => {
     document.getElementsByClassName('topnav')[0].style.display = 'block';
     cancelButton.style.display = 'block';
+    // logo.style.display = 'none';
     burgerButton.style.display = 'none';
     window.scroll(0,0);
   });

@@ -1,7 +1,7 @@
 :root{
   --titles-bg-color: rgba(218, 183, 95, 0.8);
   --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
-  --main-bg-image: url('/kepek/hatter/15.jpg');
+  --main-bg-image: url('../../kepek/hatter/proba1.jpg');
 }
 
 /* .ideiglenesformazas{
@@ -14,11 +14,25 @@ hr{
   border: 1px solid rgb(209 178 106 / 0.4);;
 }
 
-.irasok{
+.versek_wrapper li{
   font-style: italic;
 }
 
+/* .main_container::before{
+  content: '';
+  background-image: var(--main-bg-image);
+  background-position: cover;
+  position: absolute;
+  min-height: 130vh;
+  opacity: 0.3;
+} */
 
+/* body{
+  background-image: var(--main-bg-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+} */
 
 
 
@@ -29,9 +43,8 @@ hr{
 
 .main_container{
   scroll-behavior: auto;
-  background-image: var(--main-bg-image);
-  background-position: cover;
 }
+
 
 /**/
 

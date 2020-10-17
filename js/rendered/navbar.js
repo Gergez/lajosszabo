@@ -96,7 +96,7 @@ document.write( '    </div>\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '      <button class=\"language_selector\"><a id=\"lang1\">Magyar</a></button>\n' );
-document.write( '      <img class=\"language_flag\" src=\"../../kepek/menu/magyar_zaszlo.svg\" alt=\"Magyar nyelv\">\n' );
+document.write( '      <img class=\"language_flag\" src=\"./kepek/menu/magyar_zaszlo.svg\" alt=\"Magyar nyelv\">\n' );
 document.write( '\n' );
 document.write( '      <div class=\"dropdown_content\">\n' );
 document.write( '        <button class=\"language_selection\" id=\"lang2\">English</button>\n' );

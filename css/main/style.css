@@ -62,6 +62,7 @@ section p:last-of-type:not(.idezet){
 .page_container{
   width: 70%;
   margin: 0 auto;
+  min-height: calc(100vh - 61px);
 }
 
 .pages{

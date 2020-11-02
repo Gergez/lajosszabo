@@ -81,7 +81,7 @@ const lang3 = document.querySelector('#lang3');
 const lang4 = document.querySelector('#lang4');
 
 /*This function changes the img sources to the appropriate flag based on URL*/
-function imgChanger(lang) {
+function logoChanger(lang) {
   const img = document.querySelector('.language_flag');
   let current_location = location.href;
   let filtered_current_location = current_location.replace(/#hu|#en|#de|#fr/, "");
@@ -133,16 +133,16 @@ navbarButtonsAddHash();
 
 
 lang1.addEventListener('click', () => {
-  imgChanger(lang1);
+  logoChanger(lang1);
 });
 lang2.addEventListener('click', () => {
-  imgChanger(lang2);
+  logoChanger(lang2);
 });
 lang3.addEventListener('click', () => {
-  imgChanger(lang3);
+  logoChanger(lang3);
 });
 lang4.addEventListener('click', () => {
-  imgChanger(lang4);
+  logoChanger(lang4);
 });
 
 /*It's there so if the page is linked, it will update to the correct language*/
@@ -153,13 +153,13 @@ function languageOnLoadUpdater(){
   location.hash = current_location;
 
   if(current_location.includes("#hu")){
-    imgChanger(lang1);
+    logoChanger(lang1);
   }else if(current_location.includes("#en")){
-    imgChanger(lang2);
+    logoChanger(lang2);
   }else if(current_location.includes("#de")){
-    imgChanger(lang3);
+    logoChanger(lang3);
   }else if(current_location.includes("#fr")){
-    imgChanger(lang4);
+    logoChanger(lang4);
   }
 }
 /**
@@ -168,6 +168,6 @@ function languageOnLoadUpdater(){
 
 export {
   languageContentUpdater,
-  imgChanger,
+  logoChanger,
   languageOnLoadUpdater
 };

@@ -22,11 +22,11 @@ preload(
       <button><a href="https://gergez.github.io/lajosszabo/index.html" id="navbar_dialogikus_iskola">Dialogikus Iskola</a></button>
 
       <div class="dropdown_content">
-        <a href="/index.html#vadirat" id="navbar_vadirat">Vádirat</a>
-        <a href="/index.html#alapallas" id="navbar_alapallas">Alapállás</a>
-        <a href="/index.html#tortenet" id="navbar_tortenet">Történet</a>
-        <a href="/index.html#harmincas_evek" id="navbar_harmincas_evek">A '30-as évek írásai</a>
-        <a href="/index.html#negyvenot_utan" id="navbar_negyvenot_utan">1945 után</a>
+        <a href="https://gergez.github.io/lajosszabo/index.html#vadirat" id="navbar_vadirat">Vádirat</a>
+        <a href="https://gergez.github.io/lajosszabo/index.html#alapallas" id="navbar_alapallas">Alapállás</a>
+        <a href="https://gergez.github.io/lajosszabo/index.html#tortenet" id="navbar_tortenet">Történet</a>
+        <a href="https://gergez.github.io/lajosszabo/index.html#harmincas_evek" id="navbar_harmincas_evek">A '30-as évek írásai</a>
+        <a href="https://gergez.github.io/lajosszabo/index.html#negyvenot_utan" id="navbar_negyvenot_utan">1945 után</a>
       </div>
     </div>
 
@@ -35,10 +35,10 @@ preload(
       <button><a href="https://gergez.github.io/lajosszabo/beszelgetesek" id="navbar_beszelgetesek_vitak_szeminariumok">Beszélgetések</a></button>
 
       <div class="dropdown_content">
-        <a href="/beszelgetesek.html#csutortoki_beszelgetesek" id="navbar_csutortoki_beszelgetesek">Csütörtöki beszélgetések</a>
-        <a href="/beszelgetesek.html#szabo_lajos_szeminariumai" id="navbar_szabo_lajos_szeminariumai">Szabó Lajos szemináriumai</a>
-        <a href="/beszelgetesek.html#tabor_bela_preszokratikus_szeminariumai" id="navbar_tabor_bela_preszokratikus_szeminariumai">Tábor Béla preszókratikus szemináriumai</a>
-        <a href="/beszelgetesek.html#vitak" id="navbar_vitak">Viták</a>
+        <a href="https://gergez.github.io/lajosszabo/beszelgetesek.html#csutortoki_beszelgetesek" id="navbar_csutortoki_beszelgetesek">Csütörtöki beszélgetések</a>
+        <a href="https://gergez.github.io/lajosszabo/beszelgetesek.html#szabo_lajos_szeminariumai" id="navbar_szabo_lajos_szeminariumai">Szabó Lajos szemináriumai</a>
+        <a href="https://gergez.github.io/lajosszabo/beszelgetesek.html#tabor_bela_preszokratikus_szeminariumai" id="navbar_tabor_bela_preszokratikus_szeminariumai">Tábor Béla preszókratikus szemináriumai</a>
+        <a href="https://gergez.github.io/lajosszabo/beszelgetesek.html#vitak" id="navbar_vitak">Viták</a>
       </div>
     </div>
 
@@ -47,13 +47,13 @@ preload(
     <button><a href="https://gergez.github.io/lajosszabo/SZL/szabolajos" id="navbar_szabo_lajos">Szabó Lajos</a></button>
 
     <div class="dropdown_content">
-      <a href="/SZL/eletrajz/szabo_lajos_eletrajz.htm" id="navbar_szabo_lajos_eletrajz">Életrajz</a>
-      <a href="/SZL/irasok/" id="navbar_szabo_lajos_irasok">Írások</a>
-      <a href="/SZL/szeminariumi_eloadasok/" id="navbar_szabo_lajos_szeminariumi_eloadasok">Szemináriumi előadások</a>
-      <a href="/SZL/" id="navbar_szabo_lajos_grafikak_kiallitasok">Grafikák, kiállítások</a>
-      <a href="/SZL/" id="navbar_szabo_lajos_dusseldorfi_beszelgetesek">Düsseldorfi beszélgetések</a>
-      <a href="/SZL/" id="navbar_szabo_lajos_konferenciak">Konferenciák</a>
-      <a href="/SZL/" id="navbar_szabo_lajos_bibliografia">Bibliográfia</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/eletrajz/szabo_lajos_eletrajz.htm" id="navbar_szabo_lajos_eletrajz">Életrajz</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/irasok/" id="navbar_szabo_lajos_irasok">Írások</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/szeminariumi_eloadasok/" id="navbar_szabo_lajos_szeminariumi_eloadasok">Szemináriumi előadások</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/" id="navbar_szabo_lajos_grafikak_kiallitasok">Grafikák, kiállítások</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/" id="navbar_szabo_lajos_dusseldorfi_beszelgetesek">Düsseldorfi beszélgetések</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/" id="navbar_szabo_lajos_konferenciak">Konferenciák</a>
+      <a href="https://gergez.github.io/lajosszabo/SZL/" id="navbar_szabo_lajos_bibliografia">Bibliográfia</a>
     </div>
   </div>
 

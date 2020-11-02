@@ -1,7 +1,7 @@
 document.write( '<div class=\"mobile_menu\"></div>\n' );
 document.write( '<nav class=\"topnav\">\n' );
 document.write( '\n' );
-document.write( '<img class=\"logo\" src=\"/kepek/logok/15.jpg\" alt=\"logo\">' );
+document.write( '<img class=\"logo\" src=\"../kepek/logok/0666.jpg\" alt=\"logo\">\n' );
 document.write( '\n' );
 document.write( '    <div class=\"dropdown\">\n' );
 document.write( '\n' );
@@ -48,13 +48,13 @@ document.write( '    <button><a href=\"/taborbela/taborbela.html\" id=\"navbar_t
 document.write( '\n' );
 document.write( '    <div class=\"dropdown_content\">\n' );
 document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor_bela_eletrajz\">Életrajz</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor_bela_konyvek\">Könyvek</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor_bela_ostortenet\">\"Őstörténet\"</a>\n' );
+document.write( '      <a href=\"../../taborbela/taborbela.html#konyvek\" id=\"navbar_tabor_bela_konyvek\">Könyvek</a>\n' );
+document.write( '      <a href=\"../../taborbela/taborbela.html#ostortenet\" id=\"navbar_tabor_bela_ostortenet\">\"Őstörténet\"</a>\n' );
 document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor_bela_a_szimbolum_valsaga\">A szimbólum válsága</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor_bela_preszokratikus_szeminariumok\">Preszókratikus szemináriumok</a>\n' );
-document.write( '      <a href=\"/taboradam/taboradam.html\" id=\"navbar_tabor_bela_egyeb_irasok\">Egyéb írások</a>\n' );
+document.write( '      <a href=\"../../taborbela/taborbela.html#preszokratikus_szeminariumok\" id=\"navbar_tabor_bela_preszokratikus_szeminariumok\">Preszókratikus szemináriumok</a>\n' );
+document.write( '      <a href=\"../../taborbela/taborbela.html#tanulmanyok\" id=\"navbar_tabor_bela_egyeb_irasok\">Tanulmányok</a>\n' );
 document.write( '      <a href=\"/horvathagnes/horvathagnes.html\" id=\"navbar_tabor_bela_szaz\">\"Tábor Béla 100\"</a>\n' );
-document.write( '      <a href=\"/suranyilaszlo/suranyilaszlo.html\" id=\"navbar_tabor_belarol\">Tábor Béláról</a>\n' );
+document.write( '      <a href=\"../../taborbela/taborbela.html#irasok_megemlekezesek\" id=\"navbar_tabor_belarol\">Tábor Béláról</a>\n' );
 document.write( '\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
@@ -105,4 +105,4 @@ document.write( '        <button class=\"language_selection\" id=\"lang4\">Fran�
 document.write( '      </div>\n' );
 document.write( '    </div>\n' );
 document.write( '  </div>\n' );
-document.write( '</nav' );
+document.write( '</nav>' );

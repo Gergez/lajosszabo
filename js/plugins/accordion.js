@@ -1,5 +1,3 @@
-
-
 const sections = document.querySelectorAll('section');
 const titles = document.querySelectorAll('section h1');
 let containers = [];
@@ -26,6 +24,32 @@ collapseAccordion(titles);
 // collapseAccordion(containers);
 
 
+
+
+
+function accordionLinkHandler(){
+
+    const currentLocation = location.hash.toString();
+    console.log(currentLocation);
+
+    if(currentLocation != ""){
+      const accordionElement = document.querySelector(currentLocation).parentNode;
+      console.log(accordionElement);
+      accordionElement.click();
+      setTimeout( () => {
+        accordionElement.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'})
+      }, 500);
+    }
+}
+
+window.onload = () => {
+  if (document.getElementsByTagName('body')[0] !== undefined) {
+    setTimeout(accordionLinkHandler, 500);
+  }
+}
+
 export {
   collapseAccordion,
+  accordionLinkHandler
+  // eventFire
 };

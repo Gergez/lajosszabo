@@ -219,7 +219,7 @@ section a{
   transition: all 0.3s ease-in-out;
 }
 
-.section_wrapper li:hover a{
+.section_wrapper li a:hover {
   color: rgba(132, 96, 6, 1.0);
 }
 

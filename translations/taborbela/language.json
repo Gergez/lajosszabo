@@ -14,7 +14,7 @@ const language = {
 
     "szemelyiseg_es_logosz": "<a href=\"http://lajosszabo.com/szemeslog.htm\">Személyiség és Logosz – részletek</a>",
 
-    "ostortonet": "Bevezető fejezetek a valóság őstörténetéhez",
+    "ostortenet": "Bevezető fejezetek a valóság őstörténetéhez",
 
 
     "szabo_lajosrol": "<a href=\"http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf\">Szabó Lajosról</a>",
@@ -73,7 +73,7 @@ const language = {
 
     "szemelyiseg_es_logosz": "<a href=\"http://lajosszabo.com/szemeslog.htm\">Személyiség és Logosz – részletek</a>",
 
-    "ostortonet": "Introductory chapters to the prehistory of reality",
+    "ostortenet": "Introductory chapters to the prehistory of reality",
 
 
     "szabo_lajosrol": "<a href=\"http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf\">About Lajos Szabó</a>",
@@ -132,7 +132,7 @@ const language = {
 
     "szemelyiseg_es_logosz": "<a href=\"http://lajosszabo.com/szemeslog.htm\">Személyiség és Logosz – részletek</a>",
 
-    "ostortonet": "Einführungskapitel zur Vorgeschichte der Realität",
+    "ostortenet": "Einführungskapitel zur Vorgeschichte der Realität",
 
 
     "szabo_lajosrol": "<a href=\"http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf\">Szabó Lajosról</a>",
@@ -191,7 +191,7 @@ const language = {
 
     "szemelyiseg_es_logosz": "<a href=\"http://lajosszabo.com/szemeslog.htm\">Személyiség és Logosz – részletek</a>",
 
-    "ostortonet": "Chapitres d'introduction à la préhistoire de la réalité",
+    "ostortenet": "Chapitres d'introduction à la préhistoire de la réalité",
 
 
     "szabo_lajosrol": "<a href=\"http://lajosszabo.com/SZEL/Szabo_Lajosrol01.pdf\">Szabó Lajosról</a>",

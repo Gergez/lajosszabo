@@ -1,6 +1,3 @@
-
-
-
 let nextPageButton = document.createElement("BUTTON");
 let nextPageImage = document.createElement("IMG");
 
@@ -154,6 +151,7 @@ location.hash = `${pageURLs[currentPage]}${langTag}`;
 cur_location = "";
 }
 
+
 nextPageButton.addEventListener('click', goToNextPage);
 nextPageButton.addEventListener('click', setURL);
 previousPageButton.addEventListener('click', goToPreviousPage);
@@ -219,11 +217,12 @@ function checkLanguageTag(){
 
 
 function scrollToTop(){
+  setTimeout(() => {
   window.scroll({
   top: 0,
   left: 0,
   behavior: 'smooth'
-  });
+});}, 30)
 }
 
 function setCurrentPage() {

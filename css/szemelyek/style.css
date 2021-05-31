@@ -5,6 +5,7 @@
   --titles-bg-color: rgba(218, 183, 95, 0.8);
   --konyvek_outer_wrapper-bg-color: rgba(218, 183, 95, 0.55);
   --main-bg-image: url('../../kepek/hatter/proba1.jpg');
+  --link-color: rgba(132, 96, 6, 1.0);
 }
 
 /* .ideiglenesformazas{
@@ -14,11 +15,12 @@
 } */
 
 hr{
-  border: 1px solid rgb(209 178 106 / 0.4);;
+  border: 1px solid rgb(209 178 106 / 1.0);
+  margin-bottom: 20px;
 }
 
 .section_wrapper li{
-  font-style: italic;
+  font-style: normal;
 }
 
 /************************************Fent Ideiglenes, lent állandó*************************************************/
@@ -44,8 +46,9 @@ section
   transition: max-height 0.5s ease-in-out;
 }
 
-p{
-  text-indent: 0;
+p:not(.bemutatkozas){
+  font-size: 1.7rem;
+  text-indent: 7px;
 }
 
 p + p {
@@ -69,7 +72,7 @@ a{
 }
 
 a:link{
-  color:black;
+  color: black;
   background-color: none;
 }
 
@@ -125,16 +128,16 @@ section a{
 }
 
 .section_container li::before{
-  content: "-";
+  content: "";
   padding-right: 4px;
   font-size: 3rem;
-  color: black;
+  color: var(--link-color);
   line-height: 0rem;
   transition: color 0.3s ease-in-out;
 }
 
 .section_container li:hover::before{
-  color: #936606;
+  color: var(--link-color);
 }
 
 /* .section_wrapper h1::after{
@@ -172,7 +175,7 @@ section a{
   border: 8px solid transparent;
   border-top-color: #3e2200;
   margin: auto;
-  right: 5px;
+  right: 10px;
   transform: translateY(-100%);
   transition: transform 0.5s ease-in-out;
 }
@@ -185,7 +188,7 @@ section a{
   box-shadow: 0 1px 3px -1px #846006;
 }
 
-.section_outer_wrapper p:first-of-type{
+.section_outer_wrapper p:first-of-type:not(li p){
   padding-top: 15px;
   font-size: 2.2rem;
 }
@@ -202,7 +205,7 @@ section a{
 }
 
 .irasok a{
-  color: black;
+  color: rgb(84,58,1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -210,21 +213,38 @@ section a{
   color: rgba(132, 96, 6, 1.0);
 }
 
+.accordion_container section:first-of-type{
+  border-radius: 20px 20px 0 0;
+}
+
+.accordion_container section:last-of-type{
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 100px;
+}
+
 .section_wrapper li{
   font-size: 2rem;
 }
 
 .section_wrapper li a{
-  color: black;
+  color: var(--link-color);
   transition: all 0.3s ease-in-out;
 }
 
+.section_wrapper li a:visited{
+  color: var(--link-color);
+}
+
 .section_wrapper li a:hover {
-  color: rgba(132, 96, 6, 1.0);
+  color: var(--link-color);
 }
 
 .irasok_megemlekezesek{
   margin-bottom: 100px;
+}
+
+.portre_wrapper {
+  margin: 0 50px 50px 0;
 }
 
 .portre_wrapper:hover img{

@@ -90,28 +90,28 @@ function logoChanger(lang) {
     case "Magyar":
       location.href = (`${filtered_current_location}#hu`);
       console.log(location.href);
-      img.src = "../kepek/menu/magyar_zaszlo.svg";
+      img.src = "/Lajosszabo2/kepek/menu/magyar_zaszlo.svg";
       img.alt = "Magyar nyelv";
       break;
 
     case "English":
       location.href = (`${filtered_current_location}#en`);
       console.log(location.href);
-      img.src = "../kepek/menu/angol_zaszlo.svg";
+      img.src = "/Lajosszabo2/kepek/menu/angol_zaszlo.svg";
       img.alt = "English language";
       break;
 
     case "Deutsch":
       location.href = (`${filtered_current_location}#de`);
       console.log(location.href);
-      img.src = "../kepek/menu/nemet_zaszlo.svg";
+      img.src = "/Lajosszabo2/kepek/menu/nemet_zaszlo.svg";
       img.alt = "Deutsche Sprache";
       break;
 
     case "Français":
       location.href = (`${filtered_current_location}#fr`);
       console.log(location.href);
-      img.src = "../kepek/menu/francia_zaszlo.svg";
+      img.src = "/Lajosszabo2/kepek/menu/francia_zaszlo.svg";
       img.alt = "Langue Française";
       break;
   }

@@ -1,2 +1,7 @@
-ErrorDocument 404 /pagenotfound.html
-Redirect /index.html /index.html#magyar_dialogikus_iskola
+ErrorDocument 404 /pagenotfound.php
+Redirect /index.php /index.php#magyar_dialogikus_iskola
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php

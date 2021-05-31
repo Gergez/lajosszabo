@@ -1,0 +1,16 @@
+1. Kezdőoldalon "margót" csinálni a háttérnél sötétebb színnel a két oldalra.
+
+5. Könyvtárnál a tábla headerje maradjon mindig látható (position: absolute?) és legyen akkora, mint az egész sor.
+6. Könyvtárnál a táblának legyen borderje és a sorok is legyenek elválasztva
+7. Navigációs felületnél esetleg fix nagyságúra csinálni a lenyíló füleket, hogy ne legyenek 3-4 soros dolgok.
+
+
+Készek:
+2. Accordionoknál 1. elemnél bal és jobb felső sarkoknál 10px border-radius; utolsó elemnél bal és jobb alsónál szintén
+3. Személyeknél a kép és a szöveg között nagyobb margin (50px), és a képtől le is nagyobb margin
+4. Személyeknél a megjegyzések kisebb betűmérettel, beljebb szerepeljenek.
+
+
+Megbeszélni Lacival:
+
+8. A személyeknél a felsorolásoknál legyen-e gondolatjel (vagy valami más), vagy jó-e így, hogy nincs?

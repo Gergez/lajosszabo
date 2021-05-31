@@ -1,0 +1,167 @@
+#accessibility, #header, #logoLink, #accNav, #languages, #searcharea, #mainMenu, #hirdetes, #footer, .imgCaption {
+display:none;
+}
+
+
+body {
+background: #ffffff;
+font:"Times New Roman", Times, serif;
+}
+
+
+#mainwrap, mainwrap2 {
+background:#ffffff;
+width:auto;
+border-style: none;
+}
+
+#contenarea {
+border:none;
+padding:0;
+width:auto;
+}
+
+
+#menu, #topsiteSearch, #headingtop, #sideContainer, #footer, .backtoTop, .TabbedPanelsTab {
+display:none;
+
+}
+
+
+*html #contenarea {
+width:80%;
+}
+
+* {
+color: #000000 !important;
+}
+
+
+a{
+text-decoration:none;
+}
+
+/*print only logo */
+#logo {
+	display: block;
+}
+
+a:after {
+   content: " (" attr(href) ") ";
+}
+  
+.break_before { page-break-before: always; }
+.break_after { page-break-after: always; }
+
+/*a[href^="http://"]:after {
+content: " (" attr(href) ") ";
+}*/
+
+
+h1, h2, h3, h4, h5, h6,{
+font-weight:normal;
+}
+
+ul, li {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+
+/*****************************/
+/*CLASSES FOR FORMATING TEXT*/
+/****************************/
+
+.boldFont {
+font-weight:bold;
+}
+
+.italicFont {
+font-style:italic;
+}
+
+.noFloat
+{
+float:none;
+}
+.clear {
+clear:both;
+}
+
+.clearLeft {
+clear:left;
+
+}
+
+.clearRight {
+clear:right;
+
+}
+
+.alignLeft {
+text-align:left;
+}
+
+.alignRight {
+text-align:right}
+
+.alignCenter {
+text-align:center;
+}
+
+
+.indent {
+padding-left:30px;
+}
+
+
+
+div#sparespace {
+width:100px;
+line-height:2em;
+margin-left:auto; margin-right:auto;
+clear:both;
+text-align:center;}
+
+div#sparespaceBig {
+width:auto;
+margin-top:30px;
+margin-bottom:30px;
+margin-left:auto; margin-right:auto;
+clear:both;
+text-align:center;}
+
+#backtoTop {
+display:none;
+}
+
+div#contenarea p {
+font-size: 12pt !important;
+width:auto;
+line-height:1.5em; 
+text-align:justify; 
+margin-top:10pt;
+margin-bottom:10pt;
+margin-left:10pt;
+margin-right:10pt;}
+
+
+div#contenarea h3 {
+font-size: 14pt !important;
+font-weight: bold !important;
+font-weight:bold; 
+text-align:left; 
+margin:1.5em 15pt 6px 10pt;
+}
+
+#contenarea h4{
+font-size: 16pt !important;
+font-weight: bold !important;
+font-weight:bold;
+margin:10pt 10pt 20pt 10pt;
+padding-top:0.3em;
+text-align:left;
+font-variant:small-caps;
+letter-spacing: 0.1em;
+}
+

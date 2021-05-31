@@ -37,8 +37,8 @@ section h1{
   font-family: 'Crimson Text', serif;
   font-size: 3.5rem;
   text-align: center;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  /* text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.15), 2px 2px 3px rgba(0, 0, 0, 0.1); */
+  margin-bottom: 50px;
   line-height: 1em;
 }
 
@@ -58,7 +58,7 @@ section p:last-of-type:not(.idezet){
 }
 
 .titles{
-  margin-top: 100px;
+  margin-top: 135px;
 }
 
 .first_page{
@@ -91,7 +91,7 @@ section p:last-of-type:not(.idezet){
 
 .tarek{
   font-family: 'Playfair Display', serif;
-  font-size: 3.2em;
+  font-size: 3.0em;
   text-align: center;
   margin-bottom: 50px;
   transform: skewX(-5deg);
@@ -99,7 +99,7 @@ section p:last-of-type:not(.idezet){
 
 .talalkozas{
   font-family: 'Playfair Display', serif;
-  font-size: 2.8em;
+  font-size: 2.6em;
   text-align: center;
   padding: 0 20px;
   margin-bottom: 80px;
@@ -211,7 +211,7 @@ section p:last-of-type:not(.idezet){
 }
 
 .vadirat_container img {
-    margin: 20px;
+    margin: 120px 60px 20px 20px ;
     height: 430px;
     width: auto;
 }

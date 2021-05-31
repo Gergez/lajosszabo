@@ -2,7 +2,7 @@
 @import '../main/style.css';
 
 :root{
-  --main-bg-image: url('/kepek/hatter/fa_uttal.jpg');
+  /* --main-bg-image: url('/kepek/hatter/fa_uttal.jpg'); */
 }
 
 .main_container{
@@ -52,22 +52,22 @@ form input:checked+label{
 
 .form_container{
   display: flex;
-  width: fit-content;
-  margin: auto;
   border-radius: 2px;
+  margin: 40px 0;
 }
 
 .form_container label{
-  width: 150px;
+  width: 200px;
   text-align: center;
+  padding: 8px 0;
 }
 
 .form_container label:last-child{
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 6px 6px 0;
 }
 
 .form_container label:first-of-type{
-  border-radius: 10px 0 0 10px;
+  border-radius: 6px 0 0 6px;
 }
 
 .kereso_container{
@@ -183,6 +183,11 @@ input[type=search] {
   margin-bottom: 1em;
   padding: 0.25em;
   width: 30vw;
+}
+
+input[placeholder] {
+  text-align: center;
+  font-size: 1.8em;
 }
 
 .hidden {
